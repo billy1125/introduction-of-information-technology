@@ -1,6 +1,6 @@
 # 資訊與人工智慧概論 教材 — Introduction to Information Technology & AI
 
-> **元智大學「資訊與人工智慧概論」課程教材**（呂卓勲老師負責部分），修課對象為工業工程與管理系學生。全文以**繁體中文（台灣用語）**撰寫，技術名詞首次出現時附上英文原文，並搭配製造業／工業工程的實際應用範例。
+> **元智大學「資訊與人工智慧概論」課程教材**（呂卓勲老師負責部分），修課對象為工業工程與管理系學生。全文以 **繁體中文（台灣用語）** 撰寫，技術名詞首次出現時附上英文原文，並搭配製造業／工業工程的實際應用範例。
 
 **關鍵字 Keywords**：資訊科技概論、計算機概論、人工智慧、資料科學、工業工程、元智大學、大學課程教材。
 
@@ -10,31 +10,33 @@
 
 ## 📚 教材清單
 
-| 檔案 | 主題 | 說明 |
-|------|------|------|
-| [00-Course-Introduction.md](00-Course-Introduction.md) | 課程介紹 | 課程概要、評分方式、考試規定、出席規範、請假規定 |
-| [01-History-of-Computer.md](01-History-of-Computer.md) | 計算機歷史 | 計算工具演進、二進位系統、數位化、網路起源、AI 發展簡史 |
-| [02-Computer-Structure.md](02-Computer-Structure.md) | 電腦架構 | CPU、記憶體、儲存裝置、作業系統、應用軟體、工業4.0 |
-| [03-Computer-Program.md](03-Computer-Program.md) | 程式設計概念 | 演算法、程式語言、資料結構、工業工程應用 |
-| [04-Networks-and-Internet.md](04-Networks-and-Internet.md) | 網路與網際網路 | 網路基礎、TCP/IP、雲端運算、物聯網、智慧製造 |
-| [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | 資訊系統與資料庫 | 資訊系統類型（TPS/MIS/DSS/EIS）、ERP/MES/CRM、關聯式資料庫、SQL、NoSQL、大數據、電子商務 |
-| [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md) | 資料科學與人工智慧 | 從計算機歷史到 AI 的完整脈絡、機器學習、深度學習、生成式 AI、AI 代理人 |
+| 檔案 | 主題 | 說明 | 投影片版本 | 練習筆記本 |
+|------|------|------|------|------|
+| [00-Course-Introduction.md](00-Course-Introduction.md) | 課程介紹 | 課程概要、評分方式、考試規定、出席規範、請假規定 | [Slides](00-Course-Introduction.slides.md) | — |
+| [01-History-of-Computer.md](01-History-of-Computer.md) | 計算機歷史 | 計算工具演進、二進位系統、數位化、網路起源、AI 發展簡史 | [Slides](01-History-of-Computer.slides.md) | — |
+| [02-Computer-Structure.md](02-Computer-Structure.md) | 電腦架構 | CPU、記憶體、儲存裝置、作業系統、應用軟體、工業4.0 | — | [Notebook](notebooks/Computer-Structure-Examples.ipynb) |
+| [03-Computer-Program.md](03-Computer-Program.md) | 程式設計概念 | 演算法、程式語言、資料結構、工業工程應用 | — | [Notebook](notebooks/Computer-Program-Examples.ipynb) |
+| [04-Networks-and-Internet.md](04-Networks-and-Internet.md) | 網路與網際網路 | 網路基礎、TCP/IP、雲端運算、物聯網、智慧製造 | — | — |
+| [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | 資訊系統與資料庫 | 資訊系統類型（TPS/MIS/DSS/EIS）、ERP/MES/CRM、關聯式資料庫、SQL、NoSQL、大數據、電子商務 | — | — |
+| [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md) | 資料科學與人工智慧 | 從計算機歷史到 AI 的完整脈絡、機器學習、深度學習、生成式 AI、AI 代理人 | — | — |
+| [07-Industry-4.0-and-Smart-Manufacturing.md](07-Industry-4.0-and-Smart-Manufacturing.md) | 工業4.0與智慧製造整合 | 全課程應用案例整合章節，以智慧工廠案例串連硬體、資訊系統、資料科學等前六章內容 | — | — |
 
-## 💻 程式範例與練習筆記本
+尚未提供投影片或練習筆記本的章節，欄位標示為「—」。
 
-所有練習用 Jupyter 筆記本統一放在 [`notebooks/`](notebooks/) 資料夾：
+**投影片版本**：部分章節提供對應的 [Marp](https://marp.app/) 投影片版本，檔名為 `0X-XXX.slides.md`。
 
-| 檔案 | 說明 |
-|------|------|
-| [notebooks/Computer-Program-Examples.ipynb](notebooks/Computer-Program-Examples.ipynb) | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 的實作範例，可在 Google Colab 或 JupyterLab 執行 |
-| [notebooks/Computer-Structure-Examples.ipynb](notebooks/Computer-Structure-Examples.ipynb) | Python Jupyter 筆記本，對應 `02-Computer-Structure.md` 進位轉換與 IEEE 754 練習題的完整計算過程與程式驗證 |
+> **請注意**：直接在 GitHub 上開啟只會單純顯示簡單章節與文字，若要呈現接近實際上課簡報的效果，請安裝 [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) 擴充套件，在 VS Code 中開啟 `.slides.md` 檔案後，點選編輯器右上角的預覽圖示即可即時看到投影片效果，也能直接從預覽畫面匯出為 PDF 或 PPTX。
+
+若同學不方便自行安裝工具轉換，也可以直接到課程 Portal 網站下載老師預先產生的 PDF 版本。但請注意：本 GitHub 儲存庫的內容原則上會持續更新與修正，網路版本通常較新，Portal 上的 PDF 則可能是先前某個時間點的版本，兩者內容如有出入，請以本儲存庫的最新內容為準。
+
+**練習筆記本**：所有練習用 Jupyter 筆記本統一放在 [`notebooks/`](notebooks/) 資料夾，可在 Google Colab 或 JupyterLab 開啟執行。
 
 ---
 
 ## 📖 如何使用這份教材
 
 1. **直接在 GitHub 上閱讀**：點選上方各檔案連結即可線上閱覽 Markdown 內容
-2. **轉為投影片或 PDF**：部分章節提供對應的 Marp 投影片版本（檔名為 `0X-XXX.slides.md`），可使用 [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) 或 [Marp CLI](https://github.com/marp-team/marp-cli) 開啟並匯出為簡報或 PDF，方便上課簡報或列印
+2. **搭配 Marp for VS Code 閱讀投影片**：詳見上方〈📚 教材清單〉的說明與工具連結
 3. **搭配 AI 工具延伸學習**：每份教材都可以直接貼給生成式 AI（如 ChatGPT、Claude）請它幫你整理重點、出練習題或解釋不懂的段落
 
 ---
@@ -55,6 +57,8 @@
 05 資訊系統與資料庫（理解企業如何運用電腦）
     ↓
 06 資料科學與人工智慧（理解 AI 如何從資料中學習）
+    ↓
+07 工業4.0與智慧製造整合（用一個完整案例，串連前六章所學）
 ```
 
 ---

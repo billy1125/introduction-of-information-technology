@@ -14,11 +14,12 @@
 |------|------|
 | `00-Course-Introduction.md` | 課程介紹、評分方式、出席規定、考試規則 |
 | `01-History-of-Computer.md` | 計算機歷史、二進位系統、數位化、網路起源、AI 概覽 |
-| `02-Computer-Structure.md` | 計算機結構（工業工程導向）、作業系統、應用軟體、工業4.0 |
+| `02-Computer-Structure.md` | 計算機結構（工業工程導向）、作業系統、應用軟體 |
 | `03-Computer-Program.md` | 程式設計概念、資料結構、演算法（工業工程導向） |
 | `04-Networks-and-Internet.md` | 網路基礎、網際網路協定、物聯網、智慧製造 |
-| `05-Information-Systems-and-Database.md` | 資訊系統、資料庫 |
-| `06-Data-Science-and-AI.md` | 資料科學與人工智慧，串接所有課程主線的整合章節 |
+| `05-Information-Systems-and-Database.md` | 資訊系統、資料庫（ERP/MES/SCM 等企業應用系統的權威章節） |
+| `06-Data-Science-and-AI.md` | 資料科學與人工智慧，串接計算機→程式→網路→資訊系統→AI 的技術演進主線 |
+| `07-Industry-4.0-and-Smart-Manufacturing.md` | 工業4.0與智慧製造整合，全課程的應用案例整合章節，串連前六章內容 |
 | `notebooks/Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 的實作範例 |
 | `notebooks/Computer-Structure-Examples.ipynb` | Python Jupyter 筆記本，對應 `02-Computer-Structure.md`〈四、數字系統與進位轉換〉與〈五、浮點數與 IEEE 754〉的練習題完整詳解 |
 
@@ -36,6 +37,7 @@
 - **圖片**：圖片依所屬文章分類，放於 `images/文章檔名/` 資料夾（例如 `images/01-History-of-Computer/`），以相對路徑引用（一律使用正斜線 `/`），例如 `![說明文字](images/01-History-of-Computer/檔名.png)`。檔名一律使用小寫連字號（kebab-case）風格。每張圖片下方需空一行後附上一行斜體圖說標註來源：自製或 AI 生成的圖片標註 `*圖片來源：作者自製或 ChatGPT 生成*`；外部圖片（如維基共享資源）標註 `*圖片來源：[來源名稱「檔案名」](檔案頁面網址)，作者 XXX，授權 CC BY-SA 3.0*` 這類含作者與授權條款的完整格式，連結須指向該圖片在 Wikimedia Commons 等平台上的檔案頁面（File page），而非條目頁面。下載外部圖片前務必先在檔案頁面確認授權條款（避免使用僅限「合理使用／fair use」的非自由版權圖片），無法確認授權的圖片不可收錄。
 - **圖片授權例外**：外部來源圖片依其原始授權條款使用，不適用本專案 README 所宣告的 CC BY-NC-SA 授權；詳見 `README.md`〈📄 授權與使用聲明〉。
 - **參考資料**：如果要生成新內容，優先找`temp-reference/`中的內容，再透過網路找尋適合的資料。
+- **避免跨章節重複**：ERP／MES／SCM 等企業應用系統的完整定義與功能說明，權威內容在 `05-Information-Systems-and-Database.md`〈三、企業應用系統〉；智慧工廠／工業4.0的整合案例，權威內容在 `07-Industry-4.0-and-Smart-Manufacturing.md`。其他章節提到這些主題時，應以一兩句話帶過並以連結指向對應章節，不要重新完整介紹一次。
 - **專案架構**：本專案資料夾架構，不要增加與更新於`README.md`之中。
 
 ## 投影片（`.slides.md`）撰寫規範
