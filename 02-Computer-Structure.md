@@ -756,7 +756,7 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 - **使用者介面**：提供人與電腦互動的方式（圖形介面或命令列）
 - **安全性**：管控各程式與使用者對資源的存取權限
 
-### 2. 常見系統
+### 2. 常見的作業系統
 
 作業系統依使用場景可分為個人電腦、行動裝置、伺服器／雲端、嵌入式系統四大類；依授權模式則可分為**開放原始碼（Open Source）**（原始碼公開，任何人可檢視、修改、散布）與**私有／封閉原始碼（Proprietary）**（原始碼不公開，由單一廠商掌控開發與授權）兩種：
 
@@ -766,6 +766,10 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 | 行動裝置 | Android（核心原始碼開放，各手機廠商再客製化後多以封閉形式發行） | iOS／iPadOS、HarmonyOS（部分模組開源） |
 | 伺服器／雲端 | Linux 各發行版（Ubuntu Server、Red Hat Enterprise Linux、CentOS）、FreeBSD | Windows Server、Unix 系列（如 IBM AIX、Oracle Solaris） |
 | 嵌入式／即時系統 | FreeRTOS、Zephyr | VxWorks、QNX |
+
+![常見的作業系統](images\02-Computer-Structure\operating-systems.png)
+
+*圖片來源：作者自製或 ChatGPT 生成*
 
 #### 桌面作業系統
 
@@ -832,6 +836,12 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 ### 1. 檔案結構與管理
 
 **檔案系統（File System）** 是作業系統管理儲存裝置上資料的方式，提供了「資料夾（目錄）」與「檔案」的概念，讓使用者可以有系統地組織儲存資料。常見的檔案系統包括：**NTFS**（Windows，支援大容量磁碟、權限管理、加密與壓縮）、**ext4**（Linux 最常用的檔案系統，效能穩定），以及 **FAT32**（相容性最廣，但不支援超過 4 GB 的單一檔案，常用於 USB 隨身碟）。
+
+為了讓使用者不必透過指令列也能瀏覽與整理資料，主流作業系統都內建了圖形化的**檔案管理軟體**：Windows 的「檔案總管（File Explorer）」、macOS 的「Finder」，以及 Linux 各桌面環境的檔案管理員（如 GNOME 的 Files／Nautilus、KDE 的 Dolphin）。這類軟體以資料夾樹狀結構搭配圖示呈現，讓使用者能用滑鼠拖曳、複製、搬移、刪除與重新命名檔案，背後對應的正是前述檔案系統的目錄與檔案概念。下圖為 GNOME 的檔案管理員 Files 顯示使用者家目錄（Home）下的預設資料夾，如 Documents、Downloads、Pictures 等：
+
+![GNOME 檔案管理員 Files 顯示家目錄下的資料夾結構，包含 Documents、Downloads、Pictures 等預設資料夾圖示](images/02-Computer-Structure/file-manager-folder-view.png)
+
+*圖片來源：[Wikimedia Commons「GNOME Nautilus.png」](https://commons.wikimedia.org/wiki/File:GNOME_Nautilus.png)，作者 Emphrase，授權 CC BY-SA 3.0*
 
 ### 2. 權限與資料安全
 
@@ -1020,6 +1030,8 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 **產能分析（Capacity Analysis）** 分析每個生產步驟的理論產能與實際產能，識別限制整體產出的**瓶頸（Bottleneck）**（此概念源自管理學中的限制理論，Theory of Constraints）。**品質改善**則利用資料分析找出影響良率的關鍵因子：使用**散布圖（Scatter Plot）** 觀察不良率與某個製程參數的相關性；使用**柏拉圖（Pareto Chart）** 識別造成最多不良品的前幾個缺陷類型（依據「80/20 法則」：80% 的問題來自 20% 的原因），從而決定改善的優先順序。
 
 > **趣味小知識**：「柏拉圖」與「80/20 法則」的命名，來自十九世紀義大利經濟學家維爾弗雷多·柏拉圖（Vilfredo Pareto）。他當年觀察到義大利約 80% 的土地，掌握在 20% 的人口手中，這個「少數關鍵、多數次要」的現象後來被發現廣泛存在於品質管理、業績分配，甚至你我的待辦清單中——多數成果，往往來自少數關鍵因素。
+
+決策支援系統（DSS）在資訊系統中的定位、大數據分析的完整流程，以及 Power BI、Tableau 等 BI 工具背後的資料庫技術，請見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈二、資訊系統的類型〉與〈八、大數據與資料分析〉。
 
 ---
 
