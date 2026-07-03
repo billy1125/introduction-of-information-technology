@@ -758,11 +758,30 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 ### 2. 常見系統
 
-**Windows** 是桌面電腦與企業環境最普遍的作業系統，使用者介面直觀，軟體生態系豐富。**Linux** 是開放原始碼的作業系統，穩定性高、客製化程度高、安全性強，廣泛用於伺服器、雲端平台與嵌入式系統，許多工業控制系統的上層軟體也運行於 Linux。**嵌入式作業系統（Embedded OS）** 專為資源有限的嵌入式裝置（如 PLC、工業路由器、醫療設備）設計，典型代表如 FreeRTOS、VxWorks、QNX，設計重點是**即時性（Real-time）**——保證系統在嚴格的時間限制內完成響應。
+作業系統依使用場景可分為個人電腦、行動裝置、伺服器／雲端、嵌入式系統四大類；依授權模式則可分為**開放原始碼（Open Source）**（原始碼公開，任何人可檢視、修改、散布）與**私有／封閉原始碼（Proprietary）**（原始碼不公開，由單一廠商掌控開發與授權）兩種：
+
+| 使用場景 | 開放原始碼 | 私有（封閉原始碼） |
+|---------|-----------|-------------------|
+| 個人電腦／桌面 | Linux 各發行版（Ubuntu、Fedora、Debian 等） | Windows、macOS |
+| 行動裝置 | Android（核心原始碼開放，各手機廠商再客製化後多以封閉形式發行） | iOS／iPadOS、HarmonyOS（部分模組開源） |
+| 伺服器／雲端 | Linux 各發行版（Ubuntu Server、Red Hat Enterprise Linux、CentOS）、FreeBSD | Windows Server、Unix 系列（如 IBM AIX、Oracle Solaris） |
+| 嵌入式／即時系統 | FreeRTOS、Zephyr | VxWorks、QNX |
+
+#### 桌面作業系統
+
+**Windows** 是桌面電腦與企業環境最普遍的作業系統，使用者介面直觀，軟體生態系豐富；**macOS** 是蘋果專為其 Mac 系列電腦設計的作業系統，強調與蘋果自家硬體、行動裝置的整合體驗。**Linux** 是開放原始碼的作業系統，穩定性高、客製化程度高、安全性強，廣泛用於伺服器、雲端平台與嵌入式系統，許多工業控制系統的上層軟體也運行於 Linux；由於原始碼公開，Linux 衍生出數百種**發行版（Distribution）**，如面向一般使用者的 Ubuntu、Fedora，以及面向企業伺服器的 Red Hat Enterprise Linux。
+
+#### 行動作業系統
+
+行動裝置方面，**Android** 由 Google 主導，核心基於 Linux 且原始碼開放，是全球市占率最高的行動作業系統；**iOS／iPadOS** 是蘋果專為 iPhone、iPad 設計的封閉原始碼系統，以流暢度與生態系整合著稱。伺服器與雲端平台則以 Linux 發行版與 **Windows Server** 為主流，雲端運算興起後，這些系統也是各大雲端服務供應商（如 AWS、Azure、Google Cloud）資料中心的基礎。**嵌入式作業系統（Embedded OS）** 專為資源有限的嵌入式裝置（如 PLC、工業路由器、醫療設備）設計，典型代表如 FreeRTOS、VxWorks、QNX，設計重點是**即時性（Real-time）**——保證系統在嚴格的時間限制內完成響應。
 
 ### 3. 工業應用：設備控制系統中的 OS
 
 工業設備的控制系統對 OS 有特殊要求：即時性（必須在確定的時間內回應感測器輸入）、穩定性（工廠機台往往 24 小時不間斷運作，OS 不能無故當機）、強固性（需在高溫、高濕、電磁干擾的環境下正常運作），以及安全性（防止未授權存取或惡意軟體入侵控制系統）。這些需求使得工業控制系統通常採用嵌入式即時 OS，而非一般的 Windows 或標準 Linux。
+
+值得注意的是，工業現場使用的作業系統，種類上其實仍不脫上表所列的這些系統家族，但**版本與設定通常和家用、辦公室環境不同**。例如同樣掛名 Windows，產線的人機介面（HMI）電腦可能安裝的是專為工業用途設計的 **Windows IoT Enterprise**，而非一般消費者購買電腦時附帶的家用版；同樣是 Linux，控制器裡跑的也往往是經過裁剪、拿掉不必要功能以換取更高穩定性與即時性的**即時強化版本（如加上 PREEMPT_RT 即時延伸模組的 Linux）**，而非一般桌機安裝的標準發行版。
+
+換言之，工業與一般消費環境用的不是「完全不同的作業系統」，而是同一系列作業系統中，為了滿足工廠現場「不能當機、反應要快、環境要耐受」等要求所做的**特化版本**。
 
 ---
 
@@ -771,6 +790,12 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 ### 1. Process 與 Thread
 
 **行程（Process）** 是一個正在執行中的程式。當你打開 Excel，作業系統就建立了一個 Excel 的行程；再打開 Chrome，又有一個 Chrome 的行程。每個行程擁有獨立的記憶體空間，互不干擾。
+
+作業系統通常會提供一個工具，讓使用者即時檢視目前有哪些行程正在執行、各自佔用多少 CPU 與記憶體資源——在 Windows 上是「工作管理員（Task Manager）」，在 Linux 上則有 `htop`、`top` 等指令列工具，或圖形化的「系統監視器」。下圖是 Linux 系統監控工具 `htop` 的畫面，每一列代表一個正在執行的行程，可以看到 PID（行程編號）、CPU% 與 MEM%（該行程佔用的 CPU 與記憶體百分比）等欄位；同一個瀏覽器（如圖中的 Chromium、Firefox）常常會同時對應好幾個行程，這是因為瀏覽器會把不同分頁或外掛獨立成不同行程，避免其中一個分頁當機拖垮整個瀏覽器：
+
+![htop 顯示 Linux 系統中的行程列表，包含 PID、CPU% 與 MEM% 等欄位](images/02-Computer-Structure/htop-process-list.png)
+
+*圖片來源：[Wikimedia Commons「Htop-2.0.0.png」](https://commons.wikimedia.org/wiki/File:Htop-2.0.0.png)，作者 Kopiersperre，授權 GNU General Public License v2 或以上*
 
 **執行緒（Thread）** 是行程內的更小執行單位。一個行程可以包含多個執行緒，這些執行緒**共享**同一個行程的記憶體空間，但可以並行執行。例如，一個影片播放程式可能有多個執行緒：一個負責解碼影像、一個負責解碼音訊、一個負責更新畫面顯示，它們同時進行，讓你感受到流暢的影音播放。
 
@@ -783,8 +808,6 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 在工廠的電腦監控系統中，往往同時執行多個任務，包括蒐集各機台感測器資料、更新監控畫面、記錄日誌，以及偵測異常並發出警報。這些任務的**優先權**不同：異常警報的優先權最高，必須立即處理；更新畫面的優先權較低，稍微延遲不影響安全。
 
 **即時作業系統（RTOS，Real-Time Operating System）** 正是為此設計——它提供**確定性（Determinism）**：保證高優先權任務一定能在規定時間內被執行，這是一般 OS（如 Windows）無法保證的。
-
-> **趣味小知識**：「臭蟲（Bug）」與「除錯（Debug）」這兩個程式設計術語，據說源自1947年——葛麗絲·霍普（Grace Hopper）的團隊在排查哈佛 Mark II 電腦的故障時，真的在繼電器裡發現了一隻被夾死的飛蛾，導致電路短路。他們把這隻蛾貼在維修日誌上，並寫下「第一個發現真正臭蟲的案例」，這個詞從此沿用至今。
 
 ---
 
@@ -844,7 +867,17 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 ### 1. CLI 與 GUI
 
-**命令列介面（CLI，Command-Line Interface）** 讓使用者透過鍵入文字指令與電腦互動。看似古老，但 CLI 對於系統管理員和工程師仍然極為重要——批次操作、自動化腳本、遠端連線管理等任務，CLI 往往更有效率、更靈活。**圖形使用者介面（GUI，Graphical User Interface）** 以視覺化的圖示、視窗、選單呈現操作選項，大幅降低了學習門檻，讓非技術人員也能使用電腦。
+**命令列介面（CLI，Command-Line Interface）** 讓使用者透過鍵入文字指令與電腦互動。看似古老，但 CLI 對於系統管理員和工程師仍然極為重要——批次操作、自動化腳本、遠端連線管理等任務，CLI 往往更有效率、更靈活。
+
+![CLI（命令列介面）範例：在終端機中輸入文字指令，逐行顯示執行結果](images/02-Computer-Structure/cli-terminal-example.png)
+
+*圖片來源：[Wikimedia Commons「Bash screenshot.png」](https://commons.wikimedia.org/wiki/File:Bash_screenshot.png)，作者 Emx，授權 GNU General Public License v2 或以上*
+
+**圖形使用者介面（GUI，Graphical User Interface）** 以視覺化的圖示、視窗、選單呈現操作選項，大幅降低了學習門檻，讓非技術人員也能使用電腦。
+
+![GUI（圖形使用者介面）範例：檔案總管以資料夾圖示與視窗呈現，用滑鼠點選即可操作](images/02-Computer-Structure/gui-file-manager-example.png)
+
+*圖片來源：[Wikimedia Commons「Screenshot of Nemo (file manager).png」](https://commons.wikimedia.org/wiki/File:Screenshot_of_Nemo_(file_manager).png)，作者 Gaba p，授權 CC BY-SA 3.0*
 
 ### 2. 基本系統操作
 
@@ -908,7 +941,35 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 ## 二十、辦公與資料處理工具
 
-### 1. 試算表（重點：Excel）
+日常辦公最常接觸的軟體，不外乎文書處理、試算表、簡報三類。常見的辦公室軟體包括微軟的 **Word**（文書處理）、**Excel**（試算表）、**PowerPoint**（簡報），Google 的 **Google 文件／試算表／簡報**（雲端版本，可多人即時協作），開放原始碼的 **LibreOffice Writer／Calc／Impress**，以及在兩岸三地也相當普及的 **WPS Office**。這些軟體雖然廠牌不同，但功能高度對應、檔案格式也大多可互通。
+
+**辦公室套裝軟體（Office Suite）** 正是把上述這些各自獨立的工具，整合成一套統一介面、可互相搭配使用的軟體組合——例如 **Microsoft Office** 把 Word、Excel、PowerPoint 綁在一起銷售與更新，**Google Workspace** 把文件、試算表、簡報、雲端硬碟整合在同一個帳號底下，**LibreOffice** 則把 Writer、Calc、Impress，再加上繪圖工具 **Draw**，打包成一套免費的開放原始碼方案。下圖為 LibreOffice 套件中 Writer、Calc、Impress、Draw 四個應用程式同時開啟的畫面，可以看出「套裝」軟體的意涵——同一介面風格、不同用途的工具被整合在一起：
+
+![LibreOffice 辦公室套裝軟體：Writer（左上，文書處理）、Calc（右上，試算表）、Impress（左下，簡報）、Draw（右下，繪圖）四個應用程式同時開啟](images/02-Computer-Structure/office-suite-applications.png)
+
+*圖片來源：[Wikimedia Commons「LibreOffice 7.2.4.1 Writer Calc Impress and Draw screenshot.png」](https://commons.wikimedia.org/wiki/File:LibreOffice_7.2.4.1_Writer_Calc_Impress_and_Draw_screenshot.png)，作者 VulcanSphere，授權 Mozilla Public License 2.0 / GNU LGPL v3 或以上*
+
+「把多個相關工具打包成一套」這種**套裝軟體（Software Suite）** 的概念，並不只限於辦公室應用，在其他專業領域也很常見：設計領域有 **Adobe Creative Cloud**（Photoshop、Illustrator、Premiere Pro 等整合訂閱），工程領域有 **Autodesk** 產品家族（AutoCAD 製圖、Inventor 3D 建模、Fusion 360 模擬分析），統計分析領域有 **IBM SPSS**、**Minitab** 等內建多種統計工具的套裝軟體。企業級的套裝軟體則進一步整合到 ERP、MES 等系統，將採購、生產、銷售、財務等模組統一在同一套平台之下，完整介紹見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈三、企業應用系統〉。
+
+在工業工程管理實務中，辦公室套裝軟體三類工具的分工大致如下：
+
+- **文書處理（Word Processing）**：以 **Word**、WPS 文字、LibreOffice Writer 為代表，用於撰寫標準作業程序（SOP）、作業指導書、品質稽核報告等需要大量文字說明、版面編排的文件。
+- **試算表（Spreadsheet）**：以 **Excel**、Google 試算表、LibreOffice Calc 為代表，用於生產數據的記錄、計算與分析，例如產量統計、良率計算、製程參數整理。
+- **簡報（Presentation）**：以 **PowerPoint**、Google 簡報、LibreOffice Impress 為代表，用於向管理階層或客戶呈現分析結果與改善方案，強調重點視覺化而非大量文字。
+
+三者之中，試算表由於兼具資料記錄與運算分析能力，是工業現場使用頻率最高的工具。以下依序介紹這三類工具在製造業實務中的具體應用。
+
+### 1. 文書處理（重點：Word）
+
+**Microsoft Word**（及其開放原始碼對應軟體 LibreOffice Writer、WPS 文字）是製造業現場最基本的文件撰寫工具，用來產出標準作業程序（SOP）、作業指導書、品質異常報告、會議記錄等以文字說明與版面編排為主的文件。相較於試算表著重「計算」、簡報著重「呈現」，文書處理軟體的核心價值在於**結構化的長篇文字排版**：標題階層、段落樣式、目錄自動產生、版本修訂追蹤（Track Changes）等功能，讓多人協作編修同一份文件時，仍能維持格式一致、修改歷程可追溯。
+
+![LibreOffice Writer 文書處理軟體介面，顯示文件編輯畫面與段落樣式工具列](images/02-Computer-Structure/word-processing-example.png)
+
+*圖片來源：[Wikimedia Commons「LibreOffice 7.2.4.1 Writer screenshot.png」](https://commons.wikimedia.org/wiki/File:LibreOffice_7.2.4.1_Writer_screenshot.png)，作者 VulcanSphere，授權 Mozilla Public License 2.0 / GNU LGPL v3 或以上*
+
+> **趣味小知識**：1997 年，微軟在 Word 中加入了一個會自動跳出來「提供建議」的動畫小助手——迴紋針「Clippy」。它出現的時機經常抓錯（例如使用者才剛打完「親愛的」就跳出來問「你是不是要寫信？」），被許多使用者視為多餘又煩人的干擾，2010 年甚至被《時代雜誌》列入「史上 50 大最糟發明」之一，最終微軟在後續版本中將其徹底移除。有趣的是，二十多年後的今天，隨著生成式 **AI 代理人（AI Agent）** 興起，「主動觀察使用者在做什麼、跳出來提供協助」這種構想不但沒有消失，反而重出江湖——只是換成了整合在 Word、Excel 等軟體中的 **Microsoft Copilot** 等 AI 助理，憑藉更強的語言理解能力，抓時機、給建議的準確度已不可同日而語。
+
+### 2. 試算表（重點：Excel）
 
 儘管有許多專業分析工具，**Microsoft Excel** 在製造業仍然是使用最廣泛的資料處理與分析工具，原因在於其強大的靈活性與普及度。
 
@@ -924,11 +985,21 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 一個典型的應用情境：從 MES 匯出的生產日報表（CSV 格式）匯入 Excel 後，工程師可以使用樞紐分析表（PivotTable）快速彙整各機台、各班別的產量與良率，使用圖表視覺化趨勢，使用條件格式設定自動標記異常值，並建立標準化的報告模板讓每天的報告自動填入最新資料。
 
+![LibreOffice Calc 試算表軟體介面，顯示以欄列組織的資料表格](images/02-Computer-Structure/spreadsheet-example.png)
+
+*圖片來源：[Wikimedia Commons「LibreOffice 7.2.4.1 Calc with csv screenshot.png」](https://commons.wikimedia.org/wiki/File:LibreOffice_7.2.4.1_Calc_with_csv_screenshot.png)，作者 VulcanSphere，授權 Mozilla Public License 2.0 / GNU LGPL v3 或以上*
+
 > **趣味小知識**：Excel 會自動把看起來像日期的文字轉換格式，這個「貼心」功能曾經惹出大麻煩——不少基因名稱（如 `MARCH1`、`SEPT2`）被 Excel 自動誤判成日期並改寫，導致大量科學論文的資料出錯。國際基因命名委員會後來乾脆修改了數十個基因的正式名稱，只為了避開 Excel 的自動校正。連科學家都栽在試算表的預設行為上，可見小心資料格式有多重要。
 
-### 2. 簡報與報告工具
+### 3. 簡報與報告工具
 
-工程師的工作成果最終需要清楚地傳達給管理階層或客戶。製作工業報告的幾個原則：數字視覺化（一張好的圖表勝過一堆數字）、結論先行（先說結論，再說支持的數據），以及適度簡化（管理層更想看影響與建議行動，而非所有技術細節）。
+工程師的工作成果最終需要清楚地傳達給管理階層或客戶。**PowerPoint**（及 LibreOffice Impress、Google 簡報）是最常用的簡報工具，製作工業報告的幾個原則：數字視覺化（一張好的圖表勝過一堆數字）、結論先行（先說結論，再說支持的數據），以及適度簡化（管理層更想看影響與建議行動，而非所有技術細節）。
+
+![LibreOffice Impress 簡報軟體介面，顯示投影片編輯畫面與樣式面板](images/02-Computer-Structure/presentation-example.png)
+
+*圖片來源：[Wikimedia Commons「LibreOffice Impress 4.0.1 screenshot.png」](https://commons.wikimedia.org/wiki/File:LibreOffice_Impress_4.0.1_screenshot.png)，作者 The Document Foundation，授權 GNU LGPL v2.1 或以上*
+
+> **趣味小知識**：並非所有企業都推崇簡報。Amazon 創辦人貝佐斯（Jeff Bezos）就明文禁止公司內部會議使用 PowerPoint，改要求提案者事先寫成一份結構完整的敘事型備忘錄（6-page memo），會議開始先安靜閱讀。他認為條列式的簡報格式容易讓簡報者用漂亮的排版掩蓋掉論述中不夠嚴謹的邏輯，反而是完整的文章形式更能檢驗一個想法是否經得起推敲。
 
 ---
 
