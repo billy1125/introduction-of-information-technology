@@ -19,27 +19,44 @@
 | `04-Networks-and-Internet.md` | 網路基礎、網際網路協定、物聯網、智慧製造 |
 | `05-Information-Systems-and-Database.md` | 資訊系統、資料庫 |
 | `06-Data-Science-and-AI.md` | 資料科學與人工智慧，串接所有課程主線的整合章節 |
-| `Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 的實作範例 |
+| `notebooks/Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 的實作範例 |
+| `notebooks/Computer-Structure-Examples.ipynb` | Python Jupyter 筆記本，對應 `02-Computer-Structure.md`〈四、數字系統與進位轉換〉與〈五、浮點數與 IEEE 754〉的練習題完整詳解 |
 
 ### 檔案夾
 | `temp-reference/` | 用於生成教材的參考資料 |
 | `images/` | Markdown 文件引用的圖片 |
+| `notebooks/` | 所有課程練習用的 Jupyter 筆記本，集中放置於此資料夾 |
 
 ## 內容撰寫規範
 
 - **語言**：所有內容必須以繁體中文、台灣習慣的工程與資訊用語撰寫。技術名詞首次出現時附上英文，格式為「中央處理器（CPU）」。
 - **工業情境**：每個技術概念都應搭配製造業或工業工程的實際應用範例，延續現有教材的寫作風格。
 - **讀者程度**：大一新生、無程式設計背景，說明技術概念時避免未加解釋的專業術語。
-- **Markdown 格式**：教材預計透過 GitPrint.com 等工具轉換為 PDF，請使用標準 CommonMark 語法，避免 HTML 或不通用的延伸語法。
+- **Markdown 格式**：教材內文以 GitHub 直接閱讀為主，請使用標準 CommonMark 語法，避免 HTML 或不通用的延伸語法；如需簡報或 PDF 版本，另外以 Marp 撰寫對應的 `.slides.md` 檔案，撰寫規範見下方〈投影片（`.slides.md`）撰寫規範〉。
 - **圖片**：圖片依所屬文章分類，放於 `images/文章檔名/` 資料夾（例如 `images/01-History-of-Computer/`），以相對路徑引用（一律使用正斜線 `/`），例如 `![說明文字](images/01-History-of-Computer/檔名.png)`。檔名一律使用小寫連字號（kebab-case）風格。每張圖片下方需空一行後附上一行斜體圖說標註來源：自製或 AI 生成的圖片標註 `*圖片來源：作者自製或 ChatGPT 生成*`；外部圖片（如維基共享資源）標註 `*圖片來源：[來源名稱「檔案名」](檔案頁面網址)，作者 XXX，授權 CC BY-SA 3.0*` 這類含作者與授權條款的完整格式，連結須指向該圖片在 Wikimedia Commons 等平台上的檔案頁面（File page），而非條目頁面。下載外部圖片前務必先在檔案頁面確認授權條款（避免使用僅限「合理使用／fair use」的非自由版權圖片），無法確認授權的圖片不可收錄。
 - **圖片授權例外**：外部來源圖片依其原始授權條款使用，不適用本專案 README 所宣告的 CC BY-NC-SA 授權；詳見 `README.md`〈📄 授權與使用聲明〉。
 - **參考資料**：如果要生成新內容，優先找`temp-reference/`中的內容，再透過網路找尋適合的資料。
 - **專案架構**：本專案資料夾架構，不要增加與更新於`README.md`之中。
 
-## Jupyter 筆記本（`Computer-Program-Examples.ipynb`）
+## 投影片（`.slides.md`）撰寫規範
 
-- 每組 Cell 對應 `03-Computer-Program.md` 的章節內容。
+各章節對應的 Marp 投影片版本（如 `01-History-of-Computer.slides.md`）需依循 `temp-reference/slides-design-template.md` 的完整設計規範，該文件依 `01-History-of-Computer.slides.md` 目前寫法整理而成，是後續製作其他章節投影片的統一依據。
+
+最容易出錯、務必遵守的幾條規則（完整說明與範例請查閱 template 檔案）：
+
+- Frontmatter 固定為 `marp: true`、`theme: gaia`、`paginate: true`、`class: invert`，並加上讓圖片自動置中的 `style` 區塊。
+- 每個章節開頭需有一張只含 `# {中文數字}、章節標題` 與 **1–2 段引言散文**（非條列）的分隔頁，說明本章學什麼、為什麼重要，不加 `##` 副標。
+- Blockquote（`>`）一律**整句粗體**，不可只加粗部分詞語，也不可有巢狀 `**`。
+- 圖片依用途分三種版式：整頁大圖（`![h:600](path)`）、左右背景圖＋文字（`![bg left/right:45%](path)`）、文中右側小圖（`![right:40%](path)`）。
+- 投影片版本**不加圖片來源圖說**（與正文 `.md` 不同），圖片授權標註仍以正文為準。
+
+## Jupyter 筆記本（`notebooks/`）
+
+- 所有練習用 Jupyter 筆記本統一集中放在 `notebooks/` 資料夾，檔名對應其服務的教材（如 `Computer-Structure-Examples.ipynb` 對應 `02-Computer-Structure.md`）。
+- 每組 Cell 對應教材中的章節或題目內容。
+- 需要展示計算過程的題目，計算過程以 LaTeX（`$...$` / `$$...$$`）呈現，讓推導步驟清楚可讀。
 - 變數名稱使用中文（如 `總產量`、`良率`），與教材撰寫風格一致。
 - 僅使用 Python 標準函式庫，不引入外部套件。
 - 每個程式碼 Cell 必須有可見的輸出，方便學生對照執行結果。
 - 筆記本設計為由上往下依序執行，後面的 Cell 會依賴前面 Cell 的定義。
+- 若教材正文（`.md`）某章節的練習題已整理進對應筆記本並附上計算過程，正文中該小節只需保留一段簡短說明與連結指向該筆記本，不需要在正文重複列出完整題目、計算過程或答案。

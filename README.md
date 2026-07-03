@@ -20,18 +20,21 @@
 | [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | 資訊系統與資料庫 | 資訊系統類型（TPS/MIS/DSS/EIS）、ERP/MES/CRM、關聯式資料庫、SQL、NoSQL、大數據、電子商務 |
 | [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md) | 資料科學與人工智慧 | 從計算機歷史到 AI 的完整脈絡、機器學習、深度學習、生成式 AI、AI 代理人 |
 
-## 💻 程式範例
+## 💻 程式範例與練習筆記本
+
+所有練習用 Jupyter 筆記本統一放在 [`notebooks/`](notebooks/) 資料夾：
 
 | 檔案 | 說明 |
 |------|------|
-| [Computer-Program-Examples.ipynb](Computer-Program-Examples.ipynb) | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 的實作範例，可在 Google Colab 或 JupyterLab 執行 |
+| [notebooks/Computer-Program-Examples.ipynb](notebooks/Computer-Program-Examples.ipynb) | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 的實作範例，可在 Google Colab 或 JupyterLab 執行 |
+| [notebooks/Computer-Structure-Examples.ipynb](notebooks/Computer-Structure-Examples.ipynb) | Python Jupyter 筆記本，對應 `02-Computer-Structure.md` 進位轉換與 IEEE 754 練習題的完整計算過程與程式驗證 |
 
 ---
 
 ## 📖 如何使用這份教材
 
 1. **直接在 GitHub 上閱讀**：點選上方各檔案連結即可線上閱覽 Markdown 內容
-2. **轉為 PDF**：將 `.md` 檔案複製到 [GitPrint.com](https://gitprint.com) 即可轉換為 PDF，方便列印或離線閱讀
+2. **轉為投影片或 PDF**：部分章節提供對應的 Marp 投影片版本（檔名為 `0X-XXX.slides.md`），可使用 [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) 或 [Marp CLI](https://github.com/marp-team/marp-cli) 開啟並匯出為簡報或 PDF，方便上課簡報或列印
 3. **搭配 AI 工具延伸學習**：每份教材都可以直接貼給生成式 AI（如 ChatGPT、Claude）請它幫你整理重點、出練習題或解釋不懂的段落
 
 ---
