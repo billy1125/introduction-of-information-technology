@@ -39,6 +39,20 @@
 
 ---
 
+## 六、電腦在工業系統中的角色
+
+在現代製造業中，電腦扮演著三種核心角色：
+
+| 角色 | 說明 | 工業範例 |
+| --- | --- | --- |
+| **控制（Control）** | 根據設定的邏輯，自動執行操作指令 | PLC 控制機械手臂移動 |
+| **監測（Monitoring）** | 持續蒐集並顯示系統狀態 | SCADA 系統即時顯示各站溫度與壓力 |
+| **分析（Analysis）** | 對歷史與即時資料進行運算，支援決策 | 分析良率數據，找出不良品原因 |
+
+這三種角色往往層層疊加：底層電腦控制機台，中層電腦彙整監測資料，上層電腦分析數據並協助管理者做出決策（Groover, 2019）。這正是工業4.0所追求的「**垂直整合**」架構。
+
+---
+
 ## 第一篇：計算機科學基本理論與歷史
 
 ---
@@ -47,9 +61,9 @@
 
 現代電腦不只是工程上的產物，更是幾位偉大思想家在二十世紀中葉奠定的理論基礎所催生的結果。在介紹硬體細節之前，了解這三個思想支柱，有助於理解「電腦為什麼長成現在這個樣子」。
 
-#### 1.1 艾倫·圖靈與可計算性（Alan Turing & Computability）
+### 1. 艾倫·圖靈與可計算性（Alan Turing & Computability）
 
-1936年，英國數學家**艾倫·圖靈（Alan Turing）** 發表了一篇改變歷史的論文，提出了「**圖靈機（Turing Machine）**」的抽象概念。圖靈機不是一台真實的機器，而是一個思想模型：一條無限長的紙帶、一個讀寫頭、一組有限的規則——圖靈證明了這個極度簡化的模型，在理論上能夠計算任何「可計算」的問題。
+1936年，英國數學家**艾倫·圖靈（Alan Turing）** 發表了一篇改變歷史的論文（Turing, 1936），提出了「**圖靈機（Turing Machine）**」的抽象概念。圖靈機不是一台真實的機器，而是一個思想模型：一條無限長的紙帶、一個讀寫頭、一組有限的規則——圖靈證明了這個極度簡化的模型，在理論上能夠計算任何「可計算」的問題。
 
 ![艾倫·圖靈（1951年）](images/02-Computer-Structure/alan-turing.jpg)
 
@@ -68,9 +82,9 @@
 
 二戰期間，圖靈主導了破解德軍 Enigma 密碼機的工作，他的貢獻被認為大幅縮短了戰爭進程。今天，電腦科學界最高榮譽獎項即以他命名——**圖靈獎（Turing Award）**，被譽為「電腦科學的諾貝爾獎」。
 
-#### 1.2 馮諾依曼架構（Von Neumann Architecture）
+### 2. 馮諾依曼架構（Von Neumann Architecture）
 
-1945年，數學家**約翰·馮諾依曼（John von Neumann，又譯馮曼紐）** 提出了一份影響至今的電腦架構報告，描述了一種將「程式」與「資料」**共同儲存在同一記憶體**中的電腦設計，稱為**馮諾依曼架構（Von Neumann Architecture）**。
+1945年，數學家**約翰·馮諾依曼（John von Neumann，又譯馮曼紐）** 提出了一份影響至今的電腦架構報告（von Neumann, 1993），描述了一種將「程式」與「資料」**共同儲存在同一記憶體**中的電腦設計，稱為**馮諾依曼架構（Von Neumann Architecture）**。
 
 ![約翰·馮諾依曼](images/02-Computer-Structure/john-von-neumann.jpg)
 
@@ -86,7 +100,7 @@
 
 今天你使用的電腦、手機、伺服器，在架構上幾乎都仍是馮諾依曼架構的延伸與變形。然而這個架構也有其先天限制：CPU 與記憶體之間的資料傳輸速率，遠跟不上 CPU 的運算速度，形成所謂的「**馮諾依曼瓶頸（Von Neumann Bottleneck）**」，這也是現代電腦設計中快取（Cache）存在的根本原因之一。
 
-#### 1.3 克勞德·夏農與資訊理論（Claude Shannon & Information Theory）
+### 3. 克勞德·夏農與資訊理論（Claude Shannon & Information Theory）
 
 如果說圖靈定義了「什麼可以被計算」，馮諾依曼給了電腦一個具體的身體架構，那麼**克勞德·夏農（Claude Shannon）** 則回答了一個更根本的問題：「**資訊本身是什麼？可以如何量化？**」
 
@@ -94,7 +108,7 @@
 
 *圖片來源：[Wikimedia Commons「ClaudeShannon MFO3807.jpg」](https://commons.wikimedia.org/wiki/File:ClaudeShannon_MFO3807.jpg)，攝影師 Konrad Jacobs（Mathematisches Forschungsinstitut Oberwolfach），授權 CC BY-SA 2.0 Germany*
 
-1948年，夏農在貝爾實驗室發表《通信的數學理論（A Mathematical Theory of Communication）》，創立了**資訊理論（Information Theory）**，提出了幾個至今仍是數位世界基礎的概念：
+1948年，夏農在貝爾實驗室發表《通信的數學理論（A Mathematical Theory of Communication）》（Shannon, 1948），創立了**資訊理論（Information Theory）**，提出了幾個至今仍是數位世界基礎的概念：
 
 - **位元（Bit）是資訊的基本單位**：夏農提出用「位元」來衡量資訊量——一個能解答一個「是/否」問題的最小資訊單位。這個概念將抽象的「資訊」轉化為可數學計算的量，奠定了所有數位通訊與儲存的理論基礎。
 
@@ -329,7 +343,7 @@
 
 ### 2. IEEE 754 標準
 
-為了讓不同廠牌、不同架構的電腦能夠以相同的方式處理浮點數，電機電子工程師學會（IEEE）於1985年制定了 **IEEE 754** 浮點數標準，至今仍是幾乎所有現代電腦、程式語言與微控制器的浮點數基礎。
+為了讓不同廠牌、不同架構的電腦能夠以相同的方式處理浮點數，電機電子工程師學會（IEEE）於1985年制定了 **IEEE 754** 浮點數標準（IEEE, 2019），至今仍是幾乎所有現代電腦、程式語言與微控制器的浮點數基礎。
 
 IEEE 754 最常用的兩種格式：
 
@@ -404,7 +418,7 @@ $$
 
 一個著名的例子：在許多程式語言中，`0.1 + 0.2` 的計算結果並非精確的 `0.3`，而是 `0.30000000000000004`。這是因為 0.1 和 0.2 在二進位中都是無限循環小數，儲存時已經產生了微小的截斷誤差，累加後誤差就顯現出來。
 
-> **趣味小知識**：1994年，Intel 的 Pentium 處理器被發現在某些除法運算中會產生錯誤結果（後來稱為「Pentium FDIV 臭蟲」），根本原因就出在浮點數運算單元的一個微小瑕疵。這個看似極小的誤差，最終讓 Intel 付出了 4 億 7 千 5 百萬美元的代價，全面回收並更換有問題的晶片——浮點數的精度問題，從來不只是理論上的小數點遊戲。
+> **趣味小知識**：1994年，Intel 的 Pentium 處理器被發現在某些除法運算中會產生錯誤結果（後來稱為「Pentium FDIV 臭蟲」），根本原因就出在浮點數運算單元的一個微小瑕疵（Edelman, 1997）。這個看似極小的誤差，最終讓 Intel 付出了 4 億 7 千 5 百萬美元的代價，全面回收並更換有問題的晶片——浮點數的精度問題，從來不只是理論上的小數點遊戲。
 
 > **工業場景的影響**：在工廠的統計製程管制（SPC）或品質分析中，若對大量感測器資料進行累加、平均等運算，浮點誤差會逐漸累積。雖然單次誤差極小（通常在小數點後十幾位），但在高精度量測（如半導體製程的奈米級尺寸控制）或大量資料的金融結算中，必須採用**雙精度（64 bits）** 或更高精度的資料型態，有時甚至需要特殊的高精度數學函式庫，以確保計算結果的正確性。
 
@@ -422,33 +436,19 @@ $$
 
 ---
 
-## 六、電腦在工業系統中的角色
-
-在現代製造業中，電腦扮演著三種核心角色：
-
-| 角色 | 說明 | 工業範例 |
-| --- | --- | --- |
-| **控制（Control）** | 根據設定的邏輯，自動執行操作指令 | PLC 控制機械手臂移動 |
-| **監測（Monitoring）** | 持續蒐集並顯示系統狀態 | SCADA 系統即時顯示各站溫度與壓力 |
-| **分析（Analysis）** | 對歷史與即時資料進行運算，支援決策 | 分析良率數據，找出不良品原因 |
-
-這三種角色往往層層疊加：底層電腦控制機台，中層電腦彙整監測資料，上層電腦分析數據並協助管理者做出決策。這正是工業4.0所追求的「**垂直整合**」架構。
-
----
-
 ## 第三篇：電腦系統架構——硬體
-
-在〈一、計算機科學的思想基礎〉中，我們認識了**馮諾依曼架構**：將控制單元、算術邏輯單元（兩者合稱 CPU）、記憶體、輸入裝置與輸出裝置整合在一起，透過匯流排彼此溝通的電腦設計藍圖。時至今日，無論是桌上型電腦、伺服器，還是工廠裡的工業電腦（IPC），其硬體架構本質上都仍是這個藍圖的具體實現與延伸。
-
-![電腦系統架構](images\02-Computer-Structure\von-neumann-architecture-with-hardware.png)
-
-*圖片來源：作者自製或 ChatGPT 生成*
-
-本篇接下來就依循這個架構逐一介紹硬體：**中央處理器**（對應控制單元與算術邏輯單元）、**記憶體系統**、**儲存裝置**（現代電腦在馮諾依曼架構之外新增的輔助儲存層）、**輸入與輸出裝置**，以及讓這些元件彼此溝通的**主機板與匯流排**，最後再介紹工業4.0時代興起的新型硬體。
 
 ---
 
 ## 七、中央處理器（CPU）與運算架構
+
+在〈一、計算機科學的思想基礎〉中，我們認識了**馮諾依曼架構**：將控制單元、算術邏輯單元（兩者合稱 CPU）、記憶體、輸入裝置與輸出裝置整合在一起，透過匯流排彼此溝通的電腦設計藍圖（Patterson & Hennessy, 2021）。時至今日，無論是桌上型電腦、伺服器，還是工廠裡的工業電腦（IPC），其硬體架構本質上都仍是這個藍圖的具體實現與延伸。
+
+![電腦系統架構](images/02-Computer-Structure/von-neumann-architecture-with-hardware.png)
+
+*圖片來源：作者自製或 ChatGPT 生成*
+
+本篇接下來就依循這個架構逐一介紹硬體：**中央處理器**（對應控制單元與算術邏輯單元）、**記憶體系統**、**儲存裝置**（現代電腦在馮諾依曼架構之外新增的輔助儲存層）、**輸入與輸出裝置**，以及讓這些元件彼此溝通的**主機板與匯流排**，最後再介紹工業4.0時代興起的新型硬體。
 
 ### 1. CPU 基本組成與運作
 
@@ -538,7 +538,7 @@ CPU 的運作遵循一個稱為**取指—解碼—執行（Fetch-Decode-Execute
 
 這個階層設計的目標是在成本可接受的前提下，讓 CPU 盡可能快速地取得所需資料。表中最底層的「儲存裝置」，就是接下來要介紹的非揮發性儲存。
 
-![記憶體階層](images\02-Computer-Structure\memory-hierarchy.png)
+![記憶體階層](images/02-Computer-Structure/memory-hierarchy.png)
 
 *圖片來源：作者自製或 ChatGPT 生成*
 
@@ -577,7 +577,7 @@ CPU 的運作遵循一個稱為**取指—解碼—執行（Fetch-Decode-Execute
 | 可攜性 | 中（需拆機或外接盒） | 中（需拆機或外接盒） | 高（隨插即用） | 高（單片可直接攜帶） |
 | 適用場景 | 大量冷資料儲存 | 系統碟、高速應用 | 臨時資料交換、行動擴充 | 長期封存、軟體發行 |
 
-![非揮發性儲存媒體](images\02-Computer-Structure\non-volatile-storage.png)
+![非揮發性儲存媒體](images/02-Computer-Structure/non-volatile-storage.png)
 
 *圖片來源：作者自製或 ChatGPT 生成*
 
@@ -617,7 +617,7 @@ CPU 的運作遵循一個稱為**取指—解碼—執行（Fetch-Decode-Execute
 
 > **小提醒**：硬碟等儲存裝置在〈八、記憶體單元（記憶體系統、儲存裝置）〉已經介紹過，這裡為什麼又被歸類為 I/O 裝置？因為兩章討論的是同一個裝置的不同面向：第八章關心的是「資料存放在記憶體階層的哪一層」（速度、容量、是否揮發）；本章關心的則是「CPU 如何與周邊元件溝通」——CPU 無法直接定址存取硬碟，必須透過 I/O 控制器與匯流排下達讀寫指令，資料才能在硬碟與主記憶體之間搬移，這正是「磁碟 I/O」一詞的由來。
 
-![輸入與輸出裝置](images\02-Computer-Structure\io-devices.png)
+![輸入與輸出裝置](images/02-Computer-Structure/io-devices.png)
 
 *圖片來源：作者自製或 ChatGPT 生成*
 
@@ -679,7 +679,7 @@ CPU 的運作遵循一個稱為**取指—解碼—執行（Fetch-Decode-Execute
 
 第 1、2 小節介紹的主機板與匯流排，是「一台電腦內部」元件相互溝通的方式；若把視角從一片主機板拉大到一整座工廠，數十乃至數百台機台、感測器與電腦系統之間，同樣需要類似匯流排的概念來讓資料互通——只是規模從電路板等級，擴大到整個廠房，而一般辦公環境中電腦與周邊設備間相對單純的連接方式，已不敷使用。
 
-**PLC（Programmable Logic Controller，可程式邏輯控制器）** 是工廠自動化的核心元件，是一種專為工業環境設計的強固型電腦，能在惡劣的溫度、濕度與震動條件下穩定運作。PLC 的主要任務是根據預先設定的邏輯，即時控制機台動作（例如：「若感測器偵測到零件到位，則啟動夾具夾緊，再啟動鑽頭加工」），一般電腦負責上層的資料蒐集與分析，PLC 負責底層的即時控制。值得注意的是，許多工業級 PLC 採用「機架式（Rack-based）」架構：各種輸入／輸出模組插在同一個機架上，透過機架**背板匯流排（Backplane Bus）** 互相溝通並取得電力——這與第 1 小節主機板插槽、第 2 小節匯流排的概念完全相同，只是外型從桌上型電腦的主機板，換成了適應工廠環境的強固型機架，如下圖所示：
+**PLC（Programmable Logic Controller，可程式邏輯控制器）** 是工廠自動化的核心元件，是一種專為工業環境設計的強固型電腦，能在惡劣的溫度、濕度與震動條件下穩定運作（Bolton, 2015）。PLC 的主要任務是根據預先設定的邏輯，即時控制機台動作（例如：「若感測器偵測到零件到位，則啟動夾具夾緊，再啟動鑽頭加工」），一般電腦負責上層的資料蒐集與分析，PLC 負責底層的即時控制。值得注意的是，許多工業級 PLC 採用「機架式（Rack-based）」架構：各種輸入／輸出模組插在同一個機架上，透過機架**背板匯流排（Backplane Bus）** 互相溝通並取得電力——這與第 1 小節主機板插槽、第 2 小節匯流排的概念完全相同，只是外型從桌上型電腦的主機板，換成了適應工廠環境的強固型機架，如下圖所示：
 
 ![Siemens SIMATIC S7-300 PLC，CPU 模組與多個 I/O 模組並排安裝](images/02-Computer-Structure/plc-s7-300.jpg)
 
@@ -707,15 +707,17 @@ CPU 的運作遵循一個稱為**取指—解碼—執行（Fetch-Decode-Execute
 
 ## 十一、新興硬體與工業4.0
 
+工業4.0的核心概念，是將實體設備與資訊系統緊密結合，形成能自我感測、分析並回應的「**資訊物理系統（Cyber-Physical System, CPS）**」（Lee et al., 2015）；以下介紹的 IoT、邊緣運算與 AI 硬體，正是實現這套架構的關鍵新興硬體。
+
 ### 1. IoT（物聯網）設備
 
-**物聯網（Internet of Things，IoT）** 是指將各種實體裝置連接到網際網路，使其能夠蒐集資料、相互通訊的概念。在工業領域，這被稱為**工業物聯網（IIoT，Industrial Internet of Things）**。IIoT 設備通常是小型、低功耗的嵌入式裝置，具備感測器（收集資料）、微控制器（處理資料）與無線通訊模組（傳送資料，如 Wi-Fi、4G/5G、LoRa）。透過 IIoT，原本孤立的機台資料可以匯聚到中央平台，使工廠管理者不再需要在現場親自巡視，就能掌握全廠設備的即時狀態。
+**物聯網（Internet of Things，IoT）** 是指將各種實體裝置連接到網際網路，使其能夠蒐集資料、相互通訊的概念。在工業領域，這被稱為**工業物聯網（IIoT，Industrial Internet of Things）**（Xu et al., 2014）。IIoT 設備通常是小型、低功耗的嵌入式裝置，具備感測器（收集資料）、微控制器（處理資料）與無線通訊模組（傳送資料，如 Wi-Fi、4G/5G、LoRa）。透過 IIoT，原本孤立的機台資料可以匯聚到中央平台，使工廠管理者不再需要在現場親自巡視，就能掌握全廠設備的即時狀態。
 
 ### 2. 邊緣運算（Edge Computing）
 
 傳統雲端架構的資料流向是：感測器 → 網路 → 雲端伺服器 → 分析結果 → 回傳控制指令。然而這樣的流程存在**網路延遲（Latency）** 問題：若雲端伺服器距離遙遠，來回一趟可能需要數百毫秒，對於需要即時反應的工業控制，這是無法接受的。
 
-**邊緣運算（Edge Computing）** 的概念是：將運算能力部署到靠近資料來源的「邊緣」（如工廠現場的一台伺服器，甚至是感測器本身），讓資料在本地就完成即時分析與決策，只將重要的彙整結果或異常警報傳送到雲端。這帶來低延遲（本地運算毫秒內完成）、降低頻寬需求（不需將所有原始資料傳至雲端）以及離線運作能力（即使網路中斷，本地控制仍能維持）等優點。
+**邊緣運算（Edge Computing）** 的概念是：將運算能力部署到靠近資料來源的「邊緣」（如工廠現場的一台伺服器，甚至是感測器本身），讓資料在本地就完成即時分析與決策，只將重要的彙整結果或異常警報傳送到雲端（Shi et al., 2016）。這帶來低延遲（本地運算毫秒內完成）、降低頻寬需求（不需將所有原始資料傳至雲端）以及離線運作能力（即使網路中斷，本地控制仍能維持）等優點。
 
 邊緣運算與雲端運算不是競爭關係，而是互補：邊緣負責即時、本地的運算；雲端負責跨廠區的長期資料儲存、全域分析與模型訓練。
 
@@ -725,7 +727,7 @@ CPU 的運作遵循一個稱為**取指—解碼—執行（Fetch-Decode-Execute
 
 ### 4. AI 工作站：馮諾依曼架構在 AI 時代的縮影
 
-以 NVIDIA 於 2026 年推出的迷你 AI 超級電腦 **DGX Spark** 為例，這台外型只比一個路由器略大的裝置，正是本篇一路介紹的電腦硬體架構，在 AI 時代的具體縮影——它同樣由 CPU、GPU、記憶體、儲存裝置與高速匯流排組成，只是每一項規格都被拉高到足以應付 AI 訓練與推論的需求：
+以 NVIDIA 於 2025 年推出的迷你 AI 超級電腦 **DGX Spark** 為例（NVIDIA, 2025），這台外型只比一個路由器略大的裝置，正是本篇一路介紹的電腦硬體架構，在 AI 時代的具體縮影——它同樣由 CPU、GPU、記憶體、儲存裝置與高速匯流排組成，只是每一項規格都被拉高到足以應付 AI 訓練與推論的需求：
 
 ![NVIDIA DGX Spark AI 工作站](images/02-Computer-Structure/nvidia-dgx-spark.jpg)
 
@@ -749,7 +751,7 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 ### 1. OS 的角色與功能
 
-**作業系統（Operating System，OS）** 是管理電腦所有硬體資源、並為應用程式提供執行環境的基礎軟體。沒有作業系統，應用程式需要直接與硬體溝通，這幾乎是不可能的任務。OS 的主要功能包括：
+**作業系統（Operating System，OS）** 是管理電腦所有硬體資源、並為應用程式提供執行環境的基礎軟體（Silberschatz et al., 2018）。沒有作業系統，應用程式需要直接與硬體溝通，這幾乎是不可能的任務。OS 的主要功能包括：
 
 - **資源管理**：分配 CPU 時間、記憶體空間、儲存裝置給各個程式
 - **抽象化**：讓應用程式不需了解硬體細節（如不同廠牌的印表機，對應用程式來說都一樣）
@@ -767,7 +769,7 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 | 伺服器／雲端 | Linux 各發行版（Ubuntu Server、Red Hat Enterprise Linux、CentOS）、FreeBSD | Windows Server、Unix 系列（如 IBM AIX、Oracle Solaris） |
 | 嵌入式／即時系統 | FreeRTOS、Zephyr | VxWorks、QNX |
 
-![常見的作業系統](images\02-Computer-Structure\operating-systems.png)
+![常見的作業系統](images/02-Computer-Structure/operating-systems.png)
 
 *圖片來源：作者自製或 ChatGPT 生成*
 
@@ -916,7 +918,7 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 ### 2. 基礎資安（對工業控制系統的重要性）
 
-工業控制系統的資安（稱為 **OT Security，Operational Technology Security**）是近年日益重要的議題。歷史上曾有多起工廠、電廠遭受網路攻擊的案例：2010年的 Stuxnet 蠕蟲專門攻擊特定型號 PLC，造成伊朗核設施離心機大量損壞；2021年佛羅里達州水處理廠事件中，駭客遠端入侵系統，嘗試大幅提高水中化學物質濃度。基本工業資安措施包括網路隔離（將工業控制網路與辦公室 IT 網路隔離）、定期更新（需充分測試後再部署）、強密碼與多因素驗證，以及稽核日誌（記錄所有登入與操作指令）。
+工業控制系統的資安（稱為 **OT Security，Operational Technology Security**）是近年日益重要的議題。歷史上曾有多起工廠、電廠遭受網路攻擊的案例：2010年的 Stuxnet 蠕蟲專門攻擊特定型號 PLC，造成伊朗核設施離心機大量損壞（Zetter, 2014）；2021年佛羅里達州水處理廠事件中，據報導疑似遭駭客遠端入侵系統，嘗試大幅提高水中化學物質濃度（Robles & Perlroth, 2021；後續調查對是否為外部攻擊仍有爭議）。基本工業資安措施包括網路隔離（將工業控制網路與辦公室 IT 網路隔離）、定期更新（需充分測試後再部署）、強密碼與多因素驗證，以及稽核日誌（記錄所有登入與操作指令）。
 
 > **趣味小知識**：世界上第一個電腦病毒「爬行者（Creeper）」誕生於1971年，它會在感染的電腦螢幕上顯示一句挑釁的訊息：「I'm the creeper, catch me if you can!（我是爬行者，來抓我啊！）」。為了對付它，工程師寫了一支專門刪除 Creeper 的程式，取名「收割者（Reaper）」——這是史上第一支防毒軟體，「防毒」與「病毒」的攻防戰，從那時就開始了。
 
@@ -1080,6 +1082,26 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 ### 3. 資訊使用規範
 
 在組織中使用資訊系統，員工應遵守合理使用原則（公司電腦與網路資源用於業務目的）、智慧財產權（不使用盜版軟體，尊重著作權）、資料真實性（不在生產記錄中填寫虛假數據，資料造假在許多管制產業是重罪），以及社群媒體規範（不在社群媒體上分享未經授權的工廠資訊或公司機密）。
+
+---
+
+## 參考文獻
+
+- Bolton, W. (2015). *Programmable logic controllers* (6th ed.). Newnes/Elsevier.
+- Edelman, A. (1997). The mathematics of the Pentium division bug. *SIAM Review, 39*(1), 54–67. https://doi.org/10.1137/S0036144595293959
+- Groover, M. P. (2019). *Automation, production systems, and computer-integrated manufacturing* (5th ed.). Pearson.
+- Institute of Electrical and Electronics Engineers. (2019). *IEEE standard for floating-point arithmetic* (IEEE Std 754-2019). IEEE. https://doi.org/10.1109/IEEESTD.2019.8766229
+- Lee, J., Bagheri, B., & Kao, H.-A. (2015). A cyber-physical systems architecture for Industry 4.0-based manufacturing systems. *Manufacturing Letters, 3*, 18–23. https://doi.org/10.1016/j.mfglet.2014.12.001
+- NVIDIA. (2025). *NVIDIA DGX Spark: Personal AI supercomputer powered by Blackwell* [Product page]. https://www.nvidia.com/en-us/products/workstations/dgx-spark/
+- Patterson, D. A., & Hennessy, J. L. (2021). *Computer organization and design RISC-V edition: The hardware/software interface* (2nd ed.). Morgan Kaufmann/Elsevier.
+- Robles, F., & Perlroth, N. (2021, February 8). 'Dangerous stuff': Hackers tried to poison water supply of Florida town. *The New York Times*. https://www.nytimes.com/2021/02/08/us/oldsmar-florida-water-supply-hack.html
+- Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal, 27*, 379–423, 623–656.
+- Shi, W., Cao, J., Zhang, Q., Li, Y., & Xu, L. (2016). Edge computing: Vision and challenges. *IEEE Internet of Things Journal, 3*(5), 637–646. https://doi.org/10.1109/JIOT.2016.2579198
+- Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). *Operating system concepts* (10th ed.). Wiley.
+- Turing, A. M. (1936). On computable numbers, with an application to the Entscheidungsproblem. *Proceedings of the London Mathematical Society, s2-42*(1), 230–265. https://doi.org/10.1112/plms/s2-42.1.230
+- von Neumann, J. (1993). First draft of a report on the EDVAC (M. D. Godfrey, Ed.). *IEEE Annals of the History of Computing, 15*(4), 27–75. https://doi.org/10.1109/85.238389
+- Xu, L. D., He, W., & Li, S. (2014). Internet of things in industries: A survey. *IEEE Transactions on Industrial Informatics, 10*(4), 2233–2243. https://doi.org/10.1109/TII.2014.2300753
+- Zetter, K. (2014). *Countdown to zero day: Stuxnet and the launch of the world's first digital weapon*. Crown Publishers.
 
 ---
 
