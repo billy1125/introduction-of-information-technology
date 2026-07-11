@@ -95,6 +95,7 @@
 
 - 引用自維基百科等外部來源的圖片，依其原始授權條款使用，版權歸屬原作者或原出處，詳見各圖片下方的來源標註
 - 內容中提及之特定廠商、品牌或產品名稱（如 Google、Microsoft、IBM、OpenAI、Apple 等），其名稱、商標與相關權利均屬各該公司或商標權人所有，本教材與其並無隸屬或合作關係
+- `.claude/skills/speak-human-tw/` 這套「說人話」去 AI 味改寫工具，移植自 [Raymond Hou（雷蒙三十）的 speak-human-tw 專案](https://github.com/Raymondhou0917/speak-human-tw)，依其原始 **MIT 授權** 使用，版權歸屬原作者 © 2026 Raymond Hou（雷蒙三十），完整授權條款見該資料夾內的 [LICENSE](.claude/skills/speak-human-tw/LICENSE)
 
 **免責聲明**：本教材以現狀（AS IS）提供，作者已盡力確保內容正確，但不保證內容完全正確、完整或適用於特定情境，使用者應自行判斷並承擔使用風險。
 
