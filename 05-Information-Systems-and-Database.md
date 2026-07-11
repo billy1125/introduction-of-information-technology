@@ -69,6 +69,10 @@
 知識（可指導行動的理解）
 ```
 
+![DIKW 金字塔：由下而上依序為資料（Data）、資訊（Information）、知識（Knowledge）、智慧（Wisdom）](images/05-Information-Systems-and-Database/dikw-pyramid.svg)
+
+*圖片來源：[維基共享資源「DIKW Pyramid.svg」](https://commons.wikimedia.org/wiki/File:DIKW_Pyramid.svg)，作者 Longlivetheux，授權 CC BY-SA 4.0*
+
 **工業應用範例**：
 
 - **資料**：感測器每秒回傳溫度 `26.1`
@@ -77,12 +81,12 @@
 
 > 資訊系統能夠自動完成資料→資訊的轉換；而資訊→知識的這一步，往往仍需要人的經驗與判斷——這也是知識管理系統（KMS）與專家系統存在的根本原因。
 
-傳統上，「知識」的運用高度依賴人類專家：工程師累積多年經驗，才能在看到異常數據時立刻判斷根本原因。為了讓組織的知識不因人員異動而流失，**專家系統（Expert System）** 應運而生——它將領域專家的判斷規則以「若…則…（If-Then）」的形式寫入電腦，讓系統能夠模仿人類專家的推理過程，自動給出建議或診斷。
+傳統上，「知識」的運用高度依賴人類專家：工程師累積多年經驗，才能在看到異常數據時立刻判斷根本原因。為了讓組織的知識不因人員異動而流失，**[專家系統（Expert System）](https://zh.wikipedia.org/wiki/專家系統)** 應運而生——它將領域專家的判斷規則以「若…則…（If-Then）」的形式寫入電腦，讓系統能夠模仿人類專家的推理過程，自動給出建議或診斷。
 
 隨著人工智慧技術的發展，這個能力有了質的飛躍：
 
 - **AI 專家系統（AI-based Expert System）**：不再只靠人工撰寫規則，而是透過機器學習從大量歷史資料中自動歸納出規律，能夠處理更複雜、更模糊的判斷情境，例如從數千筆感測器紀錄中自動識別設備老化的早期徵兆。
-- **AI 代理人（AI Agent）**：更進一步，AI 代理人不只能夠「判斷」，還能夠「行動」。它能感知環境、制定計畫、呼叫工具、執行操作，並根據執行結果持續調整策略，在完成複雜任務時幾乎不需要人工介入。例如，一個部署在工廠的 AI 代理人可以自主偵測異常、查詢維修手冊、排程停機、通知相關人員，並記錄本次處置結果供未來學習。
+- **[AI 代理人（AI Agent）](https://zh.wikipedia.org/wiki/智能代理)**：更進一步，AI 代理人不只能夠「判斷」，還能夠「行動」。它能感知環境、制定計畫、呼叫工具、執行操作，並根據執行結果持續調整策略，在完成複雜任務時幾乎不需要人工介入。例如，一個部署在工廠的 AI 代理人可以自主偵測異常、查詢維修手冊、排程停機、通知相關人員，並記錄本次處置結果供未來學習。
 
 ```
 資料 → 資訊系統處理 → 資訊
@@ -94,7 +98,7 @@
 
 ### 2. 資訊系統的基本概念
 
-**資訊系統（Information System，IS）** 是一套將資料轉換成資訊的整合性系統，其基本流程如下：
+**[資訊系統（Information System，IS）](https://zh.wikipedia.org/wiki/資訊系統)** 是一套將資料轉換成資訊的整合性系統，其基本流程如下（Laudon & Laudon, 2022）：
 
 ```
 輸入（Input）──→ 處理（Process）──→ 輸出（Output）
@@ -126,7 +130,7 @@
 
 ## 二、資訊系統的類型
 
-根據組織的層級與用途，資訊系統可以分為作業、管理、策略三個層次，由下到上資訊的摘要程度越來越高，使用頻率則越來越低。
+根據組織的層級與用途，資訊系統可以分為作業、管理、策略三個層次，由下到上資訊的摘要程度越來越高，使用頻率則越來越低（Laudon & Laudon, 2022; O'Brien & Marakas, 2011）。
 
 ### 1. 作業層級資訊系統
 
@@ -134,13 +138,13 @@
 
 #### 電子資料處理系統（Electronic Data Processing，EDP）
 
-EDP 將人工的重複性資料處理工作自動化，例如訂單建檔、庫存異動、薪資計算等。其核心目的是「以電腦代替人工執行固定流程」，提高速度與準確性。
+[EDP](https://zh.wikipedia.org/wiki/數據處理) 將人工的重複性資料處理工作自動化，例如訂單建檔、庫存異動、薪資計算等。其核心目的是「以電腦代替人工執行固定流程」，提高速度與準確性。
 
 **工業應用**：工廠每天的物料入出庫紀錄、排班表計算、計件薪資核算，都是 EDP 的典型應用。
 
 #### 交易處理系統（Transaction Processing System，TPS）
 
-TPS 用於記錄與處理企業最底層的日常交易，是 ERP 與 MES 的資料基礎。TPS 的三種處理方式：
+[TPS](https://zh.wikipedia.org/wiki/交易處理系統) 用於記錄與處理企業最底層的日常交易，是 ERP 與 MES 的資料基礎。TPS 的三種處理方式：
 
 | 處理方式 | 說明 | 工業範例 |
 |---------|------|---------|
@@ -154,13 +158,13 @@ TPS 用於記錄與處理企業最底層的日常交易，是 ERP 與 MES 的資
 
 #### 管理資訊系統（Management Information System，MIS）
 
-MIS 將 TPS 產生的大量交易資料彙整、分類、統計，以定期報表的形式呈現，供主管進行規劃與管理控制。
+[MIS](https://zh.wikipedia.org/wiki/管理資訊系統) 將 TPS 產生的大量交易資料彙整、分類、統計，以定期報表的形式呈現，供主管進行規劃與管理控制。
 
 **工業應用**：每週產能達成率報表、各機台不良品統計、原物料消耗分析——這些都是 MIS 的典型輸出。MIS 告訴主管「發生了什麼」，但不一定告訴他「為什麼」或「該怎麼辦」。
 
 #### 決策支援系統（Decision Support System，DSS）
 
-DSS 協助中高階主管處理較複雜、非例行性的半結構化決策問題。相較於 MIS 偏向例行報表，DSS 更重視模擬、情境分析與多角度判斷。
+[DSS](https://zh.wikipedia.org/wiki/決策支援系統) 協助中高階主管處理較複雜、非例行性的半結構化決策問題。相較於 MIS 偏向例行報表，DSS 更重視模擬、情境分析與多角度判斷。
 
 DSS 通常包含三個部分：
 
@@ -176,9 +180,9 @@ DSS 通常包含三個部分：
 
 #### 知識管理系統（Knowledge Management System，KMS）
 
-KMS 蒐集、整理、保存與分享組織內的知識資產。知識分為兩類：
+[KMS](https://zh.wikipedia.org/wiki/知識管理) 蒐集、整理、保存與分享組織內的知識資產。知識分為兩類：
 
-- **內隱知識（Tacit Knowledge）**：個人經驗、技巧與判斷，難以文字化，例如資深工程師對設備異音的判斷能力
+- **[內隱知識（Tacit Knowledge）](https://zh.wikipedia.org/wiki/內隱知識)**：個人經驗、技巧與判斷，難以文字化，例如資深工程師對設備異音的判斷能力
 - **外顯知識（Explicit Knowledge）**：可文件化、分享的知識，例如設備操作手冊、故障排除 SOP
 
 **工業應用**：工廠建立「設備故障案例知識庫」，記錄歷次故障的現象、診斷過程與解決方法。新進工程師查詢後能更快處理類似問題，不必每次都重新摸索——這就是 KMS 的核心價值。
@@ -189,13 +193,15 @@ ES 模擬特定領域的專家判斷，由知識庫、推理機與使用者介�
 
 **工業應用**：「設備診斷專家系統」：操作員輸入「主軸振動加大、電流升高、加工表面粗糙」，系統推理後輸出「刀具磨耗，建議更換刀具並複查主軸軸承」。隨著生成式 AI 的進步，現代專家系統越來越多結合大型語言模型，提供更自然的互動體驗。
 
+> **趣味小知識**：專家系統並不是新概念。1970 年代史丹佛大學開發的醫療專家系統 **MYCIN**，能根據病人症狀推薦抗生素療法，在測試中的判斷準確率甚至勝過部分人類醫師——但它從未真正用於臨床。原因不是技術不行，而是當年沒人能回答一個關鍵問題：如果系統開錯藥，責任該算誰的？這個「AI 該由誰負責」的難題，到今天仍是 AI 落地醫療、製造等高風險場域時繞不開的課題。
+
 ### 3. 策略層級資訊系統
 
 策略層級系統服務的是高階主管，提供宏觀、跨部門的整體視野，支援非結構化的長期策略決策。
 
 #### 主管資訊系統（Executive Information System，EIS）
 
-EIS 整合企業內部 MIS、DSS 資料與外部市場資訊，以儀表板、摘要圖表與關鍵績效指標的形式呈現，使高階主管能快速掌握全局。
+[EIS](https://zh.wikipedia.org/wiki/高階主管資訊系統) 整合企業內部 MIS、DSS 資料與外部市場資訊，以儀表板、摘要圖表與關鍵績效指標的形式呈現，使高階主管能快速掌握全局。
 
 **工業應用**：集團董事長透過 EIS 儀表板，一眼看到全球三座工廠的即時產能、良率、庫存水位與成本差異，快速判斷是否需要調整產能配置。
 
@@ -209,7 +215,7 @@ SIS 整合內部營運資料與外部市場、競爭環境資訊，支援企業�
 
 ### 1. 企業資源規劃（Enterprise Resource Planning，ERP）
 
-ERP 是模組化、整合性的企業應用系統，將企業內部不同部門整合在同一平台中。一套完整的 ERP 系統通常涵蓋：
+[ERP](https://zh.wikipedia.org/wiki/企業資源規劃) 是模組化、整合性的企業應用系統，將企業內部不同部門整合在同一平台中。一套完整的 ERP 系統通常涵蓋：
 
 ```
 生產製造  →  採購與供應鏈  →  庫存管理
@@ -221,7 +227,9 @@ ERP 是模組化、整合性的企業應用系統，將企業內部不同部門�
 
 **ERP 的核心價值**：打破各部門的「資訊孤島」。過去採購部門不知道生產計畫，財務部門不知道庫存成本；ERP 讓所有部門共用同一套資料，資訊即時流通。
 
-代表性 ERP 系統：SAP S/4HANA、Oracle ERP、Microsoft Dynamics 365。
+代表性 ERP 系統：[SAP](https://zh.wikipedia.org/wiki/SAP) S/4HANA、Oracle ERP、Microsoft Dynamics 365。
+
+> **趣味小知識**：全球最大的 ERP 廠商 SAP 是家德國公司，1972 年由五位不滿東家的前 IBM 工程師離職創立。公司名 SAP 是德文「Systemanalyse und Programmentwicklung（系統分析與程式開發）」的縮寫。有趣的是，正因為 SAP 把企業流程的「最佳實務」寫死在系統裡，許多企業導入時反而得回頭修改自己的作業流程去遷就系統——這也是「導入 ERP 常常不是裝軟體，而是改組織」這句話的由來。
 
 **ERP 導入的關鍵**：
 - 清楚分析企業需求，而非硬套系統預設流程
@@ -231,7 +239,7 @@ ERP 是模組化、整合性的企業應用系統，將企業內部不同部門�
 
 ### 2. 製造執行系統（Manufacturing Execution System，MES）
 
-MES 位於 ERP（計畫層）與 PLC/SCADA（控制層）之間，負責管理工廠車間（Shop Floor）的即時執行狀況。
+[MES](https://zh.wikipedia.org/wiki/製造執行系統) 位於 ERP（計畫層）與 PLC/[SCADA](https://zh.wikipedia.org/wiki/資料採集與監控系統)（控制層）之間，負責管理工廠車間（Shop Floor）的即時執行狀況。
 
 | 功能 | 說明 |
 |------|------|
@@ -245,13 +253,13 @@ MES 位於 ERP（計畫層）與 PLC/SCADA（控制層）之間，負責管理�
 
 ### 3. 供應鏈管理（Supply Chain Management，SCM）
 
-SCM 管理產品從原料到消費者的整個流程，透過資訊系統整合供應商、製造商、物流商與銷售端，使供應鏈能更有效率地規劃、控制與協作。
+[SCM](https://zh.wikipedia.org/wiki/供應鏈管理) 管理產品從原料到消費者的整個流程，透過資訊系統整合供應商、製造商、物流商與銷售端，使供應鏈能更有效率地規劃、控制與協作。
 
 **工業應用**：當 MES 回報某原料即將耗盡，SCM 系統自動計算補貨量，向合格供應商詢價，並根據庫存策略決定是否下單——這整個流程可以在幾分鐘內自動完成，不需人工介入。
 
 ### 4. 顧客關係管理（Customer Relationship Management，CRM）
 
-CRM 透過資訊科技蒐集與分析顧客資料，協助企業掌握顧客偏好、改善行銷與銷售流程，並提升顧客滿意度。
+[CRM](https://zh.wikipedia.org/wiki/客戶關係管理) 透過資訊科技蒐集與分析顧客資料，協助企業掌握顧客偏好、改善行銷與銷售流程，並提升顧客滿意度。
 
 | CRM 類型 | 說明 |
 |---------|------|
@@ -265,7 +273,7 @@ CRM 透過資訊科技蒐集與分析顧客資料，協助企業掌握顧客偏�
 
 ### 1. 資料庫的定義
 
-**資料庫（Database）** 是一個或多個彼此相關資料的集合，依照一定格式整合儲存，可供不同使用者與應用程式共享、查詢與管理。
+**[資料庫（Database）](https://zh.wikipedia.org/wiki/資料庫)** 是一個或多個彼此相關資料的集合，依照一定格式整合儲存，可供不同使用者與應用程式共享、查詢與管理。
 
 用 Excel 試算表來類比：一張工作表就像一個資料表；多張工作表放在同一個檔案，彼此透過欄位關聯，就接近資料庫的概念——但真正的資料庫系統在管理、安全、效能與並行控制上遠比 Excel 完善。
 
@@ -292,7 +300,7 @@ CRM 透過資訊科技蒐集與分析顧客資料，協助企業掌握顧客偏�
 **資料庫系統（Database System）** 由兩個核心部分組成：
 
 - **資料庫（Database）**：實際儲存資料的地方
-- **資料庫管理系統（Database Management System，DBMS）**：管理資料庫的軟體，提供以下功能：
+- **[資料庫管理系統（Database Management System，DBMS）](https://zh.wikipedia.org/wiki/資料庫管理系統)**：管理資料庫的軟體，提供以下功能：
 
 | 功能 | 說明 |
 |------|------|
@@ -316,13 +324,15 @@ CRM 透過資訊科技蒐集與分析顧客資料，協助企業掌握顧客偏�
 
 **工業情境案例**：過去工廠各部門各自維護 Excel 庫存表，品管部門說庫存 500 個，倉庫說只有 430 個，生產部門說剩 480 個——三份資料互相矛盾。導入 ERP 與資料庫後，庫存資料只有一份，所有部門即時共用，這個問題就消失了。
 
+> **趣味小知識**：資料庫用四個英文字母 **ACID** 來保證交易的可靠：不可分割（Atomicity，要嘛全做、要嘛全不做）、一致（Consistency）、隔離（Isolation）、持久（Durability）。你在網路上刷卡付款時「扣款」與「建立訂單」被綁成同一筆交易——正是 ACID 的「不可分割」特性，確保不會發生「錢被扣了、訂單卻沒成立」，或「重複扣款」這種糟糕的半吊子狀態。
+
 ---
 
 ## 五、資料庫模型
 
 ### 1. 階層式資料庫（Hierarchical Database）
 
-採用**樹狀結構**，資料分層儲存。每個父節點可有多個子節點，但每個子節點只能有一個父節點，適合表達一對多關係。
+[階層式資料庫](https://zh.wikipedia.org/wiki/層次模型)採用**樹狀結構**，資料分層儲存。每個父節點可有多個子節點，但每個子節點只能有一個父節點，適合表達一對多關係。
 
 ```
 工廠
@@ -338,11 +348,17 @@ CRM 透過資訊科技蒐集與分析顧客資料，協助企業掌握顧客偏�
 
 ### 2. 網狀式資料庫（Network Database）
 
-以**圖形結構**描述資料關係，允許一個節點有多個父節點，可以處理多對多關係，比階層式更有彈性。缺點是關係複雜，隨資料量增加，維護難度大幅提高。
+[網狀式資料庫](https://zh.wikipedia.org/wiki/網狀模型)以**圖形結構**描述資料關係，允許一個節點有多個父節點，可以處理多對多關係，比階層式更有彈性。缺點是關係複雜，隨資料量增加，維護難度大幅提高。
 
 ### 3. 關聯式資料庫（Relational Database）
 
-目前最主流的資料庫模型，以**二維表格**儲存資料。每張資料表由列（紀錄）與欄（欄位）構成，不同資料表之間透過共通欄位建立關聯。
+[關聯式資料庫（Relational Database）](https://zh.wikipedia.org/wiki/關聯式資料庫)是目前最主流的資料庫模型，以**二維表格**儲存資料。每張資料表由列（紀錄）與欄（欄位）構成，不同資料表之間透過共通欄位建立關聯（Codd, 1970）。
+
+![關聯式資料庫術語示意：關聯（資料表）由屬性（欄）與元組（列）構成](images/05-Information-Systems-and-Database/relational-database-terms.svg)
+
+*圖片來源：[維基共享資源「Relational database terms.svg」](https://commons.wikimedia.org/wiki/File:Relational_database_terms.svg)，作者 Booyabazooka，授權 Public Domain*
+
+> **趣味小知識**：今天無所不在的關聯式資料庫，源自 1970 年 IBM 研究員 **Edgar F. Codd** 發表的一篇論文。諷刺的是，IBM 起初對這個構想興趣缺缺，反而讓一家小公司搶先把它商品化——那家公司後來叫做**甲骨文（Oracle）**，成了資料庫巨頭。Codd 本人則在 1981 年獲頒電腦界最高榮譽「圖靈獎」，被尊為關聯式資料庫之父。
 
 **工單資料表**
 
@@ -362,19 +378,25 @@ CRM 透過資訊科技蒐集與分析顧客資料，協助企業掌握顧客偏�
 
 #### 主鍵與外來鍵
 
-**主鍵（Primary Key，PK）**：唯一識別資料表中每一筆紀錄的欄位，不能重複、不能空白。例如「工單編號」就是工單資料表的主鍵。
+**[主鍵（Primary Key，PK）](https://zh.wikipedia.org/wiki/主鍵)**：唯一識別資料表中每一筆紀錄的欄位，不能重複、不能空白。例如「工單編號」就是工單資料表的主鍵。
 
-**外來鍵（Foreign Key，FK）**：其值對應另一資料表的主鍵，用來建立表格間的關聯。例如工單資料表中的「機台編號」是外來鍵，對應機台資料表的主鍵。
+**[外來鍵（Foreign Key，FK）](https://zh.wikipedia.org/wiki/外鍵)**：其值對應另一資料表的主鍵，用來建立表格間的關聯。例如工單資料表中的「機台編號」是外來鍵，對應機台資料表的主鍵。
+
+資料庫設計常以**[實體關係模型（Entity-Relationship Model，ER 模型）](https://zh.wikipedia.org/wiki/ER模型)** 來規劃資料表與表間關聯，再據以建立實體資料表（Chen, 1976; Elmasri & Navathe, 2016）。
+
+![以不同標記法（Chen、Crow's Foot 等）繪製的實體關係圖（ERD）範例](images/05-Information-Systems-and-Database/erd-representation.svg)
+
+*圖片來源：[維基共享資源「ERD Representation.svg」](https://commons.wikimedia.org/wiki/File:ERD_Representation.svg)，作者 Benthompson，授權 Public Domain*
 
 ### 4. 物件導向式資料庫（Object-Oriented Database）
 
-將現實世界的實體視為**物件**，物件包含資料（屬性）與行為（方法）。適合處理大型、複雜或多媒體型的資料，例如工業相機的影像與標注資料。目前在一般企業應用中，關聯式資料庫仍是主流。
+[物件導向式資料庫](https://zh.wikipedia.org/wiki/物件資料庫)將現實世界的實體視為**物件**，物件包含資料（屬性）與行為（方法）。適合處理大型、複雜或多媒體型的資料，例如工業相機的影像與標注資料。目前在一般企業應用中，關聯式資料庫仍是主流。
 
 ---
 
 ## 六、SQL——資料庫的標準語言
 
-**SQL（Structured Query Language，結構化查詢語言）** 是操作關聯式資料庫的標準語言，分為四大類：
+**[SQL（Structured Query Language，結構化查詢語言）](https://zh.wikipedia.org/wiki/SQL)** 是操作關聯式資料庫的標準語言，分為四大類：
 
 | 類型 | 全名 | 用途 | 常見指令 |
 |------|------|------|---------|
@@ -402,6 +424,8 @@ ORDER BY 良率 ASC;
 
 > 對於工業工程管理的學生，不需要能自己寫複雜的 SQL，但理解 SELECT、FROM、WHERE 的基本邏輯，有助於與 IT 人員溝通查詢需求，以及閱讀 BI 工具背後的資料邏輯。
 
+> **趣味小知識**：SQL 到底該唸「S-Q-L」還是「sequel（西擴）」？其實兩派都對。這個語言 1970 年代誕生於 IBM 時原名叫 **SEQUEL**（Structured English Query Language），後來因為這個名稱與一家英國飛機公司的商標撞名，才被迫改成 SQL。也因為這段歷史，老一輩工程師習慣唸「sequel」，年輕一輩則多半照字母唸「S-Q-L」——下次聽到有人兩種唸法混用，別懷疑，他們講的是同一個東西。
+
 ---
 
 ## 七、NoSQL 與大數據資料管理
@@ -415,15 +439,17 @@ ORDER BY 良率 ASC;
 - 結構彈性（不同機台的參數欄位不同）
 - 速度要求極高（毫秒級寫入）
 
-**NoSQL（Not Only SQL）** 是非關聯式資料庫的統稱，設計上更適合處理上述場景。
+**[NoSQL（Not Only SQL）](https://zh.wikipedia.org/wiki/NoSQL)** 是非關聯式資料庫的統稱，設計上更適合處理上述場景（Silberschatz et al., 2020）。
+
+> **趣味小知識**：「NoSQL」這個名字很容易讓人誤會。它最早在 2009 年被提出時，字面意思真的是「No SQL（不要用 SQL）」，帶點對傳統關聯式資料庫的反叛意味。但後來大家發現這太偏激——這類資料庫其實常常也支援類 SQL 查詢，於是重新詮釋為「**Not Only SQL（不只是 SQL）**」，強調它是關聯式資料庫的補充而非取代。這也呼應了前面說的：實務上兩者往往並肩合作、各司其職。
 
 ### 2. NoSQL 的常見模型
 
 | 模型 | 說明 | 代表系統 | 工業應用 |
 |------|------|---------|---------|
-| **鍵值（Key-Value）** | 以唯一鍵對應一個值，查詢速度極快 | Redis | 設備即時狀態快取 |
-| **文件（Document）** | 儲存 JSON 格式的彈性文件 | MongoDB | IoT 設備日誌、品質報告 |
-| **列式（Column-family）** | 以欄位群組儲存，適合大量讀寫 | Apache HBase、Cassandra | 時序感測器資料 |
+| **[鍵值（Key-Value）](https://zh.wikipedia.org/wiki/键值数据库)** | 以唯一鍵對應一個值，查詢速度極快 | [Redis](https://zh.wikipedia.org/wiki/Redis) | 設備即時狀態快取 |
+| **[文件（Document）](https://zh.wikipedia.org/wiki/面向文档的数据库)** | 儲存 JSON 格式的彈性文件 | [MongoDB](https://zh.wikipedia.org/wiki/MongoDB) | IoT 設備日誌、品質報告 |
+| **列式（Column-family）** | 以欄位群組儲存，適合大量讀寫 | [Apache HBase](https://zh.wikipedia.org/wiki/Apache_HBase)、[Cassandra](https://zh.wikipedia.org/wiki/Apache_Cassandra) | 時序感測器資料 |
 | **圖形（Graph）** | 節點與關係的網路結構 | Neo4j | 供應鏈網絡、設備依賴關係 |
 
 ### 3. 關聯式資料庫 vs. NoSQL
@@ -444,11 +470,11 @@ ORDER BY 良率 ASC;
 
 | 軟體 | 授權 | 特點 | 常見應用情境 |
 |------|------|------|-------------|
-| **MySQL** | 開源（社群版免費） | 輕量、穩定、部署容易 | 中小型網站、電商後台、教學用途 |
-| **PostgreSQL** | 開源（完全免費） | 功能完整、支援複雜查詢與 JSON | 中大型系統、需要嚴謹資料一致性 |
-| **Microsoft SQL Server** | 商業授權 | 與 Windows 生態整合佳，有圖形管理工具 | 企業 ERP、微軟技術棧的系統 |
-| **Oracle Database** | 商業授權 | 效能強、功能豐富，為大型企業標準 | 大型製造業、金融、政府機關 |
-| **SQLite** | 開源（完全免費） | 無需伺服器，整個資料庫就是一個檔案 | 嵌入式裝置、App 本機快取、快速原型 |
+| **[MySQL](https://zh.wikipedia.org/wiki/MySQL)** | 開源（社群版免費） | 輕量、穩定、部署容易 | 中小型網站、電商後台、教學用途 |
+| **[PostgreSQL](https://zh.wikipedia.org/wiki/PostgreSQL)** | 開源（完全免費） | 功能完整、支援複雜查詢與 JSON | 中大型系統、需要嚴謹資料一致性 |
+| **[Microsoft SQL Server](https://zh.wikipedia.org/wiki/Microsoft_SQL_Server)** | 商業授權 | 與 Windows 生態整合佳，有圖形管理工具 | 企業 ERP、微軟技術棧的系統 |
+| **[Oracle Database](https://zh.wikipedia.org/wiki/Oracle資料庫)** | 商業授權 | 效能強、功能豐富，為大型企業標準 | 大型製造業、金融、政府機關 |
+| **[SQLite](https://zh.wikipedia.org/wiki/SQLite)** | 開源（完全免費） | 無需伺服器，整個資料庫就是一個檔案 | 嵌入式裝置、App 本機快取、快速原型 |
 
 #### NoSQL 資料庫
 
@@ -457,7 +483,7 @@ ORDER BY 良率 ASC;
 | **Redis** | 鍵值 | 開源 | 快取、Session 管理、即時排行榜 |
 | **MongoDB** | 文件 | 開源（社群版免費） | IoT 日誌、彈性資料結構、快速開發 |
 | **Apache Cassandra** | 列式 | 開源 | 大量寫入的時序資料、感測器紀錄 |
-| **InfluxDB** | 時序（Time-Series） | 開源（社群版免費） | 工廠感測器、監控指標、效能紀錄 |
+| **[InfluxDB](https://zh.wikipedia.org/wiki/InfluxDB)** | 時序（Time-Series） | 開源（社群版免費） | 工廠感測器、監控指標、效能紀錄 |
 | **Neo4j** | 圖形 | 開源（社群版免費） | 供應鏈網絡、推薦系統、關係分析 |
 
 > 選擇資料庫軟體時，需同時考量**授權成本、技術人才、資料特性與系統規模**。例如，中小型工廠導入 MES 時常搭配 MySQL 或 PostgreSQL；大型跨國企業的 ERP 系統則多以 Oracle 或 SQL Server 為核心；而 InfluxDB 則幾乎是工業 IoT 感測器資料的專屬選項。
@@ -468,7 +494,7 @@ ORDER BY 良率 ASC;
 
 ### 1. 大數據的特性
 
-**大數據（Big Data）** 指資料量龐大、產生速度快，且類型多樣，以至於傳統工具難以在合理時間內處理的資料集合。常以多個「V」來描述其特性：
+**[大數據（Big Data）](https://zh.wikipedia.org/wiki/大數據)** 指資料量龐大、產生速度快，且類型多樣，以至於傳統工具難以在合理時間內處理的資料集合（Provost & Fawcett, 2013）。常以多個「V」來描述其特性：
 
 | 特性 | 說明 | 工業範例 |
 |------|------|---------|
@@ -477,6 +503,14 @@ ORDER BY 良率 ASC;
 | **Variety（樣）** | 資料類型多樣 | 數值、影像、日誌、聲音同時匯入 |
 | **Veracity（真）** | 資料的真實性與準確性 | 感測器老化導致的異常數值需過濾 |
 | **Value（值）** | 分析後可產生的商業價值 | 從良率趨勢預測設備故障時間點 |
+
+大數據的規模，最終要落在實體的資料中心裡儲存與運算——雲端業者以成排的伺服器機櫃，支撐起全球工廠與電商每天產生的海量資料。
+
+![資料中心內成排的伺服器機櫃，是儲存與運算大數據的實體基礎](images/05-Information-Systems-and-Database/server-room-datacenter.jpg)
+
+*圖片來源：[維基共享資源「BalticServers data center.jpg」](https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg)，作者 BalticServers.com，授權 CC BY-SA 3.0*
+
+> **趣味小知識**：大家朗朗上口的大數據「3V」——資料量大（Volume）、產生快（Velocity）、種類多（Variety）——其實不是什麼學術定義，而是產業分析師 Doug Laney 早在 2001 年一份內部報告裡提出的觀察。後來大數據熱潮興起，眾人才陸續替它加上真實性（Veracity）、價值（Value）等更多的 V，一路加到「5V」甚至更多，堪稱科技界最愛「集字母」的名詞之一。
 
 ### 2. 大數據分析流程
 
@@ -496,10 +530,10 @@ ORDER BY 良率 ASC;
 
 | 工具 | 用途 |
 |------|------|
-| **Hadoop** | 分散式儲存與計算平台，透過大量普通伺服器叢集平行處理資料 |
-| **Apache Spark** | 記憶體內大規模資料分析，速度遠快於 Hadoop 的 MapReduce |
-| **Power BI / Tableau** | 資料視覺化與商業智慧工具，拖拉介面產生圖表與儀表板 |
-| **Grafana** | 即時監控儀表板，常用於 IoT 與工廠感測器資料的可視化 |
+| **[Hadoop](https://zh.wikipedia.org/wiki/Apache_Hadoop)** | 分散式儲存與計算平台，透過大量普通伺服器叢集平行處理資料 |
+| **[Apache Spark](https://zh.wikipedia.org/wiki/Apache_Spark)** | 記憶體內大規模資料分析，速度遠快於 Hadoop 的 [MapReduce](https://zh.wikipedia.org/wiki/MapReduce) |
+| **Power BI / [Tableau](https://zh.wikipedia.org/wiki/Tableau)** | 資料視覺化與商業智慧工具，拖拉介面產生圖表與儀表板 |
+| **[Grafana](https://zh.wikipedia.org/wiki/Grafana)** | 即時監控儀表板，常用於 IoT 與工廠感測器資料的可視化 |
 
 ---
 
@@ -511,12 +545,16 @@ ORDER BY 良率 ASC;
 
 - 跨廠區的資料可即時整合（台灣、越南、墨西哥三廠的產能一眼掌握）
 - 工程師可在異地遠端監控設備狀態
-- 物聯網設備成為資訊系統的資料來源節點
+- 物聯網設備成為資訊系統的資料來源節點（Xu et al., 2014）
 - 雲端 ERP 讓中小企業不必自建伺服器也能使用完整系統
 
 ### 2. 雲端運算與資訊系統
 
-雲端運算讓企業可以透過網際網路租用運算資源，不必自行購置與維護硬體。對資訊系統的影響：
+[雲端運算](https://zh.wikipedia.org/wiki/雲端運算)讓企業可以透過網際網路租用運算資源，不必自行購置與維護硬體。對資訊系統的影響：
+
+![雲端運算概念示意：各種裝置透過網際網路（雲）取用運算與應用服務](images/05-Information-Systems-and-Database/cloud-computing.svg)
+
+*圖片來源：[維基共享資源「Cloud computing.svg」](https://commons.wikimedia.org/wiki/File:Cloud_computing.svg)，作者 Sam Johnston，授權 CC BY-SA 3.0*
 
 | 優點 | 說明 |
 |------|------|
@@ -538,13 +576,15 @@ AI 技術讓資訊系統從「被動回應」進化到「主動預測」：
 | 顯示庫存水位 | 預測需求，自動觸發補貨建議 |
 | 呈現良率報表 | 分析製程參數與良率的因果關係 |
 
+> **趣味小知識**：資料分析界流傳一個經典故事——某超市分析銷售資料後，發現「啤酒」和「尿布」常一起被買走，推測是年輕爸爸下班買尿布時順手帶啤酒，於是把兩者擺在一起促銷、業績大增。這個「啤酒與尿布」的故事雖然後來被證實多半是行銷傳說、細節難以考證，卻生動點出了資料探勘的精神：從看似無關的資料中，找出人們自己都沒察覺的關聯——這正是今天推薦系統（「買了這個的人也買了…」）的雛形。
+
 ---
 
 ## 十、電子商務與行動商務
 
 ### 1. 電子商務的概念
 
-**電子商務（Electronic Commerce，E-Commerce）** 是指透過網際網路進行商品、服務、資訊與金流交換的商業活動。它不是單純的「網路購物」，而是一套整合網站、資料庫、交易處理系統、物流系統、客服系統、行銷系統與金流系統的整合性資訊系統。
+**[電子商務（Electronic Commerce，E-Commerce）](https://zh.wikipedia.org/wiki/電子商務)** 是指透過網際網路進行商品、服務、資訊與金流交換的商業活動。它不是單純的「網路購物」，而是一套整合網站、資料庫、交易處理系統、物流系統、客服系統、行銷系統與金流系統的整合性資訊系統。
 
 電子商務的基本流程可視為資訊系統的延伸：
 
@@ -592,14 +632,20 @@ AI 技術讓資訊系統從「被動回應」進化到「主動預測」：
 
 ### 4. 行動商務的概念
 
-**行動商務（Mobile Commerce，M-Commerce）** 是電子商務的延伸，指使用者透過智慧型手機、平板或其他行動裝置進行商業活動。相較於傳統電子商務，行動商務更強調即時性、個人化、位置感知與行動支付。
+**[行動商務（Mobile Commerce，M-Commerce）](https://zh.wikipedia.org/wiki/行動商務)** 是電子商務的延伸，指使用者透過智慧型手機、平板或其他行動裝置進行商業活動。相較於傳統電子商務，行動商務更強調即時性、個人化、位置感知與[行動支付](https://zh.wikipedia.org/wiki/行動支付)。
+
+![中國店家並排張貼微信支付與支付寶的 QR Code，是行動支付的典型場景](images/05-Information-Systems-and-Database/qr-mobile-payment-china.jpg)
+
+*圖片來源：[維基共享資源「QR codes for mobile pay in China.jpg」](https://commons.wikimedia.org/wiki/File:QR_codes_for_mobile_pay_in_China.jpg)，作者 Harald Groven，授權 CC BY-SA 2.0*
+
+> **趣味小知識**：史上第一筆有加密保護的網路購物，據信發生在 1994 年 8 月 11 日——一位美國人透過網站刷卡買了一張 Sting 的 CD《Ten Summoner's Tales》，被《紐約時報》記為線上零售的里程碑。更早之前，1994 年也有工程師成功用網路向 Pizza Hut 訂了一份披薩。短短三十年，當年的新鮮事，已變成今天用手機掃一下 QR Code 就完成的日常。
 
 常見的行動商務應用：
 
 - 使用手機 App 購物（蝦皮、momo、PCHOME）
 - 透過行動支付付款（LINE Pay、Apple Pay、街口支付）
 - 使用外送平台訂餐（Foodpanda、Uber Eats）
-- 掃描 QR Code 取得優惠券或完成付款
+- 掃描 [QR Code](https://zh.wikipedia.org/wiki/QR碼) 取得優惠券或完成付款
 - 依據使用者位置推送附近商店優惠
 - 即時推播通知訂單、付款或物流狀態
 
@@ -676,9 +722,26 @@ AI 技術讓資訊系統從「被動回應」進化到「主動預測」：
 3. **選對工具**：結構化交易資料用關聯式資料庫，IoT 時序或非結構化資料用 NoSQL，兩者並非互斥
 4. **評估導入效益**：ERP、MES 等系統的效益來自整合與流程改造，而非購買軟體本身
 
-> 在工業4.0的時代，理解資訊系統與資料庫，等於理解智慧工廠的神經系統——資料如何流動、如何被管理、如何轉化為行動，決定了一座工廠能否真正實現「資料驅動決策」。
+> 在工業4.0的時代，理解資訊系統與資料庫，等於理解智慧工廠的神經系統——資料如何流動、如何被管理、如何轉化為行動，決定了一座工廠能否真正實現「資料驅動決策」（Lee et al., 2015）。
 
 **銜接提示**：本章介紹的 ERP、MES、SCM 與資料庫技術，會在全課程最後的 [07-Industry-4.0-and-Smart-Manufacturing.md](07-Industry-4.0-and-Smart-Manufacturing.md) 中，與硬體、程式、資料科學的內容一起，整合成一個完整的智慧工廠案例，屆時可以回頭對照這裡學過的系統架構。
+
+---
+
+## 參考文獻
+
+- Chen, P. P.-S. (1976). The entity-relationship model—Toward a unified view of data. *ACM Transactions on Database Systems, 1*(1), 9–36. https://doi.org/10.1145/320434.320440
+- Codd, E. F. (1970). A relational model of data for large shared data banks. *Communications of the ACM, 13*(6), 377–387. https://doi.org/10.1145/362384.362685
+- Connolly, T. M., & Begg, C. E. (2015). *Database systems: A practical approach to design, implementation, and management* (6th ed.). Pearson.
+- Elmasri, R., & Navathe, S. B. (2016). *Fundamentals of database systems* (7th ed.). Pearson.
+- Laudon, K. C., & Laudon, J. P. (2022). *Management information systems: Managing the digital firm* (17th ed.). Pearson.
+- Lee, J., Bagheri, B., & Kao, H.-A. (2015). A cyber-physical systems architecture for Industry 4.0-based manufacturing systems. *Manufacturing Letters, 3*, 18–23. https://doi.org/10.1016/j.mfglet.2014.12.001
+- O'Brien, J. A., & Marakas, G. M. (2011). *Management information systems* (10th ed.). McGraw-Hill.
+- Provost, F., & Fawcett, T. (2013). *Data science for business: What you need to know about data mining and data-analytic thinking*. O'Reilly.
+- Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). *Database system concepts* (7th ed.). McGraw-Hill.
+- Stair, R. M., & Reynolds, G. W. (2018). *Principles of information systems* (13th ed.). Cengage Learning.
+- Turban, E., Sharda, R., & Delen, D. (2014). *Decision support and business intelligence systems* (10th ed.). Pearson.
+- Xu, L. D., He, W., & Li, S. (2014). Internet of things in industries: A survey. *IEEE Transactions on Industrial Informatics, 10*(4), 2233–2243. https://doi.org/10.1109/TII.2014.2300753
 
 ---
 
