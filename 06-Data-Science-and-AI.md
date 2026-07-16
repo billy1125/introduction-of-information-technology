@@ -193,6 +193,8 @@ ORDER BY 良率 ASC;
 | **Veracity（真）** | 資料品質複雜 | 感測器老化導致的異常數值需過濾 |
 | **Value（值）** | 分析後可產生的價值 | 從良率趨勢預測設備故障時間點 |
 
+> **前情提要**：這五個 V 的完整說明、以及它們如何從最早的「3V」一路被後人加到 5V 的來歷，見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈八、1. 大數據的特性〉。本章關心的是下一個問題：**資料大了之後，我們拿它來做什麼**。
+
 ### 2. 資料科學：從資料中找出模式
 
 **資料科學（Data Science）** 的任務是透過統計、演算法與視覺化，從大量資料中找出有意義的規律：
@@ -257,6 +259,8 @@ AI 的發展並不是一帆風順，而是歷經三波浪潮：
 
 > 第二波 AI 的核心是**讓工程師把知識寫進電腦**；第三波 AI 的核心是**讓電腦從資料中自己學習知識**。這個轉變，是現代 AI 能力大幅躍升的根本原因。
 
+> **趣味小知識**：「人工智慧」這個名字是**為了申請經費而發明的**。1955年，John McCarthy 和 Marvin Minsky、Nathaniel Rochester、Claude Shannon（就是 [01-History-of-Computer.md](01-History-of-Computer.md) 提過的資訊理論之父）一起寫了一份提案，向洛克斐勒基金會申請經費，要在隔年暑假於達特茅斯學院辦一場為期兩個月的研討會。他們需要一個詞來稱呼這個新領域，McCarthy 想出了「Artificial Intelligence」——這是這個詞第一次出現在人類的文字裡。1956年那場研討會後來被公認為 AI 的誕生地。他們在提案裡寫下的目標是：「**學習的每一個面向，或智慧的任何其他特徵，原則上都可以被精確描述到讓機器能夠模擬它**。」他們認為這件事，十個人花兩個月可以有重大進展。七十年過去了，這個目標還沒完成。
+
 ### 3. 機器學習：訓練的過程是怎麼運作的？
 
 機器學習模型的訓練，可以分為以下步驟：
@@ -276,6 +280,8 @@ AI 的發展並不是一帆風順，而是歷經三波浪潮：
 ```
 
 **類比**：就像你練習射箭，每次射偏之後，你根據偏差調整姿勢，反覆練習直到命中率穩定——機器學習的訓練本質上是相同的過程，只是由電腦自動執行，且可以在幾小時內重複數百萬次調整。
+
+> **趣味小知識**：**「機器學習」這個詞來自一個下棋程式**。1950年代，IBM 工程師 Arthur Samuel 寫了一個會下西洋跳棋的程式，並在1959年的論文中首次使用了 machine learning（機器學習）一詞，把它定義為「**讓電腦不必被明確地寫好每一步，就能具備學習的能力**」。這個程式最有意思的地方在於：Samuel 讓它**自己跟自己下棋**，累積經驗、調整策略——結果它變得比 Samuel 本人還會下。這在當年是很震撼的事，因為它推翻了「電腦只會做你叫它做的事」這個直覺。六十多年後，AlphaGo 用的仍是同一套思路（自我對弈），只是規模大了不知幾億倍。
 
 **訓練資料 vs. 測試資料**：訓練完的模型，必須用「模型從未見過」的新資料來驗證效果。這就是為什麼要把資料分成「訓練集」和「測試集」——如果只在訓練資料上測試，就像學生只練習考古題，無法真正判斷他是否真的理解了。
 
@@ -312,6 +318,10 @@ AI 的發展並不是一帆風順，而是歷經三波浪潮：
 
 層數越多、每層神經元越多，模型能學習的模式就越複雜——這就是「深度」學習的「深」字由來。
 
+> **趣味小知識**：上面「單層不夠、要多層」這句話，背後是一段讓 AI 停滯了十幾年的公案。1958年，心理學家 Frank Rosenblatt 造出了**感知機（Perceptron）**——一台單層的神經網路機器。當時的報導有多誇張？《紐約時報》寫道：海軍揭露了一台電子計算機的雛形，「預期它將能走路、說話、看、寫、自我複製，並意識到自己的存在」。Rosenblatt 本人則說，感知機或許可以被發射到其他行星去當機械探測員。
+>
+> 然後 1969年，Marvin Minsky（對，就是上一則裡達特茅斯提案的共同作者）與 Seymour Papert 出版了《Perceptrons》一書，用嚴謹的數學證明：**單層感知機連 XOR 這麼簡單的邏輯都學不會**。這一擊精準命中，神經網路的研究經費幾乎全面斷炊，領域進入所謂的「**AI 寒冬**」，一凍十餘年。諷刺的是，Minsky 證明的是「單層」不行，而 Rosenblatt 當時其實已經在嘗試多層的版本了——只是他在1971年意外早逝，那條路就此中斷。**要再等三十多年，多層神經網路才會以「深度學習」之名捲土重來，成為今天你手機裡每一個 AI 功能的基礎。** 所以「為什麼要多層」這個問題，答案是用整個領域十幾年的寒冬換來的。
+
 **三種主要神經網路架構**：
 
 | 網路架構 | 設計邏輯 | 特長 | 工業應用 |
@@ -346,6 +356,8 @@ AI 的發展並不是一帆風順，而是歷經三波浪潮：
 傳統的語言模型按順序處理文字，讀完一個字才讀下一個字。Transformer 則能**同時看整段文字，並計算每個字與其他所有字之間的關聯程度**。
 
 例如，處理「這台設備的電流在昨天午後突然升高，**它**可能需要維修」時，模型需要理解「它」指的是「設備」而非「電流」——注意力機制就是讓模型學會建立這種跨距離的對應關係。
+
+> **趣味小知識**：Transformer 是 Google 團隊在2017年一篇論文中提出的，而那篇論文的標題叫做「**Attention Is All You Need**（你只需要注意力）」——這個名字是在向披頭四1967年的名曲〈**All You Need Is Love**〉致敬。這篇論文後來成為近十年最重要的 AI 論文，是 ChatGPT、Claude 等所有大型語言模型的共同祖先，引用次數超過十萬。它的標題句型也就此成了學術圈的一個梗，後續冒出大量「XXX Is All You Need」的論文，多到有人專門寫論文研究這個現象。至於原標題的意思其實很直白：在此之前的語言模型都要靠複雜的循環或卷積結構，而這篇論文說——**那些都可以丟掉，只留注意力機制就夠了**。
 
 **大型語言模型（Large Language Model，LLM）** 如 GPT-4、Claude、Llama，是以下列方式運作：
 
@@ -440,7 +452,33 @@ AI 代理人
 | **生成式 AI** | AI 只能判斷，不能創造 | Transformer + 大規模預訓練，生成新內容 |
 | **AI 代理人** | AI 只能回答問題，不能自主行動 | 結合 LLM 與工具呼叫，自主規劃與執行 |
 
-### 對工業工程管理學生的意義
+---
+
+## 九、學習重點總結
+
+讀完本章後，你應該能夠理解以下核心概念，並將其應用於工業場域的思考與決策：
+
+**AI 不是憑空出現，它站在整條技術主線的最上層**
+
+本章走過的七站——計算機、資訊系統、資料庫、網路、大數據、AI、生成式 AI 與代理人——是一條有先後順序的鏈條。沒有數位化就沒有資料，沒有資料庫與網路就沒有可用的資料累積，沒有大數據規模的資料就餵不動深度學習。當有人問「我們能不能導入 AI」，這條鏈條本身就是檢查清單：**先確認前面幾站你是否站穩了**。
+
+**資料科學的價值在於把資料變成可行動的判斷**
+
+統計、分析與視覺化的目的不是產出漂亮的圖，而是讓人看見資料裡原本看不見的模式，並據此行動。一張沒有人會依它做決定的儀表板，技術上再完整都沒有創造價值——這個判準在評估任何資料專案時都適用。
+
+**機器學習與深度學習：讓電腦從資料中找出規則**
+
+傳統程式是人寫好規則交給電腦執行，機器學習則是給電腦大量案例，讓它自己歸納出規則。深度學習進一步用多層神經網路，自動從影像、語音、文字這類非結構化資料中提取特徵。這個差異決定了適用範圍：規則明確、例外少的問題，寫程式就好；規則說不清楚但案例很多的問題（如從影像判斷瑕疵），才是機器學習的主場。
+
+**生成式 AI 與 AI 代理人：從判斷走向創造與自主行動**
+
+生成式 AI 讓電腦能產出新的內容，AI 代理人則結合大型語言模型與工具呼叫，讓系統能自主規劃並執行多步驟任務。對工廠而言，這代表 AI 的角色正從「回答問題」轉向「參與流程」——但也代表責任歸屬、稽核軌跡與人工監督的設計，變得比以往更重要。
+
+**AI 的限制與資料品質同樣是重點**
+
+模型的表現上限由資料決定，這是本章最實際的一課。資料有偏誤，模型就複製偏誤；資料標註品質差，再先進的架構也救不回來。工廠導入 AI 時真正的難關，通常不在模型選擇，而在資料從哪來、乾不乾淨、標得準不準。
+
+**對工業工程管理學生的意義**
 
 身為工業工程管理的學生，你未來的工作核心是在人、機器、資料與系統之間建立最佳的運作方式。理解這條技術演進主線，能讓你：
 
@@ -451,7 +489,25 @@ AI 代理人
 
 > 資訊科學的終極目標，不是讓電腦變得更聰明，而是**讓人能夠更有效地利用資料做出更好的決策**——無論這個「人」是生產線上的工程師、倉庫的物流主管，還是整個供應鏈的策略決策者。AI 是這條路上最強大的工具，但工具的價值由使用者決定。
 
-**銜接提示**：以上這條「計算機→資訊系統→資料庫→大數據→AI」的技術演進主線，會在全課程最後的 [07-Industry-4.0-and-Smart-Manufacturing.md](07-Industry-4.0-and-Smart-Manufacturing.md) 中，套用到一個完整的智慧工廠案例，讓你看到這條主線在真實工廠裡如何具體運作。
+> **銜接提示**：以上這條「計算機→資訊系統→資料庫→大數據→AI」的技術演進主線，會在全課程最後的 [07-Industry-4.0-and-Smart-Manufacturing.md](07-Industry-4.0-and-Smart-Manufacturing.md) 中，套用到一個完整的智慧工廠案例，讓你看到這條主線在真實工廠裡如何具體運作。
+
+---
+
+## 參考文獻
+
+- Chollet, F. (2021). *Deep learning with Python* (2nd ed.). Manning.
+- Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep learning*. MIT Press.
+- Laney, D. (2001). *3D data management: Controlling data volume, velocity and variety* (Research Note). META Group.
+- Laudon, K. C., & Laudon, J. P. (2022). *Management information systems: Managing the digital firm* (17th ed.). Pearson.
+- LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. *Nature, 521*(7553), 436–444. https://doi.org/10.1038/nature14539
+- Lee, J., Bagheri, B., & Kao, H.-A. (2015). A cyber-physical systems architecture for Industry 4.0-based manufacturing systems. *Manufacturing Letters, 3*, 18–23. https://doi.org/10.1016/j.mfglet.2014.12.001
+- McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (1955). *A proposal for the Dartmouth summer research project on artificial intelligence*. Dartmouth College.
+- Minsky, M., & Papert, S. (1969). *Perceptrons: An introduction to computational geometry*. MIT Press.
+- Provost, F., & Fawcett, T. (2013). *Data science for business: What you need to know about data mining and data-analytic thinking*. O'Reilly Media.
+- Rosenblatt, F. (1958). The perceptron: A probabilistic model for information storage and organization in the brain. *Psychological Review, 65*(6), 386–408. https://doi.org/10.1037/h0042519
+- Russell, S., & Norvig, P. (2021). *Artificial intelligence: A modern approach* (4th ed.). Pearson.
+- Samuel, A. L. (1959). Some studies in machine learning using the game of checkers. *IBM Journal of Research and Development, 3*(3), 210–229. https://doi.org/10.1147/rd.33.0210
+- Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is all you need. In *Advances in Neural Information Processing Systems 30* (pp. 5998–6008).
 
 ---
 
