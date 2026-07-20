@@ -912,16 +912,9 @@ WWW 之所以能做到「一個瀏覽器走天下」，是因為它建立在三�
 
 當你在瀏覽器輸入一個網址並按下 Enter，背後發生了一系列複雜的步驟：
 
-```
-1. DNS 解析：將網域名稱轉換為 IP 位址
-2. TCP 連線：與目的伺服器建立 TCP 連線（三向交握）
-3. HTTPS 握手：協商加密方式（若使用 HTTPS）
-4. 發送 HTTP 請求：告訴伺服器「我要這個網頁」
-5. 伺服器處理：伺服器查詢資料庫、執行程式，準備回應
-6. 接收 HTTP 回應：伺服器回傳 HTML、CSS、JavaScript 等檔案
-7. 瀏覽器渲染：解析 HTML 結構，套用 CSS 樣式，執行 JavaScript
-8. 顯示網頁：在螢幕上呈現最終畫面
-```
+![在瀏覽器輸入網址後，背後從 DNS 解析、TCP 連線、HTTPS 握手到網頁渲染的完整流程](images/04-Networks-and-Internet/behind-web-surfing.png)
+
+*圖片來源：作者自製或 ChatGPT 生成*
 
 這整個過程通常在 1–3 秒內完成（對使用者可見的部分）。
 
@@ -1056,6 +1049,10 @@ DNS 的價值其實不只是「好記」，更在於它多了一層**間接**：
 - **[中間人攻擊（Man-in-the-Middle）](https://zh.wikipedia.org/wiki/中間人攻擊)**：攻擊者暗中攔截通訊雙方的資料，竊聽或竄改
 
 基本的個人資安防護措施：使用強密碼並定期更換、啟用[多因素驗證（MFA）](https://zh.wikipedia.org/wiki/多重要素驗證)、定期更新作業系統與軟體、不隨意點擊可疑連結、使用 HTTPS 加密的網站。
+
+![常見網路資安威脅與防護概念示意圖](images/04-Networks-and-Internet/cybersecurity.png)
+
+*圖片來源：作者自製或 ChatGPT 生成*
 
 ### 2. 工業控制系統（ICS）安全
 
