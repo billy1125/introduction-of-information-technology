@@ -80,8 +80,6 @@ style: |
 
 ---
 
-![bg right:45%](images/03-Computer-Program/jeannette-wing.jpg)
-
 ## 補充小知識：運算思維的推手
 
 - 概念雖可追溯至更早，但真正讓它成為全球教育界重視關鍵推手的，是美國電腦科學家珍妮特·溫（Jeannette Wing）
@@ -199,8 +197,6 @@ style: |
 - 在工業系統中，這類型別錯誤可能導致產量統計錯誤，造成錯誤的生產決策
 
 ---
-
-![bg left:45%](images/03-Computer-Program/grace-hopper.jpg)
 
 ## 趣味小知識：臭蟲的由來
 
@@ -341,8 +337,6 @@ style: |
 ```
 
 ---
-
-![bg right:45%](images/03-Computer-Program/edsger-dijkstra.jpg)
 
 ## 補充小知識：goto 與結構化程式設計
 

@@ -358,7 +358,7 @@ SIS 和前面所有系統之間，有一個層次上的跳躍。MIS、DSS、EIS 
 
 最經典的例子出現在航空與零售業。美國航空當年靠 [SABRE](https://zh.wikipedia.org/wiki/Sabre_(電腦系統)) 訂位系統，把訂票終端機鋪進全美各地的旅行社，等於搶先掌握了消費者訂票的入口，在對手還來不及反應時就築好了護城河；沃爾瑪則靠一套即時串連門市與供應商的補貨系統，把庫存與物流成本壓到同業難以匹敵，它招牌的「天天低價」策略才得以成立。這些系統的價值不在於「產出漂亮的報表」，而在於它們為企業取得了對手一時追不上的**結構性優勢**——這正是 SIS 與其他資訊系統最不一樣的地方。
 
-![SABRE訂位系統](images\05-Information-Systems-and-Database\amr-sabre-sis.png)
+![SABRE訂位系統](images/05-Information-Systems-and-Database/amr-sabre-sis.png)
 
 *本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
