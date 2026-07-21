@@ -339,7 +339,7 @@ ENIAC 的速度比當時所有機械或機電計算機都快上數千倍，標�
 
 ![電腦世代演進](images/01-History-of-Computer/computer-generations.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ### 第一代（1940年代–1950年代）：真空管時代
 

@@ -79,7 +79,7 @@
 | 比喻 | 一棟大樓的內部電話系統 | 讓各棟大樓的電話系統彼此接得通的公共電話網路 |
 
 ![網路與網際網路](images/04-Networks-and-Internet/network-and-internet.png)
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 > 簡單來說：**你家的電腦、平板、手機連上無線 AP、工廠內的設備彼此相連，這些是「網路」；當你要連到某個網站、和朋友玩連線遊戲，或工廠的系統要把資料送上雲端平台，就得跨出自己的網路，透過「網際網路」和別人的網路接軌**。本篇先深入了解「網路」的基礎，下一篇再討論「網際網路」。
 
@@ -94,7 +94,7 @@
 先說結論：**實際的工廠不會只用一種拓樸，而是混合搭配**——辦公區與工程師站用星狀連到核心交換器，產線上的感測器可能掛在匯流排或環狀上與 PLC 連接，關鍵控制系統之間則用部分網狀確保高可靠性。所以下面四種拓樸不是四選一的考題，而是四種工具；讀的時候不妨想想：每一種各自付出什麼代價、換到什麼好處，才會被放在工廠的那個位置上。
 
 ![常見網路拓樸](images/04-Networks-and-Internet/network-topologies.png)
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ### 2. 星狀拓樸（Star Topology）
 
@@ -225,7 +225,7 @@
 
 ![常見網路硬體設備](images/04-Networks-and-Internet/network-hardware.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ---
 
@@ -312,7 +312,7 @@ Wi-Fi 使用**2.4 GHz** 與 **5 GHz** 兩個主要頻段：2.4 GHz 穿透力強�
 
 ![無線路由器實體線路安裝方式的五個步驟](images/04-Networks-and-Internet/easy-wifi-config.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 圖中出現了一個前面還沒提過的角色：**數據機（Modem）**。電信業者送進家裡的訊號（光纖或電話線）並不是電腦看得懂的乙太網路訊號，數據機的工作就是把兩者互相轉換——依前面〈閘道〉一節的定義，它其實正是一種閘道器。所以整條路徑是這樣的：牆上的網路孔接到數據機，數據機再用網路線接到路由器的 **WAN 埠**（步驟 2，也就是那個藍色的孔）；至於電腦、電視這些有線設備，則插在 **LAN 埠**（步驟 4，那四個黃色的孔）。回頭看前面那張背面照，藍黃兩種顏色的分工在這裡就完全對上了。
 
@@ -376,7 +376,7 @@ WAN 的傳輸速度通常低於 LAN，延遲也較高（因為資料需要傳輸
 
 ![廣域網路（WAN）概念示意圖：跨越城市與國家、連接各地分支機構的網路](images/04-Networks-and-Internet/concept-of-wan.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 企業使用 WAN 的主要方式有幾種：
 
@@ -464,7 +464,7 @@ WAN 的傳輸速度通常低於 LAN，延遲也較高（因為資料需要傳輸
 
 ![個人區域網路](images/04-Networks-and-Internet/personal-area-network.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ### 2. 藍牙（Bluetooth）
 
@@ -533,7 +533,7 @@ IoT 設備的特性往往是數量龐大、分布廣泛、電池供電（不能�
 
 ![IOT](images/04-Networks-and-Internet/concept-of-iot.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 > **延伸閱讀**：本節只先說明這些感測資料「如何傳出來」。資料傳出來之後，如何存入資料庫、由 MES 與 ERP 等企業應用系統整理成管理資訊，見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈三、企業應用系統〉；如何被機器學習模型分析出故障前兆，見 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md)〈六、第六站：人工智慧——從資訊到智慧〉；而預測性維護在智慧工廠中的完整應用情境，則見 [07-Industry-4.0-and-Smart-Manufacturing.md](07-Industry-4.0-and-Smart-Manufacturing.md)〈三、AI 在製造中的應用〉。
 
@@ -660,7 +660,7 @@ IoT 設備的特性往往是數量龐大、分布廣泛、電池供電（不能�
 
 ![封包傳遞流程](images/04-Networks-and-Internet/packet-switching.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 每個路由器收到封包後，讀取目的地 IP 位址，根據路由表選擇下一個轉發點，再將封包送出。同一份資料的不同封包，可能走完全不同的路徑到達目的地，最終在接收端按照序號重新組合。
 
@@ -672,7 +672,7 @@ IoT 設備的特性往往是數量龐大、分布廣泛、電池供電（不能�
 
 ![封包與電路交換差異](images/04-Networks-and-Internet/circuit-packer-difference.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 不過，共享線路是有代價的。工廠的即時監控資料（感測器讀值、設備狀態）透過封包交換網路傳輸時，由於多個封包共享線路，且各封包可能走不同路徑，**到達時間不一定按照傳送順序**，造成**延遲（Latency）**與**抖動（Jitter）**——後者指的是每個封包延遲時間不一致，時快時慢。對於需要精確時序的工業控制，這正是專屬電路那個「浪費」換來的東西：可預測。因此工業網路通常需要 [QoS（服務品質）](https://zh.wikipedia.org/wiki/服務品質)機制或專用網路，來保障關鍵資料的傳輸優先權。
 
@@ -688,7 +688,7 @@ IoT 設備的特性往往是數量龐大、分布廣泛、電池供電（不能�
 
 ![通訊協定概念示意圖：通訊雙方遵守共同的規則才能正確溝通](images/04-Networks-and-Internet/concept-of-protocol.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ### 2. 分層概念（簡化理解）
 
@@ -763,7 +763,7 @@ UDP 的優勢是**延遲極低**：省去了 TCP 的各種確認與重傳機制�
 
 ![TCP/IP基本概念](images/04-Networks-and-Internet/concept-of-tcpip.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 **那麼，該選 TCP 還是 UDP？** 這個取捨在工廠裡每天都在發生：
 
@@ -853,7 +853,7 @@ UDP 的優勢是**延遲極低**：省去了 TCP 的各種確認與重傳機制�
 
 ![全球資訊網（WWW）以一個瀏覽器統一了上網體驗，徹底改變了世界](images/04-Networks-and-Internet/www-change-world.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 > **趣味小知識**：台灣人最熟悉的 **[批踢踢（PTT）](https://zh.wikipedia.org/wiki/批踢踢)**，正是一個存活到 21 世紀、至今仍有人在用的 Telnet 服務。當年許多 BBS 站台都靠 Telnet 連線，多數早已走入歷史，PTT 卻是少數的「活化石」。在還沒有 Threads、Dcard 這類社群平台的年代，像老師這輩的大學生，就是靠 PTT 追時事、討論課業、和同學網友互動、揪團出遊，可以說是那個世代共同的網路生活記憶。不過，即使是 PTT，如今也順應了 WWW 化的潮流：除了傳統用 Telnet 連線軟體登入，官方也推出了網頁版（[PTT Web](https://www.ptt.cc/bbs/index.html)），讓使用者不必安裝專門的連線程式，直接打開瀏覽器就能看板、讀文——這正是本節所說「服務逐漸由 HTTP 統一」最貼近生活的一個縮影。時至今日，PTT 仍是台灣流量數一數二的社群平台，許多新聞話題都從這裡發酵；只不過使用者的年齡層，也和老師一樣逐漸偏長，年輕世代反而更常出沒在 Threads、Dcard 等新平台上。
 
@@ -914,7 +914,7 @@ WWW 之所以能做到「一個瀏覽器走天下」，是因為它建立在三�
 
 ![在瀏覽器輸入網址後，背後從 DNS 解析、TCP 連線、HTTPS 握手到網頁渲染的完整流程](images/04-Networks-and-Internet/behind-web-surfing.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 這整個過程通常在 1–3 秒內完成（對使用者可見的部分）。
 
@@ -939,7 +939,7 @@ WWW 運作在 **[用戶端—伺服器（Client-Server）](https://zh.wikipedia.
 
 ![URL 各組成部分的詳細拆解示意圖](images/04-Networks-and-Internet/url-in-detail.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ### 2. DNS 的角色
 
@@ -949,7 +949,7 @@ DNS 的價值其實不只是「好記」，更在於它多了一層**間接**：
 
 ![DNS流程](images/04-Networks-and-Internet/dns-explained.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 > **趣味小知識**：你或許看過 `8.8.8.8` 這組 IP 位址——它是 Google 提供的免費公用 DNS 伺服器。當年 Google 特地爭取到這組「四個 8」的位址，就是看中它極度好記（8 在華人文化裡還格外吉利）。當你覺得電信業者的 DNS 太慢，把電腦或路由器的 DNS 改成 `8.8.8.8`，往往能讓網頁「查地址」的速度變快一些，是很多人上網的第一個小撇步。
 
@@ -1052,7 +1052,7 @@ DNS 的價值其實不只是「好記」，更在於它多了一層**間接**：
 
 ![常見網路資安威脅與防護概念示意圖](images/04-Networks-and-Internet/cybersecurity.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ### 2. 工業控制系統（ICS）安全
 
@@ -1086,9 +1086,9 @@ DNS 的價值其實不只是「好記」，更在於它多了一層**間接**：
 
 在工業4.0情境中，一筆感測器資料從產生到最終支援管理決策，要歷經多個層次的網路傳輸。以工廠內一台 CNC 加工機床的主軸溫度感測器為例：
 
-![工業物聯網資料流](images\04-Networks-and-Internet\iiot-dataflow.png)
+![工業物聯網資料流](images/04-Networks-and-Internet/iiot-dataflow.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 每一個箭頭都代表一段網路傳輸，使用了不同的網路類型（工廠 LAN、企業 WAN、公共網際網路）與不同的協定（Modbus、TCP/IP、HTTPS）。
 
@@ -1126,7 +1126,7 @@ PLC 從現場層設備蒐集感測資料，執行即時控制邏輯，並將資�
 
 ![工業物聯網資料流](images/04-Networks-and-Internet/four-tier-architecture.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 > **補充小知識：這套四層架構的來歷——自動化金字塔與 ISA-95**
 >

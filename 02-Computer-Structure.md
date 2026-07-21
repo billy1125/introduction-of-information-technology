@@ -160,7 +160,7 @@
 
 ![資料表示與數位化](images/02-Computer-Structure/digitalization.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ---
 
@@ -358,7 +358,7 @@ IEEE 754 最常用的兩種格式：
 
 ![IEEE 754](images/02-Computer-Structure/ieee754.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 - **符號位（Sign）**：0 代表正數，1 代表負數
 - **指數（Exponent）**：以「偏移值（Bias = 127）」的方式儲存，實際指數 = 儲存值 − 127
@@ -446,7 +446,7 @@ $$
 
 ![電腦系統架構](images/02-Computer-Structure/von-neumann-architecture-with-hardware.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 本篇接下來就依循這個架構逐一介紹硬體：**中央處理器**（對應控制單元與算術邏輯單元）、**記憶體系統**、**儲存裝置**（現代電腦在馮諾依曼架構之外新增的輔助儲存層）、**輸入與輸出裝置**，以及讓這些元件彼此溝通的**主機板與匯流排**，最後再介紹工業4.0時代興起的新型硬體。
 
@@ -542,7 +542,7 @@ CPU 的運作遵循一個稱為**取指—解碼—執行（Fetch-Decode-Execute
 
 ![記憶體階層](images/02-Computer-Structure/memory-hierarchy.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ### 3. 非揮發性儲存：HDD、SSD、隨身碟與光碟
 
@@ -581,7 +581,7 @@ CPU 的運作遵循一個稱為**取指—解碼—執行（Fetch-Decode-Execute
 
 ![非揮發性儲存媒體](images/02-Computer-Structure/non-volatile-storage.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ### 4. 工業應用：即時資料緩衝與儲存需求
 
@@ -621,7 +621,7 @@ CPU 的運作遵循一個稱為**取指—解碼—執行（Fetch-Decode-Execute
 
 ![輸入與輸出裝置](images/02-Computer-Structure/io-devices.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 
 ### 2. 工業設備中的感測器與致動器
@@ -781,7 +781,7 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 ![常見的作業系統](images/02-Computer-Structure/operating-systems.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 #### 桌面作業系統
 

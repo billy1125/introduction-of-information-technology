@@ -56,7 +56,7 @@
 
 ![程式本質](images/03-Computer-Program/programmer-work.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 > **趣味小知識**：「臭蟲（Bug）」與「除錯（Debug）」這兩個程式設計術語，據說源自1947年——[葛麗絲·霍普（Grace Hopper）](https://zh.wikipedia.org/zh-tw/葛丽丝·霍普)的團隊在排查哈佛 Mark II 電腦的故障時，真的在繼電器裡發現了一隻被夾死的飛蛾，導致電路短路。他們把這隻蛾貼在維修日誌上，並寫下「第一個發現真正臭蟲的案例」，這個詞從此沿用至今。霍普本人也是電腦科學史上的傳奇人物：她是哈佛 Mark I 電腦最早的程式設計師之一，後來更開發出世界第一個編譯器（Compiler），並主導設計了影響深遠的商用程式語言 COBOL。
 
@@ -121,7 +121,7 @@
 
 ![運算思維](images/03-Computer-Program/computational-thinking.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 > **小結**：運算思維的四個面向——分解、模式辨識、抽象化、演算法思考——不是孤立的技巧，而是解決複雜問題時自然流動的思考過程。在面對工廠流程改善、系統設計或資料分析任務時，有意識地運用這四個思維工具，往往能讓問題變得清晰可解。
 
@@ -139,7 +139,7 @@
 
 ![程式本質](images/03-Computer-Program/program-sequence.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 - **輸入**：程式接收的資料，來源可以是鍵盤輸入、檔案讀取、感測器訊號、資料庫查詢……
 - **處理**：程式對資料進行的計算、判斷、轉換等操作
@@ -168,7 +168,7 @@
 
 ![資料型態](images/03-Computer-Program/datatype.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 **為什麼資料型態重要？**
 
@@ -224,7 +224,7 @@
 
 ![控制結構](images/03-Computer-Program/control-structure.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ### 1. 依序執行（sequence）
 
@@ -334,7 +334,7 @@
 
 ![控制結構混合使用](images/03-Computer-Program/control-structure-mix.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ---
 
@@ -407,7 +407,7 @@
 
 ![程式模組化概念](images/03-Computer-Program/program-marization.png)
 
-*圖片來源：作者自製或 ChatGPT 生成*
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 ### 4. 物件導向概念簡介
 
