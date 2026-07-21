@@ -1059,7 +1059,7 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 > **趣味小知識**：「柏拉圖」與「80/20 法則」的命名，來自十九世紀義大利經濟學家[維爾弗雷多·柏拉圖（Vilfredo Pareto）](https://zh.wikipedia.org/zh-tw/維爾弗雷多·帕雷托)。他當年觀察到義大利約 80% 的土地，掌握在 20% 的人口手中，這個「少數關鍵、多數次要」的現象後來被發現廣泛存在於品質管理、業績分配，甚至你我的待辦清單中——多數成果，往往來自少數關鍵因素。
 
-決策支援系統（DSS）在資訊系統中的定位、大數據分析的完整流程，以及 Power BI、Tableau 等 BI 工具背後的資料庫技術，請見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈二、資訊系統的類型〉與〈八、大數據與資料分析〉。
+決策支援系統（DSS）在資訊系統中的定位、大數據分析的完整流程，以及 Power BI、Tableau 等 BI 工具背後的資料庫技術，請見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈二、資訊系統的類型〉與〈八、大數據如何改變資訊系統〉。
 
 ---
 
