@@ -193,7 +193,7 @@ ORDER BY 良率 ASC;
 | **Veracity（真）** | 資料品質複雜 | 感測器老化導致的異常數值需過濾 |
 | **Value（值）** | 分析後可產生的價值 | 從良率趨勢預測設備故障時間點 |
 
-> **前情提要**：這五個 V 的完整說明、以及它們如何從最早的「3V」一路被後人加到 5V 的來歷，見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈八、1. 大數據的特性〉。本章關心的是下一個問題：**資料大了之後，我們拿它來做什麼**。
+> **前情提要**：這五個 V 的完整說明、以及它們如何從最早的「3V」一路被後人加到 5V 的來歷，見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈九、1. 什麼是大數據？〉。本章關心的是下一個問題：**資料大了之後，我們拿它來做什麼**。
 
 ### 2. 資料科學：從資料中找出模式
 

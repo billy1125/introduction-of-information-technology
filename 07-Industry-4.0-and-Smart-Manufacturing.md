@@ -74,9 +74,9 @@
 
 | 技術支柱 | 一句話說明 | 本課程哪裡講過 |
 | --- | --- | --- |
-| 大數據分析 | 從海量生產資料中找出規律與異常 | [05](05-Information-Systems-and-Database.md)〈八、大數據與資料分析〉、[06](06-Data-Science-and-AI.md)〈五、第五站：大數據〉 |
+| 大數據分析 | 從海量生產資料中找出規律與異常 | [05](05-Information-Systems-and-Database.md)〈九、大數據如何改變資訊系統〉、[06](06-Data-Science-and-AI.md)〈五、第五站：大數據〉 |
 | 工業物聯網（IIoT） | 讓機台與感測器連上網、把狀態說出來 | [04](04-Networks-and-Internet.md)〈九、物聯網與低功耗網路〉 |
-| 雲端運算 | 用別人的電腦做自己算不動的運算與儲存 | [05](05-Information-Systems-and-Database.md)〈九、網路、雲端與 AI 對資訊系統的影響〉 |
+| 雲端運算 | 用別人的電腦做自己算不動的運算與儲存 | [05](05-Information-Systems-and-Database.md)〈七、網路與雲端對資訊系統的影響〉 |
 | 水平與垂直系統整合 | 讓各自獨立的系統互相交換資料 | [04](04-Networks-and-Internet.md)〈二十四、3. 系統整合〉、本章〈七〉 |
 | 網路安全 | 整合得越深，被攻擊的代價越大 | [04](04-Networks-and-Internet.md)〈二十一、當代網路議題〉 |
 | 自主機器人 | 能感知環境、彼此協作，而非只會重複固定動作 | 本章原創（見下） |
@@ -158,7 +158,7 @@ PLC/SCADA ← 即時生產資料回饋
 成本結算 / 庫存更新 / 出貨安排
 ```
 
-這種垂直整合的資料流，正是工業4.0「資料驅動決策」的實踐基礎。從程式設計的角度看，ERP 的物料需求規劃本質上是「BOM 樹的遍歷＋庫存查詢＋計算」，MES 的生產排程則是「工單佇列＋排序＋機台分配」——這些系統看似龐大複雜，其實都是由基礎的資料結構與演算法堆疊而成，詳見 [03-Computer-Program.md](03-Computer-Program.md)〈十八、系統觀點〉。而讓資訊系統從「被動記錄」進化到「主動預測」的雲端與 AI 強化，則詳見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈九、網路、雲端與 AI 對資訊系統的影響〉。
+這種垂直整合的資料流，正是工業4.0「資料驅動決策」的實踐基礎。從程式設計的角度看，ERP 的物料需求規劃本質上是「BOM 樹的遍歷＋庫存查詢＋計算」，MES 的生產排程則是「工單佇列＋排序＋機台分配」——這些系統看似龐大複雜，其實都是由基礎的資料結構與演算法堆疊而成，詳見 [03-Computer-Program.md](03-Computer-Program.md)〈十八、系統觀點〉。而讓資訊系統從「被動記錄」進化到「主動預測」的雲端與 AI 強化，則詳見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈七、網路與雲端對資訊系統的影響〉。
 
 ## 五、智慧工廠基礎案例：從感測器到決策的完整資料流
 
@@ -225,7 +225,7 @@ PLC/SCADA ← 即時生產資料回饋
 
 ## 七、工業4.0整體架構
 
-> **前情提要**：[04-Networks-and-Internet.md](04-Networks-and-Internet.md)〈二十三、智慧製造網路架構（概念性）〉已經完整介紹過智慧工廠從現場層、控制層、管理層到雲端層的四層架構，以及每一層之間使用的通訊協定，本節不再重述。這一層一層的東西你都已經認識了，真正難的是把它們**串起來**——這才是本節要談的。至於雲端這一層的資訊系統整合全貌，可對照 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈十二、資訊系統與資料庫的整合關係〉的架構圖一起閱讀。
+> **前情提要**：[04-Networks-and-Internet.md](04-Networks-and-Internet.md)〈二十三、智慧製造網路架構（概念性）〉已經完整介紹過智慧工廠從現場層、控制層、管理層到雲端層的四層架構，以及每一層之間使用的通訊協定，本節不再重述。這一層一層的東西你都已經認識了，真正難的是把它們**串起來**——這才是本節要談的。至於雲端這一層的資訊系統整合全貌，可對照 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈十、資訊系統與資料庫的整合關係〉的架構圖一起閱讀。
 
 ### 1. 系統整合觀念（硬體、軟體、網路）
 
@@ -279,7 +279,7 @@ PLC/SCADA ← 即時生產資料回饋
 
 **對工業工程管理學生的啟示**
 
-[05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈十三、學習重點總結〉曾從資訊系統的角度談過類似的話題；這裡是把整門課放在一起看的版本。
+[05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈十一、學習重點總結〉曾從資訊系統的角度談過類似的話題；這裡是把整門課放在一起看的版本。
 
 身為工業工程管理的學生，你未來將是連結技術與管理的橋梁。你不需要成為電腦工程師，但你需要：
 
