@@ -629,7 +629,7 @@ WWW 建立在三項關鍵技術上：
 
 ## 十、人工智慧與未來科技
 
-> **延伸閱讀**：本節先建立 AI、機器學習、深度學習的基本概念與未來趨勢；機器學習的訓練原理、神經網路架構、生成式 AI 與 Transformer、AI 代理人等技術細節，將在 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md) 進一步說明。
+> **延伸閱讀**：本節先建立 AI、機器學習、深度學習的基本概念與未來趨勢；機器學習的訓練原理、神經網路架構、生成式 AI 與 Transformer、AI 代理人等技術細節，將在 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) 進一步說明。
 
 ### 1. AI 基本概念與應用領域
 
@@ -686,13 +686,13 @@ AI 的發展目標，是讓機器能夠執行那些「通常需要人類智慧�
 
 **自然語言處理與機器翻譯（NLP & Machine Translation）**：延續前面語音助理提到的[自然語言處理](https://zh.wikipedia.org/zh-tw/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86)技術，[機器翻譯](https://zh.wikipedia.org/zh-tw/%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AD%AF)是其中最貼近生活的應用，如 Google 翻譯、DeepL，讓不同語言的使用者能即時溝通。對工廠而言，這也是與海外客戶、供應商往來文件、跨國廠務會議溝通的重要輔助工具。
 
-**生成式 AI（Generative AI）**：不同於前面「辨識、預測」型的 AI，[生成式人工智慧](https://zh.wikipedia.org/zh-tw/%E7%94%9F%E6%88%90%E5%BC%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD)能直接「創造」全新的文字、圖片、程式碼，例如 ChatGPT、Midjourney。這是近年 AI 領域發展最快的分支，完整的技術原理（如 Transformer 架構）將在 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md) 進一步說明。
+**生成式 AI（Generative AI）**：不同於前面「辨識、預測」型的 AI，[生成式人工智慧](https://zh.wikipedia.org/zh-tw/%E7%94%9F%E6%88%90%E5%BC%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD)能直接「創造」全新的文字、圖片、程式碼，例如 ChatGPT、Midjourney。這是近年 AI 領域發展最快的分支，完整的技術原理（如 Transformer 架構）將在 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) 進一步說明。
 
 > **趣味小知識**：生成對抗網路（GAN）——早期生成圖像的關鍵技術之一，據說是發明者伊恩·古德費洛在2014年一場酒吧聚會上與朋友辯論時，靈光一閃想出來的點子：讓兩個神經網路互相對抗，一個努力「造假」，另一個努力「抓包」，兩者你來我往、共同進步，最後「造假」的一方就能生成以假亂真的圖像。這個誕生於酒吧的想法，後來成為生成式 AI 發展史上的重要里程碑。
 
 **機器人與自動化（Robotics）**：[機器人學](https://zh.wikipedia.org/zh-tw/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6)結合了 AI 與機械工程，讓機器不只能「思考」，還能實際「動手」執行任務——工廠中常見的機械手臂、倉儲物流的自動導引車（AGV），都是機器人與自動化技術的具體展現，也是工業工程領域最直接接觸到的 AI 應用之一。
 
-**預測性維護（Predictive Maintenance）**：前面「九、現代資訊系統」提過，工業物聯網（IoT）設備會持續回傳機台的溫度、震動等感測資料；AI 能從這些歷史資料中學習正常與異常的模式，提前[預測性維護](https://zh.wikipedia.org/zh-tw/%E9%A2%84%E6%B5%8B%E6%80%A7%E7%BB%B4%E6%8A%A4)機台可能發生故障的時間點，讓廠務團隊能在真正停機之前安排維修，避免產線意外中斷造成的損失。這是與工業工程管理最相關的一項 AI 應用，它在智慧工廠中的完整樣貌，見 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md)〈五、3. 智慧工廠：從感測器到決策的四層資料流〉。
+**預測性維護（Predictive Maintenance）**：前面「九、現代資訊系統」提過，工業物聯網（IoT）設備會持續回傳機台的溫度、震動等感測資料；AI 能從這些歷史資料中學習正常與異常的模式，提前[預測性維護](https://zh.wikipedia.org/zh-tw/%E9%A2%84%E6%B5%8B%E6%80%A7%E7%BB%B4%E6%8A%A4)機台可能發生故障的時間點，讓廠務團隊能在真正停機之前安排維修，避免產線意外中斷造成的損失。這是與工業工程管理最相關的一項 AI 應用，它在智慧工廠中的完整樣貌，見 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、3. 智慧工廠：從感測器到決策的四層資料流〉。
 
 ![AI應用類型](images/01-History-of-Computer/ai-applications.png)
 
@@ -755,7 +755,7 @@ AI 看似橫空出世，實際上它踩在前面每一階之上：沒有足夠�
 
 站在今天的視角，資訊科技正以我們難以完全預見的方式，更深入地融入每個人的日常生活。健康監測、教育學習、工作協作、城市管理、醫療診斷……幾乎沒有一個領域不在被資訊科技重塑。身為這個時代的大學生，理解計算機的歷史與運作原理，不僅是知識上的充實，更是在數位社會中做出明智判斷的基礎——無論你的未來職業是工程師、設計師、醫生、還是藝術家，資訊科技都將是你不可忽視的背景。
 
-> **銜接提示**：本章走過的這條「從算盤到 AI」的長路，會在全課程最後的 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md)〈五、工業4.0與智慧製造：把整條技術鏈放進工廠〉中收束成一座真實的智慧工廠——屆時你會發現，這裡提到的每一個里程碑，都還活在那座工廠的某個角落：二進位活在感測器的讀值裡，網路活在機台與雲端之間，而 AI 活在那張預測機台何時故障的報表上。
+> **銜接提示**：本章走過的這條「從算盤到 AI」的長路，會在全課程最後的 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、工業4.0與智慧製造：把整條技術鏈放進工廠〉中收束成一座真實的智慧工廠——屆時你會發現，這裡提到的每一個里程碑，都還活在那座工廠的某個角落：二進位活在感測器的讀值裡，網路活在機台與雲端之間，而 AI 活在那張預測機台何時故障的報表上。
 
 ---
 

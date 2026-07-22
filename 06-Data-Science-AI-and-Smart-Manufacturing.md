@@ -71,7 +71,7 @@
 
 早期每一台電腦都是「孤島」，資料只能靠磁碟片搬移。網路（特別是 TCP/IP 協定與全球資訊網 WWW）的出現，讓電腦之間能直接溝通，資訊系統也從「單機」演化為跨地點、跨組織、跨時間的整合服務。
 
-![網路打破孤島](images/06-Data-Science-and-AI/one-computer-to-internet.png)
+![網路打破孤島](images/06-Data-Science-AI-and-Smart-Manufacturing/one-computer-to-internet.png)
 
 *本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
@@ -105,7 +105,7 @@
 
 **[資料科學](https://zh.wikipedia.org/wiki/数据科学)（Data Science）** 是一門結合統計學、程式演算法與領域知識的學問，目的是從龐大又雜亂的資料中萃取出有意義的規律，並把它轉化成能支持決策的洞見。它不是單一技術，而是一整套流程：先從感測器、ERP、MES、電商平台等來源**採集**資料，接著**清洗**掉雜訊、補上缺失值、統一格式，再以統計、分群、關聯分析或機器學習模型進行**分析**，把結果用圖表與儀表板**視覺化**，最後交給管理者或 AI 系統據以**決策**。這條「採集→清洗→分析→視覺化→決策」的流水線，正是資料科學為了駕馭大數據而存在的理由。
 
-![甚麼是資料科學](images/06-Data-Science-and-AI/what-is-data-science.png)
+![甚麼是資料科學](images/06-Data-Science-AI-and-Smart-Manufacturing/what-is-data-science.png)
 
 *本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
@@ -150,7 +150,7 @@
 
 **機器學習就是讓電腦做同樣的事**：給定大量「輸入＋正確答案」的訓練資料，讓電腦自動找出從輸入到輸出的對應規則（函數），之後就能對新資料做出預測或判斷。
 
-![甚麼是AI](images/06-Data-Science-and-AI/what-is-ai.png)
+![甚麼是AI](images/06-Data-Science-AI-and-Smart-Manufacturing/what-is-ai.png)
 
 *本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
@@ -366,7 +366,7 @@ AI 代理人
 
 **[工業4.0](https://zh.wikipedia.org/wiki/工業4.0)（Industry 4.0）** 是德國政府於 2011 年提出的製造業戰略，代表第四次工業革命，以**數位化、網路化、智慧化**為核心，把物理世界的製造流程與數位世界的資料分析深度融合。
 
-![四次工業革命演進：機械化、大量生產、電腦自動化，到今日的資訊物理系統（Cyber-Physical Systems）](images/06-Data-Science-and-AI/industry-4.0-revolutions.png)
+![四次工業革命演進：機械化、大量生產、電腦自動化，到今日的資訊物理系統（Cyber-Physical Systems）](images/06-Data-Science-AI-and-Smart-Manufacturing/industry-4.0-revolutions.png)
 
 *圖片來源：[Wikimedia Commons「Industry 4.0.png」](https://commons.wikimedia.org/wiki/File:Industry_4.0.png)，作者 Christoph Roser（AllAboutLean.com），授權 CC BY-SA 4.0*
 

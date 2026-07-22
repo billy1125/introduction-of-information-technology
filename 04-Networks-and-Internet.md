@@ -535,7 +535,7 @@ IoT 設備的特性往往是數量龐大、分布廣泛、電池供電（不能�
 
 *本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
-> **延伸閱讀**：本節只先說明這些感測資料「如何傳出來」。資料傳出來之後，如何存入資料庫、由 MES 與 ERP 等企業應用系統整理成管理資訊，見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈三、企業應用系統〉；如何被機器學習模型分析出故障前兆，見 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md)〈二、資料科學與人工智慧〉；而預測性維護在智慧工廠中的完整應用情境，則見 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md)〈五、3. 智慧工廠：從感測器到決策的四層資料流〉。
+> **延伸閱讀**：本節只先說明這些感測資料「如何傳出來」。資料傳出來之後，如何存入資料庫、由 MES 與 ERP 等企業應用系統整理成管理資訊，見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈三、企業應用系統〉；如何被機器學習模型分析出故障前兆，見 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈二、資料科學與人工智慧〉；而預測性維護在智慧工廠中的完整應用情境，則見 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、3. 智慧工廠：從感測器到決策的四層資料流〉。
 
 ---
 
@@ -1198,7 +1198,7 @@ PLC 從現場層設備蒐集感測資料，執行即時控制邏輯，並將資�
 
 RFID 讓倉儲盤點從數天縮短為數小時；行動監控 App 讓管理者隨時掌握全球工廠狀況；LEO 衛星讓偏遠地區的工廠也能接入工業 IoT 平台；OT 資安的防護確保生產控制系統不受外部攻擊威脅。網路技術的選擇，直接影響企業的競爭力與風險管理能力。
 
-> **銜接提示**：本章介紹的四層網路架構、工業通訊協定與 OT/IT 整合，會在全課程最後的 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md)〈五、工業4.0與智慧製造：把整條技術鏈放進工廠〉中，與計算機結構、程式設計、資訊系統、資料科學一起，整合成一個完整的智慧工廠案例。屆時你會看到，這些看似各自獨立的網路技術，是如何在一條真實產線上同時運作的。
+> **銜接提示**：本章介紹的四層網路架構、工業通訊協定與 OT/IT 整合，會在全課程最後的 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、工業4.0與智慧製造：把整條技術鏈放進工廠〉中，與計算機結構、程式設計、資訊系統、資料科學一起，整合成一個完整的智慧工廠案例。屆時你會看到，這些看似各自獨立的網路技術，是如何在一條真實產線上同時運作的。
 
 ---
 

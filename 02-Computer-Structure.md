@@ -506,7 +506,7 @@ CPU 的運作遵循一個稱為**取指—解碼—執行（Fetch-Decode-Execute
 - [TPU（Tensor Processing Unit，張量處理器）](https://zh.wikipedia.org/zh-tw/張量處理單元)：由 Google 研發，專門加速張量（多維矩陣）運算，大量部署於資料中心，用於訓練與執行大型 AI 模型。
 - 這類晶片多屬於[特殊應用積體電路（ASIC，Application-Specific Integrated Circuit）](https://zh.wikipedia.org/zh-tw/特定應用積體電路)：以犧牲通用彈性為代價，換取在特定 AI 運算任務上遠優於通用 CPU／GPU 的效能與能源效率。
 
-> **延伸閱讀**：本節只先說明 GPU／AI 晶片「為什麼適合」加速 AI 運算的硬體原理；機器學習與深度學習訓練、推論的實際運作方式，請見 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md)〈二、資料科學與人工智慧〉與〈三、當代人工智慧議題〉。
+> **延伸閱讀**：本節只先說明 GPU／AI 晶片「為什麼適合」加速 AI 運算的硬體原理；機器學習與深度學習訓練、推論的實際運作方式，請見 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈二、資料科學與人工智慧〉與〈三、當代人工智慧議題〉。
 
 ---
 
@@ -877,7 +877,7 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 在需要**追溯性（Traceability）** 的產業，權限設計還有另一層意義。食品、藥品、航空業必須能對每一個出廠的產品，追出它由哪台機台、哪批原料、哪位操作員做出來——因此生產紀錄一旦建立就應**限制修改**（能改的紀錄就不算證據），並依法規保存數年、甚至數十年（航空零件即是如此）。
 
-> **延伸閱讀**：本節只先談檔案權限在追溯上的角色；一個零件的「數位身份」如何在整條產線上被完整記錄，形成批次、設備、人員、製程、品質五重追溯，請見 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md)〈五、4. 數位孿生：把試錯成本從實體世界搬到虛擬世界〉。
+> **延伸閱讀**：本節只先談檔案權限在追溯上的角色；一個零件的「數位身份」如何在整條產線上被完整記錄，形成批次、設備、人員、製程、品質五重追溯，請見 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、4. 數位孿生：把試錯成本從實體世界搬到虛擬世界〉。
 
 ---
 
@@ -1081,7 +1081,7 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 ## 二十三、專業工業應用軟體
 
-工業現場除了通用的辦公與分析軟體，還有三類專為製造業設計的大型應用系統：[ERP（企業資源規劃）](https://zh.wikipedia.org/zh-tw/企業資源計劃) 管理訂單、採購、財務等「計畫層」資料；[MES（製造執行系統）](https://zh.wikipedia.org/zh-tw/製造執行系統) 位於 ERP 與現場設備之間，管理工廠車間的即時執行狀況；[SCM（供應鏈管理）](https://zh.wikipedia.org/zh-tw/供應鏈管理) 管理原物料到成品交付的整個鏈條。這三套系統再加上負責蒐集現場資料的 SCADA，彼此透過資料流相互整合，是工業4.0「垂直整合」的基礎。完整介紹（含各系統功能、代表產品與資料庫技術）請見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈三、企業應用系統〉；這些系統如何在一座智慧工廠中協同運作的完整案例，則見 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md)〈五、3. 智慧工廠：從感測器到決策的四層資料流〉。
+工業現場除了通用的辦公與分析軟體，還有三類專為製造業設計的大型應用系統：[ERP（企業資源規劃）](https://zh.wikipedia.org/zh-tw/企業資源計劃) 管理訂單、採購、財務等「計畫層」資料；[MES（製造執行系統）](https://zh.wikipedia.org/zh-tw/製造執行系統) 位於 ERP 與現場設備之間，管理工廠車間的即時執行狀況；[SCM（供應鏈管理）](https://zh.wikipedia.org/zh-tw/供應鏈管理) 管理原物料到成品交付的整個鏈條。這三套系統再加上負責蒐集現場資料的 SCADA，彼此透過資料流相互整合，是工業4.0「垂直整合」的基礎。完整介紹（含各系統功能、代表產品與資料庫技術）請見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈三、企業應用系統〉；這些系統如何在一座智慧工廠中協同運作的完整案例，則見 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、3. 智慧工廠：從感測器到決策的四層資料流〉。
 
 ---
 
@@ -1135,7 +1135,7 @@ CPU 負責運算與控制，記憶體提供高速但揮發的工作空間，儲�
 
 從試算表、資料分析工具到 ERP、MES 等大型系統，軟體的選擇取決於問題的規模與性質，而不是功能表上的長度。同時，授權型態決定了成本結構與使用限制，工業資料保護與資訊倫理則決定了你能不能長久地把系統用下去——製程配方外洩或生產數據造假的代價，遠高於任何軟體授權費。
 
-> **銜接提示**：本章介紹的硬體架構、作業系統與應用軟體，會在全課程最後的 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md)〈五、工業4.0與智慧製造：把整條技術鏈放進工廠〉中，與程式設計、網路、資訊系統、資料科學一起，整合成一個完整的智慧工廠案例。屆時你會看到，產線上的感測器、PLC 與工業電腦，用的正是本章講過的同一套原理。
+> **銜接提示**：本章介紹的硬體架構、作業系統與應用軟體，會在全課程最後的 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、工業4.0與智慧製造：把整條技術鏈放進工廠〉中，與程式設計、網路、資訊系統、資料科學一起，整合成一個完整的智慧工廠案例。屆時你會看到，產線上的感測器、PLC 與工業電腦，用的正是本章講過的同一套原理。
 
 ---
 
@@ -1159,4 +1159,4 @@ CPU 負責運算與控制，記憶體提供高速但揮發的工作空間，儲�
 
 ---
 
-*本教材為大一計算機概論課程用途，著重概念理解與工業應用情境，建議搭配硬體規格比較、作業系統操作練習，以加深理解與應用能力。完整的智慧工廠整合案例與工業4.0應用實例，請見 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md)〈五、工業4.0與智慧製造：把整條技術鏈放進工廠〉。*
+*本教材為大一計算機概論課程用途，著重概念理解與工業應用情境，建議搭配硬體規格比較、作業系統操作練習，以加深理解與應用能力。完整的智慧工廠整合案例與工業4.0應用實例，請見 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、工業4.0與智慧製造：把整條技術鏈放進工廠〉。*

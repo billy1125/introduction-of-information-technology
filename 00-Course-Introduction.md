@@ -98,7 +98,7 @@
 | 6 | 10/16 | 網路與網際網路 | [04-Networks-and-Internet.md](04-Networks-and-Internet.md) | — | — |
 | 7 | 10/23 | 資訊系統與資料庫 | [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | — | — |
 | — | 10/28 | **期中複習** | 暫定，可自由參加 | — | — |
-| 8 | 10/30 | 資料科學、人工智慧與智慧製造（含工業4.0） | [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md) | — | — |
+| 8 | 10/30 | 資料科學、人工智慧與智慧製造（含工業4.0） | [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) | — | — |
 | 9 | 11/06 | **期中考** | — | — | — |
 
 ## 期中考試

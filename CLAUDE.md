@@ -18,7 +18,7 @@
 | `03-Computer-Program.md` | 程式設計概念、資料結構、演算法（工業工程導向） |
 | `04-Networks-and-Internet.md` | 分三篇：網路（硬體、拓樸、無線與行動通訊、物聯網）、網際網路（TCP/IP、WWW、DNS、網路服務與資安）、整合觀點（智慧製造網路架構） |
 | `05-Information-Systems-and-Database.md` | 資訊系統、資料庫（ERP/MES/SCM 等企業應用系統的權威章節） |
-| `06-Data-Science-and-AI.md` | 資料科學、人工智慧與智慧製造（**全課程終點**）：串接計算機→程式→網路→資訊系統→AI 的技術演進主線，並在最後以工業4.0智慧工廠案例收束全課程。機器學習／深度學習原理、AI 發展史，以及工業4.0（定義、九大支柱、數位轉型、數位孿生）的權威章節 |
+| `06-Data-Science-AI-and-Smart-Manufacturing.md` | 資料科學、人工智慧與智慧製造（**全課程終點**）：串接計算機→程式→網路→資訊系統→AI 的技術演進主線，並在最後以工業4.0智慧工廠案例收束全課程。機器學習／深度學習原理、AI 發展史，以及工業4.0（定義、九大支柱、數位轉型、數位孿生）的權威章節 |
 | `notebooks/Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 的實作範例 |
 | `notebooks/Computer-Structure-Examples.ipynb` | Python Jupyter 筆記本，對應 `02-Computer-Structure.md`〈四、數字系統與進位轉換〉與〈五、浮點數與 IEEE 754〉的練習題完整詳解 |
 
@@ -49,9 +49,9 @@
 - **避免跨章節重複**：各主題的權威章節如下，其他章節提到時應以一兩句話帶過並以連結指向對應章節，不要重新完整介紹一次。**新增趣味小知識或範例前，務必先搜尋該主題是否已在他章出現過**（例如 SQL／SEQUEL 的由來、大數據 3V 的來歷都已在 05 章）。
   - ERP／MES／SCM 等企業應用系統的完整定義與功能 → `05-Information-Systems-and-Database.md`〈三、企業應用系統〉
   - 資料庫、SQL、NoSQL、大數據特性（5V） → `05-Information-Systems-and-Database.md`
-  - 機器學習／深度學習原理、AI 發展史 → `06-Data-Science-and-AI.md`
+  - 機器學習／深度學習原理、AI 發展史 → `06-Data-Science-AI-and-Smart-Manufacturing.md`
   - **智慧工廠的分層架構** → `04-Networks-and-Internet.md`〈二十三、智慧製造網路架構（概念性）〉的**四層模型**（現場層／控制層／管理層／雲端層）為全專案唯一標準；IoT 文獻常見的「感知層／網路層／應用層」三層說法，僅在該節的對照 blockquote 中出現，其他地方不得用三層講智慧工廠架構
-  - 工業4.0本身（定義、九大支柱、數位轉型、數位孿生）與智慧工廠整合案例 → `06-Data-Science-and-AI.md`〈五、工業4.0與智慧製造〉
+  - 工業4.0本身（定義、九大支柱、數位轉型、數位孿生）與智慧工廠整合案例 → `06-Data-Science-AI-and-Smart-Manufacturing.md`〈五、工業4.0與智慧製造〉
 - **跨章連結格式**：連結文字用**完整檔名**（`[05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)`）而非「05 章」；小節指涉用書名號〈〉寫在連結**外面**（如〈三、企業應用系統〉或〈五、4. 數位孿生：把試錯成本從實體世界搬到虛擬世界〉），不使用 `.md#anchor`。四種既有句型：`> **延伸閱讀**`（本章點到為止，推給權威章）、`> **前情提要**`（回指先前章節）、`> **銜接提示**`（章末前指 06 章，01–05 章都應有）、章末斜體註記。一律使用 blockquote。範本見 `02-Computer-Structure.md`〈二十三、專業工業應用軟體〉。
 - **專案架構**：本專案資料夾架構，不要增加與更新於`README.md`之中。
 
