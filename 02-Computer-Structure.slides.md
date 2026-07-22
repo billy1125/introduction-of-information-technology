@@ -1523,7 +1523,7 @@ Siemens MindSphere、GE Predix、PTC ThingWorx：專為工業物聯網設計的�
 
 > **這三套系統再加上負責蒐集現場資料的 SCADA，彼此透過資料流相互整合，是工業4.0「垂直整合」的基礎**
 
-延伸閱讀：完整介紹請見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈三、企業應用系統〉；整合案例見 [07-Industry-4.0-and-Smart-Manufacturing.md](07-Industry-4.0-and-Smart-Manufacturing.md)
+延伸閱讀：完整介紹請見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈三、企業應用系統〉；整合案例見 [06-Data-Science-and-AI.md](06-Data-Science-and-AI.md)〈五、工業4.0與智慧製造〉
 
 ---
 
@@ -1574,4 +1574,4 @@ Siemens MindSphere、GE Predix、PTC ThingWorx：專為工業物聯網設計的�
 
 本教材著重概念理解與工業應用情境，建議搭配硬體規格比較、作業系統操作練習，加深理解與應用能力
 
-> **完整的智慧工廠整合案例與工業4.0應用實例，請見 07-Industry-4.0-and-Smart-Manufacturing.md**
+> **完整的智慧工廠整合案例與工業4.0應用實例，請見 06-Data-Science-and-AI.md〈五、工業4.0與智慧製造〉**
