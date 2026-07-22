@@ -45,9 +45,9 @@
 
 ### 1. 電腦與數位化：一切資料的源頭
 
-從農業社會的收成與課稅、貿易的帳目，到工業時代的彈道與橋樑計算，人類一直有「記錄與處理資料」的需求。當人口普查、複雜工程計算、工廠的大量生產資料超出人工的速度與準確度負荷，就驅動了計算機的誕生（其發展史詳見 [01-History-of-Computer.md](01-History-of-Computer.md)）。從機械計算、馮紐曼架構（Von Neumann Architecture）、積體電路，一路到今日的雲端與圖形處理器（GPU），運算能力的持續躍升，最終讓人工智慧從理論變成可行技術。
+從農業社會的收成與課稅、貿易的帳目，到工業時代的彈道與橋樑計算，人類一直有「記錄與處理資料」的需求。當人口普查、複雜工程計算、工廠的大量生產資料超出人工的速度與準確度負荷，就驅動了計算機的誕生（其發展史詳見 [01-History-of-Computer.md](01-History-of-Computer.md)）。從機械計算、[馮紐曼架構](https://zh.wikipedia.org/wiki/范紐曼型架構)（Von Neumann Architecture）、積體電路，一路到今日的雲端與[圖形處理器](https://zh.wikipedia.org/wiki/圖形處理器)（GPU），運算能力的持續躍升，最終讓人工智慧從理論變成可行技術。
 
-電腦的本質是「能依照程式指令處理數位資料的通用機器」。而讓現實世界進入電腦的前提是**數位化（Digitization）**——文字、數字、聲音、影像全部先轉換成 0 與 1。工廠的溫度感測器每秒把類比訊號轉成數位數值回傳電腦，就是數位化最日常的樣貌，也是後面一切資料的最初來源。
+電腦的本質是「能依照程式指令處理數位資料的通用機器」。而讓現實世界進入電腦的前提是**[數位化](https://zh.wikipedia.org/wiki/數位化)（Digitization）**——文字、數字、聲音、影像全部先轉換成 0 與 1。工廠的溫度感測器每秒把類比訊號轉成數位數值回傳電腦，就是數位化最日常的樣貌，也是後面一切資料的最初來源。
 
 ### 2. 資訊系統與資料庫：讓資料有意義、也被妥善管理
 
@@ -61,9 +61,9 @@
 
 **資訊系統（Information System，IS）** 就是讓「資料→資訊→知識」這條轉化鏈得以發生的機制；隨著組織規模擴大，它又依用途分成作業、管理、策略三個層次（完整說明見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)）。而這條「把資料變成價值」的轉化鏈，正是後面資料科學與 AI 要處理的核心課題。
 
-資訊系統要反覆處理資料，資料就得先有地方妥善存放。資料量少時 Excel 或文字檔就夠用；一旦資料量變大、多個系統要共享同一份資料、資料間的關係變複雜，就需要**資料庫（Database）** 與**資料庫管理系統（DBMS）**，讓資料只存一份、全公司即時共用，並由 DBMS 統一管理查詢、權限、一致性與備份。
+資訊系統要反覆處理資料，資料就得先有地方妥善存放。資料量少時 Excel 或文字檔就夠用；一旦資料量變大、多個系統要共享同一份資料、資料間的關係變複雜，就需要**[資料庫](https://zh.wikipedia.org/wiki/数据库)（Database）** 與**資料庫管理系統（DBMS）**，讓資料只存一份、全公司即時共用，並由 DBMS 統一管理查詢、權限、一致性與備份。
 
-目前最主流的是**關聯式資料庫**，以二維表格儲存、用主鍵（Primary Key）與外來鍵（Foreign Key）建立表格間的關聯，操作語言是 **SQL（Structured Query Language）**。而工業4.0與物聯網（IoT）產生的資料格式多樣、量大、速度快，傳統關聯式資料庫難以負荷，於是又出現了鍵值、文件、時序、圖形等 **NoSQL** 資料庫。這些內容的完整介紹見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)。
+目前最主流的是**關聯式資料庫**，以二維表格儲存、用主鍵（Primary Key）與外來鍵（Foreign Key）建立表格間的關聯，操作語言是 **[SQL](https://zh.wikipedia.org/wiki/SQL)（Structured Query Language）**。而工業4.0與物聯網（IoT）產生的資料格式多樣、量大、速度快，傳統關聯式資料庫難以負荷，於是又出現了鍵值、文件、時序、圖形等 **[NoSQL](https://zh.wikipedia.org/wiki/NoSQL)** 資料庫。這些內容的完整介紹見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)。
 
 > 資料庫是資訊系統的底層基礎，也是資料科學與 AI 的原料倉庫——**沒有良好的資料管理，再強大的 AI 模型也會因為資料品質低落而失效。**
 
@@ -75,11 +75,11 @@
 
 *本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
-在此之上，**雲端運算（Cloud Computing）** 讓運算資源可以透過網路按需取用，企業不必自建機房就能使用 ERP、MES 或 AI 分析服務；**物聯網（Internet of Things，IoT）** 則讓工廠裡每一台機器、每一個感測器都成為資料來源。一座現代智慧工廠可能有數萬個感測器，每秒把大量量測資料即時送上雲端——網路與雲端，正是把零散資料匯聚成「大數據」的管道。
+在此之上，**[雲端運算](https://zh.wikipedia.org/wiki/雲端運算)（Cloud Computing）** 讓運算資源可以透過網路按需取用，企業不必自建機房就能使用 ERP、MES 或 AI 分析服務；**[物聯網](https://zh.wikipedia.org/wiki/物联网)（Internet of Things，IoT）** 則讓工廠裡每一台機器、每一個感測器都成為資料來源。一座現代智慧工廠可能有數萬個感測器，每秒把大量量測資料即時送上雲端——網路與雲端，正是把零散資料匯聚成「大數據」的管道。
 
 ### 4. 大數據：當資料的量、速、樣超出傳統工具
 
-當感測器、資訊系統與網路把資料源源不絕地匯集起來，資料的規模與複雜度便跨過了一道門檻，形成**大數據（Big Data）**。它的關鍵不在於「資料很多」，而是在以下幾個維度同時超出傳統工具的能力：
+當感測器、資訊系統與網路把資料源源不絕地匯集起來，資料的規模與複雜度便跨過了一道門檻，形成**[大數據](https://zh.wikipedia.org/wiki/大數據)（Big Data）**。它的關鍵不在於「資料很多」，而是在以下幾個維度同時超出傳統工具的能力：
 
 | 特性 | 說明 | 工業範例 |
 |------|------|---------|
@@ -103,7 +103,7 @@
 
 ### 1. 資料科學：為駕馭大數據而生
 
-**資料科學（Data Science）** 是一門結合統計學、程式演算法與領域知識的學問，目的是從龐大又雜亂的資料中萃取出有意義的規律，並把它轉化成能支持決策的洞見。它不是單一技術，而是一整套流程：先從感測器、ERP、MES、電商平台等來源**採集**資料，接著**清洗**掉雜訊、補上缺失值、統一格式，再以統計、分群、關聯分析或機器學習模型進行**分析**，把結果用圖表與儀表板**視覺化**，最後交給管理者或 AI 系統據以**決策**。這條「採集→清洗→分析→視覺化→決策」的流水線，正是資料科學為了駕馭大數據而存在的理由。
+**[資料科學](https://zh.wikipedia.org/wiki/数据科学)（Data Science）** 是一門結合統計學、程式演算法與領域知識的學問，目的是從龐大又雜亂的資料中萃取出有意義的規律，並把它轉化成能支持決策的洞見。它不是單一技術，而是一整套流程：先從感測器、ERP、MES、電商平台等來源**採集**資料，接著**清洗**掉雜訊、補上缺失值、統一格式，再以統計、分群、關聯分析或機器學習模型進行**分析**，把結果用圖表與儀表板**視覺化**，最後交給管理者或 AI 系統據以**決策**。這條「採集→清洗→分析→視覺化→決策」的流水線，正是資料科學為了駕馭大數據而存在的理由。
 
 ![甚麼是資料科學](images/06-Data-Science-and-AI/what-is-data-science.png)
 
@@ -123,18 +123,18 @@
 | 波次 | 時期 | 方法 | 代表技術 |
 |------|------|------|---------|
 | **第一波** | 1950s–1970s | 人工規則、邏輯推理 | 早期棋局程式、定理證明 |
-| **第二波** | 1980s–1990s | 專家系統（Expert System） | 以 If-Then 規則模仿專家判斷 |
+| **第二波** | 1980s–1990s | [專家系統](https://zh.wikipedia.org/wiki/專家系統)（Expert System） | 以 If-Then 規則模仿專家判斷 |
 | **第三波** | 2010s 至今 | 機器學習、深度學習 | 神經網路、大型語言模型 |
 
 前兩波的共通做法，是**讓工程師把知識與規則一條一條寫進電腦**：第一波直接編寫邏輯規則，第二波則請領域專家把經驗整理成 If-Then 規則庫。但真實世界的判斷——一張影像是不是瑕疵、一句話到底什麼意思——規則多到寫不完也講不清，規則庫一龐大就彼此衝突、難以維護，成效始終上不去，AI 因此兩度陷入經費斷炊的「寒冬」。
 
-第三波能真正突破，關鍵在於換了路線：**不再由人寫規則，而是讓電腦從大量資料中自己學出規則**（也就是機器學習與深度學習）。這條路線其實很早就有人提出，卻要到 2010 年前後才跑得動，因為它同時需要三個條件，而它們恰好在此時齊備：
+第三波能真正突破，關鍵在於換了路線：**不再由人寫規則，而是讓電腦從大量資料中自己學出規則**（也就是[機器學習](https://zh.wikipedia.org/wiki/机器学习)與[深度學習](https://zh.wikipedia.org/wiki/深度学习)）。這條路線其實很早就有人提出，卻要到 2010 年前後才跑得動，因為它同時需要三個條件，而它們恰好在此時齊備：
 
 - **資料**：網路、雲端與物聯網累積出的大數據，提供了海量的訓練範例。這也是為什麼 Google、Amazon、Netflix 這類坐擁龐大用戶行為資料的公司，在 AI 競賽中先天佔有優勢。
 - **演算法**：資料科學與機器學習方法逐漸成熟，過去難以訓練的多層神經網路，其訓練技巧被一一攻克。
 - **算力**：深度學習需要天文數字般的計算量。**圖形處理器（GPU）** 原本是為了電玩畫面而生，擅長「同時進行大量相同的簡單運算」，恰好對上神經網路的計算特性；改用 GPU 做**平行運算**，能把原本要跑好幾個月的訓練壓縮到幾天，讓深度學習從紙上理論變成可行技術。
 
-值得一提的是，今天被包裝成「AI」的許多演算法，其實早在深度學習熱潮之前數十年、甚至上百年就已經被提出來了。[貝氏定理](https://zh.wikipedia.org/wiki/貝氏定理)（Bayes' theorem，用機率更新判斷）源自十八世紀；[迴歸分析](https://zh.wikipedia.org/wiki/迴歸分析)（Regression，找出變數之間的關係）是十九世紀的統計方法；[人工神經網路](https://zh.wikipedia.org/wiki/人工神经网络)的雛形感知機在 1958 年就已問世；擅長辨識影像的[卷積神經網路](https://zh.wikipedia.org/wiki/卷积神经网络)（CNN）在 1980 年代末就被提出；就連較晚近的[隨機森林](https://zh.wikipedia.org/wiki/随机森林)（Random Forest）也早在 2001 年便已發表。它們都不是這幾年才發明的新東西。
+值得一提的是，今天被包裝成「AI」的許多演算法，其實早在深度學習熱潮之前數十年、甚至上百年就已經被提出來了。[貝氏定理](https://zh.wikipedia.org/wiki/貝氏定理)（Bayes' theorem，用機率更新判斷）源自十八世紀；[迴歸分析](https://zh.wikipedia.org/wiki/迴歸分析)（Regression，找出變數之間的關係）是十九世紀的統計方法；[人工神經網路](https://zh.wikipedia.org/wiki/人工神经网络)的雛形[感知機](https://zh.wikipedia.org/wiki/感知器)在 1958 年就已問世；擅長辨識影像的[卷積神經網路](https://zh.wikipedia.org/wiki/卷积神经网络)（CNN）在 1980 年代末就被提出；就連較晚近的[隨機森林](https://zh.wikipedia.org/wiki/随机森林)（Random Forest）也早在 2001 年便已發表。它們都不是這幾年才發明的新東西。
 
 真正改變的，不是「有沒有這些演算法」，而是「跑不跑得動、值不值得跑」。早年既沒有足夠的資料可餵、也沒有足夠的算力可訓練，更關鍵的是當時的生產與商業場景還沒有把「大量資料自動分析」變成迫切需求。直到大數據、GPU 算力與明確的應用需求三者到齊，這些沉睡已久的演算法才被重新喚醒，換上「人工智慧」的名字站上舞台。
 
@@ -144,7 +144,7 @@
 
 ### 3. AI 的基本邏輯：找到輸入與輸出之間的函數
 
-**人工智慧（Artificial Intelligence，AI）** 的核心思路可以用一個簡單的比喻理解：
+**[人工智慧](https://zh.wikipedia.org/wiki/人工智能)（Artificial Intelligence，AI）** 的核心思路可以用一個簡單的比喻理解：
 
 想像你是一位新進品管員，剛開始不會判斷產品是否為不良品。你的師傅給你看了 1000 件產品，每件都標注「良品」或「不良品」，並說明判斷依據（表面光滑度、尺寸誤差、顏色均勻度）。看得夠多之後，你的大腦「學會」了判斷規則，之後遇到新產品，即使師傅不在，你也能自己判斷。
 
@@ -194,7 +194,7 @@
 | **監督式學習** | 每筆資料有正確答案（標籤） | 分類、迴歸 | 缺陷檢測、設備故障預測 |
 | **非監督式學習** | 資料沒有標籤 | 分群、關聯分析 | 找出異常生產模式、顧客分群 |
 | **半監督式學習** | 少量有標籤 + 大量無標籤 | 分類 | 醫療影像（標記成本高） |
-| **強化學習** | 系統與環境互動，透過獎懲學習 | 策略最佳化 | 機器人路徑規劃、自動排程 |
+| **[強化學習](https://zh.wikipedia.org/wiki/强化学习)** | 系統與環境互動，透過獎懲學習 | 策略最佳化 | 機器人路徑規劃、自動排程 |
 
 > **趣味小知識**：強化學習最出名的舞台就是圍棋，而圍棋也留下了一段十年呼應的人機大戰故事。2016年，採用強化學習與深度學習的 [AlphaGo](https://zh.wikipedia.org/wiki/AlphaGo) 以 4：1 擊敗南韓棋王[李世乭](https://zh.wikipedia.org/wiki/李世乭)，成為「人機大戰」的標誌性時刻；李世乭在第四局下出的「神之一手」，至今仍是人類在正式對局中唯一一次戰勝 AlphaGo 的紀錄。整整十年後的 2026年7月，另一位南韓棋王、26歲世界冠軍申真諝，對上 AlphaGo 的開源後繼者 [KataGo](https://zh.wikipedia.org/wiki/KataGo)：[在 KataGo 讓兩子的三番棋中，他執黑苦戰近五小時、以 4.5 目拿下第二局](https://www.nownews.com/news/6859108)，把比數扳成 1：1。要知道 KataGo 即使讓兩子，面對職業棋手也幾乎全勝，因此這一勝再度被拿來與李世乭當年相提並論。它給的啟示不是「AI 不行」，而是提醒我們：即使在實力遠超人類的領域，頂尖 AI 也未必真的無懈可擊（KataGo 就曾被發現存在特定的「環狀盲點」弱點），人類仍可能抓到它的破綻——這正呼應本章稍後要談的「AI 有其限制」。
 
@@ -244,7 +244,7 @@
 
 ### 1. 生成式 AI：從「判斷」到「創造」
 
-前面提到的 AI 多半是「分析型」——給定輸入，輸出一個判斷或預測。**生成式 AI（Generative AI）** 更進一步，能夠**創造出新的內容**：
+前面提到的 AI 多半是「分析型」——給定輸入，輸出一個判斷或預測。**[生成式 AI](https://zh.wikipedia.org/wiki/生成式人工智慧)（Generative AI）** 更進一步，能夠**創造出新的內容**：
 
 | 生成類型 | 代表技術 | 輸出範例 |
 |---------|---------|---------|
@@ -255,7 +255,7 @@
 
 ### 2. Transformer 與大型語言模型
 
-**Transformer 架構**是生成式 AI 的核心技術。它的關鍵創新是「**注意力機制（Attention Mechanism）**」：
+**[Transformer](https://zh.wikipedia.org/wiki/Transformer模型) 架構**是生成式 AI 的核心技術。它的關鍵創新是「**注意力機制（Attention Mechanism）**」：
 
 傳統的語言模型按順序處理文字，讀完一個字才讀下一個字。Transformer 則能**同時看整段文字，並計算每個字與其他所有字之間的關聯程度**。
 
@@ -263,7 +263,7 @@
 
 > **趣味小知識**：Transformer 是 Google 團隊在2017年一篇論文中提出的，而那篇論文的標題叫做「**Attention Is All You Need**（你只需要注意力）」——這個名字是在向披頭四1967年的名曲〈**All You Need Is Love**〉致敬。這篇論文後來成為近十年最重要的 AI 論文，是 ChatGPT、Claude 等所有大型語言模型的共同祖先，引用次數超過十萬。它的標題句型也就此成了學術圈的一個梗，後續冒出大量「XXX Is All You Need」的論文，多到有人專門寫論文研究這個現象。至於原標題的意思其實很直白：在此之前的語言模型都要靠複雜的循環或卷積結構，而這篇論文說——**那些都可以丟掉，只留注意力機制就夠了**。
 
-**大型語言模型（Large Language Model，LLM）** 如 GPT-4、Claude、Llama，是以下列方式運作：
+**[大型語言模型](https://zh.wikipedia.org/wiki/大型語言模型)（Large Language Model，LLM）** 如 GPT-4、Claude、Llama，是以下列方式運作：
 
 ```
 訓練階段（一次性，耗費大量運算資源）：
@@ -364,7 +364,7 @@ AI 代理人
 
 ### 1. 工業4.0是什麼
 
-**工業4.0（Industry 4.0）** 是德國政府於 2011 年提出的製造業戰略，代表第四次工業革命，以**數位化、網路化、智慧化**為核心，把物理世界的製造流程與數位世界的資料分析深度融合。
+**[工業4.0](https://zh.wikipedia.org/wiki/工業4.0)（Industry 4.0）** 是德國政府於 2011 年提出的製造業戰略，代表第四次工業革命，以**數位化、網路化、智慧化**為核心，把物理世界的製造流程與數位世界的資料分析深度融合。
 
 ![四次工業革命演進：機械化、大量生產、電腦自動化，到今日的資訊物理系統（Cyber-Physical Systems）](images/06-Data-Science-and-AI/industry-4.0-revolutions.png)
 
@@ -386,13 +386,13 @@ AI 代理人
 | 增材製造（3D列印） | 用「疊加」而非「切削」來製造 | 見下 |
 | 擴增實境（AR） | 把數位資訊疊在真實視野上 | 見下 |
 
-其中三項前面沒談過：**自主機器人（Autonomous Robots）** 配備感測器、能感知環境並與人共處（稱為協作機器人 Cobot，如自己避開走道的自動導引車 AGV），不同於只會重複固定動作、必須用安全柵欄圍起來的傳統機械手臂；**增材製造（Additive Manufacturing，即 3D列印）** 一層層把材料疊上去，意義不在快，而在**複雜的形狀不再更貴**，讓少量、客製、內部結構複雜的零件第一次有了經濟上的可行性；**擴增實境（Augmented Reality，AR）** 把數位資訊疊加在真實視野上，維修工程師戴上 AR 眼鏡，機器的內部結構、上次維修紀錄就浮現在眼前，取代翻不完的紙本手冊。
+其中三項前面沒談過：**自主機器人（Autonomous Robots）** 配備感測器、能感知環境並與人共處（稱為協作機器人 Cobot，如自己避開走道的自動導引車 AGV），不同於只會重複固定動作、必須用安全柵欄圍起來的傳統機械手臂；**增材製造（Additive Manufacturing，即 [3D列印](https://zh.wikipedia.org/wiki/3D列印)）** 一層層把材料疊上去，意義不在快，而在**複雜的形狀不再更貴**，讓少量、客製、內部結構複雜的零件第一次有了經濟上的可行性；**[擴增實境](https://zh.wikipedia.org/wiki/擴增實境)（Augmented Reality，AR）** 把數位資訊疊加在真實視野上，維修工程師戴上 AR 眼鏡，機器的內部結構、上次維修紀錄就浮現在眼前，取代翻不完的紙本手冊。
 
 > **趣味小知識**：「工業4.0」這個名字，其實**是先有名字才有內容**。2011年4月，三位德國人——SAP 創辦人之一 Henning Kagermann、人工智慧教授 Wolfgang Wahlster、聯邦教研部官員 Wolf-Dieter Lukas——聯名發表文章，第一次用了「Industrie 4.0」這個詞；兩天後漢諾威工業展開幕，總理梅克爾在演說中直接採用，這個詞就此傳遍世界。它是不折不扣的**行銷式命名**：借用軟體版本號「4.0」的語感，暗示這是繼機械化、電氣化、自動化之後的「第四版」工業，而它具體指涉什麼，是後來十年才慢慢被填滿的。所以當你聽到有人爭論「這到底算不算工業4.0」，別忘了：這個詞從誕生第一天起界線就是浮動的（連「九大支柱」都不是德國官方定義，而是顧問公司 BCG 在 2015 年整理、傳播開來的版本）。
 
 ### 2. 數位轉型：技術只是一半，另一半是組織
 
-**數位轉型（Digital Transformation，DX）** 是這個領域最容易被誤解的名詞。它**不是**把紙本換成 Excel、也不是給每人發一台平板，而是以數位技術**從根本改變業務流程、組織文化與商業模式**——注意這三個受詞，其中一半根本不是技術問題。你可以把全廠聯網、資料全上雲，但只要決策方式沒變、部門照樣不分享資料，那你完成的是一次昂貴的設備升級，不是轉型。
+**[數位轉型](https://zh.wikipedia.org/wiki/數位轉型)（Digital Transformation，DX）** 是這個領域最容易被誤解的名詞。它**不是**把紙本換成 Excel、也不是給每人發一台平板，而是以數位技術**從根本改變業務流程、組織文化與商業模式**——注意這三個受詞，其中一半根本不是技術問題。你可以把全廠聯網、資料全上雲，但只要決策方式沒變、部門照樣不分享資料，那你完成的是一次昂貴的設備升級，不是轉型。
 
 英文裡有三個常被混為一談的「數位化」，分清楚是管理者的基本功：
 
@@ -431,7 +431,7 @@ AI 代理人
 
 數位化的本質，是讓**資料取代紙張**成為流程的載體。一個零件從進入產線起就建立「數位身份」：哪批原料、哪台機床、哪位操作員、什麼製程參數、品質結果——這五重追溯形成完整的生產履歷。它的價值在出事時最明顯：某批貨在客戶端出現異常，有履歷就能在幾分鐘內查出是哪批料、哪台機、由誰、用什麼參數做出來的，精準地只召回那幾百件；沒有的話，就只能召回整個月的產量。
 
-把「數位身份」的想法從零件往上推到機台、產線，就是**數位孿生（Digital Twin）**——在電腦裡建立實體對象的虛擬分身，並透過感測器**持續同步**。「持續同步」四個字正是它與一般 3D 模型的分野：CAD 模型畫完就固定在那裡，數位孿生則隨實體的即時狀態不斷變化。工程師可以在機台的孿生上問「如果把進給速度調高 10% 會怎樣」，先在電腦裡撞一次，而不必拿真機台去試；產線的孿生則能在調整排程前先模擬跑一遍，看瓶頸會跑到哪裡去——對工業工程系學生而言，**它本質上就是模擬（Simulation）**，只是餵給它的不再是假設參數，而是產線上正在發生的真實資料。說到底，數位孿生就是把「試錯」的成本從實體世界（停機、耗料、撞壞機台）搬到虛擬世界（只花電腦運算時間）。
+把「數位身份」的想法從零件往上推到機台、產線，就是**[數位孿生](https://zh.wikipedia.org/wiki/數字孿生)（Digital Twin）**——在電腦裡建立實體對象的虛擬分身，並透過感測器**持續同步**。「持續同步」四個字正是它與一般 3D 模型的分野：CAD 模型畫完就固定在那裡，數位孿生則隨實體的即時狀態不斷變化。工程師可以在機台的孿生上問「如果把進給速度調高 10% 會怎樣」，先在電腦裡撞一次，而不必拿真機台去試；產線的孿生則能在調整排程前先模擬跑一遍，看瓶頸會跑到哪裡去——對工業工程系學生而言，**它本質上就是模擬（Simulation）**，只是餵給它的不再是假設參數，而是產線上正在發生的真實資料。說到底，數位孿生就是把「試錯」的成本從實體世界（停機、耗料、撞壞機台）搬到虛擬世界（只花電腦運算時間）。
 
 > **趣味小知識**：很多文章說數位孿生源自 NASA 的阿波羅13號——太空船在外太空出事，地面工程師在一模一樣的「分身」上試遍各種救援方案，再把可行做法用無線電傳給太空人。這個故事是真的，但把它說成數位孿生的起源並不精確：**NASA 當年留在地面的是一組實體模擬艙，不是電腦裡的模型**，那是不折不扣的「實體孿生」。「數位孿生」概念要到 2002 年前後才由美國密西根大學教授 Michael Grieves 提出雛形，Digital Twin 這個名字則是 NASA 的 John Vickers 取的，2011 年才正式見於文獻。不過阿波羅13的故事仍抓住了它的靈魂：**先在分身上試，再對本尊動手**——差別只在於，六十年前那個分身要用鋼鐵打造，今天它活在電腦裡，可以有一千個、隨時重來、還能快轉。
 
@@ -495,19 +495,33 @@ AI 代理人
 
 ## 參考文獻
 
+- Bishop, C. M. (2006). *Pattern recognition and machine learning*. Springer.
+- Breiman, L. (2001). Random forests. *Machine Learning, 45*(1), 5–32. https://doi.org/10.1023/A:1010933404324
 - Chollet, F. (2021). *Deep learning with Python* (2nd ed.). Manning.
+- Frank, A. G., Dalenogare, L. S., & Ayala, N. F. (2019). Industry 4.0 technologies: Implementation patterns in manufacturing companies. *International Journal of Production Economics, 210*, 15–26. https://doi.org/10.1016/j.ijpe.2019.01.004
 - Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep learning*. MIT Press.
+- Groover, M. P. (2019). *Automation, production systems, and computer-integrated manufacturing* (5th ed.). Pearson.
+- Han, J., Kamber, M., & Pei, J. (2011). *Data mining: Concepts and techniques* (3rd ed.). Morgan Kaufmann.
+- Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The elements of statistical learning: Data mining, inference, and prediction* (2nd ed.). Springer.
+- Kagermann, H., Wahlster, W., & Helbig, J. (2013). *Recommendations for implementing the strategic initiative INDUSTRIE 4.0: Final report of the Industrie 4.0 Working Group*. Acatech – National Academy of Science and Engineering.
+- Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet classification with deep convolutional neural networks. In *Advances in Neural Information Processing Systems 25* (pp. 1097–1105).
 - Laney, D. (2001). *3D data management: Controlling data volume, velocity and variety* (Research Note). META Group.
 - Laudon, K. C., & Laudon, J. P. (2022). *Management information systems: Managing the digital firm* (17th ed.). Pearson.
 - LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. *Nature, 521*(7553), 436–444. https://doi.org/10.1038/nature14539
+- LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998). Gradient-based learning applied to document recognition. *Proceedings of the IEEE, 86*(11), 2278–2324. https://doi.org/10.1109/5.726791
 - Lee, J., Bagheri, B., & Kao, H.-A. (2015). A cyber-physical systems architecture for Industry 4.0-based manufacturing systems. *Manufacturing Letters, 3*, 18–23. https://doi.org/10.1016/j.mfglet.2014.12.001
 - McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (1955). *A proposal for the Dartmouth summer research project on artificial intelligence*. Dartmouth College.
 - Minsky, M., & Papert, S. (1969). *Perceptrons: An introduction to computational geometry*. MIT Press.
+- Nakajima, S. (1988). *Introduction to TPM: Total productive maintenance*. Productivity Press.
 - Provost, F., & Fawcett, T. (2013). *Data science for business: What you need to know about data mining and data-analytic thinking*. O'Reilly Media.
 - Rosenblatt, F. (1958). The perceptron: A probabilistic model for information storage and organization in the brain. *Psychological Review, 65*(6), 386–408. https://doi.org/10.1037/h0042519
 - Russell, S., & Norvig, P. (2021). *Artificial intelligence: A modern approach* (4th ed.). Pearson.
 - Samuel, A. L. (1959). Some studies in machine learning using the game of checkers. *IBM Journal of Research and Development, 3*(3), 210–229. https://doi.org/10.1147/rd.33.0210
+- Silver, D., Huang, A., Maddison, C. J., Guez, A., Sifre, L., van den Driessche, G., … Hassabis, D. (2016). Mastering the game of Go with deep neural networks and tree search. *Nature, 529*(7587), 484–489. https://doi.org/10.1038/nature16961
+- Sutton, R. S., & Barto, A. G. (2018). *Reinforcement learning: An introduction* (2nd ed.). MIT Press.
+- Tao, F., Zhang, H., Liu, A., & Nee, A. Y. C. (2019). Digital twin in industry: State-of-the-art. *IEEE Transactions on Industrial Informatics, 15*(4), 2405–2415. https://doi.org/10.1109/TII.2018.2873186
 - Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is all you need. In *Advances in Neural Information Processing Systems 30* (pp. 5998–6008).
+- Vial, G. (2019). Understanding digital transformation: A review and a research agenda. *The Journal of Strategic Information Systems, 28*(2), 118–144. https://doi.org/10.1016/j.jsis.2019.01.003
 
 ---
 
