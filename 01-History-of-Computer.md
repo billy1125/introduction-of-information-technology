@@ -763,17 +763,29 @@ AI 看似橫空出世，實際上它踩在前面每一階之上：沒有足夠�
 
 - Abbate, J. (1999). *Inventing the Internet*. MIT Press.
 - Aspray, W. (Ed.). (1990). *Computing before computers*. Iowa State University Press.
+- Berners-Lee, T., & Fischetti, M. (1999). *Weaving the Web: The original design and ultimate destiny of the World Wide Web by its inventor*. Harper San Francisco.
+- Boole, G. (1854). *An investigation of the laws of thought, on which are founded the mathematical theories of logic and probabilities*. Walton and Maberly.
 - Campbell-Kelly, M., Aspray, W., Ensmenger, N., & Yost, J. R. (2018). *Computer: A history of the information machine* (3rd ed.). Routledge.
 - Ceruzzi, P. E. (2003). *A history of modern computing* (2nd ed.). MIT Press.
 - Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep learning*. MIT Press.
+- Hodges, A. (1983). *Alan Turing: The enigma*. Simon & Schuster.
 - Ifrah, G. (2000). *The universal history of numbers: From prehistory to the invention of the computer* (D. Bellos, E. F. Harding, S. Wood, & I. Monk, Trans.). Wiley.
+- Isaacson, W. (2014). *The innovators: How a group of hackers, geniuses, and geeks created the digital revolution*. Simon & Schuster.
 - Kurose, J. F., & Ross, K. W. (2021). *Computer networking: A top-down approach* (8th ed.). Pearson.
 - Laudon, K. C., & Laudon, J. P. (2022). *Management information systems: Managing the digital firm* (17th ed.). Pearson.
+- Licklider, J. C. R. (1960). Man-computer symbiosis. *IRE Transactions on Human Factors in Electronics, HFE-1*(1), 4–11. https://doi.org/10.1109/THFE2.1960.4503259
+- Metropolis, N., Howlett, J., & Rota, G.-C. (Eds.). (1980). *A history of computing in the twentieth century*. Academic Press.
 - Nielsen, M. A., & Chuang, I. L. (2010). *Quantum computation and quantum information* (10th anniversary ed.). Cambridge University Press.
 - Petzold, C. (2022). *Code: The hidden language of computer hardware and software* (2nd ed.). Microsoft Press.
 - Picard, R. W. (1997). *Affective computing*. MIT Press.
+- Randell, B. (Ed.). (1982). *The origins of digital computers: Selected papers* (3rd ed.). Springer-Verlag.
 - Russell, S., & Norvig, P. (2020). *Artificial intelligence: A modern approach* (4th ed.). Pearson.
+- Shannon, C. E. (1938). A symbolic analysis of relay and switching circuits. *Transactions of the American Institute of Electrical Engineers, 57*(12), 713–723. https://doi.org/10.1109/T-AIEE.1938.5057767
+- Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal, 27*, 379–423, 623–656.
 - Tanenbaum, A. S., & Wetherall, D. J. (2011). *Computer networks* (5th ed.). Pearson.
+- Turing, A. M. (1936). On computable numbers, with an application to the Entscheidungsproblem. *Proceedings of the London Mathematical Society, s2-42*(1), 230–265. https://doi.org/10.1112/plms/s2-42.1.230
+- Turing, A. M. (1950). Computing machinery and intelligence. *Mind, 59*(236), 433–460. https://doi.org/10.1093/mind/LIX.236.433
+- Wiener, N. (1948). *Cybernetics: Or control and communication in the animal and the machine*. MIT Press.
 
 ---
 

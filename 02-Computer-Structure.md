@@ -1142,16 +1142,25 @@ CPU 負責運算與控制，記憶體提供高速但揮發的工作空間，儲�
 ## 參考文獻
 
 - Bolton, W. (2015). *Programmable logic controllers* (6th ed.). Newnes/Elsevier.
+- Bryant, R. E., & O'Hallaron, D. R. (2016). *Computer systems: A programmer's perspective* (3rd ed.). Pearson.
 - Edelman, A. (1997). The mathematics of the Pentium division bug. *SIAM Review, 39*(1), 54–67. https://doi.org/10.1137/S0036144595293959
+- Goldberg, D. (1991). What every computer scientist should know about floating-point arithmetic. *ACM Computing Surveys, 23*(1), 5–48. https://doi.org/10.1145/103162.103163
 - Groover, M. P. (2019). *Automation, production systems, and computer-integrated manufacturing* (5th ed.). Pearson.
+- Hennessy, J. L., & Patterson, D. A. (2019). *Computer architecture: A quantitative approach* (6th ed.). Morgan Kaufmann/Elsevier.
 - Institute of Electrical and Electronics Engineers. (2019). *IEEE standard for floating-point arithmetic* (IEEE Std 754-2019). IEEE. https://doi.org/10.1109/IEEESTD.2019.8766229
 - Lee, J., Bagheri, B., & Kao, H.-A. (2015). A cyber-physical systems architecture for Industry 4.0-based manufacturing systems. *Manufacturing Letters, 3*, 18–23. https://doi.org/10.1016/j.mfglet.2014.12.001
+- Moore, G. E. (1965). Cramming more components onto integrated circuits. *Electronics, 38*(8), 114–117.
 - NVIDIA. (2025). *NVIDIA DGX Spark: Personal AI supercomputer powered by Blackwell* [Product page]. https://www.nvidia.com/en-us/products/workstations/dgx-spark/
+- Null, L., & Lobur, J. (2018). *The essentials of computer organization and architecture* (5th ed.). Jones & Bartlett Learning.
 - Patterson, D. A., & Hennessy, J. L. (2021). *Computer organization and design RISC-V edition: The hardware/software interface* (2nd ed.). Morgan Kaufmann/Elsevier.
 - Robles, F., & Perlroth, N. (2021, February 8). 'Dangerous stuff': Hackers tried to poison water supply of Florida town. *The New York Times*. https://www.nytimes.com/2021/02/08/us/oldsmar-florida-water-supply-hack.html
 - Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal, 27*, 379–423, 623–656.
 - Shi, W., Cao, J., Zhang, Q., Li, Y., & Xu, L. (2016). Edge computing: Vision and challenges. *IEEE Internet of Things Journal, 3*(5), 637–646. https://doi.org/10.1109/JIOT.2016.2579198
 - Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). *Operating system concepts* (10th ed.). Wiley.
+- Stallings, W. (2016). *Computer organization and architecture: Designing for performance* (10th ed.). Pearson.
+- Stallings, W. (2018). *Operating systems: Internals and design principles* (9th ed.). Pearson.
+- Tanenbaum, A. S., & Austin, T. (2013). *Structured computer organization* (6th ed.). Pearson.
+- Tanenbaum, A. S., & Bos, H. (2015). *Modern operating systems* (4th ed.). Pearson.
 - Turing, A. M. (1936). On computable numbers, with an application to the Entscheidungsproblem. *Proceedings of the London Mathematical Society, s2-42*(1), 230–265. https://doi.org/10.1112/plms/s2-42.1.230
 - von Neumann, J. (1993). First draft of a report on the EDVAC (M. D. Godfrey, Ed.). *IEEE Annals of the History of Computing, 15*(4), 27–75. https://doi.org/10.1109/85.238389
 - Xu, L. D., He, W., & Li, S. (2014). Internet of things in industries: A survey. *IEEE Transactions on Industrial Informatics, 10*(4), 2233–2243. https://doi.org/10.1109/TII.2014.2300753

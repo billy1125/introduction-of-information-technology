@@ -1205,6 +1205,10 @@ RFID 讓倉儲盤點從數天縮短為數小時；行動監控 App 讓管理者�
 ## 參考文獻
 
 - Abbate, J. (1999). *Inventing the Internet*. MIT Press.
+- Ashton, K. (2009, June 22). That 'Internet of Things' thing. *RFID Journal*. https://www.rfidjournal.com/that-internet-of-things-thing
+- Atzori, L., Iera, A., & Morabito, G. (2010). The Internet of Things: A survey. *Computer Networks, 54*(15), 2787–2805. https://doi.org/10.1016/j.comnet.2010.05.010
+- Berners-Lee, T., Cailliau, R., Luotonen, A., Nielsen, H. F., & Secret, A. (1994). The World-Wide Web. *Communications of the ACM, 37*(8), 76–82. https://doi.org/10.1145/179606.179671
+- Cerf, V. G., & Kahn, R. E. (1974). A protocol for packet network intercommunication. *IEEE Transactions on Communications, 22*(5), 637–648. https://doi.org/10.1109/TCOM.1974.1092259
 - Comer, D. E. (2015). *Computer networks and internets* (6th ed.). Pearson.
 - Forouzan, B. A. (2013). *Data communications and networking* (5th ed.). McGraw-Hill.
 - Groover, M. P. (2019). *Automation, production systems, and computer-integrated manufacturing* (5th ed.). Pearson.
@@ -1212,8 +1216,15 @@ RFID 讓倉儲盤點從數天縮短為數小時；行動監控 App 讓管理者�
 - Kurose, J. F., & Ross, K. W. (2021). *Computer networking: A top-down approach* (8th ed.). Pearson.
 - Laudon, K. C., & Laudon, J. P. (2022). *Management information systems: Managing the digital firm* (17th ed.). Pearson.
 - Lee, J., Bagheri, B., & Kao, H.-A. (2015). A cyber-physical systems architecture for Industry 4.0-based manufacturing systems. *Manufacturing Letters, 3*, 18–23. https://doi.org/10.1016/j.mfglet.2014.12.001
+- Leiner, B. M., Cerf, V. G., Clark, D. D., Kahn, R. E., Kleinrock, L., Lynch, D. C., Postel, J., Roberts, L. G., & Wolff, S. (2009). A brief history of the Internet. *ACM SIGCOMM Computer Communication Review, 39*(5), 22–31. https://doi.org/10.1145/1629607.1629613
+- Metcalfe, R. M., & Boggs, D. R. (1976). Ethernet: Distributed packet switching for local computer networks. *Communications of the ACM, 19*(7), 395–404. https://doi.org/10.1145/360248.360253
+- Mockapetris, P. V., & Dunlap, K. J. (1988). Development of the Domain Name System. *ACM SIGCOMM Computer Communication Review, 18*(4), 123–133. https://doi.org/10.1145/52325.52338
+- Peterson, L. L., & Davie, B. S. (2021). *Computer networks: A systems approach* (6th ed.). Morgan Kaufmann/Elsevier.
+- Postel, J. (1981a). *Internet Protocol* (RFC 791). Internet Engineering Task Force. https://doi.org/10.17487/RFC0791
+- Postel, J. (1981b). *Transmission Control Protocol* (RFC 793). Internet Engineering Task Force. https://doi.org/10.17487/RFC0793
 - Shi, W., Cao, J., Zhang, Q., Li, Y., & Xu, L. (2016). Edge computing: Vision and challenges. *IEEE Internet of Things Journal, 3*(5), 637–646. https://doi.org/10.1109/JIOT.2016.2579198
 - Stallings, W. (2016). *Data and computer communications* (10th ed.). Pearson.
+- Stevens, W. R. (1994). *TCP/IP illustrated, Volume 1: The protocols*. Addison-Wesley.
 - Tanenbaum, A. S., Feamster, N., & Wetherall, D. J. (2021). *Computer networks* (6th ed.). Pearson.
 - Williams, T. J. (1994). The Purdue enterprise reference architecture. *Computers in Industry, 24*(2–3), 141–158. https://doi.org/10.1016/0166-3615(94)90017-5
 - Xu, L. D., He, W., & Li, S. (2014). Internet of things in industries: A survey. *IEEE Transactions on Industrial Informatics, 10*(4), 2233–2243. https://doi.org/10.1109/TII.2014.2300753
