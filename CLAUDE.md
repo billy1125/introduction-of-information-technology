@@ -22,7 +22,7 @@
 | `notebooks/Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 的實作範例 |
 | `notebooks/Computer-Structure-Examples.ipynb` | Python Jupyter 筆記本，對應 `02-Computer-Structure.md`〈四、數字系統與進位轉換〉與〈五、浮點數與 IEEE 754〉的練習題完整詳解 |
 
-各章節另有對應的 Marp 投影片版本 `0X-XXX.slides.md`（目前涵蓋 00–05 章），撰寫規範見下方〈投影片（`.slides.md`）撰寫規範〉。
+各章節另有對應的 Marp 投影片版本 `0X-XXX.slides.md`（目前涵蓋 00–06 章），撰寫規範見下方〈投影片（`.slides.md`）撰寫規範〉。
 
 ### 檔案夾
 
