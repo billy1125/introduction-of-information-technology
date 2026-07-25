@@ -34,19 +34,23 @@
 | 1 | 09/11 | 課程介紹、計算機歷史 | [00-Course-Introduction.md](00-Course-Introduction.md)<br>[01-History-of-Computer.md](01-History-of-Computer.md) | [00-Course-Introduction.slides.md](00-Course-Introduction.slides.md)<br>[01-History-of-Computer.slides.md](01-History-of-Computer.slides.md) | — |
 | 2 | 09/18 | 電腦架構 | [02-Computer-Structure.md](02-Computer-Structure.md) | [02-Computer-Structure.slides.md](02-Computer-Structure.slides.md) | [Computer-Structure-Examples.ipynb](notebooks/Computer-Structure-Examples.ipynb) |
 | 3 | 09/25 | **中秋節放假** | — | — | — |
-| 4 | 10/02 | 程式設計概念 | [03-Computer-Program.md](03-Computer-Program.md) | — | [Computer-Program-Examples.ipynb](notebooks/Computer-Program-Examples.ipynb) |
+| 4 | 10/02 | 程式設計概念 | [03-Computer-Program.md](03-Computer-Program.md) | [03-Computer-Program.slides.md](03-Computer-Program.slides.md) | [Computer-Program-Examples.ipynb](notebooks/Computer-Program-Examples.ipynb) |
 | 5 | 10/09 | **國慶日放假** | — | — | — |
-| 6 | 10/16 | 網路與網際網路 | [04-Networks-and-Internet.md](04-Networks-and-Internet.md) | — | — |
-| 7 | 10/23 | 資訊系統與資料庫 | [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | — | — |
+| 6 | 10/16 | 網路與網際網路 | [04-Networks-and-Internet.md](04-Networks-and-Internet.md) | [04-Networks-and-Internet.slides.md](04-Networks-and-Internet.slides.md) | — |
+| 7 | 10/23 | 資訊系統與資料庫 | [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | [05-Information-Systems-and-Database.slides.md](05-Information-Systems-and-Database.slides.md) | — |
 | — | 10/28 | **期中複習** | 暫定，可自由參加 | — | — |
-| 8 | 10/30 | 資料科學、人工智慧與智慧製造（含工業4.0） | [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) | — | — |
+| 8 | 10/30 | 資料科學、人工智慧與智慧製造（含工業4.0） | [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) | [06-Data-Science-AI-and-Smart-Manufacturing.slides.md](06-Data-Science-AI-and-Smart-Manufacturing.slides.md) | — |
 | 9 | 11/06 | **期中考** | — | — | — |
 
 ## 期中考試
 
+期中考是呂老師這半學期唯一一次的正式評量，佔學期總成績的 50%，份量很重，請務必認真看待。這半學期因為連續放假被壓縮得特別緊湊，這一次考試幾乎等於呂老師這部分的成績全部，考壞了很難再補回來。
+
+以下把考試的時間地點、範圍、當天規定與評分方式一次講清楚，其中 **遲到與離場、請假與補考、成績複查** 這幾條每年都有人沒看仔細而吃虧。請同學花幾分鐘把整節讀完，別等到考試當天才在門口懊惱，也別等成績出來才發現複查期限已經過了。
+
 ### 考試時間地點
 
-- 時間：預計期中考將在「第 9 週」進行，原則上除非遇到颱風警報、重大災害，否則不會改期，建議同學把你的時間排開
+- 時間：期中考將在「第 9 週」進行
 - 地點：最晚於考前一週公告
 
 ### 考試範圍
@@ -56,29 +60,32 @@
 
 ### 基本規定
 
-- 學生須按時到達試場，遲到逾 20 分鐘者，不得入場。已進入試場者，30 分鐘內不得出場
-  - 如果你發現到了教室門外，門是鎖上的，你已經遲到超過 20 分鐘，視同缺考
-- 請務必準時出席參與考試，若因個人因素無法參與考試，請依照學校規定請假，並且申請補考事宜
-  - 期中考試請假必須要是一個合理的理由，什麼是合理的理由？請看請假規定章節
-  - 若請假通過，你可以參加補考，補考時間另訂，分數將以 80% 計算，請同學沒事不要缺考
-- 請自行準備文具，老師不會幫你準備
-- 考試時間不得以任何理由暫離教室，請先在預習時間上廁所
-- 成績預計在考試後的第一個禮拜一公布，公布後 **在週三前** 可提出複查，逾期恕不受理
+- 遲到逾 20 分鐘者，不得入場，並 **視同缺考**；已入場者，自考試開始起算，30 分鐘內不得交卷離場，滿 30 分鐘後才可以提前交卷離開
+  - 判斷方式很簡單：你走到教室門外時若門已經鎖上，就表示你已經遲到超過 20 分鐘
+- 請務必準時出席；若因個人因素無法應考，須依學校規定請假，並另行申請補考
+  - 請假必須有合理的理由，什麼才算合理？請見〈請假規定〉一節
+  - 只有請假通過者才能參加補考，補考時間另訂。補考成績依請假原因分兩種計算方式：
+    - **一般個人因素**（如自行安排的事務）：以實得分數的 **80%** 計算，例如補考考 90 分，最後登記為 90 × 80% = 72 分
+    - **事故意外、臨時生病、家中重大變故等不可抗力**：以實得分數的 **100%** 計算，但 **務必提出相關證明**（如診斷證明、就醫紀錄、事故或相關單位開立的證明、訃聞等）
+  - 除上述不可抗力的情況外，請同學沒事不要缺考
+- 文具請自行準備，老師不會幫你準備
+- 考試進行中不得以任何理由暫時離開教室（包含上廁所），請務必在入場前就先上廁所
+- 成績預計於考試後的第一個週一公布；公布後至 **當週週三前** 可提出複查，逾期恕不受理
 
 ### 期中考評分
 
-期中考分數原始分數最低 0 分，最高 100 分，但是依照等第會有以下等級：
+期中考的原始分數介於 0 到 100 分之間，並依下表換算成等第：
 
 |期中考分數（原始）|期中評量等第|備註|
 |---|---|---|
-|80分以上|A|優異|
-|70分以上未滿80分|B|良好|
-|60分以上未滿70分|C|待加強（依實際狀況而定）|
-|未滿60分|D|導師會關切，你爸媽可能會知道|
+|80 分（含）以上|A|優異|
+|70 分以上、未滿 80 分|B|良好|
+|60 分以上、未滿 70 分|C|待加強|
+|未滿 60 分|D|不及格；導師會關切，家長可能會收到通知|
 
-學期中之後各位同學你除了分數，也會看到等第，如果你拿到了一個 D，那學校會通知你，導師也會關切你，爸媽可能會知道。
+期中之後，你除了看到分數，也會看到等第。如果你拿到 D，學校會通知你、導師也會關切，家長也可能會知道。
 
-期中考分數也占總成績的 50%，假如你期中考為 70 分，70 × 50% = 35，你的總成績就已經取得 35 分。
+期中考佔學期總成績的 50%，換算時是用你的原始分數乘以 50%。例如原始分數 70 分，70 × 50% = 35，這 35 分就先計入你的學期總成績。
 
 > 請同學加油！
 
@@ -135,6 +142,7 @@
 - 你的請假理由，麻煩不要太扯，什麼叫做很扯的理由，像是：
   - 要去打工、打工班表已排好 🈲 🙅
   - 你考駕照考了四五次甚至更多 🚗 🛵
+  - 老師我已經機票買好了，可以之後補考期中考嗎？
   - 要去排演唱會周邊、心儀的偶像閃電結婚/退伍 👩‍🎤 🧑‍🎤
   - 我的鬧鐘壞了 ⏰️
   - 昨晚熬夜打電動，現在太睏了 🎮
