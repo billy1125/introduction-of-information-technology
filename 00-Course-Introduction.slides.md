@@ -39,8 +39,7 @@ style: |
 - 主管說「query 一下資料庫」，聽不懂也不會用
 - 開會聊「IoT 資料上雲端接 AI 模型」，只能點頭
 - 評估採購資訊系統時，只能看介面好不好看
-- 要評估工業電腦規格，說不清要多強的 CPU、多大的記憶體
-- 看到 [黃爸的新 AI 電腦](https://www.nvidia.com/zh-tw/products/rtx-spark/)，不懂為何要這麼大記憶體
+- 評估工業電腦或 [AI 電腦](https://www.nvidia.com/zh-tw/products/rtx-spark/) 規格時，說不清要多強的 CPU、多大的記憶體
 
 ---
 
