@@ -14,7 +14,8 @@
 
 | 檔案 | 主題 | 說明 | 投影片版本 | 練習筆記本 |
 |------|------|------|------|------|
-| [00-Course-Introduction.md](00-Course-Introduction.md) | 課程介紹 | 課程概要、評分方式、考試規定、出席規範、請假規定 | [Slides](00-Course-Introduction.slides.md) | — |
+| [00-Course-Introduction.md](00-Course-Introduction.md) | 課程介紹 | 課程概要、評分方式、考試規定、不可抗力認定、出席規範、請假規定 | [Slides](00-Course-Introduction.slides.md) | — |
+| [00-Course-Rules-Quiz.md](00-Course-Rules-Quiz.md) | 課程規範理解測驗 | 20 題是非題的自我檢核，附解答與出處；不計分、不用繳交 | — | — |
 | [01-History-of-Computer.md](01-History-of-Computer.md) | 計算機歷史 | 計算工具演進、二進位系統、數位化、網路起源、AI 發展簡史 | [Slides](01-History-of-Computer.slides.md) | — |
 | [02-Computer-Structure.md](02-Computer-Structure.md) | 電腦架構 | CPU、記憶體、儲存裝置、作業系統、應用軟體、工業4.0 | [Slides](02-Computer-Structure.slides.md) | [Notebook](notebooks/Computer-Structure-Examples.ipynb) |
 | [03-Computer-Program.md](03-Computer-Program.md) | 程式設計概念 | 演算法、程式語言、資料結構、工業工程應用 | [Slides](03-Computer-Program.slides.md) | [Notebook](notebooks/Computer-Program-Examples.ipynb) |

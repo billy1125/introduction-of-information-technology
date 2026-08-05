@@ -12,7 +12,8 @@
 
 | 檔案 | 說明 |
 |------|------|
-| `00-Course-Introduction.md` | 課程介紹、評分方式、出席規定、考試規則 |
+| `00-Course-Introduction.md` | 課程介紹、評分方式、出席規定、考試規則、不可抗力認定 |
+| `00-Course-Rules-Quiz.md` | 課程規範理解測驗（自我檢核）：20 題是非題附解答與出處，題目一律取自 `00-Course-Introduction.md`，改動該檔規定時須同步檢查此檔 |
 | `01-History-of-Computer.md` | 計算機歷史、二進位系統、數位化、網路起源、AI 概覽 |
 | `02-Computer-Structure.md` | 計算機結構（工業工程導向）、作業系統、應用軟體 |
 | `03-Computer-Program.md` | 程式設計概念、資料結構、演算法（工業工程導向） |
