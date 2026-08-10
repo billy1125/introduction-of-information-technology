@@ -63,7 +63,7 @@
 - **讀者程度**：大一新生、工業工程與管理系、無程式設計背景。
 - **應用範例取材**：一律取自製造業與工業工程場域。
 - **學習重點總結的固定引言**：「讀完本章後，你應該能夠理解以下核心概念，並將其應用於工業場域的思考與決策：」。範本見 `04-Networks-and-Internet.md`〈二十五、學習重點總結〉。
-- **銜接提示對象**：01–05 章一律前指 `06-Data-Science-AI-and-Smart-Manufacturing.md`；06 章為全課程終點，不需銜接提示。跨章連結的實際寫法範本見 `02-Computer-Structure.md`〈二十三、專業工業應用軟體〉。
+- **銜接提示對象**：01–05 章一律前指 `06-Data-Science-AI-and-Smart-Manufacturing.md`；06 章為全課程終點，不需銜接提示。跨章連結的實際寫法範本見 `02-Computer-Structure.md`〈二十二、專業工業應用軟體〉。
 - **參考文獻取材**：經典教科書取 Tanenbaum、Silberschatz、Cormen 等公認課本，原典取 Turing 1936、Codd 1970、Cerf & Kahn 1974、Vaswani 2017 等里程碑論文；份量與 `06-Data-Science-AI-and-Smart-Manufacturing.md` 看齊。
 - **趣味小知識**：各章適時穿插 `> **趣味小知識**：…` 的 blockquote，補充名詞由來、歷史八卦或老師的親身經驗，讓大一新生對枯燥的技術名詞產生記憶點。這是本教材的既有特色，新增章節時應延續。
 - **延伸閱讀連結**：正文大量附上中文維基百科連結，此慣例對學生的說明見 `README.md`〈🔗 延伸閱讀連結說明〉。

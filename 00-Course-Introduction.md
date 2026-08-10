@@ -68,7 +68,7 @@
 | 週次 | 日期 | 主題 | 對應檔案 | 投影片版本 | 練習筆記本 | 說明 |
 |---|---|---|---|---|---|---|
 | 1 | 09/11 | 課程介紹、計算機歷史 | [00-Course-Introduction.md](00-Course-Introduction.md)<br>[01-History-of-Computer.md](01-History-of-Computer.md) | [00-Course-Introduction.slides.md](00-Course-Introduction.slides.md)<br>[01-History-of-Computer.slides.md](01-History-of-Computer.slides.md) | — | 講解本文件 |
-| 2 | 09/18 | 電腦架構 | [02-Computer-Structure.md](02-Computer-Structure.md) | [02-Computer-Structure.slides.md](02-Computer-Structure.slides.md) | [Computer-Structure-Examples.ipynb](notebooks/Computer-Structure-Examples.ipynb) | — |
+| 2 | 09/18 | 電腦硬體、作業系統與應用軟體 | [02-Computer-Structure.md](02-Computer-Structure.md) | [02-Computer-Structure.slides.md](02-Computer-Structure.slides.md) | [Computer-Structure-Examples.ipynb](notebooks/Computer-Structure-Examples.ipynb) | — |
 | 3 | 09/25 | **中秋節放假** | — | — | — | 停課 |
 | 4 | 10/02 | 程式設計概念 | [03-Computer-Program.md](03-Computer-Program.md) | [03-Computer-Program.slides.md](03-Computer-Program.slides.md) | [Computer-Program-Examples.ipynb](notebooks/Computer-Program-Examples.ipynb) | — |
 | 5 | 10/09 | **國慶日補假** | — | — | — | 停課；10/10 國慶日適逢週六，補假挪至本日 |
@@ -335,11 +335,11 @@
 | 課程章節 | 你將獲得的能力 |
 |---------|--------------|
 | 計算機歷史 | 理解資訊科技的演進脈絡，不被廠商術語或話術誤導 |
-| 計算機結構 | 能評估設備規格，理解 CPU、記憶體、儲存各自的角色 |
-| 程式語言與演算法 | 讀懂基本程式邏輯，與 IT 工程師有效溝通需求 |
+| 電腦硬體、作業系統與應用軟體 | 能評估設備規格，理解 CPU、記憶體、儲存各自的角色 |
+| 程式設計概念 | 讀懂基本程式邏輯，與 IT 工程師有效溝通需求 |
 | 網路與網際網路 | 理解工廠 IoT 架構，能參與數位化方案的討論 |
 | 資訊系統與資料庫 | 能使用並評估 ERP、MES 等企業資訊系統 |
-| 資料科學與 AI | 讀懂 AI 分析報告，判斷模型效果與應用可行性 |
+| 資料科學、人工智慧與智慧製造 | 讀懂 AI 分析報告，判斷模型效果與應用可行性 |
 
 > 你不需要記住每一個技術細節，但學完這門課後，面對資訊系統、資料分析、AI 應用等工作場景，你應該會知道「**這是什麼、它在做什麼、我該如何判斷好壞**」。這就是這門課真正想給你的能力。
 
