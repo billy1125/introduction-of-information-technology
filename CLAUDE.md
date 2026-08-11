@@ -44,6 +44,7 @@
 | 新增或修改章節正文 `0X-XXX.md` | `reference/chapter-writing-guide.md` | `reference/chapter-template.md` |
 | 新增或修改投影片 `0X-XXX.slides.md` | `reference/slides-design-template.md` | `reference/slides-template.slides.md` |
 | 新增或修改練習筆記本 `notebooks/*.ipynb` | `reference/notebook-guide.md` | — |
+| 在對外文件加註 AI 協作揭露 | `reference/ai-disclosure-template.md` | 骨架就寫在該規範〈二〉，已套用的實例見 `README.md`〈🤖 AI 協作聲明〉 |
 
 分工是：**怎麼寫** 在 `reference/`，**寫什麼** 在下一節。兩邊若有衝突，格式規則以規範文件為準。
 
