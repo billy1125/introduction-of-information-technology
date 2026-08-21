@@ -882,8 +882,6 @@ Dequeue()： A 被取出，剩 [B][C][D]
 
 ---
 
-![bg left:45%](images/03-Computer-Program/donald-knuth.jpg)
-
 ## 時間複雜度與大 O 符號
 
 - **時間複雜度**：輸入資料量增加時，執行時間如何成長
