@@ -6,7 +6,15 @@
 
 本專案為元智大學「資訊與人工智慧概論」課程的教材儲存庫，修課對象為工業工程與管理系學生。所有內容以 **繁體中文（台灣用語）** 撰寫。
 
-本專案無建置系統、測試套件或 CI/CD 流程，僅包含 Markdown 文件與 Jupyter 筆記本。
+本專案無建置系統、測試套件或 CI/CD 流程，僅包含 Markdown 文件與 Jupyter 筆記本。唯一需要實際執行的是筆記本，見〈執行環境與筆記本驗證〉。
+
+## 執行環境與筆記本驗證
+
+筆記本的輸出必須是 **真的跑出來的**，所以還是需要一個能用的 Python。
+
+- **Python 直譯器**：用 `C:\Users\billy\miniconda3\python.exe`（3.13.13，與筆記本記錄的 kernel 版本相同）。PATH 上的 `python` 與 `python3` 是 Microsoft Store 的轉接程式，執行會直接失敗。
+- **輸出一律實際執行取得**，不可憑印象手寫。筆記本設計成由上往下依序執行、後面的 Cell 會用到前面的變數，因此改完之後要 **從第一個 Cell 跑到最後**，確認全部不出錯，而且實際輸出與存進 `.ipynb` 的內容一致——只跑新增的部分驗不出變數被覆蓋的問題。
+- **程式化編輯 `.ipynb` 時**：存回的 JSON 用 `indent=1`（Jupyter 自己的預設），`execution_count` 由上而下重新編號。這兩點顧到了，diff 就只有真正新增的內容；沒顧到會整份檔案被重排，等於沒辦法 review。
 
 ## 內容架構
 
@@ -20,7 +28,7 @@
 | `04-Networks-and-Internet.md` | 分三篇：網路（硬體、拓樸、無線與行動通訊、物聯網）、網際網路（TCP/IP、WWW、DNS、網路服務與資安）、整合觀點（智慧製造網路架構） |
 | `05-Information-Systems-and-Database.md` | 資訊系統、資料庫（ERP/MES/SCM 等企業應用系統的權威章節） |
 | `06-Data-Science-AI-and-Smart-Manufacturing.md` | 資料科學、人工智慧與智慧製造（**全課程終點**）：串接計算機→程式→網路→資訊系統→AI 的技術演進主線，並在最後以工業4.0智慧工廠案例收束全課程。機器學習／深度學習原理、AI 發展史，以及工業4.0（定義、九大支柱、數位轉型、數位孿生）的權威章節 |
-| `notebooks/Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 的實作範例 |
+| `notebooks/Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 第一篇（程式設計與運算思維）與第二篇（資料結構基礎，七～九節）的實作範例 |
 | `notebooks/Computer-Structure-Examples.ipynb` | Python Jupyter 筆記本，對應 `02-Computer-Structure.md`〈四、數字系統與進位轉換〉與〈五、浮點數與 IEEE 754〉的練習題完整詳解 |
 
 各章節另有對應的 Marp 投影片版本 `0X-XXX.slides.md`（目前涵蓋 00–06 章）。
@@ -30,7 +38,7 @@
 | 資料夾 | 說明 |
 |------|------|
 | `reference/` | 教材撰寫規範與骨架範本，**格式規則的唯一權威來源**。內容刻意與課程脫鉤，換一門課可整個資料夾複製沿用 |
-| `temp-reference/` | 生成教材用的暫存參考素材（非規範文件） |
+| `temp-reference/` | 生成教材用的暫存參考素材（非規範文件）。**臨時性質，目前不存在**，需要時才建立 |
 | `images/` | Markdown 文件引用的圖片，依所屬文章分子資料夾 |
 | `notebooks/` | 所有課程練習用的 Jupyter 筆記本，集中放置於此資料夾 |
 | `.claude/skills/` | Claude Code 技能（skill），每個技能自成一個資料夾，資料夾內含 `SKILL.md` 與其相依檔案 |
@@ -56,6 +64,11 @@
 - 粗體 `**` 貼著中文字或英數字時，標記外側補一個半形空白
 - 授權無法確認的外部圖片不可收錄
 
+### 改完之後要一起更新的地方
+
+- **投影片同步**：正文改動涉及 **定義、數據、章節編號或標題** 時，必須同步修改對應的 `0X-XXX.slides.md`；純粹的潤稿、補充說明或新增趣味小知識則不必動投影片。
+- **README 教材清單**：新增或移除投影片、練習筆記本時，`README.md`〈📚 教材清單〉表格的「投影片版本」與「練習筆記本」兩欄要一起更新，沒有的項目填 `—`。表格漏更新不會有任何錯誤訊息，最容易放著爛掉。
+
 ## 本課程專屬設定
 
 規範文件中凡標示「由 `CLAUDE.md` 指定」的占位項目，實際值如下。
@@ -65,10 +78,10 @@
 - **應用範例取材**：一律取自製造業與工業工程場域。
 - **學習重點總結的固定引言**：「讀完本章後，你應該能夠理解以下核心概念，並將其應用於工業場域的思考與決策：」。範本見 `04-Networks-and-Internet.md`〈二十五、學習重點總結〉。
 - **銜接提示對象**：01–05 章一律前指 `06-Data-Science-AI-and-Smart-Manufacturing.md`；06 章為全課程終點，不需銜接提示。跨章連結的實際寫法範本見 `02-Computer-Structure.md`〈二十二、專業工業應用軟體〉。
-- **參考文獻取材**：經典教科書取 Tanenbaum、Silberschatz、Cormen 等公認課本，原典取 Turing 1936、Codd 1970、Cerf & Kahn 1974、Vaswani 2017 等里程碑論文；份量與 `06-Data-Science-AI-and-Smart-Manufacturing.md` 看齊。
+- **參考文獻取材**：經典教科書取 Tanenbaum、Silberschatz、Cormen 等公認課本，原典取 Turing 1936、Codd 1970、Cerf & Kahn 1974、Vaswani 2017 等里程碑論文；每章 **約 20 筆以上**，份量與 `06-Data-Science-AI-and-Smart-Manufacturing.md` 看齊。
 - **趣味小知識**：各章適時穿插 `> **趣味小知識**：…` 的 blockquote，補充名詞由來、歷史八卦或老師的親身經驗，讓大一新生對枯燥的技術名詞產生記憶點。這是本教材的既有特色，新增章節時應延續。
 - **延伸閱讀連結**：正文大量附上中文維基百科連結，此慣例對學生的說明見 `README.md`〈🔗 延伸閱讀連結說明〉。
-- **生成新內容的素材來源**：先找 `temp-reference/`，再上網搜尋。
+- **生成新內容的素材來源**：若 `temp-reference/` 存在就先找它，沒有就直接上網搜尋可靠來源。
 - **專案架構**：資料夾架構不寫進 `README.md`。
 
 ### 權威章節清單
@@ -82,6 +95,10 @@
 | 機器學習／深度學習原理、AI 發展史 | `06-Data-Science-AI-and-Smart-Manufacturing.md` |
 | 工業4.0（定義、九大支柱、數位轉型、數位孿生）與智慧工廠整合案例 | `06-Data-Science-AI-and-Smart-Manufacturing.md`〈五、工業4.0與智慧製造〉 |
 | 智慧工廠的分層架構 | `04-Networks-and-Internet.md`〈二十三、智慧製造網路架構（概念性）〉 |
+| 資料結構（列表、堆疊、佇列、集合、映射、樹） | `03-Computer-Program.md`〈第二篇：資料結構基礎〉 |
+| 演算法、時間複雜度與效率分析 | `03-Computer-Program.md`〈第三篇：演算法基礎與效率概念〉 |
+| CPU、記憶體、儲存裝置等硬體 | `02-Computer-Structure.md`〈第三篇：電腦系統架構——硬體〉 |
+| 作業系統（行程、記憶體管理、檔案系統） | `02-Computer-Structure.md`〈第四篇：電腦系統架構——軟體：作業系統〉 |
 
 智慧工廠分層架構以該節的 **四層模型**（現場層／控制層／管理層／雲端層）為全專案唯一標準。IoT 文獻常見的「感知層／網路層／應用層」三層說法，僅能出現在該節的對照 blockquote 中，其他地方不得用三層講智慧工廠架構。
 
