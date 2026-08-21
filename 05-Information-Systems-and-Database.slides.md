@@ -9,6 +9,13 @@ style: |
     margin-left: auto;
     margin-right: auto;
   }
+  section > p,
+  section > ul,
+  section > ol,
+  section > table,
+  section > blockquote {
+    font-size: 0.85em;
+  }
 ---
 
 # 資訊系統與資料庫

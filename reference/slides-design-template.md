@@ -6,7 +6,13 @@
 
 ## 一、Frontmatter
 
-每份投影片檔案開頭固定為下列 frontmatter，四個設定值不可更動：`marp: true` 啟用 Marp、`theme: gaia` 指定佈景主題、`paginate: true` 顯示頁碼、`class: invert` 套用深色底色。`style` 區塊讓所有圖片自動水平置中，缺少它時圖片會靠左，整份投影片的版面會不一致。
+每份投影片檔案開頭固定為下列 frontmatter，四個設定值不可更動：`marp: true` 啟用 Marp、`theme: gaia` 指定佈景主題、`paginate: true` 顯示頁碼、`class: invert` 套用深色底色。
+
+`style` 區塊有兩條規則，兩條都不可省略，第三點是刻意留下的例外：
+
+- **圖片置中**：讓所有圖片自動水平置中，缺少它時圖片會靠左，整份投影片的版面會不一致。
+- **主文降一級**：`gaia` 主題的 `section` 基準字級是 35px，對條列與表格偏大，一頁塞不了幾項。這條規則把主文降到 `0.85em`（約 29.75px），標題（h1 1.8em、h2 1.5em）維持原大小，維持標題與內文的層次對比。選擇器一律用子選擇器 `section > …`，只作用於投影片的第一層區塊；若寫成 `section p` 這類後代選擇器，blockquote 裡的段落、巢狀清單的項目會被重複套用而越縮越小。
+- **程式碼區塊不套用**：`gaia` 已將 `pre code` 設為 `.7em`（約 24.5px），若再乘 0.85 會掉到約 20.8px，投影時看不清楚，因此規則中不含 `section > pre`。
 
 ```yaml
 ---
@@ -19,6 +25,13 @@ style: |
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  section > p,
+  section > ul,
+  section > ol,
+  section > table,
+  section > blockquote {
+    font-size: 0.85em;
   }
 ---
 ```

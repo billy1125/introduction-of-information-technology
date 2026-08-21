@@ -9,6 +9,13 @@ style: |
     margin-left: auto;
     margin-right: auto;
   }
+  section > p,
+  section > ul,
+  section > ol,
+  section > table,
+  section > blockquote {
+    font-size: 0.85em;
+  }
 ---
 
 # 電腦硬體、作業系統與應用軟體
