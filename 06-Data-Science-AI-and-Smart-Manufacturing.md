@@ -2,9 +2,7 @@
 
 ## 前言：從「老闆說要導入 AI」談起
 
-你的主管走進會議室，說：「我看新聞說某家工廠用 AI 預測機台故障，節省了 30% 的維修成本。我們工廠也要做。你去研究一下，下週報告給我。」
-
-於是你開始研究，馬上遇到一堆問題：
+你的主管走進會議室，說：「我看新聞說某家工廠用 AI 預測機台故障，節省了 30% 的維修成本。我們工廠也要做。你去研究一下，下週報告給我。」於是你開始研究，馬上遇到一堆問題：
 
 - 「AI 預測」需要什麼資料？資料要怎麼收集、怎麼存？
 - 「訓練模型」是什麼意思？要請誰來做？需要多少時間和資料？
@@ -35,21 +33,29 @@
 | 資料科學 | 理解資料清洗、特徵工程、模型評估的概念與流程 |
 | 人工智慧 | 理解機器學習、深度學習、生成式 AI 的基本原理與應用 |
 
-> 本章是整門課的整合與終點章節，帶你看清楚從計算機、程式、網路、資訊系統，到大數據、資料科學、人工智慧的技術演進主線，最後把整條主線放進一座真實的智慧工廠（工業4.0），看它如何改變製造業的生產方式與決策模式。
+> 本章是整門課的整合與終點章節。從計算機、程式、網路、資訊系統，一路到大數據、資料科學與人工智慧，這條技術演進主線真正在做的是同一件事：**把資料一階一階轉化成資訊，再轉化成能指導行動的知識**。本章帶你看清楚這條轉化的階梯，最後把整條主線放進一座真實的智慧工廠（工業4.0），看它如何改變製造業的生產方式與決策模式。
 
 ---
 
-## 一、從電腦到大數據：一條資料不斷累積的演進主線
+## 一、從資料到知識：一條貫穿全課程的演進主線
 
-在深入資料科學與人工智慧之前，先花一節把前面幾章串成一條主線。這條線的主角自始至終只有一個——**資料**：它如何被產生、被賦予意義、被儲存、被傳輸匯聚，最後累積成「大數據」。看懂這條累積的軌跡，就能明白為什麼資料科學與 AI 會在這個時間點登場。
+在深入資料科學與人工智慧之前，先花一節把前面幾章串成一條主線：**資料如何一階一階往上轉化，最後變成知識**。
 
-### 1. 電腦與數位化：一切資料的源頭
+- **資料（Data）**：電腦與數位化把現實世界轉成 0 與 1，產出一堆本身沒有意義的數字
+- **資訊（Information）**：資訊系統與資料庫把這些數字整理、關聯起來，成為看得懂、用得上的資訊
+- **知識（Knowledge）**：網路、雲端與物聯網把各地的資訊匯聚成流，堆出「大數據」的規模，資料科學與人工智慧從大量資訊中歸納出可重複應用的判斷原則，回頭指導現場的決策與行動
+
+（這三個層次的完整定義見 [01-History-of-Computer.md](01-History-of-Computer.md)〈一、導論：資訊與人類文明〉的「從資料到資訊，再到知識」。）
+
+看懂這道「資料→資訊→知識」的階梯，就能明白為什麼資料科學與 AI 會在這個時間點登場：**前面幾階早就被電腦、資料庫與網路一一自動化了，唯獨最後一階長年只能靠人的經驗去歸納；當資料量大到人再也歸納不動，這一階就非交給機器不可。**
+
+### 1. 電腦與數位化：資料這一階的起點
 
 從農業社會的收成與課稅、貿易的帳目，到工業時代的彈道與橋樑計算，人類一直有「記錄與處理資料」的需求。當人口普查、複雜工程計算、工廠的大量生產資料超出人工的速度與準確度負荷，就驅動了計算機的誕生（其發展史詳見 [01-History-of-Computer.md](01-History-of-Computer.md)）。從機械計算、[馮紐曼架構](https://zh.wikipedia.org/wiki/范紐曼型架構)（Von Neumann Architecture）、積體電路，一路到今日的雲端與[圖形處理器](https://zh.wikipedia.org/wiki/圖形處理器)（GPU），運算能力的持續躍升，最終讓人工智慧從理論變成可行技術。
 
-電腦的本質是「能依照程式指令處理數位資料的通用機器」。而讓現實世界進入電腦的前提是 **[數位化](https://zh.wikipedia.org/wiki/數位化)（Digitization）** ——文字、數字、聲音、影像全部先轉換成 0 與 1。工廠的溫度感測器每秒把類比訊號轉成數位數值回傳電腦，就是數位化最日常的樣貌，也是後面一切資料的最初來源。
+電腦的本質是「能依照程式指令處理數位資料的通用機器」。而讓現實世界進入電腦的前提是 **[數位化](https://zh.wikipedia.org/wiki/數位化)（Digitization）** ——文字、數字、聲音、影像全部先轉換成 0 與 1。工廠的溫度感測器每秒把類比訊號轉成數位數值回傳電腦，就是數位化最日常的樣貌，也是後面一切資料的最初來源。階梯的第一階到此為止：世界被轉成了資料，但這些數字此時還不代表任何意義。
 
-### 2. 資訊系統與資料庫：讓資料有意義、也被妥善管理
+### 2. 資訊系統與資料庫：把資料轉成資訊
 
 電腦能快速處理資料，但「資料」本身沒有意義。感測器回傳的數字 `23.5` 只是 **資料（Data）**；當系統告訴你「A 生產線午後溫度超標，對應良率下滑 4%」，才是能用於決策的 **資訊（Information）**；再把這樣的資訊與經驗、專業判斷結合，形成「下次該如何應對」的理解，就成為 **知識（Knowledge）**。
 
@@ -59,7 +65,7 @@
 
 *本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
-**資訊系統（Information System，IS）** 就是讓「資料→資訊→知識」這條轉化鏈得以發生的機制；隨著組織規模擴大，它又依用途分成作業、管理、策略三個層次（完整說明見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)）。而這條「把資料變成價值」的轉化鏈，正是後面資料科學與 AI 要處理的核心課題。
+**資訊系統（Information System，IS）** 就是讓「資料→資訊→知識」這條轉化鏈得以發生的機制；隨著組織規模擴大，它又依用途分成作業、管理、策略三個層次（完整說明見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)）。不過要注意的是，傳統資訊系統真正自動化的主要是 **「資料→資訊」** 這一階——它很會把交易紀錄彙整成報表，但報表看完後「為什麼會這樣、下次該怎麼做」的歸納，仍然得由有經驗的工程師與主管自己完成。至於再往上那一階，早年是靠 **專家系統** 把老師傅的判斷寫成 If-Then 規則來勉強逼近（見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)），成效有限——**「資訊→知識」這一階遲遲交不出去，正是後面資料科學與 AI 要接手的核心課題。**
 
 資訊系統要反覆處理資料，資料就得先有地方妥善存放。資料量少時 Excel 或文字檔就夠用；一旦資料量變大、多個系統要共享同一份資料、資料間的關係變複雜，就需要 **[資料庫](https://zh.wikipedia.org/wiki/数据库)（Database）** 與 **資料庫管理系統（DBMS）**，讓資料只存一份、全公司即時共用，並由 DBMS 統一管理查詢、權限、一致性與備份。
 
@@ -77,7 +83,9 @@
 
 在此之上，**[雲端運算](https://zh.wikipedia.org/wiki/雲端運算)（Cloud Computing）** 讓運算資源可以透過網路按需取用，企業不必自建機房就能使用 ERP、MES 或 AI 分析服務；**[物聯網](https://zh.wikipedia.org/wiki/物联网)（Internet of Things，IoT）** 則讓工廠裡每一台機器、每一個感測器都成為資料來源。一座現代智慧工廠可能有數萬個感測器，每秒把大量量測資料即時送上雲端——網路與雲端，正是把零散資料匯聚成「大數據」的管道。
 
-### 4. 大數據：當資料的量、速、樣超出傳統工具
+這一階沒有在階梯上多加一層，卻把前兩階的規模整個放大：資訊的視野從單一機台擴大到整座廠區、整條供應鏈，而要歸納的素材，也跟著多到人腦處理不完。
+
+### 4. 大數據：資料的量、速、樣超出人工歸納的極限
 
 當感測器、資訊系統與網路把資料源源不絕地匯集起來，資料的規模與複雜度便跨過了一道門檻，形成 **[大數據](https://zh.wikipedia.org/wiki/大數據)（Big Data）**。它的關鍵不在於「資料很多」，而是在以下幾個維度同時超出傳統工具的能力：
 
@@ -91,19 +99,19 @@
 
 > **前情提要**：這五個 V 的完整說明、以及它們如何從最早的「3V」一路被後人加到 5V 的來歷，見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈八、1. 什麼是大數據？〉。
 
-> 走到這一步，資料的量、速、樣都齊備了，但 **「資料很多」本身並不會自動變成價值**。面對量大、速快、又多樣混雜的資料，傳統的統計方法與人工分析已經力不從心，人類亟需一整套能大規模萃取模式的演算法與分析技術——這正是下一節「資料科學」登場的原因，也是人工智慧再度崛起的起點。
+> 走到這一步，階梯的前兩階都已經由機器接手：世界被數位化成資料，資訊系統把資料整理成資訊，網路與雲端讓資訊的規模一路放大。但 **「資料很多」本身並不會自動變成價值**——最後那一階「資訊→知識」，也就是從一堆資訊中歸納出「為什麼會這樣、下次該怎麼做」，長年只能靠人的經驗，如今面對量大、速快、又多樣混雜的資料，傳統統計方法與人工分析都已力不從心。人類亟需一整套能大規模萃取模式的演算法與分析技術，替我們把最後一階走完——這正是下一節「資料科學」登場的原因，也是人工智慧再度崛起的起點。
 
 ---
 
 ## 二、資料科學與人工智慧
 
-> **前情提要**：[01-History-of-Computer.md](01-History-of-Computer.md)〈十、人工智慧與未來科技〉已先介紹過 AI、機器學習、深度學習的基本概念與未來趨勢，本章則在此基礎上深入資料科學的流程、機器學習的訓練原理與神經網路架構。
+> **前情提要**：[01-History-of-Computer.md](01-History-of-Computer.md)〈十、人工智慧與未來科技〉已從計算機歷史的角度，把 AI 定位成這條長路目前的最前沿；本章接手 AI 的完整說明——資料科學的流程、機器學習的訓練原理、神經網路架構，以及後面〈三〉的生成式 AI、AI 代理人、能力層級與應用類型。
 
-面對大數據，人類需要一套能大規模萃取模式的方法，這就是 **資料科學**；而資料科學方法的成熟，加上運算能力的躍升，又反過來讓沉寂多年的人工智慧重新崛起。本章節先看資料科學在做什麼，再看它與算力如何一起把 AI 推上舞台，最後深入機器學習與深度學習的原理。
+面對大數據，人類需要一套能大規模萃取模式的方法，替我們走完「資訊→知識」這最後一階，這就是 **資料科學**；而資料科學方法的成熟，加上運算能力的躍升，又反過來讓沉寂多年的人工智慧重新崛起。本章節先看資料科學在做什麼，再看它與算力如何一起把 AI 推上舞台，最後深入機器學習與深度學習的原理。
 
 ### 1. 資料科學：為駕馭大數據而生
 
-**[資料科學](https://zh.wikipedia.org/wiki/数据科学)（Data Science）** 是一門結合統計學、程式演算法與領域知識的學問，目的是從龐大又雜亂的資料中萃取出有意義的規律，並把它轉化成能支持決策的洞見。它不是單一技術，而是一整套流程：先從感測器、ERP、MES、電商平台等來源 **採集** 資料，接著 **清洗** 掉雜訊、補上缺失值、統一格式，再以統計、分群、關聯分析或機器學習模型進行 **分析**，把結果用圖表與儀表板 **視覺化**，最後交給管理者或 AI 系統據以 **決策**。這條「採集→清洗→分析→視覺化→決策」的流水線，正是資料科學為了駕馭大數據而存在的理由。
+**[資料科學](https://zh.wikipedia.org/wiki/数据科学)（Data Science）** 是一門結合統計學、程式演算法與領域知識的學問，目的是從龐大又雜亂的資料中萃取出有意義的規律，並把它轉化成能支持決策的洞見。它不是單一技術，而是一整套流程：先從感測器、ERP、MES、電商平台等來源 **採集** 資料，接著 **清洗** 掉雜訊、補上缺失值、統一格式，再以統計、分群、關聯分析或機器學習模型進行 **分析**，把結果用圖表與儀表板 **視覺化**，最後交給管理者或 AI 系統據以 **決策**。這條「採集→清洗→分析→視覺化→決策」的流水線，正是資料科學為了駕馭大數據而存在的理由，做的也正是階梯最後一階的事：把大量資訊淬鍊成能重複使用的判斷，再交回給人或系統行動。
 
 ![甚麼是資料科學](images/06-Data-Science-AI-and-Smart-Manufacturing/what-is-data-science.png)
 
@@ -200,7 +208,7 @@
 | **半監督式學習** | 少量有標籤 + 大量無標籤 | 分類 | 醫療影像（標記成本高） |
 | **[強化學習](https://zh.wikipedia.org/wiki/强化学习)** | 系統與環境互動，透過獎懲學習 | 策略最佳化 | 機器人路徑規劃、自動排程 |
 
-> **趣味小知識**：強化學習最出名的舞台就是圍棋，而圍棋也留下了一段十年呼應的人機大戰故事。2016 年，採用強化學習與深度學習的 [AlphaGo](https://zh.wikipedia.org/wiki/AlphaGo) 以 4：1 擊敗南韓棋王[李世乭](https://zh.wikipedia.org/wiki/李世乭)，成為「人機大戰」的標誌性時刻；李世乭在第四局下出的「神之一手」，至今仍是人類在正式對局中唯一一次戰勝 AlphaGo 的紀錄。
+> **趣味小知識**：強化學習最出名的舞台就是圍棋，而圍棋也留下了一段十年呼應的人機大戰故事。2016 年，採用強化學習與深度學習的 [AlphaGo](https://zh.wikipedia.org/wiki/AlphaGo) 以 4：1 擊敗南韓棋王[李世乭](https://zh.wikipedia.org/wiki/李世乭)，成為「人機大戰」的標誌性時刻；李世乭在第四局下出的「神之一手」，至今仍是人類在正式對局中唯一一次戰勝 AlphaGo 的紀錄。有趣的是，同一場比賽的第二局，AlphaGo 也下出了一步人類職業棋士從未想過、甚至一度以為是失誤的「肩衝」，事後證明是決定性的神來一手——這步棋後來被稱為 **Move 37**，成為 AI 展現超越人類直覺的經典案例（Silver et al., 2016）。
 >
 > 之後十年內，人類棋手幾乎都是 AI 的手下敗將，得靠 AI 「讓子」才有一戰之力。**「讓子」是圍棋行之有年的[讓分制度](https://zh.wikipedia.org/wiki/讓子棋)**：對局開始前，先讓實力較弱的一方在棋盤上預先擺好幾顆黑子當作補償，再由白方（強者）落子。讓的子數，等於雙方公認的實力差距——讓一、兩子是小差距，讓到九子（棋盤上能擺的最多）則近乎壓倒性的差距。換句話說，「AI 要讓人類幾子」本身就是一把衡量人機差距的尺。
 >
@@ -290,6 +298,8 @@ CNN、LSTM、Transformer 這些深度神經網路很強，卻也帶來一個新�
 
 在它之前，生成內容另有一批專門的模型，最有名的是兩種：**[生成對抗網路（GAN）](https://zh.wikipedia.org/wiki/生成對抗網路)** 讓「生成器」與「鑑別器」兩個網路互相較勁，一個拚命造假、一個拚命抓假，在對抗中把成品越練越逼真；**[擴散模型（Diffusion Model）](https://zh.wikipedia.org/wiki/扩散模型)** 則先把清晰圖片一步步加上雜訊直到變成雪花，再訓練模型學會反過來「從雪花還原成圖」，生成時就從隨機雜訊逐步去噪、畫出全新影像（前面表格的 Stable Diffusion、DALL-E 正屬此類）。
 
+> **趣味小知識**：GAN 這個「讓兩個網路互相對抗」的點子，據說是發明者伊恩·古德費洛在 2014 年一場酒吧聚會上與朋友辯論時，靈光一閃想出來的：一個網路努力「造假」，另一個努力「抓包」，兩者你來我往、共同進步，最後造假的一方就能生成以假亂真的圖像。他當晚回家就把程式寫出來，並且一次跑通（Goodfellow et al., 2014）。這個誕生於酒吧的想法，後來成為生成式 AI 發展史上的重要里程碑。
+
 那為什麼近幾年幾乎清一色改用 Transformer？關鍵在它 **結構簡潔又統一**：整個模型幾乎就靠注意力機制反覆堆疊，容易放大規模、也容易訓練，而注意力權重多少能看出「模型正關注哪些字」，比起其他架構相對好分析。這些優點讓它成為當今文字、程式、乃至影像模型的共同骨幹。不過要強調的是，這 **不代表** GAN、擴散模型就被淘汰——它們在特定的影像生成任務上依然好用，各種模型各有各的擅場，Transformer 只是成了目前最通用的那把「標準工具」。
 
 它的關鍵創新，就是「**注意力機制（Attention Mechanism）**」：
@@ -320,7 +330,7 @@ Token 既是 LLM 眼中的最小單位，自然也成了整個產業的通用計
 
 **幻覺（Hallucination）**：LLM 有時會生成聽起來合理、實際上卻錯誤的內容——捏造不存在的數據、引用查無此文的論文都是典型。根本原因在於它的訓練目標是「把話講得通順」，而不是「保證每句都屬實」；模型骨子裡是在「預測下一個最可能的詞」，本身並沒有一套查證事實的機制。因此把 LLM 用在專業或高風險決策時，輸出務必經過人工查證。
 
-再往深一層看：正因為 LLM 的本領是「把話接得通順」，它並不真的理解自己在說什麼，接出來的內容自然不見得對得上真實世界的因果與邏輯——這正是幻覺的深層來源。要讓 AI 從「很會接話」再往前走到「說的話大致站得住腳」，是當前邁向 **通用人工智慧（AGI）** 的核心課題之一（AGI 的定義與發展背景見 [01-History-of-Computer.md](01-History-of-Computer.md)〈十、人工智慧與未來科技〉）。目前的一個研究方向，是在訓練階段設法讓模型不只學會語言表面的統計規律、還能學到一套貼近真實世界如何運作的邏輯（有時稱為「世界模型」），藉此壓低幻覺。而如何讓機器建立起這樣一套對真實世界的內在模型，公認是通往 AGI 最難跨越的一關。
+再往深一層看：正因為 LLM 的本領是「把話接得通順」，它並不真的理解自己在說什麼，接出來的內容自然不見得對得上真實世界的因果與邏輯——這正是幻覺的深層來源。要讓 AI 從「很會接話」再往前走到「說的話大致站得住腳」，是當前邁向 **通用人工智慧（AGI）** 的核心課題之一（AGI 的定義與發展背景見後面〈三、4. 弱 AI、強 AI 與 AGI：AI 的能力層級〉）。目前的一個研究方向，是在訓練階段設法讓模型不只學會語言表面的統計規律、還能學到一套貼近真實世界如何運作的邏輯（有時稱為「世界模型」），藉此壓低幻覺。而如何讓機器建立起這樣一套對真實世界的內在模型，公認是通往 AGI 最難跨越的一關。
 
 話說回來，這些難題雖然還沒有解，卻不妨礙 LLM 在當下就大有用處：只要問題本身結構明確、步驟清楚，它多半能勝任；而能不能把它的實力引出來，往往取決於你怎麼問。
 
@@ -359,6 +369,77 @@ Clippy 這類早期助手都靠 **寫死的規則** 運作——「偵測到某�
 > 學代理人最實在的入門方式，其實就是花點錢訂一個大型語言模型服務的 Pro 帳號親自用——例如 OpenAI 的 Codex、Anthropic 的 Claude Code——請它幫你寫一段小程式、整理一份報告或跑一次資料分析，親手摸清楚它能做到哪裡、又還做不到哪裡。
 >
 > 本課程教材也是讓 AI 代理人協助很多工作，過去要寫同樣的東西可能得花半年一年，但這份教材大概只有一個禮拜的 AI 工作量而已。
+
+### 4. 弱 AI、強 AI 與 AGI：AI 的能力層級
+
+從會判斷良品的模型、會接話的大型語言模型，到會自己動手做事的代理人，AI 的能力一路往上疊。但這些能力離「像人一樣聰明」到底還有多遠？討論這件事時，我們通常把 AI 分成三個層級。
+
+**[弱 AI（Narrow AI）](https://zh.wikipedia.org/zh-tw/%E5%BC%B1%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7)**
+
+指**只能在特定領域執行特定任務的 AI 系統**。目前所有實際應用的 AI 都屬於弱 AI，例如：
+
+- 能擊敗世界棋王的 AlphaGo，只懂下圍棋
+- 人臉辨識系統只能辨識臉，不能幫你寫報告
+- 聊天機器人雖能對話，但不具備真正的理解或意識，仍需要使用者提供更詳細的指示、資料或文件，才能給出符合需求的回應
+
+**強 AI（Strong AI）**
+
+指 **具備與人類相似思維方式的 AI**：它不只是「看起來會做事」，而是真正具有理解、意識與自我覺察等心智特質。強 AI 一方面是哲學上「機器究竟能不能思考」的老問題，一方面是科幻作品最愛的題材，工程上也曾被當成長遠目標。但「意識」本身既難以定義、又難以驗證，強 AI 至今仍停留在理論階段，沒有任何 AI 系統被證實達到這個層次。
+
+**[通用人工智慧（Artificial General Intelligence，AGI）](https://zh.wikipedia.org/zh-tw/%E9%80%9A%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7)**
+
+指**能像人類一樣跨領域學習、理解並靈活運用知識解決各種不同問題的 AI 系統**，不需要針對每個任務重新設計或訓練 AI，只要給予提示或少量示範，就能舉一反三、觸類旁通。AGI 與強 AI 的概念高度重疊，但更強調「跨領域的實用能力」而非「是否具備意識」，因此比強 AI 更容易被具體定義、測試與逐步逼近。
+
+![AI的能力層級](images/06-Data-Science-AI-and-Smart-Manufacturing/AI-evolution.png)
+
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
+
+AGI（而非強 AI）已成為目前產業界（如 OpenAI、Google DeepMind、Anthropic 等）與學術界最主要的長期研發目標：與其糾結「機器是否真正具有意識」這種難以驗證的哲學問題，業界更傾向把 AGI 當作一個可以持續逼近的工程目標。一種不需要針對特定任務額外訓練、只需簡單提示或微調就能勝任多種工作的通用型 AI。
+
+因此，近年評估 AI 是否接近 AGI 的方式，也逐漸從單一任務的準確率，轉向更貼近真實工作場景的能力指標：能否通過各領域的專業考試、完成多步驟的實際工作任務、甚至自主規劃並執行複雜流程——也就是前面〈三、3〉談過的 AI 代理人能力，而不再糾結於哲學上的意識問題。
+
+換言之，**當代 AGI 的發展路線並非追求機器擁有與人類相同的意識，而是聚焦於「能否取代人類完成大多數具經濟價值的工作」**——這也是 OpenAI 等機構在其官方定義中，直接以「高度自主、且在多數具經濟價值的工作上勝過人類」作為 AGI 判準的原因（OpenAI, 2018）。AGI 何時實現、能不能實現，學界至今沒有共識，樂觀與懷疑的預測相差數十年。但可以確定的是，一旦實現，衝擊會遠大於目前任何一種 AI 應用，因此也引發了廣泛的倫理與安全討論。
+
+那麼，每天都在用的 ChatGPT、Claude、Gemini 這些聊天機器人，算不算 AGI？**答案是還不算，但它們已經是史上最接近 AGI 的一批系統。** 微軟研究院在測試 GPT-4 後，用的標題是「通用人工智慧的火花」——注意是火花，不是火（Bubeck et al., 2023）；Google DeepMind 提出的 AGI 分級架構，也把這類通用型聊天機器人放在「**初階 AGI（Emerging AGI）**」這一層，意思是已經上路，但仍在第一階（Morris et al., 2024）。它們能跨領域回答問題、寫程式、通過不少專業考試，這在十年前難以想像；不過離 AGI 仍有幾道具體的缺口：
+
+- **學不進去新東西**：模型的能力在訓練結束那一刻就定型了，和你聊過的內容不會真的變成它的本事。神經網路要學新任務往往會沖掉舊任務學到的東西，也就是所謂的「**災難性遺忘（Catastrophic Forgetting）**」，因此無法像人一樣邊做邊累積（Kirkpatrick et al., 2017）。一位新人在你的工廠待三個月會越來越上手，模型不會——除非外掛記憶機制或重新訓練。
+- **會一本正經地說錯話**：碰到不確定的事，它仍可能給出流暢但錯誤的答案，也就是前面〈三、2〉談過的 **幻覺**，而且不一定能察覺自己什麼時候不可靠（Ji et al., 2023）。
+- **任務一長就容易走偏**：多步驟的工作做著做著，前面的小偏差會被後面放大。GAIA 這份專門測「日常但需要多步驟查找與工具操作」的評測就顯示，一般人做這些題目的正確率約九成，當時外掛了各種工具的 GPT-4 卻只有一成多（Mialon et al., 2023）——目前這類任務仍需要人在旁邊盯著、隨時拉回來。
+- **能力呈鋸齒狀**：它可能通過專業證照等級的考試，卻在簡單的算術或數字比大小上出錯。哈佛與 BCG 合作、找來 758 位管理顧問的實地實驗發現，同樣難度的工作，有些交給 AI 表現大幅變好、有些反而變差，研究者稱之為「**鋸齒狀的技術前緣（Jagged Technological Frontier）**」（Dell'Acqua et al., 2026）。人的能力大致是連續的，它不是——這種「這裡強得驚人、那裡弱得莫名」，正說明它還不是人類那種通用智慧。
+- **碰不到真實世界**：它無法自己走到產線旁量測、動手調整機台，一切都得透過人或設備介面代勞。而智慧究竟能不能脫離身體與環境互動而單獨存在，本身就是 AI 領域爭論了數十年的老問題（Brooks, 1991）。
+
+用前面那個「能否取代人類完成大多數具經濟價值的工作」的判準來看，現在的 AI 比較像 **一位博學、反應快，但沒有長期記憶、也不為結果負責的實習生**：你交代得越清楚，它做得越好；但要它獨自扛下一整件事，還不行。
+
+**生活情境**：像「幫我規劃下週出差行程、訂好符合預算的機票與飯店，並避開海鮮餐廳」這類任務，其實現在的 AI 代理人大致就能完成——但正因為這類任務範圍明確、所需資料結構化程度高，它展現的仍是「有限但實用的能力」。真正的 AGI 意味著同一套系統不需要額外設計、訓練或切換工具，就能直接應付完全陌生、跨領域的任務——例如你臨時追加「順便根據這次拜訪客戶的產業背景，寫一份符合當地商業禮儀的提案簡報，並用當地語言幫我練習口說」，AGI 也能像人類助理一樣立刻理解情境轉換並勝任，而不會因為任務類型改變就表現失常。這種「跨領域、不需重新訓練也能靈活遷移」的能力，才是現在的 AI 服務與真正 AGI 之間的關鍵差距。
+
+**工業工程與管理情境**：目前的 AI 系統多半只能完成單一任務，例如預測產線不良率，或是優化排程演算法，仍需要工程師整合不同系統的結果來做決策。若達到 AGI 等級，系統將能像一位資深廠務經理一樣，同時掌握生產排程、品質異常、供應鏈延遲與人力調度等跨部門資訊，自主判斷「這批急單該插單生產、還是先完成設備歲修」，並直接調整產線排程、通知供應商、重新分配人力——把原本分散在 ERP、MES、品管系統中的資訊整合成一個決策，而不只是提供單一指標的建議。
+
+### 5. AI 應用的類型：從辨識、預測到生成
+
+> AI 的應用範圍很廣，這裡只列目前最常見的幾類。
+
+**影像辨識（Image Recognition）**：深度學習使得電腦辨識圖片中物件的準確率，在某些任務上已超越人類。應用包括：醫療影像診斷（從 X 光或 MRI 中偵測腫瘤）、自動駕駛中的障礙物偵測、工廠產品瑕疵檢測等。
+
+**語音助理（Voice Assistant）**：Siri、Google Assistant、Amazon Alexa 等語音助理，結合了 **語音辨識**（將聲音轉為文字）、[自然語言處理](https://zh.wikipedia.org/zh-tw/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86)（理解句子的意思）與 **語音合成**（將回答轉為語音）三種技術，讓人機互動更自然。
+
+> **趣味小知識**：早在1966年，MIT 學者約瑟夫·維森鮑姆就寫了一支名叫「ELIZA」的聊天程式，它其實只是用簡單的關鍵字比對與句型套用，模仿心理治療師的對話方式（Weizenbaum, 1966）。沒想到許多受測者明知道對方是程式，卻仍對它傾訴心事、產生情感依附——這種「明知是機器仍投入情感」的現象，後來被稱為「ELIZA 效應」，至今仍是討論聊天機器人與 AI 陪伴應用時的重要參考案例。
+
+**推薦系統（Recommendation System）**：YouTube 的影片推薦、Netflix 的劇集建議、蝦皮的商品推薦，都依靠 AI 分析你的歷史行為，預測你最可能感興趣的內容，是現代科技平台留住用戶注意力的核心武器。
+
+**自動駕駛（Autonomous Driving）**：結合影像辨識、感測器融合、地圖資料與深度學習，讓車輛能夠感知周遭環境、判斷交通狀況並自主做出駕駛決策。目前正處於快速發展且仍面臨諸多技術與法規挑戰的階段。
+
+**自然語言處理與機器翻譯（NLP & Machine Translation）**：延續前面語音助理提到的[自然語言處理](https://zh.wikipedia.org/zh-tw/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86)技術，[機器翻譯](https://zh.wikipedia.org/zh-tw/%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AD%AF)是其中最貼近生活的應用，如 Google 翻譯、DeepL，讓不同語言的使用者能即時溝通。對工廠而言，這也是與海外客戶、供應商往來文件、跨國廠務會議溝通的重要輔助工具。
+
+**生成式 AI（Generative AI）**：不同於前面「辨識、預測」型的 AI，[生成式人工智慧](https://zh.wikipedia.org/zh-tw/%E7%94%9F%E6%88%90%E5%BC%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD)能直接「創造」全新的文字、圖片、程式碼，例如 ChatGPT、Midjourney。這是近年 AI 領域發展最快的分支，技術原理（Transformer 架構、大型語言模型）已在前面〈三、1〉與〈三、2〉說明。
+
+**機器人與自動化（Robotics）**：[機器人學](https://zh.wikipedia.org/zh-tw/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6)結合了 AI 與機械工程，讓機器不只能「思考」，還能實際「動手」執行任務——工廠中常見的機械手臂、倉儲物流的自動導引車（AGV），都是機器人與自動化技術的具體展現，也是工業工程領域最直接接觸到的 AI 應用之一。
+
+**預測性維護（Predictive Maintenance）**：本章〈一、3〉提過，工業物聯網（IoT）設備會持續回傳機台的溫度、震動等感測資料；AI 能從這些歷史資料中學習正常與異常的模式，提前[預測性維護](https://zh.wikipedia.org/zh-tw/%E9%A2%84%E6%B5%8B%E6%80%A7%E7%BB%B4%E6%8A%A4)機台可能發生故障的時間點，讓廠務團隊能在真正停機之前安排維修，避免產線意外中斷造成的損失。這是與工業工程管理最相關的一項 AI 應用，它在智慧工廠中的完整樣貌，見後面〈五、3. 智慧工廠：從感測器到決策的四層資料流〉。
+
+![AI應用類型](images/06-Data-Science-AI-and-Smart-Manufacturing/ai-applications.png)
+
+*本圖由 ChatGPT 生成，已由作者審核內容正確性*
+
 ---
 
 ## 四、整合視角：資訊科學與 AI 的完整脈絡
@@ -493,9 +574,9 @@ Clippy 這類早期助手都靠 **寫死的規則** 運作——「偵測到某�
 
 讀完本章後，你應該能夠理解以下核心概念，並將其應用於工業場域的思考與決策：
 
-**AI 不是憑空出現，它站在整條技術主線的最上層**
+**AI 不是憑空出現，它站在「資料→資訊→知識」這道階梯的最上層**
 
-本章走過的這條主線——計算機、資訊系統、資料庫、網路、大數據、資料科學、機器學習與深度學習、生成式 AI 與代理人——是一條有先後順序的鏈條。沒有數位化就沒有資料，沒有資料庫與網路就沒有可用的資料累積，沒有大數據規模的資料就餵不動深度學習。當有人問「我們能不能導入 AI」，這條鏈條本身就是檢查清單：**先確認前面每一環你是否站穩了**。
+本章走過的這條主線——計算機、資訊系統、資料庫、網路、大數據、資料科學、機器學習與深度學習、生成式 AI 與代理人——本質是一道由下往上的轉化階梯：數位化產出資料，資訊系統與資料庫把資料變成資訊，網路與雲端把資訊匯聚放大，最後由資料科學與 AI 把資訊淬鍊成知識。每一階都踩在下一階之上：沒有數位化就沒有資料，沒有資料庫與網路就沒有可用的資料累積，沒有大數據規模的資料就餵不動深度學習。當有人問「我們能不能導入 AI」，這道階梯本身就是檢查清單：**先確認下面每一階你是否站穩了**。
 
 **資料科學的價值在於把資料變成可行動的判斷**
 
@@ -521,7 +602,7 @@ Clippy 這類早期助手都靠 **寫死的規則** 運作——「偵測到某�
 
 > 資訊科學想做到的，說到底是 **讓人能更有效地用資料做出更好的決策**——無論這個「人」是生產線上的工程師、倉庫的物流主管，還是整個供應鏈的策略決策者。AI 是目前最強的工具，但要不要用、怎麼用，決定權在你手上。
 
-> **全課程的終點**：這是本課程的最後一章。從第一章的算盤走到這裡的智慧工廠，你走過的是同一條線——把世界變成 0 與 1，讓它流動、累積、被分析，最後在一座真實工廠裡變成決策。工業4.0的時代，「不懂電腦」的工業工程管理畢業生，會在升學與就業上吃虧；而且不只製造業，各行各業都在被資訊與人工智慧改寫做事的方式。計算機概論，就是你與資訊科技建立對話能力的第一步。
+> **全課程的終點**：這是本課程的最後一章。從第一章的算盤走到這裡的智慧工廠，你走過的是同一條線——把世界變成 0 與 1 的資料，讓資料流動、匯聚成資訊，再讓資訊被分析成知識，最後在一座真實工廠裡變成決策。工業4.0的時代，「不懂電腦」的工業工程管理畢業生，會在升學與就業上吃虧；而且不只製造業，各行各業都在被資訊與人工智慧改寫做事的方式。計算機概論，就是你與資訊科技建立對話能力的第一步。
 
 ---
 
@@ -529,16 +610,22 @@ Clippy 這類早期助手都靠 **寫死的規則** 運作——「偵測到某�
 
 - Bishop, C. M. (2006). *Pattern recognition and machine learning*. Springer.
 - Breiman, L. (2001). Random forests. *Machine Learning, 45*(1), 5–32. https://doi.org/10.1023/A:1010933404324
+- Brooks, R. A. (1991). Intelligence without representation. *Artificial Intelligence, 47*(1–3), 139–159. https://doi.org/10.1016/0004-3702(91)90053-M
 - Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., … Amodei, D. (2020). Language models are few-shot learners. In *Advances in Neural Information Processing Systems 33* (pp. 1877–1901).
 - Brynjolfsson, E., & McAfee, A. (2014). *The second machine age: Work, progress, and prosperity in a time of brilliant technologies*. W. W. Norton.
+- Bubeck, S., Chandrasekaran, V., Eldan, R., Gehrke, J., Horvitz, E., Kamar, E., … Zhang, Y. (2023). *Sparks of artificial general intelligence: Early experiments with GPT-4* (arXiv:2303.12712). arXiv. https://arxiv.org/abs/2303.12712
 - Chollet, F. (2021). *Deep learning with Python* (2nd ed.). Manning.
+- Dell'Acqua, F., McFowland, E., III, Mollick, E., Lifshitz-Assaf, H., Kellogg, K. C., Rajendran, S., Krayer, L., Candelon, F., & Lakhani, K. R. (2026). Navigating the jagged technological frontier: Field experimental evidence of the effects of artificial intelligence on knowledge worker productivity and quality. *Organization Science, 37*(2), 403–423. https://doi.org/10.1287/orsc.2025.21838
 - Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. In *Proceedings of NAACL-HLT 2019* (pp. 4171–4186). Association for Computational Linguistics. https://doi.org/10.18653/v1/N19-1423
 - Frank, A. G., Dalenogare, L. S., & Ayala, N. F. (2019). Industry 4.0 technologies: Implementation patterns in manufacturing companies. *International Journal of Production Economics, 210*, 15–26. https://doi.org/10.1016/j.ijpe.2019.01.004
 - Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep learning*. MIT Press.
+- Goodfellow, I. J., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., & Bengio, Y. (2014). Generative adversarial nets. In *Advances in Neural Information Processing Systems 27* (pp. 2672–2680).
 - Groover, M. P. (2019). *Automation, production systems, and computer-integrated manufacturing* (5th ed.). Pearson.
 - Han, J., Kamber, M., & Pei, J. (2011). *Data mining: Concepts and techniques* (3rd ed.). Morgan Kaufmann.
 - Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The elements of statistical learning: Data mining, inference, and prediction* (2nd ed.). Springer.
+- Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A., & Fung, P. (2023). Survey of hallucination in natural language generation. *ACM Computing Surveys, 55*(12), Article 248. https://doi.org/10.1145/3571730
 - Kagermann, H., Wahlster, W., & Helbig, J. (2013). *Recommendations for implementing the strategic initiative INDUSTRIE 4.0: Final report of the Industrie 4.0 Working Group*. Acatech – National Academy of Science and Engineering.
+- Kirkpatrick, J., Pascanu, R., Rabinowitz, N., Veness, J., Desjardins, G., Rusu, A. A., … Hadsell, R. (2017). Overcoming catastrophic forgetting in neural networks. *Proceedings of the National Academy of Sciences, 114*(13), 3521–3526. https://doi.org/10.1073/pnas.1611835114
 - Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet classification with deep convolutional neural networks. In *Advances in Neural Information Processing Systems 25* (pp. 1097–1105).
 - Laney, D. (2001). *3D data management: Controlling data volume, velocity and variety* (Research Note). META Group.
 - Laudon, K. C., & Laudon, J. P. (2022). *Management information systems: Managing the digital firm* (17th ed.). Pearson.
@@ -546,9 +633,12 @@ Clippy 這類早期助手都靠 **寫死的規則** 運作——「偵測到某�
 - LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998). Gradient-based learning applied to document recognition. *Proceedings of the IEEE, 86*(11), 2278–2324. https://doi.org/10.1109/5.726791
 - Lee, J., Bagheri, B., & Kao, H.-A. (2015). A cyber-physical systems architecture for Industry 4.0-based manufacturing systems. *Manufacturing Letters, 3*, 18–23. https://doi.org/10.1016/j.mfglet.2014.12.001
 - McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (1955). *A proposal for the Dartmouth summer research project on artificial intelligence*. Dartmouth College.
+- Mialon, G., Fourrier, C., Swift, C., Wolf, T., LeCun, Y., & Scialom, T. (2023). *GAIA: A benchmark for general AI assistants* (arXiv:2311.12983). arXiv. https://arxiv.org/abs/2311.12983
 - Minsky, M., & Papert, S. (1969). *Perceptrons: An introduction to computational geometry*. MIT Press.
 - Mitchell, T. M. (1997). *Machine learning*. McGraw-Hill.
+- Morris, M. R., Sohl-Dickstein, J., Fiedel, N., Warkentin, T., Dafoe, A., Faust, A., Farabet, C., & Legg, S. (2024). Position: Levels of AGI for operationalizing progress on the path to AGI. In *Proceedings of the 41st International Conference on Machine Learning* (PMLR Vol. 235, pp. 36308–36321).
 - Nakajima, S. (1988). *Introduction to TPM: Total productive maintenance*. Productivity Press.
+- OpenAI. (2018). *OpenAI charter*. https://openai.com/charter/
 - Provost, F., & Fawcett, T. (2013). *Data science for business: What you need to know about data mining and data-analytic thinking*. O'Reilly Media.
 - Rosenblatt, F. (1958). The perceptron: A probabilistic model for information storage and organization in the brain. *Psychological Review, 65*(6), 386–408. https://doi.org/10.1037/h0042519
 - Russell, S., & Norvig, P. (2021). *Artificial intelligence: A modern approach* (4th ed.). Pearson.
@@ -560,6 +650,7 @@ Clippy 這類早期助手都靠 **寫死的規則** 運作——「偵測到某�
 - Turing, A. M. (1950). Computing machinery and intelligence. *Mind, 59*(236), 433–460. https://doi.org/10.1093/mind/LIX.236.433
 - Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is all you need. In *Advances in Neural Information Processing Systems 30* (pp. 5998–6008).
 - Vial, G. (2019). Understanding digital transformation: A review and a research agenda. *The Journal of Strategic Information Systems, 28*(2), 118–144. https://doi.org/10.1016/j.jsis.2019.01.003
+- Weizenbaum, J. (1966). ELIZA—A computer program for the study of natural language communication between man and machine. *Communications of the ACM, 9*(1), 36–45. https://doi.org/10.1145/365153.365168
 
 ---
 

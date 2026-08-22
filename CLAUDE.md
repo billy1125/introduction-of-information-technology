@@ -92,7 +92,7 @@
 |------|------|
 | ERP／MES／SCM 等企業應用系統的定義與功能 | `05-Information-Systems-and-Database.md`〈三、企業應用系統〉 |
 | 資料庫、SQL、NoSQL、大數據特性（5V） | `05-Information-Systems-and-Database.md` |
-| 機器學習／深度學習原理、AI 發展史 | `06-Data-Science-AI-and-Smart-Manufacturing.md` |
+| 機器學習／深度學習原理、AI 發展史、弱 AI／強 AI／AGI、AI 應用類型 | `06-Data-Science-AI-and-Smart-Manufacturing.md`〈二〉〈三〉 |
 | 工業4.0（定義、九大支柱、數位轉型、數位孿生）與智慧工廠整合案例 | `06-Data-Science-AI-and-Smart-Manufacturing.md`〈五、工業4.0與智慧製造〉 |
 | 智慧工廠的分層架構 | `04-Networks-and-Internet.md`〈二十三、智慧製造網路架構（概念性）〉 |
 | 資料結構（列表、堆疊、佇列、集合、映射、樹） | `03-Computer-Program.md`〈第二篇：資料結構基礎〉 |
