@@ -9,6 +9,9 @@ style: |
     margin-left: auto;
     margin-right: auto;
   }
+  section.center-text > p {
+    text-align: center;
+  }
   section > p,
   section > ul,
   section > ol,
@@ -407,9 +410,28 @@ style: |
 
 ## LINE 群組
 
-- 所有課程公告皆於 LINE 群組發布，請務必加入
-- 公告時間：平日 09:00–16:00，緊急事務儘量於晚間 9 時前
+- 所有課程公告皆於 LINE 群組發布，請務必加入，群組 QR Code 於下頁
+- 公告時間：平日 09:00–16:00，若有緊急事務需要公告，則儘量於晚間 9 時前通告
 - 同學間提問、聊天不受此限制（請注意禮節）
 
-- A 班：（連結另行公告）
-- B 班：（連結另行公告）
+> **A 班、B 班各有各的群組，請加入自己班級的那一個群組即可**
+
+---
+
+<!-- _class: invert center-text -->
+
+## A 班 LINE 群組
+
+![h:420](images/00-Course-Introduction/class-a-line-qrcode.jpg)
+
+[https://line.me/ti/g/5-ASxmUASa](https://line.me/ti/g/5-ASxmUASa)
+
+---
+
+<!-- _class: invert center-text -->
+
+## B 班 LINE 群組
+
+![h:420](images/00-Course-Introduction/class-b-line-qrcode.jpg)
+
+[https://line.me/ti/g/p7uqhZyHjS](https://line.me/ti/g/p7uqhZyHjS)

@@ -302,11 +302,15 @@
 
 ### A 班
 
-（連結另行公告）
+![A班QRCODE](images/00-Course-Introduction/class-a-line-qrcode.jpg)
+
+[https://line.me/ti/g/5-ASxmUASa](https://line.me/ti/g/5-ASxmUASa)
 
 ### B 班
 
-（連結另行公告）
+![B班QRCODE](images/00-Course-Introduction/class-b-line-qrcode.jpg)
+
+[https://line.me/ti/g/p7uqhZyHjS](https://line.me/ti/g/p7uqhZyHjS)
 
 ## 前言：從第一份實習工作談起
 

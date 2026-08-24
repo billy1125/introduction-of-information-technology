@@ -862,8 +862,6 @@ Dequeue()： A 被取出，剩 [B][C][D]
 
 ---
 
-![bg right:45%](images/03-Computer-Program/tony-hoare.jpg)
-
 ## 趣味小知識：快速排序的發明
 
 - 泡沫排序直觀但非實務常用——真正撐起現代排序功能的是 **快速排序（Quicksort）**

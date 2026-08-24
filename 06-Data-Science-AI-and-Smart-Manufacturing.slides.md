@@ -100,11 +100,7 @@ style: |
 
 ## 資料、資訊與知識：三層轉化鏈
 
-- **資料（Data）**：感測器回傳的數字 `23.5`，本身沒有意義
-- **資訊（Information）**：「A 生產線午後溫度超標，對應良率下滑 4%」，能用於決策
-- **知識（Knowledge）**：把資訊與經驗結合，形成「下次該如何應對」的理解
-
-![h:340](images/05-Information-Systems-and-Database/hierarchy-of-data-information-knowledge.png)
+![h:500](images/05-Information-Systems-and-Database/hierarchy-of-data-information-knowledge.png)
 
 ---
 
@@ -129,9 +125,7 @@ style: |
 
 ## 網路、雲端與物聯網：讓資料匯聚成流
 
-早期每台電腦都是「孤島」，資料只能靠磁碟片搬移。網路（TCP/IP 與全球資訊網）讓電腦直接溝通，資訊系統也從單機演化為跨地點、跨組織的整合服務。
-
-![h:380](images/06-Data-Science-AI-and-Smart-Manufacturing/one-computer-to-internet.png)
+![h:500](images/06-Data-Science-AI-and-Smart-Manufacturing/one-computer-to-internet.png)
 
 ---
 
@@ -169,6 +163,12 @@ style: |
 
 ---
 
+<!-- ## 資訊到知識這一階為什麼難 -->
+
+![h:520](images/06-Data-Science-AI-and-Smart-Manufacturing/information-to-knowledge-limit.png)
+
+---
+
 ## 為什麼這一階長年交不出去
 
 | 侷限 | 具體情況 |
@@ -201,11 +201,7 @@ style: |
 
 ## 資料科學：為駕馭大數據而生
 
-**資料科學（Data Science）** 結合統計學、程式演算法與領域知識，目的是從龐大又雜亂的資料中萃取有意義的規律，轉化成能支持決策的洞見。它是一整套流程：
-
-![h:340](images/06-Data-Science-AI-and-Smart-Manufacturing/what-is-data-science.png)
-
-> **採集 → 清洗 → 分析 → 視覺化 → 決策：這條流水線，正是資料科學為了駕馭大數據而存在的理由**
+![h:500](images/06-Data-Science-AI-and-Smart-Manufacturing/what-is-data-science.png)
 
 ---
 
@@ -372,6 +368,12 @@ $$
 6. **訓練完成**：參數固定下來，就能對沒看過的新資料做預測
 
 > **就像練習射箭：每次射偏後根據偏差調整姿勢，反覆練習直到命中率穩定**
+
+---
+
+<!-- ## 機器學習的訓練流程 -->
+
+![h:600](images/06-Data-Science-AI-and-Smart-Manufacturing/ai-machine-learning.png)
 
 ---
 
@@ -598,6 +600,12 @@ LLM 有時會生成聽起來合理、實際上卻錯誤的內容——捏造數�
 **通用人工智慧（AGI）**：能像人類一樣跨領域學習、理解、靈活運用知識解決問題，不需針對每個任務重新訓練
 
 > **AGI 與強 AI 概念高度重疊，但更強調「跨領域實用能力」而非「是否具備意識」，因此更容易被具體定義、測試與逐步逼近**
+
+---
+
+<!-- ## AI 的能力層級 -->
+
+![h:520](images/06-Data-Science-AI-and-Smart-Manufacturing/AI-evolution.png)
 
 ---
 

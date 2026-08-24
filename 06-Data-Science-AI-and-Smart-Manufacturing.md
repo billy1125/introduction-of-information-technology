@@ -447,7 +447,7 @@ Clippy 這類早期助手都靠 **寫死的規則** 運作——「偵測到某�
 
 指**能像人類一樣跨領域學習、理解並靈活運用知識解決各種不同問題的 AI 系統**，不需要針對每個任務重新設計或訓練 AI，只要給予提示或少量示範，就能舉一反三、觸類旁通。AGI 與強 AI 的概念高度重疊，但更強調「跨領域的實用能力」而非「是否具備意識」，因此比強 AI 更容易被具體定義、測試與逐步逼近。
 
-![AI的能力層級](images/06-Data-Science-AI-and-Smart-Manufacturing/ai-evolution.png)
+![AI的能力層級](images/06-Data-Science-AI-and-Smart-Manufacturing/AI-evolution.png)
 
 *本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
