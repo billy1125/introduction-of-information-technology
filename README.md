@@ -12,16 +12,20 @@
 
 ## 📚 教材清單
 
-| 檔案 | 主題 | 說明 | 投影片版本 | 練習筆記本 |
-|------|------|------|------|------|
-| [00-Course-Introduction.md](00-Course-Introduction.md) | 課程介紹 | 課程概要、評分方式、考試規定、不可抗力認定、出席規範、請假規定 | [Slides](00-Course-Introduction.slides.md) | — |
-| [00-Course-Rules-Quiz.md](00-Course-Rules-Quiz.md) | 課程規範理解測驗 | 20 題是非題的自我檢核，附解答與出處；不計分、不用繳交 | — | — |
-| [01-History-of-Computer.md](01-History-of-Computer.md) | 計算機歷史 | 計算工具演進、二進位系統、數位化、網路起源、AI 發展簡史 | [Slides](01-History-of-Computer.slides.md) | — |
-| [02-Computer-Structure.md](02-Computer-Structure.md) | 電腦硬體、作業系統與應用軟體 | CPU、記憶體、儲存裝置、作業系統、應用軟體、工業4.0 | [Slides](02-Computer-Structure.slides.md) | [Notebook](notebooks/Computer-Structure-Examples.ipynb) |
-| [03-Computer-Program.md](03-Computer-Program.md) | 程式設計概念 | 演算法、程式語言、資料結構、工業工程應用 | [Slides](03-Computer-Program.slides.md) | [Notebook](notebooks/Computer-Program-Examples.ipynb) |
-| [04-Networks-and-Internet.md](04-Networks-and-Internet.md) | 網路與網際網路 | 網路硬體與拓樸、無線與行動通訊、物聯網、TCP/IP、WWW 與 DNS、網際網路服務與資安、智慧製造網路 | [Slides](04-Networks-and-Internet.slides.md) | — |
-| [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | 資訊系統與資料庫 | 資訊系統類型（TPS/MIS/DSS/EIS）、ERP/MES/CRM、關聯式資料庫、SQL、NoSQL、大數據、電子商務 | [Slides](05-Information-Systems-and-Database.slides.md) | — |
-| [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) | 資料科學、人工智慧與智慧製造 | 從計算機到 AI 的完整脈絡、機器學習、深度學習、生成式 AI、AI 代理人，並以工業4.0智慧工廠案例整合全課程（全課程終點章節） | [Slides](06-Data-Science-AI-and-Smart-Manufacturing.slides.md) | — |
+| 內容已確定 | 檔案 | 主題 | 說明 | 投影片版本 | 練習筆記本 |
+|------|------|------|------|------|------|
+| ✅ | [00-Course-Introduction.md](00-Course-Introduction.md) | 課程介紹 | 課程概要、評分方式、考試規定、不可抗力認定、出席規範、請假規定 | [Slides](00-Course-Introduction.slides.md) | — |
+|  | [00-Course-Rules-Quiz.md](00-Course-Rules-Quiz.md) | 課程規範理解測驗 | 20 題是非題的自我檢核，附解答與出處；不計分、不用繳交 | — | — |
+|  | [01-History-of-Computer.md](01-History-of-Computer.md) | 計算機歷史 | 計算工具演進、二進位系統、數位化、網路起源、AI 發展簡史 | [Slides](01-History-of-Computer.slides.md) | — |
+|  | [02-Computer-Structure.md](02-Computer-Structure.md) | 電腦硬體、作業系統與應用軟體 | CPU、記憶體、儲存裝置、作業系統、應用軟體、工業4.0 | [Slides](02-Computer-Structure.slides.md) | [Notebook](notebooks/Computer-Structure-Examples.ipynb) |
+|  | [03-Computer-Program.md](03-Computer-Program.md) | 程式設計概念 | 演算法、程式語言、資料結構、工業工程應用 | [Slides](03-Computer-Program.slides.md) | [Notebook](notebooks/Computer-Program-Examples.ipynb) |
+|  | [04-Networks-and-Internet.md](04-Networks-and-Internet.md) | 網路與網際網路 | 網路硬體與拓樸、無線與行動通訊、物聯網、TCP/IP、WWW 與 DNS、網際網路服務與資安、智慧製造網路 | [Slides](04-Networks-and-Internet.slides.md) | — |
+|  | [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | 資訊系統與資料庫 | 資訊系統類型（TPS/MIS/DSS/EIS）、ERP/MES/CRM、關聯式資料庫、SQL、NoSQL、大數據、電子商務 | [Slides](05-Information-Systems-and-Database.slides.md) | — |
+|  | [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) | 資料科學、人工智慧與智慧製造 | 從計算機到 AI 的完整脈絡、機器學習、深度學習、生成式 AI、AI 代理人，並以工業4.0智慧工廠案例整合全課程（全課程終點章節） | [Slides](06-Data-Science-AI-and-Smart-Manufacturing.slides.md) | — |
+
+**「內容已確定」欄位標示 ✅ 的教材，內容原則上不再變動**；對章節教材而言，標示 ✅ 就表示 **該章的期中考範圍已經定案**，同學可以放心據此準備，不必擔心讀到一半範圍又被加東西。標示 ✅ 之後仍可能有錯字修正、補充說明或排版調整，但不會再增刪影響考試範圍的內容。
+
+欄位空白者表示 **內容尚未定案、仍可能調整**，會隨著課程進行陸續標上 ✅；範圍相關的異動一律於課堂與 LINE 群組公告。
 
 尚未提供投影片或練習筆記本、或本來就不需要的項目，欄位標示為「—」。
 
