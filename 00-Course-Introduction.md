@@ -7,7 +7,7 @@
 | 授課老師 | 呂卓勲、孫天龍（以授課順序排序） |
 | Email | chohsunlu@saturn.yzu.edu.tw、tsun@saturn.yzu.edu.tw |
 | Office Hour | 呂老師：每週四 13:30–16:30、孫老師：請自行諮詢孫老師 |
-| 上課時間 | 每週五，第 2–4 節（A班）、第 6–8 節（B班），各三小時。上課日若遇國定假日則停課一次。 |
+| 上課時間 | 每週五，第 2–4 節（A 班）、第 6–8 節（B 班），各三小時。上課日若遇國定假日則停課一次。 |
 | 上課地點 | *待補* |
 | 課程內容 | 理解當代計算機基礎架構、資訊科技演進、人工智慧（Artificial Intelligence, AI）現況，能讓你對於電腦與資訊科技與 AI 有基本概念 |
 
@@ -261,7 +261,7 @@
   - 要去打工、打工班表已排好 🈲 🙅
   - 你考駕照考了四五次甚至更多 🚗 🛵
   - 老師我已經機票買好了，可以之後補考期中考嗎？
-  - 要去排演唱會周邊、心儀的偶像閃電結婚/退伍 👩‍🎤 🧑‍🎤
+  - 要去排演唱會周邊、心儀的偶像閃電結婚／退伍 👩‍🎤 🧑‍🎤
   - 我的鬧鐘壞了 ⏰️
   - 昨晚熬夜打電動，現在太睏了 🎮
   - 男生請生理假？
@@ -302,13 +302,13 @@
 
 ### A 班
 
-![A班QRCODE](images/00-Course-Introduction/class-a-line-qrcode.jpg)
+![A 班 QRCODE](images/00-Course-Introduction/class-a-line-qrcode.jpg)
 
 [https://line.me/ti/g/5-ASxmUASa](https://line.me/ti/g/5-ASxmUASa)
 
 ### B 班
 
-![B班QRCODE](images/00-Course-Introduction/class-b-line-qrcode.jpg)
+![B 班 QRCODE](images/00-Course-Introduction/class-b-line-qrcode.jpg)
 
 [https://line.me/ti/g/p7uqhZyHjS](https://line.me/ti/g/p7uqhZyHjS)
 
