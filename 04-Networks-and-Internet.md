@@ -47,7 +47,7 @@
 
 ## 一、網路基本概念
 
-> **前情提要**：[01-History-of-Computer.md](01-History-of-Computer.md)〈八、網路與網際網路的發展〉已先介紹過 ARPANET、TCP/IP、WWW 的發展歷史，本章在此基礎上深入網路拓樸、硬體設備、通訊協定分層架構等技術細節。
+> **前情提要**：[01-History-of-Computer.md](01-History-of-Computer.md)〈七、網路與網際網路的發展〉已先介紹過 ARPANET、TCP/IP、WWW 的發展歷史，本章在此基礎上深入網路拓樸、硬體設備、通訊協定分層架構等技術細節。
 
 ### 1. 什麼是網路？
 

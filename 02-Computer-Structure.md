@@ -134,17 +134,86 @@
 
 ## 三、資料表示與數位化
 
-> **前情提要**：[01-History-of-Computer.md](01-History-of-Computer.md)〈七、數位化與電腦運作原理〉已先介紹過二進位與數位化的基本概念，本節在此基礎上補充完整的進位轉換與浮點數表示法。
-
 電腦只認識兩種狀態：**0（無電）** 與 **1（有電）**，所有資料都必須轉換為由 0 和 1 組成的序列，才能被電腦處理，這個過程稱為[數位化（Digitization）](https://zh.wikipedia.org/zh-tw/數位化)。
 
-- 最小的資料單位是 **位元（bit）**，只能是 0 或 1
-- 8 個位元組成 1 個 **位元組（Byte）**，可表示 256 種不同狀態
+### 1. 二進位系統
+
+電腦之所以能處理各種資訊，關鍵在於[二進位（Binary）](https://zh.wikipedia.org/zh-tw/%E4%BA%8C%E8%BF%9B%E5%88%B6)系統。從電路開關、繼電器、邏輯閘到位元表示，二進位之所以成為現代數位電腦的基礎，主要是因為它能以穩定且可工程化的方式對應電子元件的兩種狀態（Petzold, 2022）。
+
+電子元件（如電晶體）最自然的存在狀態只有兩種：**通電（1）** 或 **不通電（0）**。電腦利用這兩種狀態的組合，來表示所有的資料與指令。這種只使用 0 和 1 的數字系統，稱為二進位（Binary，基底為 2）。
+
+**為什麼不用十進位？**
+
+雖然人類習慣使用十進位，但要讓電路穩定地區分十種不同電壓等級極為困難，且容易出錯。而只需區分「有電／沒電」兩種狀態則簡單可靠得多。
+
+**二進位計數範例**：
+
+| 十進位 | 二進位 |
+|-------|-------|
+| 0 | 0000 |
+| 1 | 0001 |
+| 2 | 0010 |
+| 3 | 0011 |
+| 4 | 0100 |
+| 8 | 1000 |
+| 15 | 1111 |
+
+**資料的計量單位**
+
+- 1 個[位元（bit）](https://zh.wikipedia.org/zh-tw/%E4%BD%8D%E5%85%83)可表示 2 種狀態（0 或 1），這是最小的資料單位
+- 8 個位元（bits）= 1 個[位元組（Byte）](https://zh.wikipedia.org/zh-tw/%E5%AD%97%E8%8A%82)，可表示 2⁸ = 256 種狀態
 - 常見單位：1 KB（千位元組）≈ 1,024 Bytes；1 MB ≈ 1,024 KB；1 GB ≈ 1,024 MB
+- 電腦的所有資料——文字、圖片、聲音、影片——最終都是由無數個 0 和 1 所組成的
 
 > **趣味小知識**：買一顆標示「1TB」的硬碟，接上電腦卻顯示只有約 931 GB，並不是被廠商偷斤減兩。硬碟製造商以「1 TB = 1,000,000,000,000 Bytes」（十進位）計算容量，作業系統卻以「1 TB = 1024⁴ Bytes」（二進位）換算顯示——同一個「TB」，兩種算法，差了將近 10%。
 
-**在製造環境中的感測資料**：工廠裡充滿各種感測器，它們測量的是連續的物理量（如溫度 25.3°C、壓力 101.5 kPa），這些類比訊號必須透過[類比數位轉換器（ADC，Analog-to-Digital Converter）](https://zh.wikipedia.org/zh-tw/類比數位轉換器) 轉換為數位資料，才能傳入電腦進行分析與儲存。取樣的頻率與精度（解析度）越高，資料越能忠實反映現實，但也需要更多儲存空間與運算資源。
+### 2. 資料數位化
+
+文字、圖像、聲音與影片雖然在人類感知上截然不同，但在電腦內部都可被編碼為位元序列，再透過軟硬體進行儲存、傳輸與處理（Petzold, 2022）。
+
+**文字（ASCII 編碼）**
+
+[ASCII](https://zh.wikipedia.org/wiki/ASCII)（美國資訊交換標準碼）是最早期的文字編碼標準，用 7 個位元（共 128 種組合）來對應英文字母、數字與常用符號。例如，大寫字母「A」對應的 ASCII 碼是 65（二進位：1000001）。
+
+然而，128 種組合無法涵蓋全球所有語言的字元。為此，現代電腦普遍採用 [Unicode](https://zh.wikipedia.org/zh-hant/%E7%BB%9F%E4%B8%80%E7%A0%81) 編碼標準（如 [UTF-8](https://zh.wikipedia.org/wiki/Utf8)），可以表示超過 14 萬個字元，涵蓋中文、日文、阿拉伯文、甚至表情符號（Emoji）。
+
+> **趣味小知識**：英文字母的大小寫轉換，其實只是「翻轉一個位元」的把戲。大寫「A」的 ASCII 碼是 65（二進位 1000001），小寫「a」是 97（二進位 1100001）——兩者只差在其中一個位元，這也是為什麼程式語言常能用簡單的位元運算，就完成大小寫轉換。
+
+**圖像（像素與 RGB）**
+
+數位圖像由無數個微小的彩色方格組成，每個方格稱為[像素（Pixel，Picture Element 的縮寫）](https://zh.wikipedia.org/zh-tw/%E5%83%8F%E7%B4%A0)。每個像素的顏色以 [RGB](https://zh.wikipedia.org/zh-hans/%E4%B8%89%E5%8E%9F%E8%89%B2%E5%85%89%E6%A8%A1%E5%BC%8F) 模型表示：
+
+- **R（Red）紅色**：0–255 的數值
+- **G（Green）綠色**：0–255 的數值
+- **B（Blue）藍色**：0–255 的數值
+
+例如：純紅色是 RGB(255, 0, 0)；純白色是 RGB(255, 255, 255)；純黑色是 RGB(0, 0, 0)。
+
+一張 1920×1080 解析度的全高清圖片，共有 1,920 × 1,080 = 約 200 萬個像素，每個像素需要 3 個 Byte（RGB 各一），未壓縮時約需 6MB 的儲存空間。
+
+**聲音（取樣）**
+
+聲音是連續的模擬波形，數位化的過程稱為[取樣（Sampling）](https://zh.wikipedia.org/zh-tw/%E9%87%87%E6%A0%B7_(%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86))：以固定的時間間隔，記錄聲波在該瞬間的振幅數值。
+
+- **取樣率（Sample Rate）**：每秒取樣次數。CD 音質的取樣率為 44,100 Hz（每秒取 44,100 個樣本）。
+- **位元深度（Bit Depth）**：每個樣本的精確度。CD 音質使用 16 位元，代表振幅可分為 2¹⁶ = 65,536 個等級。
+
+取樣率越高、位元深度越大，數位聲音還原的真實感越好，但檔案也越大。
+
+**影片與 3D**
+
+- **影片**：本質上是連續播放的圖像序列（每秒 24、30 或 60 張畫面），加上同步的聲音。
+- **3D 圖像**：以座標系統描述三維空間中的點、線、面，再透過渲染（Rendering）技術計算光線折射，產生逼真的立體畫面。
+
+### 3. 多媒體資料
+
+**多媒體（Multimedia）** 指的是結合文字、圖像、聲音、動畫與影片的複合型資訊。現代的數位媒體——從 YouTube 影片、串流音樂到電玩遊戲——都是多媒體資料的應用。
+
+電玩遊戲是多媒體技術最複雜的整合應用之一：即時的 3D 場景渲染、音效處理、物理模擬、使用者輸入回應……全都在每秒數十次的運算循環中完成，考驗著電腦的運算極限。
+
+### 4. 製造環境中的感測資料
+
+工廠裡充滿各種感測器，它們測量的是連續的物理量（如溫度 25.3°C、壓力 101.5 kPa），這些類比訊號必須透過[類比數位轉換器（ADC，Analog-to-Digital Converter）](https://zh.wikipedia.org/zh-tw/類比數位轉換器) 轉換為數位資料，才能傳入電腦進行分析與儲存。取樣的頻率與精度（解析度）越高，資料越能忠實反映現實，但也需要更多儲存空間與運算資源。
 
 ![資料表示與數位化](images/02-Computer-Structure/digitalization.png)
 
@@ -1139,6 +1208,7 @@ CPU 負責運算與控制，記憶體提供高速但揮發的工作空間，儲�
 - NVIDIA. (2025). *NVIDIA DGX Spark: Personal AI supercomputer powered by Blackwell* [Product page]. https://www.nvidia.com/en-us/products/workstations/dgx-spark/
 - Null, L., & Lobur, J. (2018). *The essentials of computer organization and architecture* (5th ed.). Jones & Bartlett Learning.
 - Patterson, D. A., & Hennessy, J. L. (2021). *Computer organization and design RISC-V edition: The hardware/software interface* (2nd ed.). Morgan Kaufmann/Elsevier.
+- Petzold, C. (2022). *Code: The hidden language of computer hardware and software* (2nd ed.). Microsoft Press.
 - Robles, F., & Perlroth, N. (2021, February 8). 'Dangerous stuff': Hackers tried to poison water supply of Florida town. *The New York Times*. https://www.nytimes.com/2021/02/08/us/oldsmar-florida-water-supply-hack.html
 - Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal, 27*, 379–423, 623–656.
 - Shi, W., Cao, J., Zhang, Q., Li, Y., & Xu, L. (2016). Edge computing: Vision and challenges. *IEEE Internet of Things Journal, 3*(5), 637–646. https://doi.org/10.1109/JIOT.2016.2579198
