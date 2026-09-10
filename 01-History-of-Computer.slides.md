@@ -56,6 +56,16 @@ style: |
 
 **要認識對象、進而交往，本身就是一件需要蒐集大量「資訊」的事**
 
+> **你剛剛入學，想必也收集了很多很多的「資訊」...**
+
+---
+
+![h:640](images/00-Course-Introduction/student-01.png)
+
+---
+
+![h:640](images/00-Course-Introduction/student-02.png)
+
 ---
 
 ## 前言：從你口袋裡的智慧型手機談起
