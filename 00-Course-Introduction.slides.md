@@ -26,7 +26,7 @@ style: |
 
 授課老師：呂卓勲、孫天龍（以授課順序排序）
 
-課程教材：[reurl.cc/AX4XRe](https://reurl.cc/AX4XRe)
+課程教材：[GitHub](https://github.com/billy1125/Introduction-of-Information-Technology)
 
 ---
 
@@ -40,7 +40,7 @@ style: |
 | Email | chohsunlu@saturn.yzu.edu.tw、tsun@saturn.yzu.edu.tw |
 | Office Hour | 呂老師：每週四 13:30–16:30、孫老師：請自行諮詢孫老師 |
 | 上課時間 | 每週五，第 2–4 節（B 班）、第 6–8 節（A 班），各三小時。上課日若遇國定假日則停課一次 |
-| 上課地點 | *待補* |
+| 上課地點 | 2425（B 班）、2115（A 班） |
 
 ---
 

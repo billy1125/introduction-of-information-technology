@@ -22,9 +22,11 @@ style: |
 
 從最早的計算工具，到電子計算機、網際網路，再到今天的 AI
 
+課程教材：[GitHub](https://github.com/billy1125/Introduction-of-Information-Technology)
+
 ---
 
-[點選這裡](https://www.youtube.com/watch?v=YCbFYv9Uewo)
+[點選這裡](https://youtu.be/fxS4P6IhKxs?si=uYxwwVpBRdMINhFb)
 
 這個影片只是讓你別睡著而已
 
