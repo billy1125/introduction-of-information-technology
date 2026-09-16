@@ -1081,7 +1081,7 @@ print(目前最大值)               # 步驟 5：輸出結果 → 521
 
 每個箭頭之間，都有程式在運作——擷取、轉換、驗證、儲存、分析。理解這個流程，有助於你在面對工業資訊系統的設計或問題排查時，能夠定位問題發生在哪個環節。
 
-> **延伸閱讀**：本節只先說明資料從感測器流向程式的整體脈絡；ADC、PLC 等硬體元件請見 [02-Computer-Structure.md](02-Computer-Structure.md)〈七、中央處理器（CPU）與運算架構〉與〈三、資料表示與數位化〉；Modbus、OPC UA 等工業通訊協定的完整介紹，請見 [04-Networks-and-Internet.md](04-Networks-and-Internet.md)〈二十三、智慧製造網路架構（概念性）〉。
+> **延伸閱讀**：本節只先說明資料從感測器流向程式的整體脈絡；ADC、PLC 等硬體元件請見 [02-Computer-Structure.md](02-Computer-Structure.md)〈六、中央處理器（CPU）與運算架構〉與〈三、資料表示與數位化〉；Modbus、OPC UA 等工業通訊協定的完整介紹，請見 [04-Networks-and-Internet.md](04-Networks-and-Internet.md)〈二十三、智慧製造網路架構（概念性）〉。
 
 ### 3. 簡單案例：感測器資料分析流程
 
