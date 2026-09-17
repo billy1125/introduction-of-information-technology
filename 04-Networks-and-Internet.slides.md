@@ -22,6 +22,8 @@ style: |
 
 從連上宿舍 Wi-Fi，到工廠設備把資料送上雲端——理解資料如何在網路中流動
 
+課程教材：[GitHub](https://github.com/billy1125/Introduction-of-Information-Technology)
+
 ---
 
 ## 前言：從連上宿舍 Wi-Fi 談起

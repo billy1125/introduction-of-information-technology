@@ -23,6 +23,8 @@ style: |
 
 從老闆一句「我們也要導入 AI」，到一座真正的智慧工廠——把整門課收束成一條從感測器到決策的完整鏈條
 
+課程教材：[GitHub](https://github.com/billy1125/Introduction-of-Information-Technology)
+
 ---
 
 ## 前言：從「老闆說要導入 AI」談起

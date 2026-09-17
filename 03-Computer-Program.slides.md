@@ -22,6 +22,8 @@ style: |
 
 把解決問題的邏輯，寫成電腦能懂、能重複執行的步驟
 
+課程教材：[GitHub](https://github.com/billy1125/Introduction-of-Information-Technology)
+
 ---
 
 ## 前言：從排班表談起

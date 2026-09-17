@@ -22,6 +22,8 @@ style: |
 
 {一行副標，說明本份簡報的跨度或主軸}
 
+課程教材：[GitHub](https://github.com/billy1125/Introduction-of-Information-Technology)
+
 ---
 
 <!-- 以下四頁為開場鉤子，只在整份簡報最前面出現一次；製作單一章節的投影片時，整段刪除 -->

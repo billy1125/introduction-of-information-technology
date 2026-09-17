@@ -22,6 +22,8 @@ style: |
 
 從校園 Portal 到工廠 ERP——理解資料如何被蒐集、儲存、處理，最後變成有用的資訊
 
+課程教材：[GitHub](https://github.com/billy1125/Introduction-of-Information-Technology)
+
 ---
 
 ## 前言：從校園 Portal 談起

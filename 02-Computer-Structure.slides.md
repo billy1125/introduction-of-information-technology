@@ -22,6 +22,8 @@ style: |
 
 從圖靈的一條紙帶，一路走到工廠裡的 AI 工作站
 
+課程教材：[GitHub](https://github.com/billy1125/Introduction-of-Information-Technology)
+
 ---
 
 ## 前言：從開機的那三十秒談起
@@ -101,6 +103,9 @@ style: |
 
 ---
 
+<!-- _backgroundColor: White -->
+<!-- _color: Black -->
+
 ![w:700](images/02-Computer-Structure/turing-machine.svg)
 
 ---
@@ -153,6 +158,8 @@ style: |
 - 五者透過 **匯流排（Bus）** 傳遞資料與控制訊號
 
 ---
+
+<!-- _backgroundColor: white -->
 
 ![h:550](images/02-Computer-Structure/von-neumann-architecture.svg)
 
@@ -318,15 +325,17 @@ style: |
 
 ## 二進位計數範例
 
-| 十進位 | 二進位 |
-|---|---|
-| 0 | 0000 |
-| 1 | 0001 |
-| 2 | 0010 |
-| 3 | 0011 |
-| 4 | 0100 |
-| 8 | 1000 |
-| 15 | 1111 |
+| 十進位 | 二進位 | 十進位 | 二進位 | 十進位 | 二進位 | 十進位 | 二進位 |
+|---|---|---|---|---|---|---|---|
+| 0 | 0000 | 7 | 0111 | 14 | 1110 | 21 | 10101 |
+| 1 | 0001 | 8 | 1000 | 15 | 1111 | 22 | 10110 |
+| 2 | 0010 | 9 | 1001 | 16 | 10000 |  |  |
+| 3 | 0011 | 10 | 1010 | 17 | 10001 |  |  |
+| 4 | 0100 | 11 | 1011 | 18 | 10010 |  |  |
+| 5 | 0101 | 12 | 1100 | 19 | 10011 |  |  |
+| 6 | 0110 | 13 | 1101 | 20 | 10100 |  |  |
+
+> **二進位還會在〈四、數字系統與進位轉換〉詳細說明。**
 
 ---
 
@@ -366,7 +375,7 @@ style: |
 <!-- ## ASCII 編碼表 -->
 <!-- _backgroundColor: white -->
 
-![h:600](images/02-Computer-Structure/ascii-table.png)
+![h:640](images/02-Computer-Structure/ascii-table.png)
 
 ---
 
@@ -390,7 +399,7 @@ style: |
 
 <!-- ## 數位圖像 -->
 
-![h:600](images/02-Computer-Structure/digital-image.png)
+![h:590](images/02-Computer-Structure/digital-image.png)
 
 ---
 
@@ -460,7 +469,7 @@ RGB 各用 1 個 Byte，每個像素需要 3 個 Byte。以 1920×1080 的 **Ful
 
 <!-- ## 數位聲音 -->
 
-![h:600](images/02-Computer-Structure/digital-audio.png)
+![h:590](images/02-Computer-Structure/digital-audio.png)
 
 ---
 
@@ -561,7 +570,7 @@ CD 音質：取樣率 44,100 Hz、位元深度 16 位元、立體聲 2 個聲道
 
 ---
 
-![h:600](images/02-Computer-Structure/digitalization.png)
+![h:640](images/02-Computer-Structure/digitalization.png)
 
 ---
 
