@@ -106,6 +106,6 @@
 
 ## Claude Code 技能（`.claude/skills/`）
 
-- **一個技能一個資料夾**：每個 skill 都自成一個獨立資料夾（如 `.claude/skills/speak-human-tw/`），該技能所有相依檔案（`references/`、`evals/` 等）一律收在此資料夾內，不散落於專案根目錄；`SKILL.md` 內的相對連結也必須指向資料夾內部，確保技能可獨立搬移。
+- **一個技能一個資料夾**：每個 skill 都自成一個獨立資料夾（如 `.claude/skills/{技能名稱}/`），該技能所有相依檔案（`references/`、`evals/` 等）一律收在此資料夾內，不散落於專案根目錄；`SKILL.md` 內的相對連結也必須指向資料夾內部，確保技能可獨立搬移。
 - **技能授權例外**：移植自外部專案的技能，依其原始授權條款使用，不適用本專案 README 所宣告的 CC BY-NC-SA 授權。移植時須在技能資料夾內保留原始 `LICENSE`，`SKILL.md` frontmatter 保留原作者標示，並在 `README.md`〈📄 授權與使用聲明〉的例外項目中列明來源與授權。
-- 現有技能：`speak-human-tw`（繁體中文去 AI 味改寫，移植自 [Raymond Hou 的 speak-human-tw](https://github.com/Raymondhou0917/speak-human-tw)，MIT 授權）。
+- 現有技能：目前沒有。
