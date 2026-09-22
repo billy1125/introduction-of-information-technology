@@ -74,9 +74,9 @@
 | 5 | 10/09 | **國慶日補假** | — | — | — | 停課；10/10 國慶日適逢週六，補假挪至本日 |
 | 6 | 10/16 | 網路與網際網路 | [04-Networks-and-Internet.md](04-Networks-and-Internet.md) | [04-Networks-and-Internet.slides.md](04-Networks-and-Internet.slides.md) | — | — |
 | 7 | 10/23 | 資訊系統與資料庫 | [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | [05-Information-Systems-and-Database.slides.md](05-Information-Systems-and-Database.slides.md) | — | — |
-| — | 10/28 | **期中複習** | — | — | — | **暫定，晚間加開，自由參加**；詳細時間地點另行公告 |
 | 8 | 10/30 | 資料科學、人工智慧與智慧製造（含工業4.0） | [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) | [06-Data-Science-AI-and-Smart-Manufacturing.slides.md](06-Data-Science-AI-and-Smart-Manufacturing.slides.md) | — | 全課程終點 |
-| 9 | 11/06 | **期中考** | — | — | — | **地點最晚考前一週公告** |
+| 9 | 11/04 | **期中複習** | — | — | — | **自由參加**；時間：18:00-21:00、地點：2623教室 |
+| 9 | 11/06 | **期中考** | — | — | — | **考試時間地點均為課程時間與教室** |
 
 ## 期中考試
 
@@ -103,7 +103,7 @@
 ### 考試時間地點
 
 - 時間：期中考將在「2026.11.06（第 9 週）」進行
-- 地點：最晚於考前一週公告
+- 地點：課程教室
 
 ### 考試範圍
 
@@ -221,7 +221,7 @@
 
 ### 期中考複習課程（畫重點？！）
 
-因為本學期前段太多放假，預計將於 10/28 晚間（暫定，詳細時間地點會再公告），會開設考前複習或整理課程，歡迎同學多參加。
+因為本學期前段太多放假，預計將於 **11/04（三）18:00-21:00 地點 2623 教室**，開設考前複習或整理課程，不點名，自由參加。
 
 有任何本課程問題的同學都可以來，也歡迎同學可以另外找時間跟老師討論，當然同學間討論更好！
 
