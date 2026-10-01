@@ -1036,6 +1036,26 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 換句話說，即使技術演進到了生成式 AI 的時代，電腦仍然遵循著圖靈、馮諾依曼奠定的基本架構——CPU＋記憶體＋儲存＋輸入輸出，只是每個部件都因應新的運算需求不斷演化。對工業工程管理的學生而言，理解這套架構，才能看懂企業導入 AI 應用（如良率預測、視覺檢測、生成式排程建議）時，硬體採購規劃需要考慮的不只是「買一台厲害的電腦」，而是記憶體、算力與儲存三者是否均衡搭配。
 
+### 5. 回到自己的書桌：大學四年的個人電腦該買什麼規格
+
+企業採購 AI 硬體要看記憶體、算力與儲存是否均衡，同一套判斷也能用在自己要買的電腦上。下表以 2026 年下半年的市場為準，整理一台希望用到大學畢業的個人電腦，在這三項規格上的建議。規格與價格每年都在變，表中的數字是寫作當下的建議，不是保證；比數字更重要的是表格後面的判斷依據。
+
+| 項目 | 多數同學（文書、Excel、Python 練習、線上 AI 服務） | 會用到 3D 繪圖、模擬軟體，或想在自己電腦上跑 AI 模型 |
+| --- | --- | --- |
+| 記憶體（RAM） | 16 GB，不建議 8 GB | 32 GB |
+| 儲存裝置（SSD） | 512 GB 起，預算允許選 1 TB | 1 TB 以上 |
+| GPU | CPU 內顯即可 | 獨立顯示卡，VRAM 8 GB 以上 |
+
+**記憶體是三項之中最不該省的。** Microsoft 列出的 Windows 11 最低需求只有 4 GB，但那只代表「裝得起來」；它為主打本機 AI 功能的 Copilot+ PC 訂的門檻則是 16 GB（Microsoft, n.d.）。原因可以回到〈七、記憶體與儲存裝置〉的記憶體階層：瀏覽器分頁、Office、通訊軟體與 Python 同時開著，RAM 一旦用完，作業系統就會把暫時不用的資料搬到 SSD 上（見〈十三、記憶體管理〉的虛擬記憶體），而 SSD 的存取延遲是 RAM 的上百倍，電腦就會明顯卡頓。另外，許多輕薄筆電的記憶體直接焊在主機板上，買了之後不能再加，購買當下就要選夠；記憶體插槽可以自行加裝的機種，才適合先買 16 GB、日後再擴充。
+
+**儲存裝置的彈性比記憶體大。** Windows 11 光是安裝就要求至少 64 GB，Copilot+ PC 的門檻是 256 GB（Microsoft, n.d.）；再加上四年累積的報告、課堂錄影、專題資料與各種軟體，256 GB 的餘裕有限，因此建議 512 GB 起跳，並且選 SSD 而不是 HDD 當系統碟。不過容量不夠時，還可以用外接 SSD 或雲端硬碟補上，這一項買少了比較容易補救。
+
+**多數同學不需要獨立顯示卡。** ChatGPT、Claude、Gemini 這類線上 AI 服務的運算，都在雲端資料中心的 GPU 上完成，你的電腦只負責送出文字與顯示結果；本課程的 Python 練習也可以上傳到 Google Colab 執行，同樣不吃自己電腦的算力。真正需要獨立顯示卡的情況有兩種。第一種是 3D 繪圖與模擬軟體：以工業設計與製造業常見的 3D CAD 軟體 SOLIDWORKS 為例，它只有 Windows 版，經銷商的硬體建議多以 32 GB 記憶體搭配獨立顯示卡為基準。第二種是在自己的電腦上執行 AI 模型，這時要先看 VRAM 容量，因為模型必須整個載入 VRAM，GPU 才能運算。一個 70 億參數的語言模型，若每個參數壓縮成 4 bits 存放，就需要 7 × 10⁹ × 4 ÷ 8 = 3.5 × 10⁹ bytes，約 3.5 GB，再加上運算過程的暫存空間，8 GB VRAM 是實際可用的起點。
+
+選 Mac 的同學要多留意兩件事。Apple Silicon 的 Mac 和前一小節的 DGX Spark 一樣採用統一記憶體，同一塊記憶體既是 RAM 也是 VRAM，而且出廠後無法擴充，購買時就要把兩者的需求一起算進去；此外，部分工程軟體沒有 macOS 版本，選購前先確認系上課程會用到哪些軟體。
+
+> **趣味小知識**：2026 年買電腦，會發現同樣的規格比前一年貴。原因就在前一小節：AI 伺服器需要大量記憶體，記憶體大廠把產能優先撥給資料中心，個人電腦能分到的記憶體變少、價格上漲。市調機構 TrendForce 在 2026 年 7 月預估，第三季一般型 DRAM 的合約價會再比上一季上漲 13–18%、NAND Flash（SSD 的儲存元件）上漲 10–15%，筆電的零售價也會跟著全面調漲（TrendForce, 2026）。資料中心的 AI 與你書桌上的筆電，用的是同一批工廠生產的記憶體。
+
 ---
 
 ## 第五篇：軟體層面
@@ -1420,6 +1440,7 @@ CPU 負責運算與控制，記憶體提供高速但揮發的工作空間，儲�
 - Hennessy, J. L., & Patterson, D. A. (2019). *Computer architecture: A quantitative approach* (6th ed.). Morgan Kaufmann/Elsevier.
 - Institute of Electrical and Electronics Engineers. (2019). *IEEE standard for floating-point arithmetic* (IEEE Std 754-2019). IEEE. https://doi.org/10.1109/IEEESTD.2019.8766229
 - Lee, J., Bagheri, B., & Kao, H.-A. (2015). A cyber-physical systems architecture for Industry 4.0-based manufacturing systems. *Manufacturing Letters, 3*, 18–23. https://doi.org/10.1016/j.mfglet.2014.12.001
+- Microsoft. (n.d.). *Windows 11 specs and system requirements*. Retrieved October 1, 2026, from https://www.microsoft.com/en-us/windows/windows-11-specifications
 - Moore, G. E. (1965). Cramming more components onto integrated circuits. *Electronics, 38*(8), 114–117.
 - NVIDIA. (2025). *NVIDIA DGX Spark: Personal AI supercomputer powered by Blackwell* [Product page]. https://www.nvidia.com/en-us/products/workstations/dgx-spark/
 - Null, L., & Lobur, J. (2018). *The essentials of computer organization and architecture* (5th ed.). Jones & Bartlett Learning.
@@ -1434,6 +1455,7 @@ CPU 負責運算與控制，記憶體提供高速但揮發的工作空間，儲�
 - Stallings, W. (2018). *Operating systems: Internals and design principles* (9th ed.). Pearson.
 - Tanenbaum, A. S., & Austin, T. (2013). *Structured computer organization* (6th ed.). Pearson.
 - Tanenbaum, A. S., & Bos, H. (2015). *Modern operating systems* (4th ed.). Pearson.
+- TrendForce. (2026, July 3). *AI server demand continues to support memory prices in 3Q26, but gains moderate as consumer demand weakens and high base effects take hold, says TrendForce* [Press release]. https://www.trendforce.com/presscenter/news/20260703-13134.html
 - Turing, A. M. (1936). On computable numbers, with an application to the Entscheidungsproblem. *Proceedings of the London Mathematical Society, s2-42*(1), 230–265. https://doi.org/10.1112/plms/s2-42.1.230
 - von Neumann, J. (1993). First draft of a report on the EDVAC (M. D. Godfrey, Ed.). *IEEE Annals of the History of Computing, 15*(4), 27–75. https://doi.org/10.1109/85.238389
 - Xu, L. D., He, W., & Li, S. (2014). Internet of things in industries: A survey. *IEEE Transactions on Industrial Informatics, 10*(4), 2233–2243. https://doi.org/10.1109/TII.2014.2300753
