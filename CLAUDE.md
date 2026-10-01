@@ -28,7 +28,7 @@
 | `04-Networks-and-Internet.md` | 分三篇：網路（硬體、拓樸、無線與行動通訊、物聯網）、網際網路（TCP/IP、WWW、DNS、網路服務與資安）、整合觀點（智慧製造網路架構） |
 | `05-Information-Systems-and-Database.md` | 資訊系統、資料庫（ERP/MES/SCM 等企業應用系統的權威章節） |
 | `06-Data-Science-AI-and-Smart-Manufacturing.md` | 資料科學、人工智慧與智慧製造（**全課程終點**）：串接計算機→程式→網路→資訊系統→AI 的技術演進主線，並在最後以工業4.0智慧工廠案例收束全課程。機器學習／深度學習原理、AI 發展史，以及工業4.0（定義、九大支柱、數位轉型、數位孿生）的權威章節 |
-| `notebooks/Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 第一篇（程式設計與運算思維）與第二篇（資料結構基礎，七～八節）的實作範例 |
+| `notebooks/Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 第一篇（程式設計與運算思維，二～四節）、第二篇（資料結構基礎，六～七節）與第三篇〈十一、效率與時間複雜度概念〉的實作範例 |
 | `notebooks/Computer-Structure-Examples.ipynb` | Python Jupyter 筆記本，對應 `02-Computer-Structure.md`〈四、數字系統與進位轉換〉與〈五、浮點數與 IEEE 754〉的練習題完整詳解 |
 
 各章節另有對應的 Marp 投影片版本 `0X-XXX.slides.md`（目前涵蓋 00–06 章）。
