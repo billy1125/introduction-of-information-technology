@@ -1038,17 +1038,20 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 ### 5. 回到自己的書桌：大學四年的個人電腦該買什麼規格
 
-企業採購 AI 硬體要看記憶體、算力與儲存是否均衡，同一套判斷也能用在自己要買的電腦上。下表以 2026 年下半年的市場為準，整理一台希望用到大學畢業的個人電腦，在這三項規格上的建議。規格與價格每年都在變，表中的數字是寫作當下的建議，不是保證；比數字更重要的是表格後面的判斷依據。
+企業採購 AI 硬體要看記憶體、算力與儲存是否均衡，同一套判斷也能用在自己要買的電腦上。下表以 2026 年下半年的市場為準，整理一台希望用到大學畢業的個人電腦，在這三項上的規格建議，其中算力分成 CPU 與 GPU 兩列。規格與價格每年都在變，表中的數字是寫作當下的建議，不是保證；比數字更重要的是表格後面的判斷依據。
 
 | 項目 | 多數同學（文書、Excel、Python 練習、線上 AI 服務） | 會用到 3D 繪圖、模擬軟體，或想在自己電腦上跑 AI 模型 |
 | --- | --- | --- |
 | 記憶體（RAM） | 16 GB，不建議 8 GB | 32 GB |
 | 儲存裝置（SSD） | 512 GB 起，預算允許選 1 TB | 1 TB 以上 |
+| CPU | 近兩年推出的主流中階款（Intel Core Ultra 5、AMD Ryzen AI 5 這一級） | 高一級的款式（Core Ultra 7、Ryzen AI 7 這一級），並選 Intel 或 AMD |
 | GPU | CPU 內顯即可 | 獨立顯示卡，VRAM 8 GB 以上 |
 
-**記憶體是三項之中最不該省的。** Microsoft 列出的 Windows 11 最低需求只有 4 GB，但那只代表「裝得起來」；它為主打本機 AI 功能的 Copilot+ PC 訂的門檻則是 16 GB（Microsoft, n.d.）。原因可以回到〈七、記憶體與儲存裝置〉的記憶體階層：瀏覽器分頁、Office、通訊軟體與 Python 同時開著，RAM 一旦用完，作業系統就會把暫時不用的資料搬到 SSD 上（見〈十三、記憶體管理〉的虛擬記憶體），而 SSD 的存取延遲是 RAM 的上百倍，電腦就會明顯卡頓。另外，許多輕薄筆電的記憶體直接焊在主機板上，買了之後不能再加，購買當下就要選夠；記憶體插槽可以自行加裝的機種，才適合先買 16 GB、日後再擴充。
+**記憶體是最不該省的一項。** Microsoft 列出的 Windows 11 最低需求只有 4 GB，但那只代表「裝得起來」；它為主打本機 AI 功能的 Copilot+ PC 訂的門檻則是 16 GB（Microsoft, n.d.）。原因可以回到〈七、記憶體與儲存裝置〉的記憶體階層：瀏覽器分頁、Office、通訊軟體與 Python 同時開著，RAM 一旦用完，作業系統就會把暫時不用的資料搬到 SSD 上（見〈十三、記憶體管理〉的虛擬記憶體），而 SSD 的存取延遲是 RAM 的上百倍，電腦就會明顯卡頓。另外，許多輕薄筆電的記憶體直接焊在主機板上，買了之後不能再加，購買當下就要選夠；記憶體插槽可以自行加裝的機種，才適合先買 16 GB、日後再擴充。
 
 **儲存裝置的彈性比記憶體大。** Windows 11 光是安裝就要求至少 64 GB，Copilot+ PC 的門檻是 256 GB（Microsoft, n.d.）；再加上四年累積的報告、課堂錄影、專題資料與各種軟體，256 GB 的餘裕有限，因此建議 512 GB 起跳，並且選 SSD 而不是 HDD 當系統碟。不過容量不夠時，還可以用外接 SSD 或雲端硬碟補上，這一項買少了比較容易補救。
+
+**CPU 買主流中階款就夠，不必追最高階。** Windows 11 的最低需求只是 1 GHz、2 核心以上的 64 位元處理器，近幾年的 CPU 都遠高於這條線（Microsoft, n.d.）。文書、Excel 與 Python 練習用不滿中階 CPU 的算力，電腦變慢時先不夠用的通常是記憶體。選購時看兩件事。第一是等級與世代：Intel Core Ultra 與 AMD Ryzen AI 的型號數字 5、7、9 代表同一世代裡由低到高的等級，多數同學選 5 這一級即可；會跑模擬或 3D 算圖的同學選 7 這一級，這類工作能同時用上多個核心（見〈六、中央處理器（CPU）與運算架構〉的多核心與平行處理）。世代則優先選近兩年推出的，原因是 Copilot+ PC 要求 CPU 內建每秒可執行 40 兆次運算（40 TOPS）以上的 NPU，目前只有 AMD Ryzen AI 300／400、Intel Core Ultra 200V／300V 與 Qualcomm Snapdragon X 這幾個系列達標（Microsoft, n.d.）。第二是架構：Intel 與 AMD 的 CPU 屬於 x86 架構，Snapdragon X 屬於 Arm 架構，兩者的指令不相通，軟體必須另外推出對應版本才能發揮效能。瀏覽器、Office、Python 這類常用軟體都已經有 Arm 版，但 CAD 與模擬軟體是 Windows on Arm 支援最弱的一塊（Pierce, 2026），因此會用到這類軟體的同學應選 Intel 或 AMD。
 
 **多數同學不需要獨立顯示卡。** ChatGPT、Claude、Gemini 這類線上 AI 服務的運算，都在雲端資料中心的 GPU 上完成，你的電腦只負責送出文字與顯示結果；本課程的 Python 練習也可以上傳到 Google Colab 執行，同樣不吃自己電腦的算力。真正需要獨立顯示卡的情況有兩種。第一種是 3D 繪圖與模擬軟體：以工業設計與製造業常見的 3D CAD 軟體 SOLIDWORKS 為例，它只有 Windows 版，經銷商的硬體建議多以 32 GB 記憶體搭配獨立顯示卡為基準。第二種是在自己的電腦上執行 AI 模型，這時要先看 VRAM 容量，因為模型必須整個載入 VRAM，GPU 才能運算。一個 70 億參數的語言模型，若每個參數壓縮成 4 bits 存放，就需要 7 × 10⁹ × 4 ÷ 8 = 3.5 × 10⁹ bytes，約 3.5 GB，再加上運算過程的暫存空間，8 GB VRAM 是實際可用的起點。
 
@@ -1304,6 +1307,8 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 三者之中，試算表由於兼具資料記錄與運算分析能力，是工業現場使用頻率最高的工具。以下依序介紹這三類工具在製造業實務中的具體應用。
 
+> 我們學校也有提供學生 [Microsoft 365](https://www.yzu.edu.tw/admin/is/index.php/tw/support/softwares)，同學可以多利用，不用去用盜版。
+
 ### 1. 文書處理（重點：Word）
 
 **Microsoft Word**（及其開放原始碼對應軟體 LibreOffice Writer、WPS 文字）是製造業現場最基本的文件撰寫工具，用來產出標準作業程序（SOP）、作業指導書、品質異常報告、會議記錄等以文字說明與版面編排為主的文件。相較於試算表著重「計算」、簡報著重「呈現」，文書處理軟體的核心價值在於 **結構化的長篇文字排版**：標題階層、段落樣式、目錄自動產生、版本修訂追蹤（Track Changes）等功能，讓多人協作編修同一份文件時，仍能維持格式一致、修改歷程可追溯。
@@ -1317,16 +1322,6 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 ### 2. 試算表（重點：Excel）
 
 儘管有許多專業分析工具，**Microsoft Excel** 在製造業仍然是使用最廣泛的資料處理與分析工具，原因在於其強大的靈活性與普及度。
-
-| 函數 | 功能 | 工業應用範例 |
-| --- | --- | --- |
-| `SUM()` | 加總 | 計算當月總產量 |
-| `AVERAGE()` | 平均值 | 計算製程參數平均值 |
-| `STDEV()` | 標準差 | 評估製程變異程度 |
-| `MAX()` / `MIN()` | 最大／最小值 | 找出最高／最低的量測值 |
-| `COUNTIF()` | 條件計數 | 計算不合格品數量 |
-| `VLOOKUP()` | 垂直查詢 | 根據零件編號查詢對應的規格 |
-| `IF()` | 條件判斷 | 判斷量測值是否在規格內 |
 
 一個典型的應用情境：從 MES 匯出的生產日報表（CSV 格式）匯入 Excel 後，工程師可以使用樞紐分析表（PivotTable）快速彙整各機台、各班別的產量與良率，使用圖表視覺化趨勢，使用條件格式設定自動標記異常值，並建立標準化的報告模板讓每天的報告自動填入最新資料。
 
@@ -1344,7 +1339,15 @@ DGX Spark 的核心是 **GB10 Grace Blackwell 超級晶片**：一顆結合 20 �
 
 *圖片來源：[Wikimedia Commons「LibreOffice Impress 4.0.1 screenshot.png」](https://commons.wikimedia.org/wiki/File:LibreOffice_Impress_4.0.1_screenshot.png)，作者 The Document Foundation，授權 GNU LGPL v2.1 或以上*
 
-> **趣味小知識**：並非所有企業都推崇簡報。Amazon 創辦人貝佐斯（Jeff Bezos）就明文禁止公司內部會議使用 PowerPoint，改要求提案者事先寫成一份結構完整的敘事型備忘錄（6-page memo），會議開始先安靜閱讀。他認為條列式的簡報格式容易讓簡報者用漂亮的排版掩蓋掉論述中不夠嚴謹的邏輯，反而是完整的文章形式更能檢驗一個想法是否經得起推敲。
+### 4. 辦公室軟體的雲端化
+
+前面介紹的三類工具，不一定要安裝在自己的電腦上。許多雲端服務業者把辦公室軟體做成網頁服務，例如 Google 提供的 [Google 文件（Google Docs）](https://zh.wikipedia.org/zh-tw/Google文件)、Google 試算表與 Google 簡報：打開瀏覽器、登入帳號就能編輯，不必安裝軟體，檔案存放在業者的伺服器上，修改會自動儲存。連長期以安裝版銷售 Office 的微軟，也把自家的辦公室軟體雲端化，推出 Microsoft 365，Word、Excel、PowerPoint 都有可以在瀏覽器中使用的網頁版。
+
+> 我們學校也有提供學生 [Microsoft 365](https://www.yzu.edu.tw/admin/is/index.php/tw/support/softwares)，同學可以多利用，不必去用盜版。
+
+雲端化之後，多人可以同時編輯同一份檔案，換一台電腦或改用手機、平板也能接續工作。在工業現場，不同廠區的工程師可以共同維護同一份生產報表，不必用電子郵件來回傳送多個版本。相對來說，檔案放在業者的伺服器上，製程配方這類機密資料能不能上傳，要依公司的資料保護規定判斷（見〈二十二、軟體授權與資訊倫理〉）。
+
+這種「軟體由業者維運、使用者透過網路使用」的服務模式稱為 SaaS（Software as a Service，軟體即服務），完整介紹見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈七、6. 雲端運算與資訊系統〉。
 
 ---
 
@@ -1446,6 +1449,7 @@ CPU 負責運算與控制，記憶體提供高速但揮發的工作空間，儲�
 - Null, L., & Lobur, J. (2018). *The essentials of computer organization and architecture* (5th ed.). Jones & Bartlett Learning.
 - Patterson, D. A., & Hennessy, J. L. (2021). *Computer organization and design RISC-V edition: The hardware/software interface* (2nd ed.). Morgan Kaufmann/Elsevier.
 - Petzold, C. (2022). *Code: The hidden language of computer hardware and software* (2nd ed.). Microsoft Press.
+- Pierce, L. (2026, August 27). *Snapdragon X2 Elite vs Panther Lake vs Ryzen: Which laptop chip should students buy?* Newegg Insider. https://www.newegg.com/insider/snapdragon-x2-elite-vs-panther-lake-vs-ryzen-which-laptop-chip-should-students-buy/
 - Robles, F., & Perlroth, N. (2021, February 8). 'Dangerous stuff': Hackers tried to poison water supply of Florida town. *The New York Times*. https://www.nytimes.com/2021/02/08/us/oldsmar-florida-water-supply-hack.html
 - Shannon, C. E. (1938). A symbolic analysis of relay and switching circuits. *Transactions of the American Institute of Electrical Engineers, 57*(12), 713–723. https://doi.org/10.1109/T-AIEE.1938.5057767
 - Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal, 27*, 379–423, 623–656.
