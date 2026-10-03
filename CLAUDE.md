@@ -28,7 +28,7 @@
 | `04-Networks-and-Internet.md` | 分三篇：網路（硬體、拓樸、無線與行動通訊、物聯網）、網際網路（TCP/IP、WWW、DNS、網路服務與資安）、整合觀點（智慧製造網路架構） |
 | `05-Information-Systems-and-Database.md` | 資訊系統、資料庫（ERP/MES/SCM 等企業應用系統的權威章節） |
 | `06-Data-Science-AI-and-Smart-Manufacturing.md` | 資料科學、人工智慧與智慧製造（**全課程終點**）：串接計算機→程式→網路→資訊系統→AI 的技術演進主線，並在最後以工業4.0智慧工廠案例收束全課程。機器學習／深度學習原理、AI 發展史，以及工業4.0（定義、九大支柱、數位轉型、數位孿生）的權威章節 |
-| `notebooks/Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 第一篇（程式設計與運算思維，二～四節）、第二篇（資料結構基礎，六～七節）與第三篇〈十一、效率與時間複雜度概念〉的實作範例 |
+| `notebooks/Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 第一篇（程式設計基礎，二～四節）、第二篇（資料結構基礎，六～七節）與第三篇〈十一、效率與時間複雜度概念〉的實作範例 |
 | `notebooks/Computer-Structure-Examples.ipynb` | Python Jupyter 筆記本，對應 `02-Computer-Structure.md`〈四、數字系統與進位轉換〉與〈五、浮點數與 IEEE 754〉的練習題完整詳解 |
 
 各章節另有對應的 Marp 投影片版本 `0X-XXX.slides.md`（目前涵蓋 00–06 章）。
@@ -76,7 +76,7 @@
 - **章節標題副標**：01–06 章正文以 `# {章節標題}——工業工程管理導向` 開頭；00 開頭的行政文件不加副標。
 - **讀者程度**：大一新生、工業工程與管理系、無程式設計背景。
 - **應用範例取材**：一律取自製造業與工業工程場域。
-- **學習重點總結的固定引言**：「讀完本章後，你應該能夠理解以下核心概念，並將其應用於工業場域的思考與決策：」。範本見 `04-Networks-and-Internet.md`〈二十五、學習重點總結〉。
+- **學習重點總結的固定引言**：「讀完本章後，你應該能夠理解以下核心概念，並將其應用於工業場域的思考與決策：」。範本見 `04-Networks-and-Internet.md`〈二十四、學習重點總結〉。
 - **銜接提示對象**：01–05 章一律前指 `06-Data-Science-AI-and-Smart-Manufacturing.md`；06 章為全課程終點，不需銜接提示。跨章連結的實際寫法範本見 `02-Computer-Structure.md`〈二十一、專業工業應用軟體〉。
 - **參考文獻取材**：經典教科書取 Tanenbaum、Silberschatz、Cormen 等公認課本，原典取 Turing 1936、Codd 1970、Cerf & Kahn 1974、Vaswani 2017 等里程碑論文；每章 **約 20 筆以上**，份量與 `06-Data-Science-AI-and-Smart-Manufacturing.md` 看齊。
 - **趣味小知識**：各章適時穿插 `> **趣味小知識**：…` 的 blockquote，補充名詞由來、歷史八卦或老師的親身經驗，讓大一新生對枯燥的技術名詞產生記憶點。這是本教材的既有特色，新增章節時應延續。

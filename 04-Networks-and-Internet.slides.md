@@ -58,7 +58,7 @@ style: |
 
 | 你的動作 | 對應的網路概念 |
 |---------|--------------|
-| 選擇 Wi-Fi 並輸入密碼 | 無線接取點（AP）的認證機制 |
+| 選擇 Wi-Fi 並輸入密碼 | 無線存取點（AP）的認證機制 |
 | 等待連線圖示出現 | DHCP 協定分配 IP 位址 |
 | 打開瀏覽器輸入網址 | DNS 將域名解析為 IP 位址 |
 | 網頁開始載入 | TCP/IP 封包路由與傳輸 |
@@ -124,7 +124,7 @@ Internet = inter-（之間）＋ network（網路），直譯就是「網路與�
 
 <!-- ## 網路與網際網路 -->
 
-![h:520](images/04-Networks-and-Internet/network-and-internet.png)
+![h:600](images/04-Networks-and-Internet/network-and-internet.png)
 
 ---
 
@@ -221,6 +221,14 @@ Internet = inter-（之間）＋ network（網路），直譯就是「網路與�
 
 ---
 
+<!-- ## 機房中的 Cisco ASR 9006 路由器 -->
+
+![h:480](images/04-Networks-and-Internet/cisco-asr9006-router.jpg)
+
+> **電信業者等級的路由器：模組可抽換、接整束光纖、控制模組雙備援**
+
+---
+
 ![bg right:42%](images/04-Networks-and-Internet/outdoor-wireless-access-point.jpg)
 
 ## 存取點（Access Point，AP）
@@ -246,7 +254,7 @@ Internet = inter-（之間）＋ network（網路），直譯就是「網路與�
 
 <!-- ## 常見網路硬體設備 -->
 
-![h:520](images/04-Networks-and-Internet/network-hardware.png)
+![h:600](images/04-Networks-and-Internet/network-hardware.png)
 
 ---
 
@@ -258,7 +266,7 @@ Internet = inter-（之間）＋ network（網路），直譯就是「網路與�
 
 ---
 
-![bg right:35%](images/04-Networks-and-Internet/ethernet-rj45-connector.jpg)
+![bg right:35%](images/04-Networks-and-Internet/netgear-gigabit-switch-5-port.jpg)
 
 ## 有線區域網路：乙太網路
 
@@ -270,12 +278,38 @@ Internet = inter-（之間）＋ network（網路），直譯就是「網路與�
 
 ---
 
+![bg left:35%](images/04-Networks-and-Internet/cat5e-ethernet-cable-rj45-connectors.jpg)
+
 ## 選購小提醒：網路線
 
 - **Cat5e 就足以跑滿 1 Gbps**（100 公尺內），不必額外花錢
 - 拖後腿的通常是老舊 Cat5、劣質線材、接頭壓接不良或線身壓折
 - 新買建議直接選 **Cat6**，為升級 2.5G／10G 預留餘裕
 - 陷阱：**TIA 從未制定「Cat6e」標準**，那是廠商自創的行銷名稱；Cat6 之上是 Cat6A
+
+---
+
+<!-- ## 10BASE2 的 BNC T 型接頭 -->
+
+![w:700](images/04-Networks-and-Internet/10base2-t-piece.png)
+
+> **乙太網路一開始不是星狀：早期的 10BASE2 用 T 型接頭把整層樓串成一條線**
+
+---
+
+<!-- ## 10BASE2 網路的牆上接孔 -->
+
+![h:480](images/04-Networks-and-Internet/10base2-t-wall-plug.jpg)
+
+> **元智大學辦公室牆上至今還留著的 10BASE2 接孔**
+
+---
+
+<!-- ## Acorn AEH70 10BASE2 乙太網路卡 -->
+
+![h:480](images/04-Networks-and-Internet/acorn-10base2-ethernet-card.jpg)
+
+> **1990 年代初期的 10BASE2 網路卡：接頭是圓形的 BNC，不是方形的 RJ-45**
 
 ---
 
@@ -292,7 +326,7 @@ Internet = inter-（之間）＋ network（網路），直譯就是「網路與�
 
 ---
 
-# 五、無線網路（Wireless）
+# 五、無線網路（Wireless Networks）
 
 **Wi-Fi** 讓裝置無需纜線即可連網，是最普及的無線區域網路技術。
 
@@ -315,6 +349,14 @@ Internet = inter-（之間）＋ network（網路），直譯就是「網路與�
 
 ---
 
+<!-- ## 華碩 RT-AX1800S 無線路由器正面 -->
+
+![h:480](images/04-Networks-and-Internet/asus-rt-ax1800s-01.jpg)
+
+> **四根天線不是為了「訊號更遠」，而是對應 MIMO：同時收發多路資料流**
+
+---
+
 ![bg right:45%](images/04-Networks-and-Internet/asus-rt-ax1800s-02.jpg)
 
 ## 一個盒子裡的三種設備
@@ -329,6 +371,20 @@ Internet = inter-（之間）＋ network（網路），直譯就是「網路與�
 
 ---
 
+<!-- ## 無線路由器安裝五步驟 -->
+
+![h:600](images/04-Networks-and-Internet/easy-wifi-config.png)
+
+---
+
+<!-- ## 路由器的外部網路（WAN）設定畫面 -->
+
+![h:460](images/04-Networks-and-Internet/asus-rt-be3600s-01.png)
+
+> **一台路由器同時擁有兩個 IP：對外是公用 IP（140.138 開頭），對內是家中裝置看到的預設閘道**
+
+---
+
 ## 無線網路安全性
 
 無線訊號在空中傳播，訊號範圍內的裝置理論上都能接收，安全性是重要課題
@@ -337,6 +393,14 @@ Internet = inter-（之間）＋ network（網路），直譯就是「網路與�
 - 較舊的 **WEP** 已被證實不安全，不應再使用
 - 公用「免密碼（Open）」Wi-Fi 的資料，其實是以明文在空中飄
 - 其他措施：改預設密碼、隱藏 SSID、MAC 過濾、定期更新韌體
+
+---
+
+<!-- ## 路由器的無線網路（Wi-Fi）設定畫面 -->
+
+![h:460](images/04-Networks-and-Internet/asus-rt-be3600s-02.png)
+
+> **安全性設定三選項：Open 不設密碼；密碼是一般家庭的選擇；RADIUS 是企業與校園每人各自帳密的做法**
 
 ---
 
@@ -349,6 +413,8 @@ Wi-Fi 是為了讓「人」上網；工廠還要讓成百上千個感測器把�
 - 主要挑戰是 **電池壽命與訊號可靠性**
 - 不用耗電的 Wi-Fi，改採低功耗協定（Zigbee、LoRaWAN），並設計休眠機制
 
+> **WSN 正是物聯網（IoT）的基礎設施：沒有它把資料蒐集、送出來，後面的分析與決策就沒有原料**
+
 ---
 
 # 六、廣域網路（WAN）
@@ -356,6 +422,12 @@ Wi-Fi 是為了讓「人」上網；工廠還要讓成百上千個感測器把�
 **廣域網路（WAN）** 跨越城市、國家甚至全球，通常由電信業者提供，企業租用骨幹線路連接各地分支機構。
 
 網際網路本身可視為全球最大的廣域網路。這一章看企業串接跨地分支的幾種主要方式。
+
+---
+
+<!-- ## 廣域網路（WAN） -->
+
+![h:600](images/04-Networks-and-Internet/concept-of-wan.png)
 
 ---
 
@@ -384,7 +456,7 @@ Wi-Fi 是為了讓「人」上網；工廠還要讓成百上千個感測器把�
 
 行動通訊歷經數十年演進，每一代（Generation，G）都帶來速度、容量與功能的重大躍升。
 
-我們用同一系列的手機來對照——從半公斤重的「黑金剛」，到薄得能塞進口袋的智慧型手機，中間隔了三十七年、五個世代。
+我們用同一系列的手機來對照——從將近一公斤重的「黑金剛」，到薄得能塞進口袋的智慧型手機，中間隔了三十七年、五個世代。
 
 ---
 
@@ -394,12 +466,20 @@ Wi-Fi 是為了讓「人」上網；工廠還要讓成百上千個感測器把�
 
 **1G（1980 年代）**：類比訊號，只能傳語音，無加密
 
-- 代表：Motorola「黑金剛」，重達近 800 公克，售價可抵一輛小汽車
+- 代表：Motorola「黑金剛」，重約 794 公克至 1.13 公斤，售價可抵一輛小汽車
 - 螢幕是 LED 數字管，只顯示得出數字
 
 **2G（1990 年代）**：轉為數位，支援簡訊（SMS）與低速資料
 
 - 代表：Nokia 3310，以「摔不壞」聞名；鍵盤上的字母催生了簡訊文化
+
+---
+
+<!-- ## Nokia 3310 行動電話 -->
+
+![h:480](images/04-Networks-and-Internet/nokia-3310.jpg)
+
+> **2G 代表機種 Nokia 3310：有了單色液晶螢幕，能顯示文字與圖案**
 
 ---
 
@@ -418,6 +498,14 @@ Wi-Fi 是為了讓「人」上網；工廠還要讓成百上千個感測器把�
 
 ---
 
+<!-- ## Apple iPhone 5 -->
+
+![h:480](images/04-Networks-and-Internet/iphone-5.jpg)
+
+> **4G 代表機種 iPhone 5：Apple 第一款支援 4G LTE 的機型**
+
+---
+
 ## 5G 的三大關鍵特性（2020 年代起）
 
 | 特性 | 數字 | 意義 |
@@ -425,6 +513,14 @@ Wi-Fi 是為了讓「人」上網；工廠還要讓成百上千個感測器把�
 | 超高速（eMBB） | 最高 20 Gbps | 4G 的 20 倍，超高清影像即時傳輸 |
 | 超低延遲（URLLC） | < 1 毫秒 | 工業機器人即時控制、自動駕駛 |
 | 大規模連接（mMTC） | 每平方公里 100 萬台 | 大規模 IoT 感測器部署 |
+
+---
+
+<!-- ## Apple iPhone 12 -->
+
+![h:480](images/04-Networks-and-Internet/iphone-12.jpg)
+
+> **5G 代表機種 iPhone 12：從黑金剛到它，中間隔了三十七年、五個世代**
 
 ---
 
@@ -445,6 +541,12 @@ Wi-Fi 是為了讓「人」上網；工廠還要讓成百上千個感測器把�
 有一類網路範圍只有你伸手可及的幾公尺、甚至幾公分，圍繞著「一個人」打轉。
 
 戴 AirPods 聽音樂、嗶悠遊卡進站、刷學生證開門——背後是同一組概念：以個人為中心、覆蓋範圍極小的短距離無線通訊。
+
+---
+
+<!-- ## 個人區域網路（PAN） -->
+
+![h:600](images/04-Networks-and-Internet/personal-area-network.png)
 
 ---
 
@@ -532,6 +634,22 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 ---
 
+<!-- ## Starlink 衛星群劃過夜空的光軌 -->
+
+![h:480](images/04-Networks-and-Internet/starlink-satellites-ctio.jpg)
+
+> **剛發射的衛星排成一串「星鏈列車」，光軌會干擾天文望遠鏡的觀測**
+
+---
+
+<!-- ## Starlink 地面終端機 -->
+
+![h:480](images/04-Networks-and-Internet/starlink-terminal-ramstein.jpg)
+
+> **有了地面終端機，沒有光纖與基地台的地方也能連上網路**
+
+---
+
 ## GEO vs LEO 比較
 
 | 比較項目 | GEO 衛星 | LEO 衛星 |
@@ -596,6 +714,28 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 ---
 
+<!-- ## 1977 年 3 月的 ARPANET 邏輯連線圖 -->
+
+![h:600](images/04-Networks-and-Internet/arpanet-logical-map-1977.png)
+
+---
+
+<!-- ## 全球第一台網站伺服器 -->
+
+![h:460](images/04-Networks-and-Internet/first-web-server.jpg)
+
+> **伯納斯-李架設全球第一個網站的 NeXT 電腦，機身貼著「這台機器是伺服器，請勿關機！」**
+
+---
+
+<!-- ## 賈伯斯與 iPhone -->
+
+![h:480](images/04-Networks-and-Internet/steve-jobs-iphone-2007.jpg)
+
+> **2007 年賈伯斯發表 iPhone，開啟了行動網際網路時代**
+
+---
+
 # 十三、封包交換（Packet Switching）
 
 在網際網路上，資料並非整塊傳送，而是被切割成許多小的 **封包**。
@@ -615,6 +755,12 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 ---
 
+<!-- ## 封包傳遞流程 -->
+
+![h:600](images/04-Networks-and-Internet/packet-switching.png)
+
+---
+
 ## 封包交換 vs 電路交換
 
 | | 電路交換 | 封包交換 |
@@ -625,6 +771,12 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 | 代價 | 浪費，但可預測 | 有延遲與抖動 |
 
 > **工業即時控制需要「可預測」，因此常需 QoS 機制或專用網路來保障關鍵資料的優先權**
+
+---
+
+<!-- ## 封包交換與電路交換的差異 -->
+
+![h:600](images/04-Networks-and-Internet/circuit-packer-difference.png)
 
 ---
 
@@ -728,6 +880,12 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 ---
 
+<!-- ## TCP/IP 基本概念 -->
+
+![h:600](images/04-Networks-and-Internet/concept-of-tcpip.png)
+
+---
+
 ## 該選 TCP 還是 UDP？
 
 | 應用場景 | 適合協定 | 原因 |
@@ -771,6 +929,22 @@ IP 是「網路上的門牌」。這一章拆解它的結構——目前仍廣�
 - **DNS 伺服器**：把網域名稱轉換為 IP
 
 這些可手動設定，也可交由 **DHCP** 自動分配
+
+---
+
+<!-- ## Windows 的網路連線詳細資料 -->
+
+![h:460](images/04-Networks-and-Internet/network-setting.png)
+
+> **預設閘道、DNS 伺服器、DHCP 伺服器都是 192.168.50.1——家用路由器一台身兼多職**
+
+---
+
+<!-- ## iPhone 的 Wi-Fi 網路設定畫面 -->
+
+![h:460](images/04-Networks-and-Internet/network-setting-iphone.jpg)
+
+> **同樣的概念，不同作業系統用不同的名字：Windows 稱為「預設閘道」，iPhone 直接叫它「Router」**
 
 ---
 
@@ -839,12 +1013,24 @@ WWW 之前，每種服務各用一套應用層協定：
 
 ---
 
+<!-- ## 在 Windows 11 上執行的 Google Chrome -->
+
+![h:600](images/04-Networks-and-Internet/google-chrome-windows11.png)
+
+---
+
 ## 趣味小知識：PTT 是活到 21 世紀的 Telnet
 
 - 台灣人熟悉的 **PTT**，正是至今仍有人在用的 Telnet 服務——BBS 時代的「活化石」
 - 沒有 Threads、Dcard 的年代，像老師這輩的大學生靠 PTT 追時事、討論課業、揪團
 - 如今 PTT 也 WWW 化了：官方推出網頁版（PTT Web），打開瀏覽器就能看板讀文
 - 流量仍高、常帶動新聞話題，但使用者年齡偏長，年輕世代轉向新平台
+
+---
+
+<!-- ## 以 Telnet 登入 PTT 的文字介面 -->
+
+![h:600](images/04-Networks-and-Internet/ptt-boards.jpg)
 
 ---
 
@@ -903,6 +1089,12 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 ```
 
 整個過程通常在數十毫秒內完成，對使用者幾乎無感
+
+---
+
+<!-- ## DNS 解析流程 -->
+
+![h:600](images/04-Networks-and-Internet/dns-explained.png)
 
 ---
 
@@ -1108,25 +1300,7 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 
 ---
 
-# 二十四、工業4.0中的網路角色
-
-網路不只是工業4.0的「配件」，而是使能工業4.0的核心基礎設施。
-
-這一章總結網路在工業4.0中扮演的三個角色：即時連線、資料驅動決策、系統整合。
-
----
-
-## 三個核心角色
-
-- **即時連線**：讓機台、零件、人員、訂單都能即時感知彼此狀態；網路品質（頻寬、延遲、可靠性）直接決定系統能力上限
-- **資料驅動決策**：決策依據從「歷史統計」轉向「即時資料」——問題發生當下就收到警報，而非月底報告才發現
-- **系統整合**：**水平整合**（廠內各系統）＋**垂直整合**（現場到雲端）
-
-> **網路是實現水平與垂直整合的媒介——不同層次在毫秒、秒、分鐘的時間尺度下協同，共同確保製程品質**
-
----
-
-# 二十五、學習重點總結
+# 二十四、學習重點總結
 
 讀完本章，你應該能理解以下核心概念，並應用於工業場域的思考與決策。
 
@@ -1144,7 +1318,7 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 
 **封包、協定與 IP 位址是基礎**：資料以封包傳輸、由路由器逐跳轉發；協定是共同語言，分層設計讓複雜功能可管理
 
-**現代網路支撐工業4.0**：從感測器的 LoRaWAN、到 PLC 的工業乙太網路、到 MES 內網、到雲端的網際網路——垂直整合依賴不同層次的網路協同
+**現代網路支撐工業4.0**：從感測器的 LoRaWAN、到 PLC 的工業乙太網路、到 MES 內網、到雲端的網際網路——垂直整合（從現場設備到雲端的整合）依賴不同層次的網路協同
 
 ---
 

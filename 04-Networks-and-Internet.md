@@ -29,7 +29,7 @@
 
 | 你的動作 | 對應的網路概念 |
 |---------|--------------|
-| 選擇 Wi-Fi 並輸入密碼 | 無線接取點（AP）的認證機制 |
+| 選擇 Wi-Fi 並輸入密碼 | 無線存取點（AP）的認證機制 |
 | 等待連線圖示出現 | DHCP 協定分配 IP 位址 |
 | 打開瀏覽器輸入網址 | DNS 將域名解析為 IP 位址 |
 | 網頁開始載入 | TCP/IP 封包路由與傳輸 |
@@ -116,7 +116,7 @@
 - **優點**：佈線簡單、成本低
 - **缺點**：主幹線斷線即全線癱瘓；節點越多，碰撞與延遲越嚴重
 
-匯流排拓樸在早期以太網路廣泛使用，現今已少見於一般辦公網路，但在某些 **工業現場匯流排（Fieldbus）** 中仍有應用。
+匯流排拓樸在早期乙太網路廣泛使用，現今已少見於一般辦公網路，但在某些 **工業現場匯流排（Fieldbus）** 中仍有應用。
 
 > **趣味小故事**：老師 1999 年在中央大學念書時，宿舍的網路就還是匯流排架構——那時它其實已經快被淘汰了。上面提到的「主幹線斷線即全線癱瘓」，對當年的我們不是課本上的一句話，而是會造成大家困擾的問題：只要有一位同學的網路線鬆脫或網路卡故障，整條走廊的人就一起斷線。所以每當遊戲打到一半突然連不上，整層樓的每個同學都會衝出房間沿路敲門，一間一間追查到底是哪個房間、哪位同學是「兇手」。後來星狀拓樸普及，這種集體抓兇手的場面也就跟著走入歷史了。
 
@@ -243,9 +243,13 @@
 
 **乙太網路（[Ethernet](https://zh.wikipedia.org/wiki/乙太網路)）** 是目前有線區域網路的主流標準，由 IEEE 802.3 規範制定。乙太網路使用[雙絞線](https://zh.wikipedia.org/wiki/雙絞線)（如常見的 Cat5e、Cat6 網路線）或光纖作為傳輸媒介，透過 [RJ-45](https://zh.wikipedia.org/wiki/8P8C) 接頭連接到交換器。
 
-![乙太網路線末端的 RJ-45（8P8C）接頭](images/04-Networks-and-Internet/ethernet-rj45-connector.jpg)
+![插著乙太網路線的 Netgear 5 埠 Gigabit 交換器](images/04-Networks-and-Internet/netgear-gigabit-switch-5-port.jpg)
 
-*圖片來源：[維基共享資源「Ethernet RJ45 connector p1160054.jpg」](https://commons.wikimedia.org/wiki/File:Ethernet_RJ45_connector_p1160054.jpg)，作者 David Monniaux，授權 CC BY-SA 2.0 fr*
+*圖片來源：[維基共享資源「Netgear Gigabit Switch 5-port.jpg」](https://commons.wikimedia.org/wiki/File:Netgear_Gigabit_Switch_5-port.jpg)，作者 Simon A. Eugster，授權 CC BY-SA 3.0*
+
+![Cat5e 乙太網路線末端的 RJ-45（8P8C）接頭](images/04-Networks-and-Internet/cat5e-ethernet-cable-rj45-connectors.jpg)
+
+*圖片來源：[維基共享資源「Cat-5e Ethernet network cable RJ45 end connectors.jpg」](https://commons.wikimedia.org/wiki/File:Cat-5e_Ethernet_network_cable_RJ45_end_connectors.jpg)，作者 DiscDepotDundee.co.uk (Disk Depot Ltd.)，授權 CC BY-SA 4.0*
 
 乙太網路的傳輸速度一路演進：從最早的 10 Mbps（每秒百萬位元），到 100 Mbps 的快速乙太網路（Fast Ethernet），再到現今的主流規格——**1 Gbps 的 [Gigabit Ethernet](https://zh.wikipedia.org/wiki/千兆乙太網)（1000BASE-T，IEEE 802.3ab）**。今日市售的主機板、筆電與家用路由器幾乎都已內建 1 Gbps 網路埠，前面介紹 Wi-Fi 6 路由器時提到的「Gigabit LAN 埠」指的正是這個規格。工業環境則因為既有設備的服役年限長，100 Mbps 仍相當常見，但新建的產線多半已直接採用 1 Gbps。再往上，資料中心與骨幹網路則使用 10/25/100 Gbps 甚至更高的規格。
 
@@ -366,6 +370,8 @@ Wi-Fi 使用 **2.4 GHz** 與 **5 GHz** 兩個主要頻段：2.4 GHz 穿透力強
 
 前面談的 Wi-Fi，是為了讓「人」上網而設計的。但工廠裡還有另一種無線需求：讓成百上千個感測器把讀值送出來。這類網路有自己的名字——**[無線感測網路（Wireless Sensor Network，WSN）](https://zh.wikipedia.org/wiki/無線感測器網路)**，由大量低功耗的無線感測節點所組成，每個節點具備感測（如溫度、濕度、震動）、簡單運算與無線通訊的能力。
 
+這裡要特別說明：**WSN 正是物聯網（IoT）的基礎設施**。IoT 要讓實體物件「感知自己的狀態並回報」，靠的就是這一層佈在現場的感測節點與無線通訊；沒有 WSN 把資料蒐集、送出來，後面的分析與決策就沒有原料。IoT 的完整介紹見後面〈九、物聯網與低功耗網路〉。
+
 WSN 特別適合下列場景：感測節點分布廣泛而佈線困難的大型廠區；移動設備（如 AGV 自動導引車）或產品在生產過程中的追蹤；舊廠翻新時，無法輕易在現有設備上加裝有線網路的情況。
 
 WSN 的主要挑戰是電池壽命與訊號可靠性——感測器往往裝在沒有電源可接的地方，換一次電池要停機。因此工業 WSN 不使用耗電的 Wi-Fi，而是採用專為此設計的低功耗通訊協定（如 [Zigbee](https://zh.wikipedia.org/wiki/ZigBee)、LoRaWAN），並設計節能的運作模式（例如平時休眠、每隔幾分鐘才醒來傳一次資料）。這些協定的特性與取捨，留待〈九、2. 低功耗廣域網路（LPWAN）〉再細談。
@@ -406,7 +412,7 @@ WAN 的傳輸速度通常低於 LAN，延遲也較高（因為資料需要傳輸
 
 **1G（1980 年代）**：第一代類比行動通訊，只能傳輸語音，通話品質差、容量小，無加密保護。台灣於 1989 年開放 1G 服務。
 
-> **趣味小知識**：1G 時代的手機又大又重，最經典的就是俗稱「黑金剛」的 Motorola 大哥大——機身像一塊磚頭、重達近 800 公克，售價可抵當時一台機車甚至一輛小汽車。它不只是通訊工具，更是身分與財力的象徵，握著它講電話幾乎等於昭告天下「我是大老闆」。短短三十多年，手機就從半公斤的磚頭變成放進口袋、運算能力遠勝當年超級電腦的智慧型手機。
+> **趣味小知識**：1G 時代的手機又大又重，最經典的就是俗稱「黑金剛」的 Motorola 大哥大——機身像一塊磚頭、重量約在 794 公克至 1.13 公斤之間，售價可抵當時一台機車甚至一輛小汽車。它不只是通訊工具，更是身分與財力的象徵，握著它講電話幾乎等於昭告天下「我是大老闆」。短短三十多年，手機就從將近一公斤的磚頭變成放進口袋、運算能力遠勝當年超級電腦的智慧型手機。
 
 ![Motorola DynaTAC 8000X 行動電話](images/04-Networks-and-Internet/motorola-dynatac-8000x.jpg)
 
@@ -1158,33 +1164,7 @@ PLC 從現場層設備蒐集感測資料，執行即時控制邏輯，並將資�
 
 ---
 
-## 二十四、工業4.0中的網路角色
-
-### 1. 即時連線（Real-time Connectivity）
-
-工業4.0的核心承諾之一，是讓製造系統中的每個元素（機台、零件、人員、訂單）都能夠即時感知彼此的狀態，並根據最新資訊做出協調。這種 **即時連線能力** 是所有其他工業4.0技術的基礎。
-
-沒有可靠的即時網路連線，預測性維護的感測資料無法即時回傳、AGV 無法與生產排程系統即時協調、數位孿生無法即時反映實體設備的狀態。**網路品質（頻寬、延遲、可靠性）直接決定了工業4.0系統能夠達到的能力上限**。
-
-### 2. 資料驅動決策（Data-Driven Decision Making）
-
-在傳統工廠，決策往往依賴管理者的經驗判斷，輔以定期（日報、週報）的統計數字。工業4.0透過網路實現的資料即時蒐集與傳輸，使得 **決策依據從「歷史統計」轉向「即時資料」**。
-
-一個典型的轉變：以前工廠每個月統計一次設備的稼動率，下個月才能知道上個月的問題；現在透過即時監控網路，管理者在問題發生的當下就收到警報，能在幾分鐘內啟動應對措施，而不是等到月底報告才發現問題。
-
-### 3. 系統整合（Integration）
-
-工業4.0的另一個核心是 **水平整合**（同一工廠內各系統之間的整合）與 **垂直整合**（從現場設備到雲端管理平台的整合）。網路是實現這些整合的媒介（Lee et al., 2015）。
-
-**水平整合範例**：倉儲系統察覺某物料庫存低於安全庫存，透過網路自動觸發 ERP 的採購申請，同時通知生產排程系統調整生產優先序。這一系列的自動化協調，全靠系統間的網路連線與資料交換。
-
-**垂直整合範例**：現場感測器的溫度異常，經由 PLC 判斷後立即調整製程參數（毫秒級），同時將事件記錄透過 MES 存入資料庫（秒級），最終在雲端平台觸發預測模型重新評估（分鐘級）。三個層次的反應，分別在不同的時間尺度下發生，共同確保製程品質。
-
-> **小結**：網路不只是工業4.0的「配件」，而是使能工業4.0的核心基礎設施。理解不同網路技術的特性（速度、延遲、可靠性、覆蓋範圍、成本），是工業工程管理者在規劃與評估智慧製造系統時不可或缺的知識。
-
----
-
-## 二十五、學習重點總結
+## 二十四、學習重點總結
 
 讀完本章後，你應該能夠理解以下核心概念，並將其應用於工業場域的思考與決策：
 
@@ -1202,7 +1182,7 @@ PLC 從現場層設備蒐集感測資料，執行即時控制邏輯，並將資�
 
 **現代網路如何支撐工業4.0與智慧製造**
 
-從感測器的 LoRaWAN 低功耗連線、到 PLC 的工業乙太網路、到 MES 的企業內網、到雲端平台的網際網路連線——工業4.0的「垂直整合」依賴不同層次的網路技術協同運作。5G 私有網路的超低延遲，正在使以往不可能的即時工業控制成為現實。
+從感測器的 LoRaWAN 低功耗連線、到 PLC 的工業乙太網路、到 MES 的企業內網、到雲端平台的網際網路連線——工業4.0的「垂直整合」（從現場設備到雲端管理平台的整合，詳見 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、4. 工業4.0中的網路角色〉）依賴不同層次的網路技術協同運作。5G 私有網路的超低延遲，正在使以往不可能的即時工業控制成為現實。
 
 **網路技術如何影響生產、物流與管理決策**
 
@@ -1225,7 +1205,6 @@ RFID 讓倉儲盤點從數天縮短為數小時；行動監控 App 讓管理者�
 - International Society of Automation. (2010). *ANSI/ISA-95.00.01-2010: Enterprise-control system integration — Part 1: Models and terminology*. ISA.
 - Kurose, J. F., & Ross, K. W. (2021). *Computer networking: A top-down approach* (8th ed.). Pearson.
 - Laudon, K. C., & Laudon, J. P. (2022). *Management information systems: Managing the digital firm* (17th ed.). Pearson.
-- Lee, J., Bagheri, B., & Kao, H.-A. (2015). A cyber-physical systems architecture for Industry 4.0-based manufacturing systems. *Manufacturing Letters, 3*, 18–23. https://doi.org/10.1016/j.mfglet.2014.12.001
 - Leiner, B. M., Cerf, V. G., Clark, D. D., Kahn, R. E., Kleinrock, L., Lynch, D. C., Postel, J., Roberts, L. G., & Wolff, S. (2009). A brief history of the Internet. *ACM SIGCOMM Computer Communication Review, 39*(5), 22–31. https://doi.org/10.1145/1629607.1629613
 - Metcalfe, R. M., & Boggs, D. R. (1976). Ethernet: Distributed packet switching for local computer networks. *Communications of the ACM, 19*(7), 395–404. https://doi.org/10.1145/360248.360253
 - Mockapetris, P. V., & Dunlap, K. J. (1988). Development of the Domain Name System. *ACM SIGCOMM Computer Communication Review, 18*(4), 123–133. https://doi.org/10.1145/52325.52338
