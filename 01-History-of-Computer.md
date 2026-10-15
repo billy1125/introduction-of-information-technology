@@ -548,7 +548,7 @@ WWW 建立在三項關鍵技術上：
 
 ## 八、現代資訊系統
 
-> **延伸閱讀**：本節先建立網路化資訊系統、雲端運算與物聯網的基本概念；資訊系統的層級與類型（TPS/MIS/DSS/EIS）、ERP/MES/SCM/CRM 等企業應用系統、資料庫與大數據技術，將在 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) 進一步說明；物聯網與低功耗網路技術則在 [04-Networks-and-Internet.md](04-Networks-and-Internet.md)〈九、物聯網與低功耗網路〉有更完整的介紹。
+> **延伸閱讀**：本節先建立網路化資訊系統、雲端運算與物聯網的基本概念；資訊系統的層級與類型（TPS/MIS/DSS/EIS）、ERP/MES/SCM/CRM 等企業應用系統、資料庫與大數據技術，將在 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) 進一步說明；物聯網與低功耗網路技術則在 [04-Networks-and-Internet.md](04-Networks-and-Internet.md)〈八、物聯網與低功耗網路〉有更完整的介紹。
 
 ### 1. 網路化資訊系統
 
