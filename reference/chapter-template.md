@@ -4,7 +4,7 @@
 
 骨架只規定形狀，不重述規則。撰寫時的完整規範見 `reference/chapter-writing-guide.md`，課程專屬的設定（標題副標、讀者程度、範例取材領域、固定引言、權威章節清單）見專案的 `CLAUDE.md`。以下三點最容易漏：
 
-- `## 參考文獻` 必須是英文 APA 格式、依第一作者姓氏字母排序、各章約 20 筆以上。
+- `## 參考文獻` 與 `## 延伸書目` 必須是英文 APA 格式、依第一作者姓氏字母排序。正文有引用的列參考文獻，沒引用的課本列延伸書目。
 - `## {中文數字}、學習重點總結` 固定是最後一個編號小節，位置緊接在 `## 參考文獻` 之前。
 - 粗體 `**` 直接貼著中文字或英數字時，標記外側要補一個半形空白。
 
@@ -65,6 +65,10 @@
 - Author, A. A. (Year). *Title of the book* (Nth ed.). Publisher.
 - Author, B. B., & Author, C. C. (Year). Title of the journal article. *Journal Name*, *volume*(issue), pages. https://doi.org/xxxxx
 - Author, D. D. (Year). Title of the conference paper. In *Proceedings of the Conference Name* (pp. pages). Publisher.
+
+## 延伸書目
+
+- Author, E. E. (Year). *Title of the textbook* (Nth ed.). Publisher.
 
 ---
 

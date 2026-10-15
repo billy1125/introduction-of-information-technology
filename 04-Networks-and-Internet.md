@@ -572,7 +572,7 @@ RFID 與條碼的最大差異在於：RFID **不需要對準讀取器**，可以
 
 IoT 的核心思想是「讓物品能夠感知自己的狀態，並與外界溝通」。一台傳統的工廠壓縮機只會運轉；一台 IoT 壓縮機會即時回報自己的溫度、振動、電流、出口壓力，並在數值異常時主動發出警報。
 
-其實 IoT 離大家的生活一點也不遠，最貼近日常的例子就是智慧家電。掃地機器人會自己記住家裡的格局、避開障礙物，掃完還能用手機 App 查看清掃路線與進度；智慧插座、智慧燈泡與冷氣可以用手機遠端開關，甚至設定「回家前半小時自動開冷氣」；有些冰箱還會在門沒關好時傳訊息提醒你。這些家電的共同點，是把原本「只會做一件事」的機器接上網路，讓它們能感知自己的狀態、也能和你的手機互通。這其實就是前面那台工廠 IoT 壓縮機的家用版本。
+其實 IoT 離大家的生活一點也不遠，最貼近日常的例子就是 **智慧家電**。掃地機器人會自己記住家裡的格局、避開障礙物，掃完還能用手機 App 查看清掃路線與進度；智慧插座、智慧燈泡與冷氣可以用手機遠端開關，甚至設定「回家前半小時自動開冷氣」；有些冰箱還會在門沒關好時傳訊息提醒你。這些家電的共同點，是把原本「只會做一件事」的機器接上網路，讓它們能感知自己的狀態、也能和你的手機互通。這其實就是前面那台工廠 IoT 壓縮機的家用版本。
 
 ![小米生態鏈品牌 Lydsto 的掃地機器人，頂部圓形凸起為光達感測器](images/04-Networks-and-Internet/lydsto-robot-vacuum.jpg)
 
@@ -765,7 +765,7 @@ IoT 設備的特性往往是數量龐大、分布廣泛、電池供電（不能�
 
 ### 2. 分層概念（簡化理解）
 
-網路通訊被拆成多個 **分層（Layer）**，每一層只負責特定的功能，向上層提供服務、向下層請求服務。用寄一封信來想最容易理解，寄信的每個步驟剛好對應到後面〈3. TCP/IP 架構概覽〉的四層：
+多數的網路通訊都會被拆成多個 **分層（Layer）** 的概念，每一層只負責特定的功能，向上層提供服務、向下層請求服務。用寄一封信來想最容易理解，寄信的每個步驟剛好對應到後面〈3. TCP/IP 架構概覽〉的四層：
 
 ![用寄信與收信的步驟比喻 TCP/IP 四層網路模型](images/04-Networks-and-Internet/postal-analogy-tcp-ip-layers.png)
 
@@ -1095,7 +1095,7 @@ DNS 的價值其實不只是「好記」，更在於它多了一層 **間接**�
 
 ![Chrome 瀏覽器把未加密的 HTTP 網站標示為不安全](images/04-Networks-and-Internet/chrome-not-secure-warning.png)
 
-*圖片來源：[Wikimedia Commons「Not secure example.png」](https://commons.wikimedia.org/wiki/File:Not_secure_example.png)，作者 KarlLukas，授權 CC BY-SA 4.0*
+*圖片來源：老師親自截圖*
 
 上圖是 Chrome 連上一個 HTTP 網站時的畫面：網址列左側出現「Not secure」（中文介面顯示「不安全」），點開後會警告不要在這個網站輸入密碼或信用卡號碼，因為資料可能被攻擊者竊取。
 
@@ -1261,25 +1261,28 @@ RFID 讓倉儲盤點從數天縮短為數小時；行動監控 App 讓管理者�
 - Atzori, L., Iera, A., & Morabito, G. (2010). The Internet of Things: A survey. *Computer Networks, 54*(15), 2787–2805. https://doi.org/10.1016/j.comnet.2010.05.010
 - Berners-Lee, T., Cailliau, R., Luotonen, A., Nielsen, H. F., & Secret, A. (1994). The World-Wide Web. *Communications of the ACM, 37*(8), 76–82. https://doi.org/10.1145/179606.179671
 - Cerf, V. G., & Kahn, R. E. (1974). A protocol for packet network intercommunication. *IEEE Transactions on Communications, 22*(5), 637–648. https://doi.org/10.1109/TCOM.1974.1092259
-- Comer, D. E. (2015). *Computer networks and internets* (6th ed.). Pearson.
-- Forouzan, B. A. (2013). *Data communications and networking* (5th ed.). McGraw-Hill.
 - Groover, M. P. (2019). *Automation, production systems, and computer-integrated manufacturing* (5th ed.). Pearson.
 - Hafner, K., & Lyon, M. (1996). *Where wizards stay up late: The origins of the Internet*. Simon & Schuster.
 - International Society of Automation. (2010). *ANSI/ISA-95.00.01-2010: Enterprise-control system integration — Part 1: Models and terminology*. ISA.
 - Kurose, J. F., & Ross, K. W. (2021). *Computer networking: A top-down approach* (8th ed.). Pearson.
-- Laudon, K. C., & Laudon, J. P. (2022). *Management information systems: Managing the digital firm* (17th ed.). Pearson.
 - Leiner, B. M., Cerf, V. G., Clark, D. D., Kahn, R. E., Kleinrock, L., Lynch, D. C., Postel, J., Roberts, L. G., & Wolff, S. (2009). A brief history of the Internet. *ACM SIGCOMM Computer Communication Review, 39*(5), 22–31. https://doi.org/10.1145/1629607.1629613
 - Metcalfe, R. M., & Boggs, D. R. (1976). Ethernet: Distributed packet switching for local computer networks. *Communications of the ACM, 19*(7), 395–404. https://doi.org/10.1145/360248.360253
 - Mockapetris, P. V., & Dunlap, K. J. (1988). Development of the Domain Name System. *ACM SIGCOMM Computer Communication Review, 18*(4), 123–133. https://doi.org/10.1145/52325.52338
-- Peterson, L. L., & Davie, B. S. (2021). *Computer networks: A systems approach* (6th ed.). Morgan Kaufmann/Elsevier.
 - Postel, J. (1981a). *Internet Protocol* (RFC 791). Internet Engineering Task Force. https://doi.org/10.17487/RFC0791
 - Postel, J. (1981b). *Transmission Control Protocol* (RFC 793). Internet Engineering Task Force. https://doi.org/10.17487/RFC0793
 - Shi, W., Cao, J., Zhang, Q., Li, Y., & Xu, L. (2016). Edge computing: Vision and challenges. *IEEE Internet of Things Journal, 3*(5), 637–646. https://doi.org/10.1109/JIOT.2016.2579198
-- Stallings, W. (2016). *Data and computer communications* (10th ed.). Pearson.
-- Stevens, W. R. (1994). *TCP/IP illustrated, Volume 1: The protocols*. Addison-Wesley.
 - Tanenbaum, A. S., Feamster, N., & Wetherall, D. J. (2021). *Computer networks* (6th ed.). Pearson.
 - Williams, T. J. (1994). The Purdue enterprise reference architecture. *Computers in Industry, 24*(2–3), 141–158. https://doi.org/10.1016/0166-3615(94)90017-5
 - Xu, L. D., He, W., & Li, S. (2014). Internet of things in industries: A survey. *IEEE Transactions on Industrial Informatics, 10*(4), 2233–2243. https://doi.org/10.1109/TII.2014.2300753
+
+## 延伸書目
+
+- Comer, D. E. (2015). *Computer networks and internets* (6th ed.). Pearson.
+- Forouzan, B. A. (2013). *Data communications and networking* (5th ed.). McGraw-Hill.
+- Laudon, K. C., & Laudon, J. P. (2022). *Management information systems: Managing the digital firm* (17th ed.). Pearson.
+- Peterson, L. L., & Davie, B. S. (2021). *Computer networks: A systems approach* (6th ed.). Morgan Kaufmann/Elsevier.
+- Stallings, W. (2016). *Data and computer communications* (10th ed.). Pearson.
+- Stevens, W. R. (1994). *TCP/IP illustrated, Volume 1: The protocols*. Addison-Wesley.
 
 ---
 
