@@ -747,6 +747,10 @@ CPU 的運作遵循一個稱為 **取指—解碼—執行（Fetch-Decode-Execut
 
 *圖片來源：[Wikimedia Commons「Cpu.jpg」](https://commons.wikimedia.org/wiki/File:Cpu.jpg)，作者 Poooow，公有領域（Public Domain）*
 
+![Intel i486SX 處理器（1989 年），上方為正面，下方為背面的針腳](images/02-Computer-Structure/intel-i486sx-cpu.jpg)
+
+*本圖由作者自行攝影，地點為國立臺灣科學教育館*
+
 ### 2. 多核心與平行處理
 
 早期 CPU 只有一個核心，只能一次執行一個指令序列。[多核心（Multi-core）](https://zh.wikipedia.org/zh-tw/多核心處理器) CPU 將數個獨立的運算核心整合在同一晶片上，讓電腦能夠真正 **同時** 執行多個工作，稱為[平行處理（Parallel Processing）](https://zh.wikipedia.org/zh-tw/並行計算)。
@@ -852,6 +856,12 @@ CPU 的運作遵循一個稱為 **取指—解碼—執行（Fetch-Decode-Execut
 ![非揮發性儲存媒體](images/02-Computer-Structure/non-volatile-storage.png)
 
 *本圖由 ChatGPT 生成，已由作者審核內容正確性*
+
+除了上面四種，主機板上還有一顆存放 BIOS/UEFI 韌體的非揮發性晶片，開機時 CPU 執行的第一段程式就存在這裡。早期這類晶片常用 [EPROM（Erasable Programmable Read-Only Memory，可抹除可程式化唯讀記憶體）](https://zh.wikipedia.org/zh-tw/EPROM)，晶片中央有一扇透明窗，用紫外線照射就能抹除內容再重新寫入；現代主機板則改用快閃記憶體。
+
+![EPROM 晶片，中央的透明窗可以看到裡面的矽晶粒](images/02-Computer-Structure/eprom-chips.jpg)
+
+*本圖由作者自行攝影，地點為國立臺灣科學教育館*
 
 ### 3. 記憶體階層與效能
 

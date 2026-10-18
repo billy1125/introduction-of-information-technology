@@ -381,6 +381,14 @@ ENIAC 的速度比當時所有機械或機電計算機都快上數千倍，電�
 
 **代表機器**：ENIAC、[UNIVAC I](https://en.wikipedia.org/wiki/UNIVAC_I)（第一台商用電腦，1951 年）
 
+![小型九腳真空管，玻璃管內可見金屬電極與底部接腳](images/01-History-of-Computer/vacuum-tube-miniature.jpg)
+
+*本圖由作者自行攝影，地點為國立臺灣科學教育館*
+
+![大型真空管，頂端有多支接腳，玻璃管內是金屬電極結構](images/01-History-of-Computer/vacuum-tube-large.jpg)
+
+*本圖由作者自行攝影，地點為國立臺灣科學教育館*
+
 ---
 
 ### 第二代（1950 年代–1960 年代）：電晶體時代
@@ -396,6 +404,18 @@ ENIAC 的速度比當時所有機械或機電計算機都快上數千倍，電�
 | 發熱 | 嚴重 | 少 |
 | 壽命 | 短 | 長 |
 | 成本 | 高 | 低 |
+
+![早期金屬外殼封裝的電晶體，三支接腳從圓柱形外殼底部伸出](images/01-History-of-Computer/transistor-metal-can.jpg)
+
+*本圖由作者自行攝影，地點為國立臺灣科學教育館*
+
+![各種塑膠封裝的電晶體，體積只有指甲大小](images/01-History-of-Computer/transistor-plastic-package.jpg)
+
+*本圖由作者自行攝影，地點為國立臺灣科學教育館*
+
+![金屬外殼的功率電晶體，外殼兩側有固定用的螺絲孔](images/01-History-of-Computer/transistor-power-metal-case.jpg)
+
+*本圖由作者自行攝影，地點為國立臺灣科學教育館*
 
 **特點**：
 - 體積大幅縮小，電腦從整棟建築縮小到幾個機櫃
@@ -421,6 +441,10 @@ ENIAC 的速度比當時所有機械或機電計算機都快上數千倍，電�
 **核心技術**：[積體電路（Integrated Circuit，IC）](https://zh.wikipedia.org/zh-tw/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF)
 
 積體電路（又稱「晶片」）是將多個電晶體、電阻、電容等電子元件，透過微影技術 **整合在一片矽晶片** 上的技術，由[傑克·基爾比（Jack Kilby）](https://zh.wikipedia.org/zh-tw/%E5%82%91%E5%85%8B%C2%B7%E5%9F%BA%E7%88%BE%E6%AF%94)與[羅伯特·諾伊斯（Robert Noyce）](https://zh.wikipedia.org/zh-tw/%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E8%AF%BA%E4%BC%8A%E6%96%AF)分別在 1958-1959 年間發明。
+
+![不同封裝的積體電路：上方為針腳柵格陣列（PGA）封裝的處理器背面，下方與右側為雙列直插（DIP）封裝的晶片](images/01-History-of-Computer/ic-dip-pga-packages.jpg)
+
+*本圖由作者自行攝影，地點為國立臺灣科學教育館*
 
 **特點**：
 - 電腦體積進一步縮小至桌子大小
