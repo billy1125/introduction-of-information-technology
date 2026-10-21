@@ -30,7 +30,8 @@
 | `06-Data-Science-AI-and-Smart-Manufacturing.md` | 資料科學、人工智慧與智慧製造（**全課程終點**）：串接計算機→程式→網路→資訊系統→AI 的技術演進主線，並在最後以工業4.0智慧工廠案例收束全課程。機器學習／深度學習原理、AI 發展史，以及工業4.0（定義、九大支柱、數位轉型、數位孿生）的權威章節 |
 | `notebooks/Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 第一篇（程式設計基礎，三～五節）、第二篇（資料結構基礎，七節）與第三篇（演算法基礎與效率概念，九～十一節）的實作範例 |
 | `notebooks/Computer-Structure-Examples.ipynb` | Python Jupyter 筆記本，對應 `02-Computer-Structure.md`〈四、數字系統與進位轉換〉與〈五、浮點數與 IEEE 754〉的練習題完整詳解 |
-| `past-exams/Mid-Test-114-1.md` | 114-1 期中考考古題：選擇題 36 題、簡答及計算題 2 題，未附解答 |
+| `past-exams/Mid-Test-114-1.md` | 114-1 期中考考古題：選擇題 36 題、簡答及計算題 2 題，題目檔不附解答 |
+| `past-exams/Mid-Test-114-1-Answers.md` | 114-1 期中考標準答案：選擇題答案表，以及簡答及計算題的計算過程 |
 
 各章節另有對應的 Marp 投影片版本 `0X-XXX.slides.md`（目前涵蓋 00–06 章）。
 
