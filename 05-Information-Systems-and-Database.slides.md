@@ -70,17 +70,18 @@ style: |
 
 ---
 
+## 整個章節就一張圖
+
+![h:450](images/05-Information-Systems-and-Database/integration-of-is.png)
+
+##### [大圖](https://github.com/billy1125/introduction-of-information-technology/blob/main/images/05-Information-Systems-and-Database/integration-of-is.png)
+---
+
 # 一、資料、資訊與資訊系統
 
 整門課只在講一件事：把資料處理成資訊，再轉化成能支援決策的知識。本章處理的是這條路上的儲存與轉化——資料庫讓大量資料能被有系統地存放與查詢，資訊系統則把它整理成各層級決策需要的資訊。
 
 本節先複習資料、資訊與知識的差別，再用「系統觀念」拆開資訊系統的骨架，最後看 AI 怎麼把這條轉化鏈往上推。
-
----
-
-<!-- ## 把整章收攏成一張圖 -->
-
-![h:630](images/05-Information-Systems-and-Database/integration-of-is.png)
 
 ---
 
@@ -220,7 +221,7 @@ style: |
 
 ---
 
-## 資訊系統的演進：自動化、智慧化、自主化
+## 當代資訊系統的演進
 
 - **自動化**：資料 → 資訊，系統彙整數字、產生報表、發出警報
 - **智慧化**：資訊 → 知識，**AI 專家系統（AI-based Expert System）** 從資料中歸納判斷規則
@@ -588,8 +589,6 @@ MIS 把資料整理成報表，回答「發生了什麼」；DSS 更進一步，
 
 ---
 
-![bg left:45%](images/05-Information-Systems-and-Database/amr-sabre-sis.png)
-
 ## 策略資訊系統（SIS）
 
 **策略資訊系統（Strategic Information System，SIS）** 整合內部營運與外部市場、競爭環境資訊，支援企業識別策略機會。
@@ -606,6 +605,10 @@ MIS、DSS、EIS 都在「把公司管好」，眼睛向內看；SIS 則把資訊
 - **大數據與 AI 的影響**：AI 即時分析輿情、市場與供應鏈資料，讓趨勢預測與風險預警更快、更全面
 
 > **SIS 的價值不在產出報表，而在替企業取得對手追不上的結構性優勢。**
+
+---
+
+![h:600](images/05-Information-Systems-and-Database/amr-sabre-sis.png)
 
 ---
 
@@ -638,7 +641,7 @@ ERP 是以企業功能為觀點，對組織進行 **模組化** 與 **整合** �
 
 <!-- ## 企業資源規劃 -->
 
-![h:520](images/05-Information-Systems-and-Database/concept-of-erp.png)
+![h:600](images/05-Information-Systems-and-Database/concept-of-erp.png)
 
 ---
 
@@ -673,13 +676,16 @@ ERP 是以企業功能為觀點，對組織進行 **模組化** 與 **整合** �
 
 ---
 
-## ERP 的概念適用於任何多部門組織
+## ERP 不一定就叫「ERP」
 
-ERP 的核心概念是把多個部門的功能整合進同一套系統、共用同一份資料，不限於營利公司：
+只要把多個部門的功能整合進同一套系統、共用同一份資料，就是 ERP，名稱與場域都不限：
 
-- **學校**：Portal 要打通教務、學務、總務、人事與會計，某種程度上就是校園版的 ERP
-- **政府機關**：把各科室的行政、公文與預算串在一起
+- **公司**：常直接叫產品名稱（「上 SAP 開單」「用鼎新查庫存」）；「進銷存系統」是只有採購、銷售、庫存的精簡版 ERP
+- **學校**：元智大學 Portal 要打通教務、學務、總務、人事與會計，某種程度上就是校園版的 ERP
+- **政府機關**：把各科室的行政、公文與預算串在一起，稱為 **政府資訊系統（Government Information System）**
 - **醫院**：掛號、批價、檢驗、藥局到病歷全部整合，稱為 **醫院資訊系統（Hospital Information System，HIS）**
+
+> **判斷依據是有沒有把多個部門整合在同一份資料上，而不是名稱。**
 
 ---
 
@@ -741,6 +747,8 @@ ERP 擅長整合企業內部，但公司不會關起門來運作：上游有供�
 
 早期資料分散成一個個獨立檔案，同一筆資料常存好幾份，改了一處漏了另一處就對不起來。現代資訊系統把資料集中存進資料庫，同一筆資料只存一份，由專門的軟體統一管理。
 
+系上也有開設「資料庫管理系統」課程，若同學需要深入學習，建議在大二可以選修該課程。
+
 ---
 
 ## 資料的層級
@@ -779,6 +787,24 @@ ERP 擅長整合企業內部，但公司不會關起門來運作：上游有供�
 
 ---
 
+## 一整個資料庫：多張表加上關聯
+
+下一頁是同一個 Access 檔案的查詢設計畫面：
+
+- 上半部是「客戶」「訂貨主檔」「訂貨明細」「產品資料」四張資料表，以連線串在一起
+- 連線兩端的 1 與 ∞ 表示對應筆數（∞ 代表「多」）：一位客戶有多張訂單，一張訂單有多筆明細，多筆明細指向同一項產品
+- 下半部是利用這些關聯設計的查詢，統計每位客戶在不同期間各訂購了多少產品
+
+> **四張資料表加上它們之間的關聯，合起來才是一整個資料庫**
+
+---
+
+<!-- ## Microsoft Access 的查詢設計畫面 -->
+
+![h:600](images/05-Information-Systems-and-Database/ms-access-relationships.png)
+
+---
+
 ## 資料是怎麼被管理的
 
 1. **資料寫死在程式裡**：資料少時最省事，但資料一改就得改程式、重新編譯
@@ -791,7 +817,7 @@ ERP、MES、CRM 能彼此共用同一份資料，靠的就是資料庫系統。
 
 <!-- ## 為什麼需要資料庫 -->
 
-![h:520](images/05-Information-Systems-and-Database/why-db.png)
+![h:600](images/05-Information-Systems-and-Database/why-db.png)
 
 ---
 
@@ -839,7 +865,7 @@ DBMS 有商業軟體，例如 Oracle、Microsoft SQL Server；也有 **開放原
 
 <!-- ## WordPress 網站的 MySQL 資料庫 -->
 
-![h:520](images/05-Information-Systems-and-Database/wordpress-mysql-database.png)
+![h:590](images/05-Information-Systems-and-Database/wordpress-mysql-database.png)
 
 ---
 
@@ -936,7 +962,7 @@ Codd 在 1981 年獲頒電腦界最高榮譽的 **圖靈獎（Turing Award）**�
 
 <!-- ## 學生、課程、選課成績三張表的關聯 -->
 
-![h:520](images/05-Information-Systems-and-Database/relational-db-student-score.png)
+![h:590](images/05-Information-Systems-and-Database/relational-db-student-score.png)
 
 ---
 
@@ -952,7 +978,7 @@ Codd 在 1981 年獲頒電腦界最高榮譽的 **圖靈獎（Turing Award）**�
 
 <!-- ## 機台、產品、工單三張表的關聯 -->
 
-![w:1100](images/05-Information-Systems-and-Database/relational-db-machine-workorder.png)
+![w:1200](images/05-Information-Systems-and-Database/relational-db-machine-workorder.png)
 
 ---
 
@@ -967,7 +993,7 @@ Codd 在 1981 年獲頒電腦界最高榮譽的 **圖靈獎（Turing Award）**�
 
 <!-- ## 實體關係模型（ER 模型） -->
 
-![h:520](images/05-Information-Systems-and-Database/er-model.png)
+![h:580](images/05-Information-Systems-and-Database/er-model.png)
 
 ---
 
@@ -985,7 +1011,7 @@ ER 圖中每個方框是一個 **實體（Entity）**，對應一張資料表；
 
 <!-- ## 遊戲資料庫的 ER 圖 -->
 
-![h:520](images/05-Information-Systems-and-Database/ermodel-in-game.png)
+![h:550](images/05-Information-Systems-and-Database/ermodel-in-game.png)
 
 ---
 
@@ -1090,6 +1116,19 @@ ORDER BY 分數 ASC;
 
 ---
 
+## SELECT 查詢結果
+
+查詢結果可能如下（數據為示意），分數由低到高排列：
+
+| 學號 | 課程代碼 | 分數 |
+|---|---|---|
+| S1107 | IE201 | 38 |
+| S1102 | IE202 | 45 |
+| S1115 | IE203 | 52 |
+| S1123 | IE201 | 58 |
+
+---
+
 ## 同一套語法，搬到工廠也通
 
 查出今日良率低於 95% 的生產線，並由低到高排列：
@@ -1103,6 +1142,19 @@ ORDER BY 良率 ASC;
 ```
 
 > **SQL 原名 SEQUEL，因為和一家英國飛機公司的商標撞名才改名，所以「sequel」和「S-Q-L」兩種唸法都對。**
+
+---
+
+## 工廠良率查詢結果
+
+查詢結果可能如下（數據為示意）。良率在 95% 以上的生產線不符合條件，不會出現在結果裡：
+
+| 生產線名稱 | 良率 | 班次 |
+|---|---|---|
+| C 線 | 0.874 | 夜班 |
+| B 線 | 0.912 | 夜班 |
+| A 線 | 0.931 | 中班 |
+| D 線 | 0.946 | 早班 |
 
 ---
 
@@ -1122,6 +1174,8 @@ SQL 的結構對應關聯式資料庫的固定表格：查詢精準、資料一�
 資料一旦變得巨量、格式雜亂、又要快速寫入，這套嚴謹反而成了限制。把這個限制推到極致的，就是〈八〉要談的大數據。
 
 > **資料大到、雜到某個程度，光靠 SQL 與關聯式資料庫就不夠用，才需要 NoSQL 補位。**
+
+NoSQL 實際上是「Not Only SQL」（不只是 SQL），重點在於不要求固定的表格結構，而不是排斥 SQL
 
 ---
 
@@ -1145,12 +1199,6 @@ SQL 的結構對應關聯式資料庫的固定表格：查詢精準、資料一�
 學校的 Portal 就是例子：只要有存取權限、能上網，不論在宿舍、家裡還是外地，都能選課、請假、線上申請各種校內服務，不必跑到行政單位櫃台。
 
 用電腦瀏覽器登入 Portal，或用手機上的元智大學 App，都能查看課程、行事曆，也都能辦理請假。
-
----
-
-<!-- ## 用電腦瀏覽器登入的元智大學 Portal -->
-
-![h:520](images/05-Information-Systems-and-Database/yzu-portal-web.png)
 
 ---
 
@@ -1197,7 +1245,7 @@ SQL 的結構對應關聯式資料庫的固定表格：查詢精準、資料一�
 
 <!-- ## 電子商務的商業模式 -->
 
-![h:520](images/05-Information-Systems-and-Database/e-commerce.png)
+![h:600](images/05-Information-Systems-and-Database/e-commerce.png)
 
 ---
 
@@ -1209,7 +1257,7 @@ SQL 的結構對應關聯式資料庫的固定表格：查詢精準、資料一�
 
 ---
 
-![bg right:45%](images/05-Information-Systems-and-Database/mobile-payment.jpg)
+![bg right:40%](images/05-Information-Systems-and-Database/mobile-payment.jpg)
 
 ## 行動商務的四個重點
 
@@ -1236,21 +1284,17 @@ SQL 的結構對應關聯式資料庫的固定表格：查詢精準、資料一�
 
 <!-- ## 行動商務 -->
 
-![h:520](images/05-Information-Systems-and-Database/m-commerce.png)
+![h:600](images/05-Information-Systems-and-Database/m-commerce.png)
 
 ---
 
 ## 雲端運算與資訊系統
 
+![bg right:45% 100%](images/05-Information-Systems-and-Database/cloud-computing.svg)
+
 電子商務與行動商務要同時服務數以百萬計的使用者，多數企業不自建機房，而是交給 **雲端運算（Cloud Computing）**：透過網際網路隨需（on-demand）租用運算、儲存與軟體資源，用多少算多少。
 
 過去大型系統必須裝在公司機房，是因為早期網路頻寬窄、延遲高。寬頻與光纖普及後，系統擺在遠端的 **資料中心（Data Center）**，使用起來與裝在隔壁機房幾乎沒有差別。
-
----
-
-<!-- ## 雲端運算概念 -->
-
-![h:520](images/05-Information-Systems-and-Database/cloud-computing.svg)
 
 ---
 
@@ -1279,7 +1323,7 @@ SQL 的結構對應關聯式資料庫的固定表格：查詢精準、資料一�
 
 <!-- ## 三種雲端服務模式 -->
 
-![h:520](images/05-Information-Systems-and-Database/cloud-computing-services.png)
+![w:1150](images/05-Information-Systems-and-Database/cloud-computing-services.png)
 
 ---
 
@@ -1327,7 +1371,7 @@ SQL 的結構對應關聯式資料庫的固定表格：查詢精準、資料一�
 
 ---
 
-![bg left:45%](images/05-Information-Systems-and-Database/cern-server-datacenter.jpg)
+![bg left:40%](images/05-Information-Systems-and-Database/cern-server-datacenter.jpg)
 
 ## 大數據落在實體的資料中心
 
@@ -1352,7 +1396,7 @@ SQL 的結構對應關聯式資料庫的固定表格：查詢精準、資料一�
 
 <!-- ## 大數據分析流程與資訊系統層級的對應 -->
 
-![h:520](images/05-Information-Systems-and-Database/big-data-is.png)
+![h:600](images/05-Information-Systems-and-Database/big-data-is.png)
 
 ---
 
