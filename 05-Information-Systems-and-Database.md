@@ -207,7 +207,11 @@
 
 ---
 
-[EDP](https://zh.wikipedia.org/wiki/數據處理) 將人工的重複性資料處理工作自動化，例如訂單建檔、庫存異動、薪資計算等。其核心目的是「以電腦代替人工執行固定流程」，提高速度與準確性。
+[EDP](https://zh.wikipedia.org/wiki/數據處理) 將人工的重複性資料處理工作自動化，例如訂單建檔、庫存異動、薪資計算等。其核心目的是「以電腦代替人工執行固定流程」，提高速度與準確性。例如 **電費帳單**：每期抄表讀數集中送進電腦後，系統依同一套費率公式算出每一戶的金額，再一次產生全部帳單。規則固定、數量龐大、每期重複，正是最適合交給 EDP 的工作。
+
+![台灣電力公司的繳費通知單，列出計費度數、流動電費計算式與應繳總金額](images/05-Information-Systems-and-Database/electricity-bill.jpg)
+
+*圖片來源：[維基共享資源「TPC Keelung Branch electricity bill G0113041016443.jpg」](https://commons.wikimedia.org/wiki/File:TPC_Keelung_Branch_electricity_bill_G0113041016443.jpg)，作者 Solomon203，授權 CC BY-SA 4.0*
 
 **校園情境**：學校每學期把上千筆選課登記、成績登錄、學雜費繳費紀錄自動建檔與計算，取代早年職員逐筆手寫謄抄，就是 EDP 最貼近你的例子。
 
@@ -226,6 +230,12 @@
 ![一個便利商店年輕女店員使用 POS 幫客戶結帳](images/05-Information-Systems-and-Database/clerk-use-pos.png)
 
 *本圖由 ChatGPT 生成，已由作者審核內容正確性*
+
+股票買賣的 **電子撮合** 也是 TPS：投資人的買單與賣單一筆筆送進證券交易所的電腦，系統依「價格優先、時間優先」的規則，即時把價格相符的買賣單配對成交，並記下每一筆成交紀錄。這件事過去由人工撮合；[臺灣證券交易所](https://zh.wikipedia.org/wiki/臺灣證券交易所) 在 1988 年將所有上市股票納入電腦輔助撮合，1993 年再全面改為電腦自動競價交易。
+
+![臺灣證券交易所內的行情顯示螢幕，列出各股買進、賣出、成交價與加權指數走勢](images/05-Information-Systems-and-Database/twse-market-display.jpg)
+
+*圖片來源：[維基共享資源「Market data on display at Taiwan Stock Exchange 20210208.jpg」](https://commons.wikimedia.org/wiki/File:Market_data_on_display_at_Taiwan_Stock_Exchange_20210208.jpg)，作者 中華民國總統府，授權 CC BY 2.0*
 
 TPS 的三種處理方式：
 
@@ -325,6 +335,12 @@ KMS 的樣貌這幾年正在劇烈改變。早期的 KMS 比較像一座 **數�
 *本圖由 ChatGPT 生成，已由作者審核內容正確性*
 
 講得再白話一點：你只要對現代 KMS 打一句「請幫我整理我們公司過去和 A 公司的採購流程」，系統就會自動把散落在合約、郵件、簡報、報價單裡的相關內容找齊、歸納好，幾秒鐘回你一段條理分明、還附上引用來源的說明——這在過去得靠夠資深的人翻查半天才做得到。
+
+下圖是作者自己實作的 RAG 系統，用來回答勞動法規的問題。左半部的「查條文」讓使用者自己用關鍵字搜尋法規；右半部的「系統的建議」才是 RAG 的產出：系統先從法規資料庫找出相關條文（這一題是性別平等工作法第 19 條），再依條文內容寫出建議答案，並列出引用的條文與系統對答案的把握程度。答案附上了出處，使用者就能對照條文自己核對，不必全盤相信系統。
+
+![作者實作的 RAG 勞動法規問答系統：左邊是條文搜尋，右邊是系統依條文寫出的建議答案與引用條文](images/05-Information-Systems-and-Database/rag-labor-law-qa.png)
+
+*本圖由作者截圖*
 
 **校園情境**：系上的「教學助教經驗共享區」與「歷屆考古題、解題筆記庫」，讓新任助教與學弟妹快速上手，不必每次重新摸索，就是校園裡的 KMS。
 
