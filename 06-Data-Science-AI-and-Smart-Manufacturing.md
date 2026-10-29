@@ -407,6 +407,8 @@ CNN、LSTM、Transformer 這些深度神經網路很強，卻也帶來一個新�
 | 影片生成 | [Sora](https://zh.wikipedia.org/wiki/Sora_(人工智能模型)) | 產品展示影片 |
 | [語音合成](https://zh.wikipedia.org/wiki/語音合成)（Speech Synthesis） | TTS（Text-to-Speech）模型 | 語音客服、教學語音 |
 
+這張表依「產出什麼」來分類，但現在的主流產品多半不只做一種。以 ChatGPT 為例，同一個對話視窗裡就能寫文字、畫圖，也能用語音對話，表中各類型的界線越來越模糊。
+
 ### 2. Transformer 與大型語言模型
 
 **[Transformer](https://zh.wikipedia.org/wiki/Transformer模型) 架構** 是生成式 AI 的核心技術，最早由 Google 團隊在 2017 年的一篇論文「**Attention Is All You Need**（你只需要注意力）」中提出（Vaswani et al., 2017）。有趣的是，它一開始的用途其實很單純——做 **機器翻譯（Machine Translation）**：先「分析」來源語言整句話的結構與詞跟詞之間的關聯，再把這份理解「轉換」成目標語言重新生成出來。原始論文示範的正是 **英德翻譯**（把英文句子譯成德文）。
@@ -532,6 +534,8 @@ AGI（而非強 AI）已成為目前產業界（如 OpenAI、[Google DeepMind](h
 **生活情境**：像「幫我規劃下週出差行程、訂好符合預算的機票與飯店，並避開海鮮餐廳」這類任務，其實現在的 AI 代理人大致就能完成——但正因為這類任務範圍明確、所需資料結構化程度高，它展現的仍是「有限但實用的能力」。真正的 AGI 意味著同一套系統不需要額外設計、訓練或切換工具，就能直接應付完全陌生、跨領域的任務——例如你臨時追加「順便根據這次拜訪客戶的產業背景，寫一份符合當地商業禮儀的提案簡報，並用當地語言幫我練習口說」，AGI 也能像人類助理一樣立刻理解情境轉換並勝任，而不會因為任務類型改變就表現失常。這種「跨領域、不需重新訓練也能靈活遷移」的能力，才是現在的 AI 服務與真正 AGI 之間的關鍵差距。
 
 **工業工程與管理情境**：目前的 AI 系統多半只能完成單一任務，例如預測產線不良率，或是優化排程演算法，仍需要工程師整合不同系統的結果來做決策。若達到 AGI 等級，系統將能像一位資深廠務經理一樣，同時掌握生產排程、品質異常、供應鏈延遲與人力調度等跨部門資訊，自主判斷「這批急單該插單生產、還是先完成設備歲修」，並直接調整產線排程、通知供應商、重新分配人力——把原本分散在 ERP、MES、品管系統中的資訊整合成一個決策，而不只是提供單一指標的建議。
+
+**機器會不會思考，為什麼這麼難判斷**：1950 年，Alan Turing 提出 **[圖靈測試](https://zh.wikipedia.org/wiki/圖靈測試)（Turing Test）**，主張只要評審透過文字對話分不出對方是人還是機器，就該承認機器有智慧（Turing, 1950）。1980 年，哲學家 John Searle 用 **[中文房間](https://zh.wikipedia.org/wiki/中文房間)（Chinese Room）** 反駁：一個不懂中文的人照著規則手冊回覆中文問題，外面的人以為他懂中文，他其實一個字都看不懂；表現得像，不等於真的理解（Searle, 1980）。兩派爭論至今沒有定論，因為我們連判斷別人有沒有意識，也只能從言行推論。這也是業界改用 AGI 這種看能力、不看意識的標準的原因。
 
 ### 5. AI 應用的類型：從辨識、預測到生成
 
@@ -782,6 +786,7 @@ AGI（而非強 AI）已成為目前產業界（如 OpenAI、[Google DeepMind](h
 - Rosenblatt, F. (1958). The perceptron: A probabilistic model for information storage and organization in the brain. *Psychological Review, 65*(6), 386–408. https://doi.org/10.1037/h0042519
 - Rüßmann, M., Lorenz, M., Gerbert, P., Waldner, M., Engel, P., Harnisch, M., & Justus, J. (2015). *Industry 4.0: The future of productivity and growth in manufacturing industries*. Boston Consulting Group. https://www.bcg.com/publications/2015/engineered_products_project_business_industry_4_future_productivity_growth_manufacturing_industries
 - Samuel, A. L. (1959). Some studies in machine learning using the game of checkers. *IBM Journal of Research and Development, 3*(3), 210–229. https://doi.org/10.1147/rd.33.0210
+- Searle, J. R. (1980). Minds, brains, and programs. *Behavioral and Brain Sciences, 3*(3), 417–424. https://doi.org/10.1017/S0140525X00005756
 - Silver, D., Huang, A., Maddison, C. J., Guez, A., Sifre, L., van den Driessche, G., … Hassabis, D. (2016). Mastering the game of Go with deep neural networks and tree search. *Nature, 529*(7587), 484–489. https://doi.org/10.1038/nature16961
 - Tao, F., Zhang, H., Liu, A., & Nee, A. Y. C. (2019). Digital twin in industry: State-of-the-art. *IEEE Transactions on Industrial Informatics, 15*(4), 2405–2415. https://doi.org/10.1109/TII.2018.2873186
 - Turing, A. M. (1950). Computing machinery and intelligence. *Mind, 59*(236), 433–460. https://doi.org/10.1093/mind/LIX.236.433
