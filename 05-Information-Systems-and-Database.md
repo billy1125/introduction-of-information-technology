@@ -40,11 +40,11 @@
 
 ---
 
-## 一、資料、資訊與資訊系統（複習）
+## 一、資料、資訊與資訊系統
 
 > **前情提要**：[01-History-of-Computer.md](01-History-of-Computer.md)〈八、現代資訊系統〉已先介紹過網路化資訊系統、雲端運算（Cloud Computing）與[物聯網（Internet of Things，IoT）](https://zh.wikipedia.org/wiki/物聯網)的基本概念，本章在此基礎上深入資訊系統的層級與類型、企業應用系統（ERP/MES/SCM/CRM）與資料庫技術。
 
-### 1. 資料、資訊與知識的關係
+### 1. 資料、資訊與知識的關係（複習）
 
 在進入正題之前，我們先複習之前一直說過的「資料」、「資訊」、「知識」。
 

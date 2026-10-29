@@ -19,8 +19,8 @@
 | ✅ | [01-History-of-Computer.md](01-History-of-Computer.md) | 計算機歷史 | 計算工具演進、二進位系統、數位化、網路起源、AI 發展簡史 | [Slides](01-History-of-Computer.slides.md) | — |
 | ✅ | [02-Computer-Structure.md](02-Computer-Structure.md) | 電腦硬體、作業系統與應用軟體 | CPU、記憶體、儲存裝置、作業系統、應用軟體、工業4.0 | [Slides](02-Computer-Structure.slides.md) | [Notebook](notebooks/Computer-Structure-Examples.ipynb) |
 | ✅ | [03-Computer-Program.md](03-Computer-Program.md) | 程式設計概念 | 演算法、程式語言、資料結構、工業工程應用 | [Slides](03-Computer-Program.slides.md) | [Notebook](notebooks/Computer-Program-Examples.ipynb) |
-|  | [04-Networks-and-Internet.md](04-Networks-and-Internet.md) | 網路與網際網路 | 網路硬體與拓樸、無線與行動通訊、物聯網、TCP/IP、WWW 與 DNS、網際網路服務與資安、智慧製造網路 | [Slides](04-Networks-and-Internet.slides.md) | — |
-|  | [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | 資訊系統與資料庫 | 資訊系統類型（TPS/MIS/DSS/EIS）、ERP/MES/CRM、關聯式資料庫、SQL、NoSQL、大數據、電子商務 | [Slides](05-Information-Systems-and-Database.slides.md) | — |
+| ✅ | [04-Networks-and-Internet.md](04-Networks-and-Internet.md) | 網路與網際網路 | 網路硬體與拓樸、無線與行動通訊、物聯網、TCP/IP、WWW 與 DNS、網際網路服務與資安、智慧製造網路 | [Slides](04-Networks-and-Internet.slides.md) | — |
+| ✅ | [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | 資訊系統與資料庫 | 資訊系統類型（TPS/MIS/DSS/EIS）、ERP/MES/CRM、關聯式資料庫、SQL、NoSQL、大數據、電子商務 | [Slides](05-Information-Systems-and-Database.slides.md) | — |
 |  | [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) | 資料科學、人工智慧與智慧製造 | 從計算機到 AI 的完整脈絡、機器學習、深度學習、生成式 AI、AI 代理人，並以工業4.0智慧工廠案例整合全課程（全課程終點章節） | [Slides](06-Data-Science-AI-and-Smart-Manufacturing.slides.md) | — |
 |  | — | 全課程複習 | 六章重點的摘要與複習地圖，附各章教材連結；**只是索引與摘要，不能取代教材** | Slides | — |
 
