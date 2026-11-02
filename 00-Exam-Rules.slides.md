@@ -153,6 +153,10 @@ style: |
 
 ---
 
+![h:600](images/00-Exam-Rules/answer-sheet-example.jpg)
+
+---
+
 ## 考試當天：如廁與暫時離場
 
 - 原則上不得任意離開考場；有需要請 **先舉手告知**，不得自行離開
