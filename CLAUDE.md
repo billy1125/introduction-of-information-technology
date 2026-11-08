@@ -29,10 +29,6 @@
 | `04-Networks-and-Internet.md` | 分三篇：網路（硬體、拓樸、無線與行動通訊、物聯網）、網際網路（TCP/IP、WWW、DNS、網路服務與資安）、整合觀點（智慧製造網路架構） |
 | `05-Information-Systems-and-Database.md` | 資訊系統、資料庫（ERP/MES/SCM 等企業應用系統的權威章節） |
 | `06-Data-Science-AI-and-Smart-Manufacturing.md` | 資料科學、人工智慧與智慧製造（**全課程終點**）：串接計算機→程式→網路→資訊系統→AI 的技術演進主線，並在最後以工業4.0智慧工廠案例收束全課程。機器學習／深度學習原理、AI 發展史，以及工業4.0（定義、九大支柱、數位轉型、數位孿生）的權威章節 |
-| `notebooks/Computer-Program-Examples.ipynb` | Python Jupyter 筆記本，對應 `03-Computer-Program.md` 第一篇（程式設計基礎，三～五節）、第二篇（資料結構基礎，七節）與第三篇（演算法基礎與效率概念，九～十一節）的實作範例 |
-| `notebooks/Computer-Structure-Examples.ipynb` | Python Jupyter 筆記本，對應 `02-Computer-Structure.md`〈四、數字系統與進位轉換〉與〈五、浮點數與 IEEE 754〉的練習題完整詳解 |
-| `past-exams/Mid-Test-114-1.md` | 114-1 期中考考古題：選擇題 36 題、簡答及計算題 2 題，題目檔不附解答 |
-| `past-exams/Mid-Test-114-1-Answers.md` | 114-1 期中考標準答案：選擇題答案表，以及簡答及計算題的計算過程 |
 
 各章節另有對應的 Marp 投影片版本 `0X-XXX.slides.md`（目前涵蓋 00–06 章）。
 
@@ -40,11 +36,11 @@
 
 | 資料夾 | 說明 |
 |------|------|
-| `past-exams/` | 本課程過去的考古題，**僅供參考，不等於一定會出題** |
+| `past-exams/` | 本課程過去的期中考考古題，每次考試的題目檔（不附解答）與標準答案檔分開存放，**僅供參考，不等於一定會出題**。各屆清單與各章節分量見 `past-exams/README.md` |
 | `reference/` | 教材撰寫規範與骨架範本，**格式規則的唯一權威來源**。內容刻意與課程脫鉤，換一門課可整個資料夾複製沿用 |
 | `temp-reference/` | 生成教材用的暫存參考素材（非規範文件）。**臨時性質，目前不存在**，需要時才建立 |
 | `images/` | Markdown 文件引用的圖片，依所屬文章分子資料夾 |
-| `notebooks/` | 所有課程練習用的 Jupyter 筆記本，集中放置於此資料夾 |
+| `notebooks/` | 所有課程練習用的 Python Jupyter 筆記本，集中放置於此資料夾，內容為對應章節正文的實作範例與練習題詳解。各筆記本對應的章節見 `notebooks/README.md` |
 | `.claude/skills/` | Claude Code 技能（skill），每個技能自成一個資料夾，資料夾內含 `SKILL.md` 與其相依檔案 |
 
 ## 教材撰寫規範
@@ -72,7 +68,8 @@
 
 - **投影片同步**：正文改動涉及 **定義、數據、章節編號或標題** 時，必須同步修改對應的 `0X-XXX.slides.md`；純粹的潤稿、補充說明或新增趣味小知識則不必動投影片。
 - **README 教材清單**：新增或移除投影片、練習筆記本時，`README.md`〈📚 教材清單〉表格的「投影片版本」與「練習筆記本」兩欄要一起更新，沒有的項目填 `—`。表格漏更新不會有任何錯誤訊息，最容易放著爛掉。
-- **README 考古題清單**：新增或移除 `past-exams/` 的檔案時，`README.md`〈📝 考古題〉表格要一起更新。
+- **筆記本清單**：新增或移除練習筆記本時，`notebooks/README.md` 的筆記本清單要一起更新。
+- **考古題清單**：新增或移除 `past-exams/` 的檔案時，`past-exams/README.md` 的考古題清單與各章節分量要一起更新。`README.md`〈📝 考古題〉只說明資料夾內容，不列個別檔案。
 
 ## 本課程專屬設定
 
