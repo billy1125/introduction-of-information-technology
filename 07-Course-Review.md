@@ -10,7 +10,7 @@
 
 | 內容 | 課文 | 依據 |
 |---|---|---|
-| 工業4.0與智慧製造整節，以及學習重點總結裡的工業4.0那一段 | [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五〉〈六〉 | [00-Exam-Rules.md](00-Exam-Rules.md)〈一、考試時間、地點與範圍〉 |
+| 工業4.0與智慧製造整節，以及學習重點總結裡的工業4.0那一段 | [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五〉〈七〉 | [00-Exam-Rules.md](00-Exam-Rules.md)〈一、考試時間、地點與範圍〉 |
 | 程式碼與偽代碼怎麼寫 | [03-Computer-Program.md](03-Computer-Program.md)〈前言〉 | 課文註明不考程式碼 |
 | break 與 continue | [03-Computer-Program.md](03-Computer-Program.md)〈四、4〉 | 課文註明不會考 |
 | 其他常見資料結構（延伸介紹） | [03-Computer-Program.md](03-Computer-Program.md)〈八〉 | 課文註明原則上不會考 |
@@ -49,7 +49,7 @@
 
 ## 二、電腦硬體、作業系統與應用軟體
 
-課文：[02-Computer-Structure.md](02-Computer-Structure.md) ｜ 自我檢查：〈二十三、學習重點總結〉
+課文：[02-Computer-Structure.md](02-Computer-Structure.md) ｜ 自我檢查：〈二十四、學習重點總結〉
 
 | 重點 | 你要能回答 | 課文 |
 |---|---|---|
@@ -72,7 +72,7 @@
 
 ## 三、程式設計概念
 
-課文：[03-Computer-Program.md](03-Computer-Program.md) ｜ 自我檢查：〈十五、學習重點總結〉
+課文：[03-Computer-Program.md](03-Computer-Program.md) ｜ 自我檢查：〈十六、學習重點總結〉
 
 考的是概念，不考程式碼怎麼寫。
 
@@ -93,7 +93,7 @@
 
 ## 四、網路與網際網路
 
-課文：[04-Networks-and-Internet.md](04-Networks-and-Internet.md) ｜ 自我檢查：〈二十三、學習重點總結〉
+課文：[04-Networks-and-Internet.md](04-Networks-and-Internet.md) ｜ 自我檢查：〈二十四、學習重點總結〉
 
 | 重點 | 你要能回答 | 課文 |
 |---|---|---|
@@ -115,7 +115,7 @@
 
 ## 五、資訊系統與資料庫
 
-課文：[05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) ｜ 自我檢查：〈十、學習重點總結〉
+課文：[05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) ｜ 自我檢查：〈十一、學習重點總結〉
 
 | 重點 | 你要能回答 | 課文 |
 |---|---|---|
@@ -137,7 +137,7 @@
 
 ## 六、資料科學、人工智慧
 
-課文：[06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) ｜ 自我檢查：〈六、學習重點總結〉（工業4.0那一段除外）
+課文：[06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) ｜ 自我檢查：〈七、學習重點總結〉（工業4.0那一段除外）
 
 | 重點 | 你要能回答 | 課文 |
 |---|---|---|
