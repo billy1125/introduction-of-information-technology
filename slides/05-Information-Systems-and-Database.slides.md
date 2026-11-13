@@ -72,7 +72,7 @@ style: |
 
 ## 整個章節就一張圖
 
-![h:450](images/05-Information-Systems-and-Database/integration-of-is.png)
+![h:450](../images/05-Information-Systems-and-Database/integration-of-is.png)
 
 ##### [大圖](https://github.com/billy1125/introduction-of-information-technology/blob/main/images/05-Information-Systems-and-Database/integration-of-is.png)
 ---
@@ -107,7 +107,7 @@ style: |
 
 <!-- ## 資料、資訊與知識的關係 -->
 
-![h:600](images/05-Information-Systems-and-Database/hierarchy-of-data-information-knowledge.png)
+![h:600](../images/05-Information-Systems-and-Database/hierarchy-of-data-information-knowledge.png)
 
 ---
 
@@ -135,7 +135,7 @@ style: |
 
 <!-- ## 系統觀念 -->
 
-![h:520](images/05-Information-Systems-and-Database/concept-of-system-view.png)
+![h:520](../images/05-Information-Systems-and-Database/concept-of-system-view.png)
 
 ---
 
@@ -172,7 +172,7 @@ style: |
 
 <!-- ## 財務管理系統框架：大系統由子系統組成 -->
 
-![h:600](images/05-Information-Systems-and-Database/financial-management-system.gif)
+![h:600](../images/05-Information-Systems-and-Database/financial-management-system.gif)
 
 ---
 
@@ -186,7 +186,7 @@ style: |
 
 <!-- ## 圖書館借閱系統的個人借閱紀錄 -->
 
-![w:1000](images/05-Information-Systems-and-Database/library-borrowing-system.png)
+![w:1000](../images/05-Information-Systems-and-Database/library-borrowing-system.png)
 
 ---
 
@@ -233,7 +233,7 @@ style: |
 
 <!-- ## 資料、資訊、知識與 AI -->
 
-![h:580](images/05-Information-Systems-and-Database/data-information-knowledge-ai.png)
+![h:580](../images/05-Information-Systems-and-Database/data-information-knowledge-ai.png)
 
 ---
 
@@ -247,7 +247,7 @@ style: |
 
 <!-- ## 資訊系統的組成要素 -->
 
-![w:1100](images/05-Information-Systems-and-Database/elements-of-is.png)
+![w:1100](../images/05-Information-Systems-and-Database/elements-of-is.png)
 
 ---
 
@@ -273,7 +273,7 @@ style: |
 
 <!-- ## 資訊系統的層次 -->
 
-![h:600](images/05-Information-Systems-and-Database/level-of-is.png)
+![h:600](../images/05-Information-Systems-and-Database/level-of-is.png)
 
 ---
 
@@ -330,7 +330,7 @@ style: |
 
 ---
 
-![bg right:45%](images/05-Information-Systems-and-Database/clerk-use-pos.png)
+![bg right:45%](../images/05-Information-Systems-and-Database/clerk-use-pos.png)
 
 ## 交易處理系統（TPS）
 
@@ -360,7 +360,7 @@ style: |
 
 ---
 
-![bg left:45%](images/05-Information-Systems-and-Database/manager-use-mis.png)
+![bg left:45%](../images/05-Information-Systems-and-Database/manager-use-mis.png)
 
 ## 管理資訊系統（MIS）
 
@@ -382,7 +382,7 @@ style: |
 
 ---
 
-![bg right:45%](images/05-Information-Systems-and-Database/investers-use-dss.png)
+![bg right:45%](../images/05-Information-Systems-and-Database/investers-use-dss.png)
 
 ## 決策支援系統（DSS）
 
@@ -407,7 +407,7 @@ MIS 把資料整理成報表，回答「發生了什麼」；DSS 更進一步，
 
 <!-- ## Google 財經的 VT 個股頁面 -->
 
-![h:600](images/05-Information-Systems-and-Database/google-finance-dss.png)
+![h:600](../images/05-Information-Systems-and-Database/google-finance-dss.png)
 
 ---
 
@@ -421,7 +421,7 @@ MIS 把資料整理成報表，回答「發生了什麼」；DSS 更進一步，
 
 <!-- ## 約翰戴水庫決策支援系統畫面 -->
 
-![h:600](images/05-Information-Systems-and-Database/decision-support-system-john-day-reservoir.jpg)
+![h:600](../images/05-Information-Systems-and-Database/decision-support-system-john-day-reservoir.jpg)
 
 ---
 
@@ -437,7 +437,7 @@ MIS 把資料整理成報表，回答「發生了什麼」；DSS 更進一步，
 
 <!-- ## DSS 概念 -->
 
-![w:1100](images/05-Information-Systems-and-Database/concept-of-dss.png)
+![w:1100](../images/05-Information-Systems-and-Database/concept-of-dss.png)
 
 ---
 
@@ -480,7 +480,7 @@ MIS 把資料整理成報表，回答「發生了什麼」；DSS 更進一步，
 
 <!-- ## RAG 為基礎的 KMS -->
 
-![h:580](images/05-Information-Systems-and-Database/rag-kms.png)
+![h:580](../images/05-Information-Systems-and-Database/rag-kms.png)
 
 ---
 
@@ -503,7 +503,7 @@ MIS 把資料整理成報表，回答「發生了什麼」；DSS 更進一步，
 
 ---
 
-![bg left:40%](images/05-Information-Systems-and-Database/doctors-use-es.png)
+![bg left:40%](../images/05-Information-Systems-and-Database/doctors-use-es.png)
 
 ## 專家系統（ES）
 
@@ -558,7 +558,7 @@ MIS 把資料整理成報表，回答「發生了什麼」；DSS 更進一步，
 
 ---
 
-![bg right:45%](images/05-Information-Systems-and-Database/manager-use-eis.png)
+![bg right:45%](../images/05-Information-Systems-and-Database/manager-use-eis.png)
 
 ## 主管資訊系統（EIS）
 
@@ -608,7 +608,7 @@ MIS、DSS、EIS 都在「把公司管好」，眼睛向內看；SIS 則把資訊
 
 ---
 
-![h:600](images/05-Information-Systems-and-Database/amr-sabre-sis.png)
+![h:600](../images/05-Information-Systems-and-Database/amr-sabre-sis.png)
 
 ---
 
@@ -641,7 +641,7 @@ ERP 是以企業功能為觀點，對組織進行 **模組化** 與 **整合** �
 
 <!-- ## 企業資源規劃 -->
 
-![h:600](images/05-Information-Systems-and-Database/concept-of-erp.png)
+![h:600](../images/05-Information-Systems-and-Database/concept-of-erp.png)
 
 ---
 
@@ -765,7 +765,7 @@ ERP 擅長整合企業內部，但公司不會關起門來運作：上游有供�
 
 <!-- ## 資料的層級 -->
 
-![w:1100](images/05-Information-Systems-and-Database/level-of-data.png)
+![w:1100](../images/05-Information-Systems-and-Database/level-of-data.png)
 
 ---
 
@@ -783,7 +783,7 @@ ERP 擅長整合企業內部，但公司不會關起門來運作：上游有供�
 
 <!-- ## Microsoft Access 的產品資料表 -->
 
-![h:520](images/05-Information-Systems-and-Database/ms-access.png)
+![h:520](../images/05-Information-Systems-and-Database/ms-access.png)
 
 ---
 
@@ -801,7 +801,7 @@ ERP 擅長整合企業內部，但公司不會關起門來運作：上游有供�
 
 <!-- ## Microsoft Access 的查詢設計畫面 -->
 
-![h:600](images/05-Information-Systems-and-Database/ms-access-relationships.png)
+![h:600](../images/05-Information-Systems-and-Database/ms-access-relationships.png)
 
 ---
 
@@ -817,7 +817,7 @@ ERP、MES、CRM 能彼此共用同一份資料，靠的就是資料庫系統。
 
 <!-- ## 為什麼需要資料庫 -->
 
-![h:600](images/05-Information-Systems-and-Database/why-db.png)
+![h:600](../images/05-Information-Systems-and-Database/why-db.png)
 
 ---
 
@@ -865,7 +865,7 @@ DBMS 有商業軟體，例如 Oracle、Microsoft SQL Server；也有 **開放原
 
 <!-- ## WordPress 網站的 MySQL 資料庫 -->
 
-![h:590](images/05-Information-Systems-and-Database/wordpress-mysql-database.png)
+![h:590](../images/05-Information-Systems-and-Database/wordpress-mysql-database.png)
 
 ---
 
@@ -904,7 +904,7 @@ DBMS 有商業軟體，例如 Oracle、Microsoft SQL Server；也有 **開放原
 
 <!-- ## 遊戲情境：伺服器讀寫角色、裝備、背包資料表 -->
 
-![h:520](images/05-Information-Systems-and-Database/db-in-game.png)
+![h:520](../images/05-Information-Systems-and-Database/db-in-game.png)
 
 ---
 
@@ -962,7 +962,7 @@ Codd 在 1981 年獲頒電腦界最高榮譽的 **圖靈獎（Turing Award）**�
 
 <!-- ## 學生、課程、選課成績三張表的關聯 -->
 
-![h:590](images/05-Information-Systems-and-Database/relational-db-student-score.png)
+![h:590](../images/05-Information-Systems-and-Database/relational-db-student-score.png)
 
 ---
 
@@ -978,7 +978,7 @@ Codd 在 1981 年獲頒電腦界最高榮譽的 **圖靈獎（Turing Award）**�
 
 <!-- ## 機台、產品、工單三張表的關聯 -->
 
-![w:1200](images/05-Information-Systems-and-Database/relational-db-machine-workorder.png)
+![w:1200](../images/05-Information-Systems-and-Database/relational-db-machine-workorder.png)
 
 ---
 
@@ -993,7 +993,7 @@ Codd 在 1981 年獲頒電腦界最高榮譽的 **圖靈獎（Turing Award）**�
 
 <!-- ## 實體關係模型（ER 模型） -->
 
-![h:580](images/05-Information-Systems-and-Database/er-model.png)
+![h:580](../images/05-Information-Systems-and-Database/er-model.png)
 
 ---
 
@@ -1011,7 +1011,7 @@ ER 圖中每個方框是一個 **實體（Entity）**，對應一張資料表；
 
 <!-- ## 遊戲資料庫的 ER 圖 -->
 
-![h:550](images/05-Information-Systems-and-Database/ermodel-in-game.png)
+![h:550](../images/05-Information-Systems-and-Database/ermodel-in-game.png)
 
 ---
 
@@ -1084,7 +1084,7 @@ ER 圖中每個方框是一個 **實體（Entity）**，對應一張資料表；
 
 <!-- ## 應用程式送出 SQL，DBMS 回傳結果 -->
 
-![w:1100](images/05-Information-Systems-and-Database/sql-query-flow.png)
+![w:1100](../images/05-Information-Systems-and-Database/sql-query-flow.png)
 
 ---
 
@@ -1245,7 +1245,7 @@ NoSQL 實際上是「Not Only SQL」（不只是 SQL），重點在於不要求�
 
 <!-- ## 電子商務的商業模式 -->
 
-![h:600](images/05-Information-Systems-and-Database/e-commerce.png)
+![h:600](../images/05-Information-Systems-and-Database/e-commerce.png)
 
 ---
 
@@ -1257,7 +1257,7 @@ NoSQL 實際上是「Not Only SQL」（不只是 SQL），重點在於不要求�
 
 ---
 
-![bg right:40%](images/05-Information-Systems-and-Database/mobile-payment.jpg)
+![bg right:40%](../images/05-Information-Systems-and-Database/mobile-payment.jpg)
 
 ## 行動商務的四個重點
 
@@ -1284,13 +1284,13 @@ NoSQL 實際上是「Not Only SQL」（不只是 SQL），重點在於不要求�
 
 <!-- ## 行動商務 -->
 
-![h:600](images/05-Information-Systems-and-Database/m-commerce.png)
+![h:600](../images/05-Information-Systems-and-Database/m-commerce.png)
 
 ---
 
 ## 雲端運算與資訊系統
 
-![bg right:45% 100%](images/05-Information-Systems-and-Database/cloud-computing.svg)
+![bg right:45% 100%](../images/05-Information-Systems-and-Database/cloud-computing.svg)
 
 電子商務與行動商務要同時服務數以百萬計的使用者，多數企業不自建機房，而是交給 **雲端運算（Cloud Computing）**：透過網際網路隨需（on-demand）租用運算、儲存與軟體資源，用多少算多少。
 
@@ -1323,7 +1323,7 @@ NoSQL 實際上是「Not Only SQL」（不只是 SQL），重點在於不要求�
 
 <!-- ## 三種雲端服務模式 -->
 
-![w:1150](images/05-Information-Systems-and-Database/cloud-computing-services.png)
+![w:1150](../images/05-Information-Systems-and-Database/cloud-computing-services.png)
 
 ---
 
@@ -1371,7 +1371,7 @@ NoSQL 實際上是「Not Only SQL」（不只是 SQL），重點在於不要求�
 
 ---
 
-![bg left:40%](images/05-Information-Systems-and-Database/cern-server-datacenter.jpg)
+![bg left:40%](../images/05-Information-Systems-and-Database/cern-server-datacenter.jpg)
 
 ## 大數據落在實體的資料中心
 
@@ -1396,7 +1396,7 @@ NoSQL 實際上是「Not Only SQL」（不只是 SQL），重點在於不要求�
 
 <!-- ## 大數據分析流程與資訊系統層級的對應 -->
 
-![h:600](images/05-Information-Systems-and-Database/big-data-is.png)
+![h:600](../images/05-Information-Systems-and-Database/big-data-is.png)
 
 ---
 

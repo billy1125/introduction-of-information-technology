@@ -1,6 +1,6 @@
 # 全課程複習：考試重點整理
 
-**資訊與人工智慧概論（IE123）115-1** ｜ 考試規定見 [00-Exam-Rules.md](00-Exam-Rules.md) ｜ 投影片版見 [07-Course-Review.slides.md](07-Course-Review.slides.md)
+**資訊與人工智慧概論（IE123）115-1** ｜ 考試規定見 [00-Exam-Rules.md](00-Exam-Rules.md) ｜ 投影片版見 [07-Course-Review.slides.md](slides/07-Course-Review.slides.md)
 
 > **這份是複習索引，不能取代課文。** 這裡只列要弄懂什麼、去哪裡讀。定義、比較表與工業案例都在課文裡。
 

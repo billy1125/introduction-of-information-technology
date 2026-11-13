@@ -144,7 +144,7 @@ Internet（注意 I 要大寫） = inter-（之間）＋ network（網路），�
 
 <!-- ## 網路與網際網路 -->
 
-![h:600](images/04-Networks-and-Internet/network-and-internet.png)
+![h:600](../images/04-Networks-and-Internet/network-and-internet.png)
 
 ---
 
@@ -171,7 +171,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 <!-- ## 常見網路拓樸 -->
 
-![h:600](images/04-Networks-and-Internet/network-topologies.png)
+![h:600](../images/04-Networks-and-Internet/network-topologies.png)
 
 ---
 
@@ -230,13 +230,13 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 ---
 
-![h:550](images/04-Networks-and-Internet/3com-3c905-tx-nic.jpg)
+![h:550](../images/04-Networks-and-Internet/3com-3c905-tx-nic.jpg)
 
 一張標準網路卡
 
 ---
 
-![bg right:40%](images/04-Networks-and-Internet/dlink-switches.jpg)
+![bg right:40%](../images/04-Networks-and-Internet/dlink-switches.jpg)
 
 ## 交換器（Switch）
 
@@ -248,7 +248,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 ---
 
-![bg left:40%](images/04-Networks-and-Internet/tp-link-tl-wr841n.jpg)
+![bg left:40%](../images/04-Networks-and-Internet/tp-link-tl-wr841n.jpg)
 
 ## 路由器（Router）
 
@@ -263,13 +263,13 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 <!-- ## 機房中的 Cisco ASR 9006 路由器 -->
 
-![h:480](images/04-Networks-and-Internet/cisco-asr9006-router.jpg)
+![h:480](../images/04-Networks-and-Internet/cisco-asr9006-router.jpg)
 
 > **電信業者等級的路由器：模組可抽換、接整束光纖、控制模組雙備援**
 
 ---
 
-![bg right:42%](images/04-Networks-and-Internet/yzu-aruba-access-point.jpg)
+![bg right:42%](../images/04-Networks-and-Internet/yzu-aruba-access-point.jpg)
 
 ## 存取點（Access Point，AP）
 
@@ -310,7 +310,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 <!-- ## Juniper Networks SRX3400 服務閘道器 -->
 
-![w:700](images/04-Networks-and-Internet/juniper-srx3400-service-gateway.jpg)
+![w:700](../images/04-Networks-and-Internet/juniper-srx3400-service-gateway.jpg)
 
 > **Juniper SRX3400 服務閘道器：裝在企業網路與外部網路的交界，同時負責路由與防火牆**
 
@@ -318,7 +318,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 <!-- ## 常見網路硬體設備 -->
 
-![h:600](images/04-Networks-and-Internet/network-hardware.png)
+![h:600](../images/04-Networks-and-Internet/network-hardware.png)
 
 ---
 
@@ -335,7 +335,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 ---
 
-![bg right:35%](images/04-Networks-and-Internet/netgear-gigabit-switch-5-port.jpg)
+![bg right:35%](../images/04-Networks-and-Internet/netgear-gigabit-switch-5-port.jpg)
 
 ## 有線區域網路：乙太網路
 
@@ -347,7 +347,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 ---
 
-![bg left:35%](images/04-Networks-and-Internet/cat5e-ethernet-cable-rj45-connectors.jpg)
+![bg left:35%](../images/04-Networks-and-Internet/cat5e-ethernet-cable-rj45-connectors.jpg)
 
 ## 選購小提醒：網路線
 
@@ -360,7 +360,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 <!-- ## 10BASE2 的 BNC T 型接頭 -->
 
-![w:700](images/04-Networks-and-Internet/10base2-t-piece.png)
+![w:700](../images/04-Networks-and-Internet/10base2-t-piece.png)
 
 > **乙太網路一開始不是星狀：早期的 10BASE2 用 T 型接頭把整層樓串成一條線**
 
@@ -368,7 +368,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 <!-- ## 10BASE2 網路的牆上接孔 -->
 
-![h:480](images/04-Networks-and-Internet/10base2-t-wall-plug.jpg)
+![h:480](../images/04-Networks-and-Internet/10base2-t-wall-plug.jpg)
 
 > **元智大學辦公室牆上至今還留著的 10BASE2 接孔**
 
@@ -376,7 +376,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 <!-- ## Acorn AEH70 10BASE2 乙太網路卡 -->
 
-![h:480](images/04-Networks-and-Internet/acorn-10base2-ethernet-card.jpg)
+![h:480](../images/04-Networks-and-Internet/acorn-10base2-ethernet-card.jpg)
 
 > **1990 年代初期的 10BASE2 網路卡：接頭是圓形的 BNC，不是方形的 RJ-45**
 
@@ -423,7 +423,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 <!-- ## 華碩 RT-BE3600S 無線路由器正面 -->
 
-![h:480](images/04-Networks-and-Internet/asus-rt-be3600s-03.jpg)
+![h:480](../images/04-Networks-and-Internet/asus-rt-be3600s-03.jpg)
 
 > **四根天線不是為了「訊號更遠」，而是對應 MIMO：同時收發多路資料，一次服務多台裝置**
 
@@ -443,7 +443,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 <!-- ## 無線路由器安裝五步驟 -->
 
-![h:600](images/04-Networks-and-Internet/easy-wifi-config.png)
+![h:600](../images/04-Networks-and-Internet/easy-wifi-config.png)
 
 ---
 
@@ -458,7 +458,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 ---
 
-![h:550](images/04-Networks-and-Internet/cht-alcatel-lucent-i-040gw-modem.jpg)
+![h:550](../images/04-Networks-and-Internet/cht-alcatel-lucent-i-040gw-modem.jpg)
 
 一台中華電信的光世代數據機
 
@@ -474,7 +474,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 <!-- ## 路由器的外部網路（WAN）設定畫面 -->
 
-![h:550](images/04-Networks-and-Internet/asus-rt-be3600s-01.png)
+![h:550](../images/04-Networks-and-Internet/asus-rt-be3600s-01.png)
 
 > **用瀏覽器連上路由器的位址，就能登入設定畫面**
 
@@ -504,7 +504,7 @@ n 台裝置兩兩相連，需要 n × (n − 1) ÷ 2 條線：
 
 ---
 
-![bg right:45%](images/04-Networks-and-Internet/asus-rt-be3600s-02.png)
+![bg right:45%](../images/04-Networks-and-Internet/asus-rt-be3600s-02.png)
 
 ## 讀懂 Wi-Fi 設定畫面
 
@@ -536,7 +536,7 @@ Wi-Fi 是為了讓「人」上網；另一種需求是讓大量感測器把讀�
 
 <!-- ## 廣域網路（WAN） -->
 
-![h:600](images/04-Networks-and-Internet/concept-of-wan.png)
+![h:600](../images/04-Networks-and-Internet/concept-of-wan.png)
 
 ---
 
@@ -578,7 +578,7 @@ Wi-Fi 是為了讓「人」上網；另一種需求是讓大量感測器把讀�
 
 ---
 
-![bg right:35%](images/04-Networks-and-Internet/motorola-dynatac-8000x.jpg)
+![bg right:35%](../images/04-Networks-and-Internet/motorola-dynatac-8000x.jpg)
 
 ## 1G 與 2G
 
@@ -595,7 +595,7 @@ Wi-Fi 是為了讓「人」上網；另一種需求是讓大量感測器把讀�
 
 <!-- ## Nokia 3310 行動電話 -->
 
-![h:480](images/04-Networks-and-Internet/nokia-3310.jpg)
+![h:480](../images/04-Networks-and-Internet/nokia-3310.jpg)
 
 > **2G 代表機種 Nokia 3310：有了單色液晶螢幕，能顯示文字與圖案**
 
@@ -616,13 +616,13 @@ Wi-Fi 是為了讓「人」上網；另一種需求是讓大量感測器把讀�
 
 <!-- ## Apple iPhone 3GS -->
 
-![h:480](images/04-Networks-and-Internet/iphone-3g.jpg)
+![h:480](../images/04-Networks-and-Internet/iphone-3g.jpg)
 
 3G 代表機種 iPhone 3GS
 
 ---
 
-![h:480](images/04-Networks-and-Internet/iphone-5.jpg)
+![h:480](../images/04-Networks-and-Internet/iphone-5.jpg)
 
 4G 代表機種 iPhone 5：Apple 第一款支援 4G LTE 的機型
 
@@ -640,7 +640,7 @@ Wi-Fi 是為了讓「人」上網；另一種需求是讓大量感測器把讀�
 
 <!-- ## Apple iPhone 12 -->
 
-![h:480](images/04-Networks-and-Internet/iphone-12.jpg)
+![h:480](../images/04-Networks-and-Internet/iphone-12.jpg)
 
 5G 代表機種 iPhone 12：從黑金剛到它，中間隔了三十七年、五個世代
 
@@ -665,11 +665,11 @@ Wi-Fi 是為了讓「人」上網；另一種需求是讓大量感測器把讀�
 
 <!-- ## 個人區域網路（PAN） -->
 
-![h:600](images/04-Networks-and-Internet/personal-area-network.png)
+![h:600](../images/04-Networks-and-Internet/personal-area-network.png)
 
 ---
 
-![bg right:38%](images/04-Networks-and-Internet/airpods.jpg)
+![bg right:38%](../images/04-Networks-and-Internet/airpods.jpg)
 
 ## PAN 與藍牙
 
@@ -683,7 +683,7 @@ Wi-Fi 是為了讓「人」上網；另一種需求是讓大量感測器把讀�
 
 ---
 
-![bg left:40%](images/04-Networks-and-Internet/apple-pay-square-reader.jpg)
+![bg left:40%](../images/04-Networks-and-Internet/apple-pay-square-reader.jpg)
 
 ## NFC（近場通訊）
 
@@ -697,7 +697,7 @@ Wi-Fi 是為了讓「人」上網；另一種需求是讓大量感測器把讀�
 
 ---
 
-![bg right:38%](images/04-Networks-and-Internet/rfid-tags.jpg)
+![bg right:38%](../images/04-Networks-and-Internet/rfid-tags.jpg)
 
 ## RFID（無線射頻識別）
 
@@ -717,7 +717,7 @@ Wi-Fi 是為了讓「人」上網；另一種需求是讓大量感測器把讀�
 
 ---
 
-![bg right:45%](images/04-Networks-and-Internet/lydsto-robot-vacuum.jpg)
+![bg right:45%](../images/04-Networks-and-Internet/lydsto-robot-vacuum.jpg)
 
 ## 生活中的 IoT：掃地機器人
 
@@ -752,7 +752,7 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 <!-- ## 物聯網概念 -->
 
-![h:500](images/04-Networks-and-Internet/concept-of-iot.png)
+![h:500](../images/04-Networks-and-Internet/concept-of-iot.png)
 
 > **網路把資料「送出來」，送出來之後能長出多少價值，是後面資訊系統、資料科學、智慧製造三章要回答的問題**
 
@@ -766,7 +766,7 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 ---
 
-![bg right:40%](images/04-Networks-and-Internet/starlink-satellites-stack.jpg)
+![bg right:40%](../images/04-Networks-and-Internet/starlink-satellites-stack.jpg)
 
 ## 低軌衛星（LEO）概念
 
@@ -779,7 +779,7 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 <!-- ## Starlink 衛星群劃過夜空的光軌 -->
 
-![h:480](images/04-Networks-and-Internet/starlink-satellites-ctio.jpg)
+![h:480](../images/04-Networks-and-Internet/starlink-satellites-ctio.jpg)
 
 > **剛發射的衛星排成一串「星鏈列車」，光軌會干擾天文望遠鏡的觀測**
 
@@ -787,7 +787,7 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 <!-- ## Starlink 地面終端機 -->
 
-![h:480](images/04-Networks-and-Internet/starlink-terminal-ramstein.jpg)
+![h:480](../images/04-Networks-and-Internet/starlink-terminal-ramstein.jpg)
 
 > **有了地面終端機，沒有光纖與基地台的地方也能連上網路**
 
@@ -859,13 +859,13 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 <!-- ## 1977 年 3 月的 ARPANET 邏輯連線圖 -->
 
-![h:600](images/04-Networks-and-Internet/arpanet-logical-map-1977.png)
+![h:600](../images/04-Networks-and-Internet/arpanet-logical-map-1977.png)
 
 ---
 
 <!-- ## 全球第一台網站伺服器 -->
 
-![h:460](images/04-Networks-and-Internet/first-web-server.jpg)
+![h:460](../images/04-Networks-and-Internet/first-web-server.jpg)
 
 > **伯納斯-李架設全球第一個網站的 NeXT 電腦，機身貼著「這台機器是伺服器，請勿關機！」**
 
@@ -873,7 +873,7 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 <!-- ## 賈伯斯與 iPhone -->
 
-![h:480](images/04-Networks-and-Internet/steve-jobs-iphone-2007.jpg)
+![h:480](../images/04-Networks-and-Internet/steve-jobs-iphone-2007.jpg)
 
 > **2007 年賈伯斯發表 iPhone，開啟了行動網際網路時代**
 
@@ -900,7 +900,7 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 <!-- ## 封包傳遞流程 -->
 
-![h:600](images/04-Networks-and-Internet/packet-switching.png)
+![h:600](../images/04-Networks-and-Internet/packet-switching.png)
 
 ---
 
@@ -919,7 +919,7 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 <!-- ## 封包交換與電路交換的差異 -->
 
-![h:600](images/04-Networks-and-Internet/circuit-packer-difference.png)
+![h:600](../images/04-Networks-and-Internet/circuit-packer-difference.png)
 
 ---
 
@@ -957,13 +957,13 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 <!-- ## 小型私人連線聚會 -->
 
-![h:600](images/04-Networks-and-Internet/private-lan-party.jpg)
+![h:600](../images/04-Networks-and-Internet/private-lan-party.jpg)
 
 ---
 
 <!-- ## 分層：用寄一封信來理解 -->
 
-![w:1100](images/04-Networks-and-Internet/postal-analogy-tcp-ip-layers.png)
+![w:1100](../images/04-Networks-and-Internet/postal-analogy-tcp-ip-layers.png)
 
 > **寄信由上往下、收信由下往上；每一層只管自己的事，不需要知道其他層怎麼做**
 
@@ -1013,7 +1013,7 @@ IoT 設備數量龐大、分布廣、電池供電、每次只傳少量資料—�
 
 <!-- ## OSI 七層模型與 TCP/IP 四層架構的對照 -->
 
-![h:550](images/04-Networks-and-Internet/osi-vs-tcp-models.png)
+![h:550](../images/04-Networks-and-Internet/osi-vs-tcp-models.png)
 
 ---
 
@@ -1062,7 +1062,7 @@ TCP/IP 這個名稱，取自四層架構中間兩層的核心協定：網路層�
 
 <!-- ## TCP/IP 基本概念 -->
 
-![h:600](images/04-Networks-and-Internet/concept-of-tcpip.png)
+![h:600](../images/04-Networks-and-Internet/concept-of-tcpip.png)
 
 ---
 
@@ -1112,13 +1112,13 @@ IP 是「網路上的門牌」。這一章拆解它的結構——目前仍廣�
 
 ---
 
-![h:600](images/04-Networks-and-Internet/ipv4-and-ipv6.png)
+![h:600](../images/04-Networks-and-Internet/ipv4-and-ipv6.png)
 
 ---
 
 <!-- ## Windows 的網路連線詳細資料 -->
 
-![h:460](images/04-Networks-and-Internet/network-setting.png)
+![h:460](../images/04-Networks-and-Internet/network-setting.png)
 
 > **預設閘道、DNS 伺服器、DHCP 伺服器都是 192.168.50.1——家用路由器一台身兼多職**
 
@@ -1126,7 +1126,7 @@ IP 是「網路上的門牌」。這一章拆解它的結構——目前仍廣�
 
 <!-- ## iPhone 的 Wi-Fi 網路設定畫面 -->
 
-![h:460](images/04-Networks-and-Internet/network-setting-iphone.jpg)
+![h:460](../images/04-Networks-and-Internet/network-setting-iphone.jpg)
 
 > **同樣的概念，不同作業系統用不同的名字：Windows 稱為「預設閘道」，iPhone 直接叫它「Router」**
 
@@ -1155,7 +1155,7 @@ WWW 之前，每種服務各用一套應用層協定：
 
 <!-- ## WWW 改變世界 -->
 
-![h:550](images/04-Networks-and-Internet/www-change-world.png)
+![h:550](../images/04-Networks-and-Internet/www-change-world.png)
 
 WWW 改變世界
 
@@ -1197,7 +1197,7 @@ WWW 改變世界
 
 ---
 
-![h:550](images/04-Networks-and-Internet/netscape-navigator-1.22.png)
+![h:550](../images/04-Networks-and-Internet/netscape-navigator-1.22.png)
 
 1990 年代非常流行的瀏覽器，Netscape Navigator 1.22
 
@@ -1205,7 +1205,7 @@ WWW 改變世界
 
 <!-- ## 在 Windows 11 上執行的 Google Chrome -->
 
-![h:550](images/04-Networks-and-Internet/google-chrome-windows11.png)
+![h:550](../images/04-Networks-and-Internet/google-chrome-windows11.png)
 
 現在很常見的 Google Chrome 瀏覽器
 
@@ -1222,7 +1222,7 @@ WWW 改變世界
 
 <!-- ## 以 Telnet 登入 PTT 的文字介面 -->
 
-![h:600](images/04-Networks-and-Internet/ptt-boards.jpg)
+![h:600](../images/04-Networks-and-Internet/ptt-boards.jpg)
 
 ---
 
@@ -1238,7 +1238,7 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 
 ---
 
-![h:480](images/04-Networks-and-Internet/behind-web-surfing.png)
+![h:480](../images/04-Networks-and-Internet/behind-web-surfing.png)
 
 > **從 DNS 解析、TCP 連線、HTTPS 握手到瀏覽器渲染，整個過程通常在 1–3 秒內完成**
 
@@ -1265,7 +1265,7 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 
 ## URL 結構
 
-![w:1100](images/04-Networks-and-Internet/url-in-detail.png)
+![w:1100](../images/04-Networks-and-Internet/url-in-detail.png)
 
 ---
 
@@ -1273,7 +1273,7 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 
 電腦只認識 IP，不認識 `www.google.com`——**DNS** 負責在中間翻譯
 
-![w:1150](images/04-Networks-and-Internet/dns-explained.png)
+![w:1150](../images/04-Networks-and-Internet/dns-explained.png)
 
 ---
 
@@ -1295,7 +1295,7 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 
 ## 網際網路服務百花齊放
 
-![w:900](images/04-Networks-and-Internet/internet-services-overview.png)
+![w:900](../images/04-Networks-and-Internet/internet-services-overview.png)
 
 ---
 
@@ -1324,7 +1324,7 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 
 ---
 
-![bg right:50%](images/04-Networks-and-Internet/https-padlock-address-bar.jpg)
+![bg right:50%](../images/04-Networks-and-Internet/https-padlock-address-bar.jpg)
 
 ## HTTPS 加密
 
@@ -1338,7 +1338,7 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 
 <!-- ## Chrome 把 HTTP 網站標示為不安全 -->
 
-![h:480](images/04-Networks-and-Internet/chrome-not-secure-warning.png)
+![h:480](../images/04-Networks-and-Internet/chrome-not-secure-warning.png)
 
 現在的瀏覽器如果連到非 HTTPS 的網站，都會顯示「不安全」
 
@@ -1352,7 +1352,7 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 
 ---
 
-![bg right:30%](images/04-Networks-and-Internet/app-store-wikipedia-app-page.png)
+![bg right:30%](../images/04-Networks-and-Internet/app-store-wikipedia-app-page.png)
 
 ## App 生態與邊緣運算
 
@@ -1384,7 +1384,7 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 
 ---
 
-![w:1100](images/04-Networks-and-Internet/cybersecurity.png)
+![w:1100](../images/04-Networks-and-Internet/cybersecurity.png)
 
 ---
 
@@ -1427,7 +1427,7 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 
 <!-- ## 工業物聯網資料流 -->
 
-![w:1100](images/04-Networks-and-Internet/iiot-dataflow.png)
+![w:1100](../images/04-Networks-and-Internet/iiot-dataflow.png)
 
 ---
 
@@ -1454,7 +1454,7 @@ WWW 運作在 **用戶端—伺服器** 架構之上
 
 <!-- ## 四層架構圖 -->
 
-![h:520](images/04-Networks-and-Internet/four-tier-architecture.png)
+![h:520](../images/04-Networks-and-Internet/four-tier-architecture.png)
 
 ---
 

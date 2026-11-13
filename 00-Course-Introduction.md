@@ -67,14 +67,14 @@
 
 | 週次 | 日期 | 主題 | 對應檔案 | 投影片版本 | 練習筆記本 | 說明 |
 |---|---|---|---|---|---|---|
-| 1 | 09/11 | 課程介紹、計算機歷史 | [課程介紹](00-Course-Introduction.md)<br>[第一章](01-History-of-Computer.md) | [課程介紹投影片](00-Course-Introduction.slides.md)<br>[第一章投影片](01-History-of-Computer.slides.md) | — | 講解本文件 |
-| 2 | 09/18 | 電腦硬體、作業系統與應用軟體 | [第二章](02-Computer-Structure.md) | [第二章投影片](02-Computer-Structure.slides.md) | [第二章練習筆記本](notebooks/Computer-Structure-Examples.ipynb) | — |
+| 1 | 09/11 | 課程介紹、計算機歷史 | [課程介紹](00-Course-Introduction.md)<br>[第一章](01-History-of-Computer.md) | [課程介紹投影片](slides/00-Course-Introduction.slides.md)<br>[第一章投影片](slides/01-History-of-Computer.slides.md) | — | 講解本文件 |
+| 2 | 09/18 | 電腦硬體、作業系統與應用軟體 | [第二章](02-Computer-Structure.md) | [第二章投影片](slides/02-Computer-Structure.slides.md) | [第二章練習筆記本](notebooks/Computer-Structure-Examples.ipynb) | — |
 | 3 | 09/25 | **中秋節放假** | — | — | — | 停課 |
-| 4 | 10/02 | 程式設計概念 | [第三章](03-Computer-Program.md) | [第三章投影片](03-Computer-Program.slides.md) | [第三章練習筆記本](notebooks/Computer-Program-Examples.ipynb) | — |
+| 4 | 10/02 | 程式設計概念 | [第三章](03-Computer-Program.md) | [第三章投影片](slides/03-Computer-Program.slides.md) | [第三章練習筆記本](notebooks/Computer-Program-Examples.ipynb) | — |
 | 5 | 10/09 | **國慶日補假** | — | — | — | 停課；10/10 國慶日適逢週六，補假挪至本日 |
-| 6 | 10/16 | 網路與網際網路 | [第四章](04-Networks-and-Internet.md) | [第四章投影片](04-Networks-and-Internet.slides.md) | — | — |
-| 7 | 10/23 | 資訊系統與資料庫 | [第五章](05-Information-Systems-and-Database.md) | [第五章投影片](05-Information-Systems-and-Database.slides.md) | — | — |
-| 8 | 10/30 | 資料科學、人工智慧與智慧製造（含工業4.0） | [第六章](06-Data-Science-AI-and-Smart-Manufacturing.md) | [第六章投影片](06-Data-Science-AI-and-Smart-Manufacturing.slides.md) | — | 全課程終點 |
+| 6 | 10/16 | 網路與網際網路 | [第四章](04-Networks-and-Internet.md) | [第四章投影片](slides/04-Networks-and-Internet.slides.md) | — | — |
+| 7 | 10/23 | 資訊系統與資料庫 | [第五章](05-Information-Systems-and-Database.md) | [第五章投影片](slides/05-Information-Systems-and-Database.slides.md) | — | — |
+| 8 | 10/30 | 資料科學、人工智慧與智慧製造（含工業4.0） | [第六章](06-Data-Science-AI-and-Smart-Manufacturing.md) | [第六章投影片](slides/06-Data-Science-AI-and-Smart-Manufacturing.slides.md) | — | 全課程終點 |
 | 9 | 11/04 | **期中複習** | — | — | — | **自由參加**；時間：18:00-21:00、地點：2623教室 |
 | 9 | 11/06 | **期中考** | [期中考試規定](00-Exam-Rules.md) | — | — | **考試時間為課程時間；地點 A 班 2115、B 班 2623（非原上課教室）** |
 

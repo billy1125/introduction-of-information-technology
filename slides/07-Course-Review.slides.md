@@ -72,13 +72,13 @@ style: |
 
 ---
 
-![w:1050](images/00-Course-Introduction/course-map.png)
+![w:1050](../images/00-Course-Introduction/course-map.png)
 
 ---
 
 ## 全課程的一條主線
 
-![w:1100](images/07-Course-Review/data-information-knowledge.png)
+![w:1100](../images/07-Course-Review/data-information-knowledge.png)
 
 ---
 
@@ -92,7 +92,7 @@ style: |
 
 # 一、計算機歷史
 
-這一章要帶走的不是年份與人名，而是 **每一代工具解決了什麼問題、又留下什麼限制給下一代**。完整內容見 [01-History-of-Computer.md](01-History-of-Computer.md)。
+這一章要帶走的不是年份與人名，而是 **每一代工具解決了什麼問題、又留下什麼限制給下一代**。完整內容見 [01-History-of-Computer.md](../01-History-of-Computer.md)。
 
 ---
 
@@ -108,7 +108,7 @@ style: |
 
 - **為何發明計算工具**：資料量變大，人腦慢、會累、會犯錯；工具最終服務人的資訊需求
 
-各節完整說明見 [01-History-of-Computer.md](01-History-of-Computer.md)。
+各節完整說明見 [01-History-of-Computer.md](../01-History-of-Computer.md)。
 
 ---
 
@@ -210,7 +210,7 @@ style: |
 
 # 二、電腦硬體、作業系統與應用軟體
 
-這一章從三個思想基礎出發，依序整理資料怎麼變成 0 與 1、硬體怎麼分工、作業系統與應用軟體怎麼調度。完整內容見 [02-Computer-Structure.md](02-Computer-Structure.md)。
+這一章從三個思想基礎出發，依序整理資料怎麼變成 0 與 1、硬體怎麼分工、作業系統與應用軟體怎麼調度。完整內容見 [02-Computer-Structure.md](../02-Computer-Structure.md)。
 
 ---
 
@@ -253,7 +253,7 @@ style: |
 | 十 → 十六 | 連續除以 16，餘數 10–15 寫成 A–F |
 | 二進位加法 | 滿 2 進位，結果轉回十進位驗算 |
 
-練習題見 [notebooks/Computer-Structure-Examples.ipynb](notebooks/Computer-Structure-Examples.ipynb)。
+練習題見 [notebooks/Computer-Structure-Examples.ipynb](../notebooks/Computer-Structure-Examples.ipynb)。
 
 ---
 
@@ -308,7 +308,7 @@ style: |
 
 # 三、程式設計概念
 
-這一章的重點不在語法，而在 **怎麼想問題**：把流程拆成步驟、選對資料的擺法、判斷資料量變大時算不算得完。完整內容見 [03-Computer-Program.md](03-Computer-Program.md)。
+這一章的重點不在語法，而在 **怎麼想問題**：把流程拆成步驟、選對資料的擺法、判斷資料量變大時算不算得完。完整內容見 [03-Computer-Program.md](../03-Computer-Program.md)。
 
 ---
 
@@ -340,7 +340,7 @@ style: |
 - **計數與累加**：迴圈外歸零，迴圈內累加，可依條件重置
 - **只能一行行往下執行**：程式冗長重複，除錯與修改都要動很多處
 
-範例程式：[Computer-Program-Examples.ipynb](notebooks/Computer-Program-Examples.ipynb)
+範例程式：[Computer-Program-Examples.ipynb](../notebooks/Computer-Program-Examples.ipynb)
 
 ---
 
@@ -398,7 +398,7 @@ style: |
 
 # 四、網路與網際網路
 
-網路把裝置連起來，網際網路再用 TCP/IP 把眾多獨立的網路連起來。複習時抓住每個設備與協定各自解決什麼問題，完整內容見 [04-Networks-and-Internet.md](04-Networks-and-Internet.md)。
+網路把裝置連起來，網際網路再用 TCP/IP 把眾多獨立的網路連起來。複習時抓住每個設備與協定各自解決什麼問題，完整內容見 [04-Networks-and-Internet.md](../04-Networks-and-Internet.md)。
 
 ---
 
@@ -530,13 +530,13 @@ style: |
 | 管理層 | MES、ERP | 秒級 | 標準 TCP/IP 企業網路 |
 | 雲端層 | 跨廠分析、AI | 分鐘級 | 網際網路：HTTPS、MQTT |
 
-各層說明與示意圖見 [04-Networks-and-Internet.md](04-Networks-and-Internet.md)〈二十二、智慧製造網路架構〉。
+各層說明與示意圖見 [04-Networks-and-Internet.md](../04-Networks-and-Internet.md)〈二十二、智慧製造網路架構〉。
 
 ---
 
 # 五、資訊系統與資料庫
 
-資訊系統把工廠每天產生的資料整理成各層級用得上的資訊，資料庫讓這些資料存得住、查得到。完整內容見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)。
+資訊系統把工廠每天產生的資料整理成各層級用得上的資訊，資料庫讓這些資料存得住、查得到。完整內容見 [05-Information-Systems-and-Database.md](../05-Information-Systems-and-Database.md)。
 
 ---
 
@@ -556,7 +556,7 @@ style: |
 
 ---
 
-![w:1100](images/05-Information-Systems-and-Database/concept-of-system-view.png)
+![w:1100](../images/05-Information-Systems-and-Database/concept-of-system-view.png)
 
 ---
 
@@ -674,13 +674,13 @@ style: |
 
 - **B 與 C**：B 是企業、C 是消費者；製造業最相關的是 B2B
 
-各主題的說明見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)。
+各主題的說明見 [05-Information-Systems-and-Database.md](../05-Information-Systems-and-Database.md)。
 
 ---
 
 # 六、資料科學、人工智慧與智慧製造
 
-前五章已經把「資料→資訊」自動化，這章談資料科學與 AI 怎麼接手「資訊→知識」。完整內容見 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)。
+前五章已經把「資料→資訊」自動化，這章談資料科學與 AI 怎麼接手「資訊→知識」。完整內容見 [06-Data-Science-AI-and-Smart-Manufacturing.md](../06-Data-Science-AI-and-Smart-Manufacturing.md)。
 
 ---
 
@@ -780,7 +780,7 @@ $$
 | 工具使用（Tool Use） | 輸出動作指令，由外部程式執行後回饋 |
 | AI 代理人（AI Agent） | LLM ＋工具＋「觀察→思考→行動」迴圈 |
 
-各主題的完整說明見 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)。
+各主題的完整說明見 [06-Data-Science-AI-and-Smart-Manufacturing.md](../06-Data-Science-AI-and-Smart-Manufacturing.md)。
 
 ---
 
@@ -822,8 +822,8 @@ $$
 
 ## 練習資源
 
-- [notebooks/Computer-Structure-Examples.ipynb](notebooks/Computer-Structure-Examples.ipynb)：進位轉換 25 題、二進位加減 5 題、二補數 5 題、IEEE 754 5 題，另有多媒體檔案大小練習
-- [notebooks/Computer-Program-Examples.ipynb](notebooks/Computer-Program-Examples.ipynb)：資料結構與程式邏輯範例，含庫存週轉率、OEE 等練習
+- [notebooks/Computer-Structure-Examples.ipynb](../notebooks/Computer-Structure-Examples.ipynb)：進位轉換 25 題、二進位加減 5 題、二補數 5 題、IEEE 754 5 題，另有多媒體檔案大小練習
+- [notebooks/Computer-Program-Examples.ipynb](../notebooks/Computer-Program-Examples.ipynb)：資料結構與程式邏輯範例，含庫存週轉率、OEE 等練習
 - 兩本都可直接上傳 [Google Colab](https://colab.research.google.com/) 執行，不必在自己電腦安裝 Python
 
 ---
@@ -832,7 +832,7 @@ $$
 
 - 正文裡的 **比較表格、實際數據與工業案例**，是情境題最常取材的地方
 - 各章的 **學習重點總結**，是最貼近考點的重點清單
-- 課程規範（出席、考試規定）見 [00-Course-Introduction.md](00-Course-Introduction.md)
+- 課程規範（出席、考試規定）見 [00-Course-Introduction.md](../00-Course-Introduction.md)
 
 > **複習投影片是地圖，教材才是路；只看地圖的人不會真的走到終點。**
 

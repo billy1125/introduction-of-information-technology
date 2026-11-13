@@ -106,7 +106,7 @@ style: |
 <!-- _backgroundColor: White -->
 <!-- _color: Black -->
 
-![w:700](images/02-Computer-Structure/turing-machine.svg)
+![w:700](../images/02-Computer-Structure/turing-machine.svg)
 
 ---
 
@@ -129,7 +129,7 @@ style: |
 
 ---
 
-![bg right:45%](images/02-Computer-Structure/alan-turing.jpg)
+![bg right:45%](../images/02-Computer-Structure/alan-turing.jpg)
 
 ## 艾倫·圖靈
 
@@ -161,11 +161,11 @@ style: |
 
 <!-- _backgroundColor: white -->
 
-![h:550](images/02-Computer-Structure/von-neumann-architecture.svg)
+![h:550](../images/02-Computer-Structure/von-neumann-architecture.svg)
 
 ---
 
-![bg left:45%](images/02-Computer-Structure/john-von-neumann.jpg)
+![bg left:45%](../images/02-Computer-Structure/john-von-neumann.jpg)
 
 ## 關鍵創新：程式儲存
 
@@ -195,7 +195,7 @@ style: |
 
 ---
 
-![bg right:45%](images/02-Computer-Structure/claude-shannon.jpg)
+![bg right:45%](../images/02-Computer-Structure/claude-shannon.jpg)
 
 ## 1948 年，《通信的數學理論》
 
@@ -309,7 +309,7 @@ style: |
 
 <!-- ## 二進位系統 -->
 
-![h:600](images/02-Computer-Structure/binary.png)
+![h:600](../images/02-Computer-Structure/binary.png)
 
 ---
 
@@ -375,7 +375,7 @@ style: |
 <!-- ## ASCII 編碼表 -->
 <!-- _backgroundColor: white -->
 
-![h:640](images/02-Computer-Structure/ascii-table.png)
+![h:640](../images/02-Computer-Structure/ascii-table.png)
 
 ---
 
@@ -399,7 +399,7 @@ style: |
 
 <!-- ## 數位圖像 -->
 
-![h:590](images/02-Computer-Structure/digital-image.png)
+![h:590](../images/02-Computer-Structure/digital-image.png)
 
 ---
 
@@ -469,7 +469,7 @@ RGB 各用 1 個 Byte，每個像素需要 3 個 Byte。以 1920×1080 的 **Ful
 
 <!-- ## 數位聲音 -->
 
-![h:590](images/02-Computer-Structure/digital-audio.png)
+![h:590](../images/02-Computer-Structure/digital-audio.png)
 
 ---
 
@@ -522,7 +522,7 @@ CD 音質：取樣率 44,100 Hz、位元深度 16 位元、立體聲 2 個聲道
 
 - **H.264**、**H.265（HEVC）**：破壞性壓縮，利用前後畫面大多相同，只記錄畫面之間的變化
 - H.265 在同樣畫質下檔案通常比 H.264 小
-- 圖片、聲音、影片的檔案大小各 2 道練習題，附計算過程：[notebooks/Computer-Structure-Examples.ipynb](notebooks/Computer-Structure-Examples.ipynb)
+- 圖片、聲音、影片的檔案大小各 2 道練習題，附計算過程：[notebooks/Computer-Structure-Examples.ipynb](../notebooks/Computer-Structure-Examples.ipynb)
 
 ---
 
@@ -570,7 +570,7 @@ CD 音質：取樣率 44,100 Hz、位元深度 16 位元、立體聲 2 個聲道
 
 ---
 
-![h:640](images/02-Computer-Structure/digitalization.png)
+![h:640](../images/02-Computer-Structure/digitalization.png)
 
 ---
 
@@ -880,7 +880,7 @@ A − B = A + (B 的二補數)，會加法就能算減法。
 
 ## 自我練習與驗算工具
 
-- 完整 35 道練習題（25 題進位轉換 + 5 題二進位加減法 + 5 題二補數），附計算過程與 Python 驗證：[notebooks/Computer-Structure-Examples.ipynb](notebooks/Computer-Structure-Examples.ipynb)
+- 完整 35 道練習題（25 題進位轉換 + 5 題二進位加減法 + 5 題二補數），附計算過程與 Python 驗證：[notebooks/Computer-Structure-Examples.ipynb](../notebooks/Computer-Structure-Examples.ipynb)
 - **Windows 小算盤**：切換「程式設計人員」模式，同步顯示各進位結果
 - **macOS 計算機**：選單「顯示」→「程式設計者」（`Cmd+3`）
 - **線上工具**：RapidTables Base Converter，或 Google 搜尋「43 to binary」
@@ -926,7 +926,7 @@ A − B = A + (B 的二補數)，會加法就能算減法。
 
 ---
 
-![h:530](images/02-Computer-Structure/ieee754.png)
+![h:530](../images/02-Computer-Structure/ieee754.png)
 
 ---
 
@@ -973,7 +973,7 @@ Step 6  組合：符號 + 指數 + 尾數
         1 10000001 10100000000000000000000
 ```
 
-- 5 道 IEEE 754 練習題（含反向轉換）見 [練習筆記本](notebooks/Computer-Structure-Examples.ipynb)
+- 5 道 IEEE 754 練習題（含反向轉換）見 [練習筆記本](../notebooks/Computer-Structure-Examples.ipynb)
 
 ---
 
@@ -1031,7 +1031,7 @@ Step 6  組合：符號 + 指數 + 尾數
 
 ---
 
-![h:600](images/02-Computer-Structure/von-neumann-architecture-with-hardware.png)
+![h:600](../images/02-Computer-Structure/von-neumann-architecture-with-hardware.png)
 
 ---
 
@@ -1056,7 +1056,7 @@ CPU 的運作遵循 **Fetch-Decode-Execute** 循環：
 
 ---
 
-![bg left:45%](images/02-Computer-Structure/cpu-chip-photo.jpg)
+![bg left:45%](../images/02-Computer-Structure/cpu-chip-photo.jpg)
 
 ## 多核心與平行處理
 
@@ -1085,11 +1085,11 @@ CPU 的運作遵循 **Fetch-Decode-Execute** 循環：
 
 ---
 
-![h:380](images/02-Computer-Structure/cpu-gpu-architecture.svg)
+![h:380](../images/02-Computer-Structure/cpu-gpu-architecture.svg)
 
 ---
 
-![bg right:45%](images/02-Computer-Structure/gpu-die-photo.jpg)
+![bg right:45%](../images/02-Computer-Structure/gpu-die-photo.jpg)
 
 ## 趣味小知識：蒙娜麗莎示範
 
@@ -1162,7 +1162,7 @@ CPU 的運作遵循 **Fetch-Decode-Execute** 循環：
 
 ---
 
-![h:600](images/02-Computer-Structure/non-volatile-storage.png)
+![h:600](../images/02-Computer-Structure/non-volatile-storage.png)
 
 ---
 
@@ -1177,7 +1177,7 @@ CPU 的運作遵循 **Fetch-Decode-Execute** 循環：
 
 ---
 
-![h:600](images/02-Computer-Structure/memory-hierarchy.png)
+![h:600](../images/02-Computer-Structure/memory-hierarchy.png)
 
 ---
 
@@ -1210,7 +1210,7 @@ CPU 的運作遵循 **Fetch-Decode-Execute** 循環：
 
 ---
 
-![h:500](images/02-Computer-Structure/io-devices.png)
+![h:500](../images/02-Computer-Structure/io-devices.png)
 
 ---
 
@@ -1269,7 +1269,7 @@ CPU 再快、記憶體再大，彼此之間也得有線路才能溝通。主機�
 
 ---
 
-![h:500](images/02-Computer-Structure/motherboard-overview.jpg)
+![h:500](../images/02-Computer-Structure/motherboard-overview.jpg)
 
 ---
 
@@ -1284,7 +1284,7 @@ CPU 再快、記憶體再大，彼此之間也得有線路才能溝通。主機�
 
 ---
 
-![h:600](images/02-Computer-Structure/computer-system-bus.svg)
+![h:600](../images/02-Computer-Structure/computer-system-bus.svg)
 
 ---
 
@@ -1328,7 +1328,7 @@ CPU 再快、記憶體再大，彼此之間也得有線路才能溝通。主機�
 
 ---
 
-![bg right:45%](images/02-Computer-Structure/nvidia-dgx-spark.jpg)
+![bg right:45%](../images/02-Computer-Structure/nvidia-dgx-spark.jpg)
 
 ## AI 工作站：DGX Spark
 
@@ -1399,7 +1399,7 @@ CPU 再快、記憶體再大，彼此之間也得有線路才能溝通。主機�
 
 ---
 
-![h:600](images/02-Computer-Structure/operating-systems.png)
+![h:600](../images/02-Computer-Structure/operating-systems.png)
 
 ---
 
@@ -1433,7 +1433,7 @@ CPU 再快、記憶體再大，彼此之間也得有線路才能溝通。主機�
 
 ---
 
-![h:500](images/02-Computer-Structure/htop-process-list.png)
+![h:500](../images/02-Computer-Structure/htop-process-list.png)
 以上的視窗顯示了 Linux 作業系統的行程與執行緒清單
 
 ---
@@ -1500,7 +1500,7 @@ RAM 永遠不夠用，這不是因為買太小，而是因為程式會越來越�
 
 ---
 
-![h:440](images/02-Computer-Structure/file-manager-folder-view.png)
+![h:440](../images/02-Computer-Structure/file-manager-folder-view.png)
 Linux 作業系統 GNOME 的檔案管理員，顯示了使用者家目錄（Home）下的預設資料夾，如 Documents、Downloads、Pictures 等
 
 ---
@@ -1577,13 +1577,13 @@ Linux 作業系統 GNOME 的檔案管理員，顯示了使用者家目錄（Home
 
 ## CLI：命令列介面
 
-![h:600](images/02-Computer-Structure/cli-terminal-example.png)
+![h:600](../images/02-Computer-Structure/cli-terminal-example.png)
 
 ---
 
 ## GUI：圖形使用者介面
 
-![h:400](images/02-Computer-Structure/gui-file-manager-example.png)
+![h:400](../images/02-Computer-Structure/gui-file-manager-example.png)
 Linux 作業系統 GNOME 圖形使用者介面
 
 ---
@@ -1708,7 +1708,7 @@ SCADA 的介面設計有四個核心原則：
 
 ---
 
-![h:490](images/02-Computer-Structure/office-suite-applications.png)
+![h:490](../images/02-Computer-Structure/office-suite-applications.png)
 LibreOffice 的執行畫面
 
 ---
@@ -1723,7 +1723,7 @@ LibreOffice 的執行畫面
 
 ---
 
-![bg right:45%](images/02-Computer-Structure/word-processing-example.png)
+![bg right:45%](../images/02-Computer-Structure/word-processing-example.png)
 
 ## 文書處理（例如：Word、Writer）
 
@@ -1744,7 +1744,7 @@ LibreOffice 的執行畫面
 
 ---
 
-![bg left:45%](images/02-Computer-Structure/spreadsheet-example.png)
+![bg left:45%](../images/02-Computer-Structure/spreadsheet-example.png)
 
 ## 試算表（例如：Excel、Calc）
 
@@ -1755,7 +1755,7 @@ LibreOffice 的執行畫面
 
 ---
 
-![bg right:45%](images/02-Computer-Structure/presentation-example.png)
+![bg right:45%](../images/02-Computer-Structure/presentation-example.png)
 
 ## 簡報與報告工具（例如：Powerpoint、Impress）
 
@@ -1829,7 +1829,7 @@ LibreOffice 的執行畫面
 
 工廠裡還有一類軟體，是你在學校電腦上不會看到的：ERP、MES、SCM。
 
-它們的完整介紹留在 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)，這裡只先建立一件事——這三套系統各自站在哪一層，以及為什麼它們必須連在一起。
+它們的完整介紹留在 [05-Information-Systems-and-Database.md](../05-Information-Systems-and-Database.md)，這裡只先建立一件事——這三套系統各自站在哪一層，以及為什麼它們必須連在一起。
 
 ---
 
@@ -1842,7 +1842,7 @@ LibreOffice 的執行畫面
 
 > **這正是工業4.0「垂直整合」的基礎。**
 
-完整介紹見 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈三、企業應用系統〉；智慧工廠的協同運作案例見 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、工業4.0與智慧製造〉
+完整介紹見 [05-Information-Systems-and-Database.md](../05-Information-Systems-and-Database.md)〈三、企業應用系統〉；智慧工廠的協同運作案例見 [06-Data-Science-AI-and-Smart-Manufacturing.md](../06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、工業4.0與智慧製造〉
 
 ---
 
@@ -1945,6 +1945,6 @@ CPU 負責運算與控制，記憶體提供高速但揮發的工作空間，儲�
 
 ## 課程結語
 
-本章介紹的硬體架構、作業系統與應用軟體，會在全課程最後的 [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、工業4.0與智慧製造〉中，與程式設計、網路、資訊系統、資料科學一起，整合成一個完整的智慧工廠案例。
+本章介紹的硬體架構、作業系統與應用軟體，會在全課程最後的 [06-Data-Science-AI-and-Smart-Manufacturing.md](../06-Data-Science-AI-and-Smart-Manufacturing.md)〈五、工業4.0與智慧製造〉中，與程式設計、網路、資訊系統、資料科學一起，整合成一個完整的智慧工廠案例。
 
 > **屆時你會看到，產線上的感測器、PLC 與工業電腦，用的正是本章講過的同一套原理。**

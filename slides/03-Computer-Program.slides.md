@@ -109,7 +109,7 @@ style: |
 
 ---
 
-![h:550](images/03-Computer-Program/eniac-first-computer.gif)
+![h:550](../images/03-Computer-Program/eniac-first-computer.gif)
 早期電腦要寫程式，等於就是在修改電路
 
 ---
@@ -125,7 +125,7 @@ style: |
 
 ---
 
-![bg left:40%](images/03-Computer-Program/ibm-650-machine-code-sheet.jpg)
+![bg left:40%](../images/03-Computer-Program/ibm-650-machine-code-sheet.jpg)
 
 ## 電腦只看懂機器碼(0與1)
 
@@ -141,7 +141,7 @@ style: |
 
 ## 打孔卡：有孔是 1，沒孔是 0
 
-![w:900](images/03-Computer-Program/ibm-1130-binary-punch-card.jpg)
+![w:900](../images/03-Computer-Program/ibm-1130-binary-punch-card.jpg)
 
 這張 IBM 1130 打孔卡本身就是一個小程式
 
@@ -223,7 +223,7 @@ style: |
 
 <!-- ## 程式設計師的工作流程 -->
 
-![h:600](images/03-Computer-Program/programmer-work.png)
+![h:600](../images/03-Computer-Program/programmer-work.png)
 
 ---
 
@@ -237,7 +237,7 @@ style: |
 
 ---
 
-![h:550](images/03-Computer-Program/first-computer-bug.jpg)
+![h:550](../images/03-Computer-Program/first-computer-bug.jpg)
 
 第一支程式錯誤，就是一隻蟲搞出來的
 
@@ -272,7 +272,7 @@ style: |
 
 <!-- ## 程式的本質 -->
 
-![h:600](images/03-Computer-Program/program-sequence.png)
+![h:600](../images/03-Computer-Program/program-sequence.png)
 
 ---
 
@@ -322,7 +322,7 @@ print("今日良率：", round(良率, 1), "%")
 
 <!-- ## 資料型態 -->
 
-![h:600](images/03-Computer-Program/datatype.png)
+![h:600](../images/03-Computer-Program/datatype.png)
 
 ---
 
@@ -399,7 +399,7 @@ print("今日良率：", round(良率, 1), "%")
 
 <!-- ## 控制結構 -->
 
-![h:600](images/03-Computer-Program/control-structure.png)
+![h:600](../images/03-Computer-Program/control-structure.png)
 
 ---
 
@@ -506,7 +506,7 @@ print("張小強")
 
 <!-- ## 控制結構混合使用 -->
 
-![h:600](images/03-Computer-Program/control-structure-mix.png)
+![h:600](../images/03-Computer-Program/control-structure-mix.png)
 
 ---
 
@@ -572,7 +572,7 @@ print("張小強")
 
 <!-- ## 程式模組化概念 -->
 
-![h:600](images/03-Computer-Program/program-marization.png)
+![h:600](../images/03-Computer-Program/program-marization.png)
 
 ---
 
@@ -622,7 +622,7 @@ print("張小強")
 
 <!-- ## 為何需要資料結構 -->
 
-![h:600](images/03-Computer-Program/why-data-structure.png)
+![h:600](../images/03-Computer-Program/why-data-structure.png)
 
 ---
 
@@ -663,7 +663,7 @@ print("張小強")
 
 <!-- ## 記憶體中的陣列示意 -->
 
-![w:1100](images/03-Computer-Program/array-list.png)
+![w:1100](../images/03-Computer-Program/array-list.png)
 
 ---
 
@@ -687,7 +687,7 @@ print("張小強")
 
 <!-- ## 存取與走訪 -->
 
-![h:600](images/03-Computer-Program/random-access-traversal.png)
+![h:600](../images/03-Computer-Program/random-access-traversal.png)
 
 ---
 
@@ -706,7 +706,7 @@ print("張小強")
 
 <!-- ## 其他常見資料結構 -->
 
-![h:600](images/03-Computer-Program/data-structure.png)
+![h:600](../images/03-Computer-Program/data-structure.png)
 
 ---
 
@@ -743,7 +743,7 @@ print("張小強")
 
 <!-- ## 媽媽要你拿著購物清單去超級市場買東西 -->
 
-![w:1100](images/03-Computer-Program/algorithm-comics.png)
+![w:1100](../images/03-Computer-Program/algorithm-comics.png)
 
 ---
 
@@ -808,7 +808,7 @@ print("張小強")
 
 <!-- ## 線性搜尋 -->
 
-![h:600](images/03-Computer-Program/line-search.png)
+![h:600](../images/03-Computer-Program/line-search.png)
 
 ---
 
@@ -829,7 +829,7 @@ print("張小強")
 
 <!-- ## 泡沫排序 -->
 
-![h:600](images/03-Computer-Program/bubble-sort.png)
+![h:600](../images/03-Computer-Program/bubble-sort.png)
 
 ---
 
@@ -948,7 +948,7 @@ print("張小強")
 
 <!-- ## 時間複雜度 -->
 
-![h:600](images/03-Computer-Program/time-complexity.png)
+![h:600](../images/03-Computer-Program/time-complexity.png)
 
 ---
 
@@ -1044,7 +1044,7 @@ print("張小強")
 
 ## 把概念寫成程式
 
-打開 [Computer-Program-Examples.ipynb](notebooks/Computer-Program-Examples.ipynb)，把讀過的東西實際跑一遍
+打開 [Computer-Program-Examples.ipynb](../notebooks/Computer-Program-Examples.ipynb)，把讀過的東西實際跑一遍
 
 | 筆記本段落 | 對應本章 |
 |---|---|

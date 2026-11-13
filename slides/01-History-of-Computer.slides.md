@@ -34,7 +34,7 @@ style: |
 
 ---
 
-![How Couple Meet h:630](images/01-History-of-Computer/how-couple-meet.png)
+![How Couple Meet h:630](../images/01-History-of-Computer/how-couple-meet.png)
 
 ---
 
@@ -48,7 +48,7 @@ style: |
 
 ---
 
-![h:600](images/01-History-of-Computer/when-you-meet-mrs-right.png)
+![h:600](../images/01-History-of-Computer/when-you-meet-mrs-right.png)
 
 ---
 
@@ -62,11 +62,11 @@ style: |
 
 ---
 
-![h:640](images/00-Course-Introduction/student-01.png)
+![h:640](../images/00-Course-Introduction/student-01.png)
 
 ---
 
-![h:640](images/00-Course-Introduction/student-02.png)
+![h:640](../images/00-Course-Introduction/student-02.png)
 
 ---
 
@@ -145,7 +145,7 @@ style: |
 
 <!-- ## 資訊，驅動人類文明的力量 -->
 
-![h:600](images/01-History-of-Computer/information-and-civilization.png)
+![h:600](../images/01-History-of-Computer/information-and-civilization.png)
 
 ---
 
@@ -159,7 +159,7 @@ style: |
 
 ---
 
-![h:600](images/01-History-of-Computer/data-information-knowledge.png)
+![h:600](../images/01-History-of-Computer/data-information-knowledge.png)
 
 ---
 
@@ -226,7 +226,7 @@ style: |
 
 ---
 
-![bg right:45%](images/01-History-of-Computer/ishango-bone.jpg)
+![bg right:45%](../images/01-History-of-Computer/ishango-bone.jpg)
 
 ## 伊尚戈骨頭
 
@@ -245,7 +245,7 @@ style: |
 
 ---
 
-![bg left:45%](images/01-History-of-Computer/egypt-rope-stretching.jpg)
+![bg left:45%](../images/01-History-of-Computer/egypt-rope-stretching.jpg)
 
 ## 古埃及的土地測量
 
@@ -267,7 +267,7 @@ style: |
 
 ---
 
-![bg right:45%](images/01-History-of-Computer/slide-rule.jpg)
+![bg right:45%](../images/01-History-of-Computer/slide-rule.jpg)
 
 ## 計算尺
 
@@ -307,7 +307,7 @@ style: |
 
 ---
 
-![bg left:45%](images/01-History-of-Computer/difference-engine.jpg)
+![bg left:45%](../images/01-History-of-Computer/difference-engine.jpg)
 
 ## 差分機（Difference Engine，1820 年代）
 
@@ -329,7 +329,7 @@ style: |
 
 ---
 
-![bg right:45%](images/01-History-of-Computer/ada-lovelace.jpg)
+![bg right:45%](../images/01-History-of-Computer/ada-lovelace.jpg)
 
 ## 愛達·勒芙蕾絲
 
@@ -374,7 +374,7 @@ style: |
 
 ---
 
-![bg left:45%](images/01-History-of-Computer/hollerith-punch-card.jpg)
+![bg left:45%](../images/01-History-of-Computer/hollerith-punch-card.jpg)
 
 ## Hollerith 打孔卡系統
 
@@ -423,7 +423,7 @@ style: |
 
 ---
 
-![bg right:45%](images/01-History-of-Computer/vacuum-tube.jpg)
+![bg right:45%](../images/01-History-of-Computer/vacuum-tube.jpg)
 
 ## 真空管
 
@@ -434,7 +434,7 @@ style: |
 
 ---
 
-![bg left:45%](images/01-History-of-Computer/integrated-circuit.jpg)
+![bg left:45%](../images/01-History-of-Computer/integrated-circuit.jpg)
 
 ## 積體電路（IC）
 
@@ -445,7 +445,7 @@ style: |
 
 ---
 
-![bg right:45%](images/01-History-of-Computer/abc-computer.jpg)
+![bg right:45%](../images/01-History-of-Computer/abc-computer.jpg)
 
 ## ABC 計算機（1942 年）
 
@@ -471,7 +471,7 @@ style: |
 
 ---
 
-![bg right:45%](images/01-History-of-Computer/eniac.jpg)
+![bg right:45%](../images/01-History-of-Computer/eniac.jpg)
 
 ## ENIAC 小知識
 
@@ -523,7 +523,7 @@ style: |
 
 <!-- ## 電腦世代演進總覽 -->
 
-![h:600](images/01-History-of-Computer/computer-generations.png)
+![h:600](../images/01-History-of-Computer/computer-generations.png)
 
 ---
 
@@ -743,7 +743,7 @@ WWW 建立在三項關鍵技術上：
 
 <!-- ## AI 基本概念一覽 -->
 
-![h:600](images/01-History-of-Computer/ai-basic.png)
+![h:600](../images/01-History-of-Computer/ai-basic.png)
 
 ---
 
@@ -795,7 +795,7 @@ WWW 建立在三項關鍵技術上：
 
 <!-- ## 未來關鍵技術趨勢總覽 -->
 
-![h:600](images/01-History-of-Computer/future-technology.png)
+![h:600](../images/01-History-of-Computer/future-technology.png)
 
 ---
 
@@ -871,7 +871,7 @@ WWW 建立在三項關鍵技術上：
 
 ---
 
-![h:600](images/01-History-of-Computer/age-of-computer.png)
+![h:600](../images/01-History-of-Computer/age-of-computer.png)
 
 ---
 

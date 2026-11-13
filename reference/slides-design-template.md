@@ -1,8 +1,8 @@
 # 投影片設計規範
 
-本檔為各章節投影片版本（`0X-XXX.slides.md`）的統一設計規範，不綁定特定課程或學科領域。投影片以 [Marp](https://marp.app/) 撰寫，在 VS Code 中安裝 Marp for VS Code 擴充套件即可預覽與匯出 PDF。
+本檔為各章節投影片版本（`slides/0X-XXX.slides.md`）的統一設計規範，不綁定特定課程或學科領域。投影片以 [Marp](https://marp.app/) 撰寫，在 VS Code 中安裝 Marp for VS Code 擴充套件即可預覽與匯出 PDF。
 
-製作新章節投影片時，複製 `reference/slides-template.slides.md` 作為起點，並依本檔調整內容。投影片是正文的濃縮版，正文的撰寫規範（用語、中英夾雜空白、粗體標記前後空白、圖片路徑與檔名）同樣適用，見 `reference/chapter-writing-guide.md`；本檔只記錄投影片特有的規則。課程名稱、章節標題副標等隨課程而異的設定，見專案的 `CLAUDE.md`。
+製作新章節投影片時，複製 `reference/slides-template.slides.md` 到 `slides/` 資料夾作為起點，並依本檔調整內容。投影片是正文的濃縮版，正文的撰寫規範（用語、中英夾雜空白、粗體標記前後空白、圖片路徑與檔名）同樣適用，見 `reference/chapter-writing-guide.md`；本檔只記錄投影片特有的規則。課程名稱、章節標題副標等隨課程而異的設定，見專案的 `CLAUDE.md`。
 
 ## 一、Frontmatter
 
@@ -141,7 +141,7 @@ style: |
 
 左右背景圖應交錯使用 `bg left:45%` 與 `bg right:45%`，避免整份簡報的圖片都擠在同一側。
 
-圖片路徑與檔名沿用正文 `.md` 的規則（`images/{本章檔名}/{kebab-case 檔名}.png`），見 `reference/chapter-writing-guide.md`〈五、圖片〉。
+圖片的資料夾與檔名沿用正文 `.md` 的規則，見 `reference/chapter-writing-guide.md`〈五、圖片〉。投影片放在 `slides/` 資料夾，比正文深一層，因此路徑要以 `../` 開頭，寫成 `../images/{本章檔名}/{kebab-case 檔名}.png`；連到正文或筆記本的相對連結同理。
 
 ## 十、不加圖片來源圖說
 

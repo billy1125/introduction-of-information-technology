@@ -17,4 +17,4 @@
 | 9 | 11/04（三） | 期中複習 | — | — | 自由參加；18:00-21:00、2623 教室 |
 | 9 | 11/06 | 期中考 | `00-Exam-Rules.md` | — | 細節見 [midterm-exam.md](midterm-exam.md) |
 
-各章的投影片版本為同名的 `0X-XXX.slides.md`。
+各章的投影片版本為 `slides/` 資料夾中同名的 `0X-XXX.slides.md`。

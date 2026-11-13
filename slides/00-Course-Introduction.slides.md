@@ -102,7 +102,7 @@ style: |
 ## 課程規範：重要，請自己讀完一遍
 
 - 課程規範很長，但 **每一條都會影響你的成績**，不要只聽第一週講過一次就算了
-- 讀完請自己做一遍 [課程規範理解測驗](00-Course-Rules-Quiz.md)：不計分、不用繳交，答案就附在後面
+- 讀完請自己做一遍 [課程規範理解測驗](../00-Course-Rules-Quiz.md)：不計分、不用繳交，答案就附在後面
 - **建議第 2 週（09/18）上課前做完**，答錯的題目回頭把那一節重讀一次
 - 若有規定你不太能接受，歡迎找老師聊；規範全班一體適用，**請趁加退選期間想清楚**
 - 文件若有異動會在 LINE 群組公告，以 **最新版本** 為準
@@ -126,7 +126,7 @@ style: |
 
 ## 期中考試
 
-- 考試規定、缺考與補考、不可抗力認定、評分等第與考前複習課程，另見 [期中考試規定](00-Exam-Rules.md)
+- 考試規定、缺考與補考、不可抗力認定、評分等第與考前複習課程，另見 [期中考試規定](../00-Exam-Rules.md)
 
 ---
 
@@ -202,7 +202,7 @@ style: |
 
 ## A 班 LINE 群組
 
-![h:420](images/00-Course-Introduction/class-a-line-qrcode.jpg)
+![h:420](../images/00-Course-Introduction/class-a-line-qrcode.jpg)
 
 [https://line.me/ti/g/5-ASxmUASa](https://line.me/ti/g/5-ASxmUASa)
 
@@ -212,6 +212,6 @@ style: |
 
 ## B 班 LINE 群組
 
-![h:420](images/00-Course-Introduction/class-b-line-qrcode.jpg)
+![h:420](../images/00-Course-Introduction/class-b-line-qrcode.jpg)
 
 [https://line.me/ti/g/p7uqhZyHjS](https://line.me/ti/g/p7uqhZyHjS)

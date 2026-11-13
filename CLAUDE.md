@@ -30,7 +30,7 @@
 | `05-Information-Systems-and-Database.md` | 資訊系統、資料庫（ERP/MES/SCM 等企業應用系統的權威章節） |
 | `06-Data-Science-AI-and-Smart-Manufacturing.md` | 資料科學、人工智慧與智慧製造（**全課程終點**）：串接計算機→程式→網路→資訊系統→AI 的技術演進主線，並在最後以工業4.0智慧工廠案例收束全課程。機器學習／深度學習原理、AI 發展史，以及工業4.0（定義、九大支柱、數位轉型、數位孿生）的權威章節 |
 
-各章節另有對應的 Marp 投影片版本 `0X-XXX.slides.md`（目前涵蓋 00–06 章）。
+各章節另有對應的 Marp 投影片版本 `slides/0X-XXX.slides.md`（目前涵蓋 00–06 章）。
 
 ### 檔案夾
 
@@ -39,6 +39,7 @@
 | `lores/` | 課程基本設定檔，**課程基本資料、進度、期中考與出席規定的唯一權威來源**：`course-info.md`（基本資料、配分、教材位置、LINE 群組）、`schedule.md`（進度表）、`midterm-exam.md`（期中考時間地點範圍與計分）、`attendance.md`（簽到簽退、曠課與扣考）。更新任何文件時，這些項目一律以設定檔為準；要改設定時先改設定檔，再同步改引用到的文件。此資料夾不寫進 `README.md` |
 | `past-exams/` | 本課程過去的期中考考古題，每次考試的題目檔（不附解答）與標準答案檔分開存放，**僅供參考，不等於一定會出題**。各屆清單與各章節分量見 `past-exams/README.md` |
 | `reference/` | 教材撰寫規範與骨架範本，**格式規則的唯一權威來源**。內容刻意與課程脫鉤，換一門課可整個資料夾複製沿用 |
+| `slides/` | 各章節的 Marp 投影片版本 `0X-XXX.slides.md`，集中放置於此資料夾。投影片內引用圖片、筆記本與正文時，路徑一律以 `../` 開頭（如 `../images/0X-XXX/example.png`） |
 | `temp-reference/` | 生成教材用的暫存參考素材（非規範文件）。**臨時性質，目前不存在**，需要時才建立 |
 | `images/` | Markdown 文件引用的圖片，依所屬文章分子資料夾 |
 | `notebooks/` | 所有課程練習用的 Python Jupyter 筆記本，集中放置於此資料夾，內容為對應章節正文的實作範例與練習題詳解。各筆記本對應的章節見 `notebooks/README.md` |
@@ -51,7 +52,7 @@
 | 要做的事 | 先讀規範 | 再複製骨架 |
 |------|------|------|
 | 新增或修改章節正文 `0X-XXX.md` | `reference/chapter-writing-guide.md` | `reference/chapter-template.md` |
-| 新增或修改投影片 `0X-XXX.slides.md` | `reference/slides-design-template.md` | `reference/slides-template.slides.md` |
+| 新增或修改投影片 `slides/0X-XXX.slides.md` | `reference/slides-design-template.md` | `reference/slides-template.slides.md` |
 | 新增或修改練習筆記本 `notebooks/*.ipynb` | `reference/notebook-guide.md` | — |
 | 在對外文件加註 AI 協作揭露 | `reference/ai-disclosure-template.md` | 骨架就寫在該規範〈二〉，已套用的實例見 `README.md`〈🤖 AI 協作聲明〉 |
 
@@ -67,7 +68,7 @@
 
 ### 改完之後要一起更新的地方
 
-- **投影片同步**：正文改動涉及 **定義、數據、章節編號或標題** 時，必須同步修改對應的 `0X-XXX.slides.md`；純粹的潤稿、補充說明或新增趣味小知識則不必動投影片。
+- **投影片同步**：正文改動涉及 **定義、數據、章節編號或標題** 時，必須同步修改對應的 `slides/0X-XXX.slides.md`；純粹的潤稿、補充說明或新增趣味小知識則不必動投影片。
 - **README 教材清單**：新增或移除投影片、練習筆記本時，`README.md`〈📚 教材清單〉表格的「投影片版本」與「練習筆記本」兩欄要一起更新，沒有的項目填 `—`。表格漏更新不會有任何錯誤訊息，最容易放著爛掉。
 - **筆記本清單**：新增或移除練習筆記本時，`notebooks/README.md` 的筆記本清單要一起更新。
 - **考古題清單**：新增或移除 `past-exams/` 的檔案時，`past-exams/README.md` 的考古題清單與各章節分量要一起更新。`README.md`〈📝 考古題〉只說明資料夾內容，不列個別檔案。

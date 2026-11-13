@@ -52,7 +52,7 @@ style: |
 
 ---
 
-![h:600](images/00-Exam-Rules/why-test.jpg)
+![h:600](../images/00-Exam-Rules/why-test.jpg)
 
 ---
 
@@ -153,7 +153,7 @@ style: |
 
 ---
 
-![h:600](images/00-Exam-Rules/answer-sheet-example.jpg)
+![h:600](../images/00-Exam-Rules/answer-sheet-example.jpg)
 
 ---
 

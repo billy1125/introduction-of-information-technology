@@ -61,7 +61,7 @@ style: |
 
 <!-- ## 技術演進的完整脈絡圖 -->
 
-![w:900](images/06-Data-Science-AI-and-Smart-Manufacturing/computer-to-ai.png)
+![w:900](../images/06-Data-Science-AI-and-Smart-Manufacturing/computer-to-ai.png)
 
 ---
 
@@ -91,7 +91,7 @@ style: |
 
 ---
 
-![w:800](images/05-Information-Systems-and-Database/hierarchy-of-data-information-knowledge.png)
+![w:800](../images/05-Information-Systems-and-Database/hierarchy-of-data-information-knowledge.png)
 
 ---
 
@@ -129,7 +129,7 @@ style: |
 
 ## 網路、雲端與物聯網：讓資料匯聚成流
 
-![w:1100](images/06-Data-Science-AI-and-Smart-Manufacturing/one-computer-to-internet.png)
+![w:1100](../images/06-Data-Science-AI-and-Smart-Manufacturing/one-computer-to-internet.png)
 
 ---
 
@@ -169,7 +169,7 @@ style: |
 
 <!-- ## 資訊到知識這一階為什麼難 -->
 
-![h:520](images/06-Data-Science-AI-and-Smart-Manufacturing/information-to-knowledge-limit.png)
+![h:520](../images/06-Data-Science-AI-and-Smart-Manufacturing/information-to-knowledge-limit.png)
 
 ---
 
@@ -207,7 +207,7 @@ style: |
 
 ## 資料科學：為駕馭大數據而生
 
-![w:1100](images/06-Data-Science-AI-and-Smart-Manufacturing/what-is-data-science.png)
+![w:1100](../images/06-Data-Science-AI-and-Smart-Manufacturing/what-is-data-science.png)
 
 ---
 
@@ -250,7 +250,7 @@ style: |
 
 <!-- ## 常見資料科學任務 -->
 
-![w:1100](images/06-Data-Science-AI-and-Smart-Manufacturing/data-science-category.png)
+![w:1100](../images/06-Data-Science-AI-and-Smart-Manufacturing/data-science-category.png)
 
 ---
 
@@ -276,7 +276,7 @@ style: |
 
 ---
 
-![w:1100](images/06-Data-Science-AI-and-Smart-Manufacturing/history-of-ai.png)
+![w:1100](../images/06-Data-Science-AI-and-Smart-Manufacturing/history-of-ai.png)
 
 ---
 
@@ -314,7 +314,7 @@ style: |
 
 ---
 
-![w:1050](images/06-Data-Science-AI-and-Smart-Manufacturing/what-is-ai.png)
+![w:1050](../images/06-Data-Science-AI-and-Smart-Manufacturing/what-is-ai.png)
 
 ---
 
@@ -360,7 +360,7 @@ $$
 
 ## 同一個邏輯，套進不同任務
 
-![h:500](images/06-Data-Science-AI-and-Smart-Manufacturing/ai-task-input-output.png)
+![h:500](../images/06-Data-Science-AI-and-Smart-Manufacturing/ai-task-input-output.png)
 
 ---
 
@@ -398,7 +398,7 @@ $$
 
 <!-- ## 機器學習的訓練流程 -->
 
-![h:600](images/06-Data-Science-AI-and-Smart-Manufacturing/ai-machine-learning.png)
+![h:600](../images/06-Data-Science-AI-and-Smart-Manufacturing/ai-machine-learning.png)
 
 ---
 
@@ -439,7 +439,7 @@ $$
 
 <!-- ## 機器學習的四大類型 -->
 
-![h:600](images/06-Data-Science-AI-and-Smart-Manufacturing/ml-four-types.png)
+![h:600](../images/06-Data-Science-AI-and-Smart-Manufacturing/ml-four-types.png)
 
 ---
 
@@ -463,7 +463,7 @@ $$
 
 <!-- ## 人工神經網路 -->
 
-![w:1100](images/06-Data-Science-AI-and-Smart-Manufacturing/ann.svg)
+![w:1100](../images/06-Data-Science-AI-and-Smart-Manufacturing/ann.svg)
 
 ---
 
@@ -475,7 +475,7 @@ $$
 
 ---
 
-![w:1100](images/06-Data-Science-AI-and-Smart-Manufacturing/deep-ann.png)
+![w:1100](../images/06-Data-Science-AI-and-Smart-Manufacturing/deep-ann.png)
 
 ---
 
@@ -499,7 +499,7 @@ $$
 
 ---
 
-![w:1200](images/06-Data-Science-AI-and-Smart-Manufacturing/deep-learning.png)
+![w:1200](../images/06-Data-Science-AI-and-Smart-Manufacturing/deep-learning.png)
 
 ---
 
@@ -525,7 +525,7 @@ $$
 
 <!-- ## CNN、RNN、LSTM 與 Transformer 的比較 -->
 
-![w:1100](images/06-Data-Science-AI-and-Smart-Manufacturing/cnn-rnn-transformer-comparison.png)
+![w:1100](../images/06-Data-Science-AI-and-Smart-Manufacturing/cnn-rnn-transformer-comparison.png)
 
 ---
 
@@ -600,7 +600,7 @@ $$
 
 LLM 的核心其實只有一件事：**一個詞元接著一個詞元地「預測下一個字」**——算出最可能的下一個詞元、吐出來、再接回尾端繼續預測，一整句通順的回答就這樣「接龍」生成出來。
 
-![w:1100](images/06-Data-Science-AI-and-Smart-Manufacturing/llm-principle.png)
+![w:1100](../images/06-Data-Science-AI-and-Smart-Manufacturing/llm-principle.png)
 
 ---
 
@@ -671,7 +671,7 @@ LLM 有時會生成聽起來合理、實際上卻錯誤的內容——捏造數�
 
 ---
 
-![w:900](images/06-Data-Science-AI-and-Smart-Manufacturing/concept-of-agent.png)
+![w:900](../images/06-Data-Science-AI-and-Smart-Manufacturing/concept-of-agent.png)
 
 ---
 
@@ -706,7 +706,7 @@ LLM 有時會生成聽起來合理、實際上卻錯誤的內容——捏造數�
 
 <!-- ## AI 的能力層級 -->
 
-![w:1100](images/06-Data-Science-AI-and-Smart-Manufacturing/ai-evolution.png)
+![w:1100](../images/06-Data-Science-AI-and-Smart-Manufacturing/ai-evolution.png)
 
 ---
 
@@ -764,7 +764,7 @@ LLM 有時會生成聽起來合理、實際上卻錯誤的內容——捏造數�
 
 <!-- ## AI 應用類型一覽 -->
 
-![h:600](images/06-Data-Science-AI-and-Smart-Manufacturing/ai-applications.png)
+![h:600](../images/06-Data-Science-AI-and-Smart-Manufacturing/ai-applications.png)
 
 ---
 
@@ -778,7 +778,7 @@ LLM 有時會生成聽起來合理、實際上卻錯誤的內容——捏造數�
 
 <!-- ## 技術演進的完整脈絡圖 -->
 
-![h:600](images/06-Data-Science-AI-and-Smart-Manufacturing/computer-to-ai.png)
+![h:600](../images/06-Data-Science-AI-and-Smart-Manufacturing/computer-to-ai.png)
 
 ---
 
@@ -819,7 +819,7 @@ LLM 有時會生成聽起來合理、實際上卻錯誤的內容——捏造數�
 
 **工業4.0（Industry 4.0）** 是德國政府 2011 年提出的製造業戰略，代表第四次工業革命，以 **數位化、網路化、智慧化** 為核心。
 
-![h:330](images/06-Data-Science-AI-and-Smart-Manufacturing/industry-4.0-revolutions.png)
+![h:330](../images/06-Data-Science-AI-and-Smart-Manufacturing/industry-4.0-revolutions.png)
 
 ---
 
