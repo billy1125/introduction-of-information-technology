@@ -23,7 +23,7 @@
 
 這份文件與 [00-Exam-Rules.md](00-Exam-Rules.md)（期中考試規定）只涵蓋呂卓勲老師負責的資訊科技概論部分：兩份文件中所有關於期中考、補考、簽到簽退、扣考、複查期限的規定，講的都是呂老師這半學期的事。
 
-孫天龍老師負責的人工智慧概論部分，評分方式與上課方式一律 **由孫老師自行公告**，本文件不代為說明，也不保證與孫老師的規定一致。文件中出現「請自行諮詢孫老師」的地方，就是指這件事。
+孫天龍老師負責的人工智慧概論部分，評分方式與上課方式一律 **由孫老師自行公告**，本文件不代為說明，也不保證與孫老師的規定一致。
 
 > 請同學務必記得：等孫老師開始上課時，再跟孫老師確認一次他那部分的評分方式與課堂要求。不要拿這份文件的規定去推論孫老師那半學期怎麼算。
 
@@ -35,7 +35,7 @@
 |---|---|---|
 | 適用範圍 | **本文件只涵蓋呂卓勲老師的部分**；孫天龍老師的評分與上課方式由孫老師公告，請當面再確認一次 | 本文件的適用範圍 |
 | 配分 | 呂卓勲老師 50%（期中考）、孫天龍老師 50%（計算方式請自行諮詢孫老師） | 學期配分比重 |
-| 關鍵日期 | 期中考 **第 9 週（11/06）**；期中複習課程 **10/28 晚間**（暫定，自由參加） | 課程預計進度表 |
+| 關鍵日期 | 期中考 **第 9 週（11/06）**；期中複習課程 **11/04（三）18:00-21:00**（自由參加） | 課程預計進度表 |
 | 考試範圍 | 呂卓勲老師所教授的所有教材內容，不含第六章〈五、工業4.0與智慧製造〉；題型為單選題與簡答題 | 期中考試規定 |
 | 遲到與離場 | **遲到逾 20 分鐘不得入場，視同缺考**；已入場者 30 分鐘內不得交卷離場 | 期中考試規定／考試規定 |
 | 缺考與補考 | 須依學校規定請假並另行申請補考；一般個人因素以實得分數 **80%** 計算，不可抗力並提出證明才是 **100%**，**沒請假就是 0 分** | 期中考試規定／什麼算不可抗力？ |
@@ -67,16 +67,16 @@
 
 | 週次 | 日期 | 主題 | 對應檔案 | 投影片版本 | 練習筆記本 | 說明 |
 |---|---|---|---|---|---|---|
-| 1 | 09/11 | 課程介紹、計算機歷史 | [00-Course-Introduction.md](00-Course-Introduction.md)<br>[01-History-of-Computer.md](01-History-of-Computer.md) | [00-Course-Introduction.slides.md](00-Course-Introduction.slides.md)<br>[01-History-of-Computer.slides.md](01-History-of-Computer.slides.md) | — | 講解本文件 |
-| 2 | 09/18 | 電腦硬體、作業系統與應用軟體 | [02-Computer-Structure.md](02-Computer-Structure.md) | [02-Computer-Structure.slides.md](02-Computer-Structure.slides.md) | [Computer-Structure-Examples.ipynb](notebooks/Computer-Structure-Examples.ipynb) | — |
+| 1 | 09/11 | 課程介紹、計算機歷史 | [課程介紹](00-Course-Introduction.md)<br>[第一章](01-History-of-Computer.md) | [課程介紹投影片](00-Course-Introduction.slides.md)<br>[第一章投影片](01-History-of-Computer.slides.md) | — | 講解本文件 |
+| 2 | 09/18 | 電腦硬體、作業系統與應用軟體 | [第二章](02-Computer-Structure.md) | [第二章投影片](02-Computer-Structure.slides.md) | [第二章練習筆記本](notebooks/Computer-Structure-Examples.ipynb) | — |
 | 3 | 09/25 | **中秋節放假** | — | — | — | 停課 |
-| 4 | 10/02 | 程式設計概念 | [03-Computer-Program.md](03-Computer-Program.md) | [03-Computer-Program.slides.md](03-Computer-Program.slides.md) | [Computer-Program-Examples.ipynb](notebooks/Computer-Program-Examples.ipynb) | — |
+| 4 | 10/02 | 程式設計概念 | [第三章](03-Computer-Program.md) | [第三章投影片](03-Computer-Program.slides.md) | [第三章練習筆記本](notebooks/Computer-Program-Examples.ipynb) | — |
 | 5 | 10/09 | **國慶日補假** | — | — | — | 停課；10/10 國慶日適逢週六，補假挪至本日 |
-| 6 | 10/16 | 網路與網際網路 | [04-Networks-and-Internet.md](04-Networks-and-Internet.md) | [04-Networks-and-Internet.slides.md](04-Networks-and-Internet.slides.md) | — | — |
-| 7 | 10/23 | 資訊系統與資料庫 | [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | [05-Information-Systems-and-Database.slides.md](05-Information-Systems-and-Database.slides.md) | — | — |
-| 8 | 10/30 | 資料科學、人工智慧與智慧製造（含工業4.0） | [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) | [06-Data-Science-AI-and-Smart-Manufacturing.slides.md](06-Data-Science-AI-and-Smart-Manufacturing.slides.md) | — | 全課程終點 |
+| 6 | 10/16 | 網路與網際網路 | [第四章](04-Networks-and-Internet.md) | [第四章投影片](04-Networks-and-Internet.slides.md) | — | — |
+| 7 | 10/23 | 資訊系統與資料庫 | [第五章](05-Information-Systems-and-Database.md) | [第五章投影片](05-Information-Systems-and-Database.slides.md) | — | — |
+| 8 | 10/30 | 資料科學、人工智慧與智慧製造（含工業4.0） | [第六章](06-Data-Science-AI-and-Smart-Manufacturing.md) | [第六章投影片](06-Data-Science-AI-and-Smart-Manufacturing.slides.md) | — | 全課程終點 |
 | 9 | 11/04 | **期中複習** | — | — | — | **自由參加**；時間：18:00-21:00、地點：2623教室 |
-| 9 | 11/06 | **期中考** | [00-Exam-Rules.md](00-Exam-Rules.md) | — | — | **考試時間為課程時間；地點 A 班 2115、B 班 2623（非原上課教室）** |
+| 9 | 11/06 | **期中考** | [期中考試規定](00-Exam-Rules.md) | — | — | **考試時間為課程時間；地點 A 班 2115、B 班 2623（非原上課教室）** |
 
 ## 期中考試
 

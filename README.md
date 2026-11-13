@@ -14,16 +14,16 @@
 
 | 內容已確定 | 檔案 | 主題 | 說明 | 投影片版本 | 練習筆記本 |
 |------|------|------|------|------|------|
-| ✅ | [00-Course-Introduction.md](00-Course-Introduction.md) | 課程介紹 | 課程概要、評分方式、進度表、出席規範、扣考規則、請假規定 | [Slides](00-Course-Introduction.slides.md) | — |
-| ✅ | [00-Exam-Rules.md](00-Exam-Rules.md) | 期中考試規定 | 考試規定、考試當天規則、缺考與補考、不可抗力認定、評分等第 | [Slides](00-Exam-Rules.slides.md) | — |
-| ✅ | [00-Course-Rules-Quiz.md](00-Course-Rules-Quiz.md) | 課程規範理解測驗 | 20 題是非題的自我檢核，附解答與出處；不計分、不用繳交 | — | — |
-| ✅ | [01-History-of-Computer.md](01-History-of-Computer.md) | 計算機歷史 | 計算工具演進、二進位系統、數位化、網路起源、AI 發展簡史 | [Slides](01-History-of-Computer.slides.md) | — |
-| ✅ | [02-Computer-Structure.md](02-Computer-Structure.md) | 電腦硬體、作業系統與應用軟體 | CPU、記憶體、儲存裝置、作業系統、應用軟體、工業4.0 | [Slides](02-Computer-Structure.slides.md) | [Notebook](notebooks/Computer-Structure-Examples.ipynb) |
-| ✅ | [03-Computer-Program.md](03-Computer-Program.md) | 程式設計概念 | 演算法、程式語言、資料結構、工業工程應用 | [Slides](03-Computer-Program.slides.md) | [Notebook](notebooks/Computer-Program-Examples.ipynb) |
-| ✅ | [04-Networks-and-Internet.md](04-Networks-and-Internet.md) | 網路與網際網路 | 網路硬體與拓樸、無線與行動通訊、物聯網、TCP/IP、WWW 與 DNS、網際網路服務與資安、智慧製造網路 | [Slides](04-Networks-and-Internet.slides.md) | — |
-| ✅ | [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md) | 資訊系統與資料庫 | 資訊系統類型（TPS/MIS/DSS/EIS）、ERP/MES/CRM、關聯式資料庫、SQL、NoSQL、大數據、電子商務 | [Slides](05-Information-Systems-and-Database.slides.md) | — |
-| ✅ | [06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md) | 資料科學、人工智慧與智慧製造 | 從計算機到 AI 的完整脈絡、機器學習、深度學習、生成式 AI、AI 代理人，並以工業4.0智慧工廠案例整合全課程（全課程終點章節） | [Slides](06-Data-Science-AI-and-Smart-Manufacturing.slides.md) | — |
-| ✅ | [07-Course-Review.md](07-Course-Review.md) | 全課程複習 | 六章重點的摘要與複習地圖，附各章教材連結；**只是索引與摘要，不能取代教材** | [Slides](07-Course-Review.slides.md) | — |
+| ✅ | [課程介紹](00-Course-Introduction.md) | 課程介紹 | 課程概要、評分方式、進度表、出席規範、扣考規則、請假規定 | [課程介紹投影片](00-Course-Introduction.slides.md) | — |
+| ✅ | [期中考試規定](00-Exam-Rules.md) | 期中考試規定 | 考試規定、考試當天規則、缺考與補考、不可抗力認定、評分等第 | [期中考試規定投影片](00-Exam-Rules.slides.md) | — |
+| ✅ | [課程規範理解測驗](00-Course-Rules-Quiz.md) | 課程規範理解測驗 | 20 題是非題的自我檢核，附解答與出處；不計分、不用繳交 | — | — |
+| ✅ | [第一章](01-History-of-Computer.md) | 計算機歷史 | 計算工具演進、二進位系統、數位化、網路起源、AI 發展簡史 | [第一章投影片](01-History-of-Computer.slides.md) | — |
+| ✅ | [第二章](02-Computer-Structure.md) | 電腦硬體、作業系統與應用軟體 | CPU、記憶體、儲存裝置、作業系統、應用軟體、工業4.0 | [第二章投影片](02-Computer-Structure.slides.md) | [第二章練習筆記本](notebooks/Computer-Structure-Examples.ipynb) |
+| ✅ | [第三章](03-Computer-Program.md) | 程式設計概念 | 演算法、程式語言、資料結構、工業工程應用 | [第三章投影片](03-Computer-Program.slides.md) | [第三章練習筆記本](notebooks/Computer-Program-Examples.ipynb) |
+| ✅ | [第四章](04-Networks-and-Internet.md) | 網路與網際網路 | 網路硬體與拓樸、無線與行動通訊、物聯網、TCP/IP、WWW 與 DNS、網際網路服務與資安、智慧製造網路 | [第四章投影片](04-Networks-and-Internet.slides.md) | — |
+| ✅ | [第五章](05-Information-Systems-and-Database.md) | 資訊系統與資料庫 | 資訊系統類型（TPS/MIS/DSS/EIS）、ERP/MES/CRM、關聯式資料庫、SQL、NoSQL、大數據、電子商務 | [第五章投影片](05-Information-Systems-and-Database.slides.md) | — |
+| ✅ | [第六章](06-Data-Science-AI-and-Smart-Manufacturing.md) | 資料科學、人工智慧與智慧製造 | 從計算機到 AI 的完整脈絡、機器學習、深度學習、生成式 AI、AI 代理人，並以工業4.0智慧工廠案例整合全課程（全課程終點章節） | [第六章投影片](06-Data-Science-AI-and-Smart-Manufacturing.slides.md) | — |
+| ✅ | [全課程複習](07-Course-Review.md) | 全課程複習 | 六章重點的摘要與複習地圖，附各章教材連結；**只是索引與摘要，不能取代教材** | [全課程複習投影片](07-Course-Review.slides.md) | — |
 
 **「內容已確定」欄位標示 ✅ 的教材，內容原則上不再變動**；對章節教材而言，標示 ✅ 就表示 **該章的期中考範圍已經定案**，同學可以放心據此準備，不必擔心讀到一半範圍又被加東西。標示 ✅ 之後仍可能有錯字修正、補充說明或排版調整，但不會再增刪影響考試範圍的內容。
 
@@ -35,7 +35,7 @@
 
 ## 📝 考古題
 
-[`past-exams/`](past-exams/) 收錄本課程過去的期中考題目與標準答案，讓同學熟悉出題方式。各屆考古題清單與各章節分量見 [past-exams/README.md](past-exams/README.md)。
+[`past-exams/`](past-exams/) 收錄本課程過去的期中考題目與標準答案，讓同學熟悉出題方式。各屆考古題清單與各章節分量見 [考古題清單](past-exams/README.md)。
 
 > **考古題僅供參考，不等於一定會出題。** 每學期的教材內容與考試範圍都可能調整，準備考試請以上方〈📚 教材清單〉標示 ✅ 的教材為準。
 
@@ -90,9 +90,9 @@
 
 本教材也適合作為報考 **資訊相關領域研究所** 時「計算機概論」考科的入門讀物。不過請務必把它定位成 **概論級（入門入口）教材**：它的目標是幫你建立各主題的基本觀念與整體脈絡，讓你有個穩固的起點，而不是涵蓋研究所考試所需的全部深度。把每一章讀熟、把脈絡讀通之後，再依你報考的方向往下延伸查閱與搜尋：
 
-- **報考資訊管理研究所（資管所）**：以 [05-Information-Systems-and-Database.md](05-Information-Systems-and-Database.md)〈資訊系統與資料庫〉為核心，建議再自行延伸搜尋資訊系統相關主題的更深入內容
-- **報考資訊工程／資訊科學研究所（資工／資科所）**：請務必延伸電腦硬體與軟體（[02-Computer-Structure.md](02-Computer-Structure.md)）、程式設計（[03-Computer-Program.md](03-Computer-Program.md)）與電腦網路（[04-Networks-and-Internet.md](04-Networks-and-Internet.md)）等相關領域的進階內容
-- **人工智慧與資料科學（[06-Data-Science-AI-and-Smart-Manufacturing.md](06-Data-Science-AI-and-Smart-Manufacturing.md)）**：上述三類研究所都會用到，是共同的重點
+- **報考資訊管理研究所（資管所）**：以 [第五章](05-Information-Systems-and-Database.md)〈資訊系統與資料庫〉為核心，建議再自行延伸搜尋資訊系統相關主題的更深入內容
+- **報考資訊工程／資訊科學研究所（資工／資科所）**：請務必延伸電腦硬體與軟體（[第二章](02-Computer-Structure.md)）、程式設計（[第三章](03-Computer-Program.md)）與電腦網路（[第四章](04-Networks-and-Internet.md)）等相關領域的進階內容
+- **人工智慧與資料科學（[第六章](06-Data-Science-AI-and-Smart-Manufacturing.md)）**：上述三類研究所都會用到，是共同的重點
 
 無論報考哪一類，本教材都只是一個入門入口——它幫你把觀念打底、把技術地圖攤開，真正要應考仍須依各校考古題與指定教科書再往深處鑽研。好好把這份教材讀完，一定能幫助你在後續的延伸學習上事半功倍。
 
