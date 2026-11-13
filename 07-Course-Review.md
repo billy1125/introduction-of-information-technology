@@ -31,7 +31,7 @@
 
 ## 一、計算機歷史
 
-課文：[01-History-of-Computer.md](01-History-of-Computer.md) ｜ 自我檢查：〈十、學習重點總結〉
+課文：[01-History-of-Computer.md](01-History-of-Computer.md) ｜ 自我檢查：〈十一、學習重點總結〉
 
 | 重點 | 你要能回答 | 課文 |
 |---|---|---|
